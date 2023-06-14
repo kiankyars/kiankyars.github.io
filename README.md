@@ -1,12 +1,4 @@
 # kiankyars.github.io
-My first website, it is a resume-style website using Bootstrap 5.
+- This is version two of my personal website, this time built with react, and with the primary purpose to serve as my blog, during my internship in [Germany](https://www.daad.de/rise/en/rise-germany/).
 
-Future plans:
-
-Figure out how to make the website more mobile friendly via either the meta
-<meta name="viewport" content="initial-scale=1, width=device-width"> tag,
-or using breakpoints, containers, rows, and columns via Boostrap.
-
-Resize the Carousel to take up less space.
-
-Add a dark mode toggle.
+- Introduction to react was learnt through the following LinkedIn Learning [Course](https://www.linkedin.com/learning/hands-on-introduction-react).
