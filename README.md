@@ -1,4 +1,4 @@
 # kiankyars.github.io
-- This is version two of my personal website, this time built with [Gatsby's blog starter](https://github.com/gatsbyjs/gatsby-starter-blog), and with the primary purpose to serve as my blog, during my internship in [Germany](https://www.daad.de/rise/en/rise-germany/).
+- After trying, unsuccessfully, to make version two of my personal website via a large jump in framework (Gatsby), I will be putting my personal website on pause until I learn sufficient React to make my own simple page for the second edition. The main focus this time will be on making the website more appealing than the first.
 
-- Introduction to react was learnt through the following LinkedIn Learning [Course](https://www.linkedin.com/learning/hands-on-introduction-react), although I would not recommend it.
+- In the mean time, check out my [medium](https://medium.com/@kyars), where I post the blog that was intended to go on this page.
