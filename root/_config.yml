@@ -19,14 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Adam Karvonen
-email: adam.karvonen@galois.com
-description: >- # this means to ignore newlines until "baseurl:"
-I'm a research engineer working at Galois.
-I'm currently interested in LLMs, both in understanding and interpreting them and combining them with formal methods.
-baseurl: "" # the subpath of your site, e.g. /blog
+email: adam.karvonen@gmail.com
+description: Adam Karvonen's personal website
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adamkarvonen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: a_karvonen
+github_username:  adamkarvonen
 
 # Build settings
 theme: minima
