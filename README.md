@@ -1,1 +1,0 @@
-# adamkarvonen.github.io
