@@ -21,7 +21,7 @@
 title: Adam Karvonen
 email: adam.karvonen@gmail.com
 description: Adam Karvonen's personal website
-# baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/root" # the subpath of your site, e.g. /blog
 url: "https://adamkarvonen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: a_karvonen
 github_username:  adamkarvonen
