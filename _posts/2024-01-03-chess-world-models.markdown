@@ -33,13 +33,13 @@ I also checked if it was playing unique games not found in its training dataset.
 
 ## Chess-GPT's Internal World Model
 
-Next, I wanted to see if my model could accurately track the state of the board. A quick overview of linear probes: We can take the internal activations of a model as it's predicting the next token, and train a linear model to take the model's activations as inputs and predict board state as output. Because a linear probe is very simple, we can have confidence that it reflects the model's internal knowledge rather than the capacity of the probe itself. We can also train a non-linear probe using a small neural network instead of a linear model, but we risk our non-linear probe capturing noise and misleading us. 
+Next, I wanted to see if my model could accurately track the state of the board. A quick overview of linear probes: We can take the internal activations of a model as it's predicting the next token, and train a linear model to take the model's activations as inputs and predict board state as output. Because a linear probe is very simple, we can have confidence that it reflects the model's internal knowledge rather than the capacity of the probe itself. We can also train a non-linear probe using a small neural network instead of a linear model, but we risk being misled as the non-linear probe picks up noise from the data. 
 
 In the original Othello paper, they found that only non-linear probes could accurately construct the board state of "this square has a black / white / blank piece". For this objective, the probe is trained on the model's activations at every move. However, Neel Nanda then found that a linear probe can accurately construct the state of the board of "this square has my / their / blank piece". To do this, the linear probe is only trained on model activation's as its predicting the Black XOR White move.
 
 Armed with this knowledge, I trained some linear probes on my model. And once again, it basically worked on my first try. I also found that my Chess-GPT uses a "my / their" board state, rather than a "black / white" board state. My guess is that the model learns one "program" to predict the next move given a board state, and reuses the same "program" for both players. The linear probe's objective was to classify every square into one of 13 classes (blank, white / black pawn, rook, bishop, knight, king, queen). The linear probe accurately classified 99.2% of squares over 10,000 games.
 
-I visualized some of these probe outputs. When visualizing, I would create two heat maps: one with `abs(probe output)` clipped to < 5, and one without clipping. In this case, we can see with clipping that the model is very confident on the location of the black king. Without clipping, we can see it's extremely confident that the black king is not on white's side of the board.
+To better interpret the internal predictions of my model, I created some visual heat maps. These heat maps were derived from the probe outputs, which had been trained on a one-hot objective to predict whether a chess piece, such the black king, was present on a given square (1 if present, 0 if not). The first heat map shows the actual board state for the black king. The second heat map depicts the probe’s confidence with a clipping limit applied to the output values where any value above 5 is reduced to 5. This clipping makes the probe's output more binary, as shown by the white square against the black background. The third heat map presents the probe’s output without any clipping, revealing a gradient of confidence levels. It shows that the model is extremely certain that the black king is not located on the white side of the chessboard.
 
 ![3 heatmaps of the linear probe for black king location](/images/chess_world_models/king_probe.png)
 
@@ -51,7 +51,7 @@ The model still knows where the blank squares are, but it is once again less con
 
 ![3 heatmaps of the linear probe for blank squares location](/images/chess_world_models/blank_probe.png)
 
-For this move in this chess game, the linear probe perfectly reconstructs the state of the board.
+For this move in this chess game, the linear probe perfectly reconstructs the state of the board. The probe's objective is to classify each square into one of 13 categories, each representing a different chess piece or a blank square. To create this graph, we just take the prediction with the highest value for each square as the probe's output.
 
 ![2 heatmaps of the linear probe for board state](/images/chess_world_models/board_state.png)
 
@@ -69,7 +69,7 @@ To an extent, this is unsurprising. This reminds me of the OpenAI [Sentiment Neu
 
 The evidence here would be stronger if I also performed casual interventions on the model using these probes. For example, I could intervene to change the model's internal representation of the board state, and see if it makes legal moves under the new state of the board. Or, I could intervene on the model's representation of player skill and see if it plays better or worse. Unfortunately, I just ran out of time. This was a Christmas break project, and it's time to get back to work.
 
-However, I still consider the findings to be strong. Linear probes have a limited capacity, and are a relatively accepted method of benchmarking what a model has learned. I followed general best practices of training the probes on a training set, and testing them on a separate test set. The board state in particular is a very concrete task to probe against. Probing for skill level does have a possibility that the model is learning some feature that is mostly correlated with skill, but 89% is a relatively good result for the difficult task of discerning the ELO of players in a chess game after 25 moves.
+However, I still consider the findings to be strong. Linear probes have a limited capacity, and are an accepted method of benchmarking what a model has learned. I followed general best practices of training the probes on a training set, and testing them on a separate test set. The board state in particular is a very concrete task to probe against. Probing for skill level does have a possibility that the model is learning some feature that is mostly correlated with skill, but 89% is a good result for the difficult task of discerning the ELO of players in a chess game after 25 moves.
 
 ## Potential future work
 
