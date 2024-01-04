@@ -23,7 +23,7 @@ My initial hypothesis was that Othello-GPT trained on human games performed poor
 
 Initially, I looked at fine-tuning open source models like LLama 7B or OpenLlama 3B. However, I almost immediately had to abandon that approach to keep my GPU costs down (I used RTX 3090s from [runpod](https://www.runpod.io/)). Instead, I started training models from scratch using Andrej Karpathy's [nanogpt](https://github.com/karpathy/nanoGPT) repository. I experimented with 25M and 50M parameter models.
 
-![A graph of Chess-GPT vs Stockfish](../images/chess_world_models/50M-Chess-GPT-win-rate.png)
+![A graph of Chess-GPT vs Stockfish](/images/chess_world_models/50M-Chess-GPT-win-rate.png)
 
 It basically worked on the first try. The 50M parameter model played at 1300 ELO with 99.8% of its moves being legal within one day of training. I find it fairly impressive that a model with only 8 layers can correctly make a legal move 80 turns into a game. I left one training for a few more days and it reached 1500 ELO. I'm still investigating dataset mixes and I'm sure there's room for improvement.
 
@@ -39,21 +39,21 @@ In the original Othello paper, they found that only non-linear probes could accu
 
 Armed with this knowledge, I trained some linear probes on my model. And once again, it basically worked on my first try. I also found that my Chess-GPT uses a "my / their" board state, rather than a "black / white" board state. My guess is that the model learns one "program" to predict the next move given a board state, and reuses the same "program" for both players. The linear probe's objective was to classify every square into one of 13 classes (blank, white / black pawn, rook, bishop, knight, king, queen). The linear probe accurately classified 99.2% of squares over 10,000 games.
 
-I visualized some of these probe outputs. When visualizing, I would create two heat maps: one with abs(probe output) clipped to < 5, and one without clipping. In this case, we can see with clipping that the model is very confident on the location of the black king. Without clipping, we can see it's extremely confident that the black king is not on white's side of the board.
+I visualized some of these probe outputs. When visualizing, I would create two heat maps: one with `abs(probe output)` clipped to < 5, and one without clipping. In this case, we can see with clipping that the model is very confident on the location of the black king. Without clipping, we can see it's extremely confident that the black king is not on white's side of the board.
 
-![3 heatmaps of the linear probe for black king location](../images/chess_world_models/king_probe.png)
+![3 heatmaps of the linear probe for black king location](/images/chess_world_models/king_probe.png)
 
-We see a very similar result for the location of the white pawns, although the model is less confident. This board state comes from the 12th move in a chess game, and the model is extremely confident that no pawns are in the opposite side's back rank.
+We see a very similar result for the location of the white pawns, although the model is less confident. This board state comes from the 12th move in a chess game, and the model is extremely confident that no white pawns are in the either side's back rank.
 
-![3 heatmaps of the linear probe for white pawn location](../images/chess_world_models/pawn_probe.png)
+![3 heatmaps of the linear probe for white pawn location](/images/chess_world_models/pawn_probe.png)
 
 The model still knows where the blank squares are, but it is once again less confident this.
 
-![3 heatmaps of the linear probe for blank squares location](../images/chess_world_models/blank_probe.png)
+![3 heatmaps of the linear probe for blank squares location](/images/chess_world_models/blank_probe.png)
 
 For this move in this chess game, the linear probe perfectly reconstructs the state of the board.
 
-![2 heatmaps of the linear probe for board state](../images/chess_world_models/board_state.png)
+![2 heatmaps of the linear probe for board state](/images/chess_world_models/board_state.png)
 
 ## Probing for latent variables
 
