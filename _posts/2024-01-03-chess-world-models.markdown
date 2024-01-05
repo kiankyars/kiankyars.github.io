@@ -95,6 +95,10 @@ In Othello-GPT, the model had a vocabulary of 60 tokens, corresponding to the 60
 
 Neel Nanda excluded the first 5 and last 5 moves of the game when training his probes. I found that my linear probes accuracy did not change when trained on all moves or all but the first 5 moves.
 
+# Model training details
+
+The LLMs were character level models rather than using byte-pair encoding and tokenization. From manually inspecting gpt-3.5 tokenization, it looks like a standard tokenizer has slightly over 1 character per token for a PGN string, excluding spaces. As my model had a vocabulary of just 32 tokens, I was able to reduce my model size by 25 million parameters compared to using a standard tokenizer with a vocabulary of 50,257 tokens. During training, I ensured that every batch began with ";1.", a delimiter token followed by a new game. I did try training a model by randomly sampling blocks that usually began in the middle of a game, although it's 1024 context length meant that it usually also received the beginning of a game later on. The model still learned to play chess. I would be curious what sort of cursed heuristics that model learned to infer the board state when receiving an input that starts in the middle of a chess game.
+
 # Open source code, models, and datasets
 
 All code, models, and datasets are open source.
@@ -112,8 +116,6 @@ Wandb training loss curves and model configs can be viewed here: [https://api.wa
 
 # Model size and dataset comparison
 
-# Skill Estimation
-
 | Model Name | Probe Layer Target | ELO Classification Accuracy | Board State Classification Accuracy | Legal Move Rate |
 | ---------- | ------------------ | --------- | --- | --- |
 | Randomly Initialized 8 layer model | 5 | 65.8% | 70.8% | 0% |
@@ -121,6 +123,10 @@ Wandb training loss curves and model configs can be viewed here: [https://api.wa
 | 8 Layer Model trained on Lichess Games | 7 | 88.0% | 98.0% | 99.6% |
 | 16 Layer Model trained on Lichess Games | 12 | 89.2% | 98.6% | 99.8% |
 | 16 Layer Model trained on Stockfish Games | 12 | N/A | 99.2% | 99.7% |
+
+There are some caveats for the following graph: Unfortunately, I accidentally deleted part of the logs for the 16 layer Stockfish model, but I believe it was trained on around 120 billion input characters. All other models were trained for a total of 60 billion input characters. The models were trained for several epochs - the datasets ranged in size from 4 - 7 billion characters. The labels stand for the dataset from hugging face that the model was trained on as well as the number of layers in the model. In this graph, for 1 game a win counts as 1 point, a draw as 0.5, and a loss as 0. We lose some information compared to a stacked bar chart, but I felt it would be too crowded.
+
+![A line chart comparing various LLM's win rates against Stockfish](/images/chess_world_models/llm-win-rate.png)
 
 # Probe accuracy per layer on an 8 Layer Network
 
