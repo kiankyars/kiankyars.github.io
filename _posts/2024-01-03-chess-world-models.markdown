@@ -91,7 +91,9 @@ Other potential directions:
 
 Both Neel Nanda and I trained our probes to predict "my piece / their piece" instead of "white piece / black piece". To predict "white piece / black piece", you just have to train the linear probe on the model's activations at every move. To predict "my piece / their piece", you have to train the linear probe on the model's activations at every white XOR black move.
 
-In Othello-GPT, the model had a vocabulary of 60 tokens, corresponding to the 60 legal squares where a piece could be placed. So, Neel Nanda just probed at every even character for a white "my piece / their piece" probe, and at every odd character for a black "my piece / their piece" probe. In my case, the input to Chess-GPT was a string like "1.e4 e5 2.Nf3 ...". So, I trained the white "my piece / their piece" probe on the model's activations at the index of every "." as it's predicting the next character. For example, the probe would be trained on "1." and "1.e4 e5 2." as inputs. For a black "my piece / their piece" probe, I trained it on the index of every even " " character.
+In Othello-GPT, the model had a vocabulary of 60 tokens, corresponding to the 60 legal squares where a piece could be placed. So, Neel Nanda just probed at every even character for a white "my piece / their piece" probe, and at every odd character for a black "my piece / their piece" probe. In my case, the input to Chess-GPT was a string like "1.e4 e5 2.Nf3 ...". 
+
+So, I trained the white "my piece / their piece" probe on the model's activations at the index of every "." as it's predicting the next character. For example, the probe would be trained on "1." and "1.e4 e5 2." as inputs. For a black "my piece / their piece" probe, I trained it on the index of every even " " character. I trained a linear probe on the "white piece / black piece" objective, and it obtained a classification accuracy of 86%.
 
 Neel Nanda excluded the first 5 and last 5 moves of the game when training his probes. I found that my linear probes accuracy did not change when trained on all moves or all but the first 5 moves.
 
