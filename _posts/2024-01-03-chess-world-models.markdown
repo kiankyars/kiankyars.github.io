@@ -84,6 +84,7 @@ Other potential directions:
 - Perform causal interventions on the model using these linear probes.
 - Investigate why the model sometimes fails to make a legal move or model the true state of the board.
 - How does the model compute the state of the board, or the location of a specific piece?
+- I fine-tuned GPT-2 on a 50 / 50 mix of OpenWebText and chess games, and it learned to play chess and continued to output plausible looking text. Maybe there's something interesting to look at there?
 
 ## Appendix
 
