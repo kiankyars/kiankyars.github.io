@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chess World Models"
+title:  "Chess-GPT's Internal World Model"
 date:   2024-01-03 16:46:58 -0600
 categories: machine_learning
 ---
