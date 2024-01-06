@@ -86,6 +86,8 @@ Other potential directions:
 - How does the model compute the state of the board, or the location of a specific piece?
 - I fine-tuned GPT-2 on a 50 / 50 mix of OpenWebText and chess games, and it learned to play chess and continued to output plausible looking text. Maybe there's something interesting to look at there?
 
+If interested in discussion or collaboration, feel free to contact me via email. There is also this [Twitter thead](https://twitter.com/a_karvonen/status/1743666230127411389) for public discussion purposes.
+
 ## Appendix
 
 # Technical probing details
