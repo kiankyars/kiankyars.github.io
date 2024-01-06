@@ -31,7 +31,7 @@ It basically worked on the first try. The 50M parameter model played at 1300 ELO
 
 So, `gpt-3.5-turbo-instruct`'s performance is not magic. If you give an LLM a few million chess games, it will learn to play chess. My 50M parameter model is orders of magnitude smaller than any reasonable estimate of `gpt-3.5`'s size, and it is within 300 ELO of its performance. In addition, we recently had confirmation that GPT-4's training dataset included [a collection of PGN format chess games](https://cdn.openai.com/papers/weak-to-strong-generalization.pdf) from players with an ELO over 1800.
 
-I also checked if it was playing unique games not found in its training dataset. There are often allegations that LLMs just memorize such a wide swath of the internet that they appear to generalize. Because I had access to the training dataset, I could easily examine this question. In a random sample of 100 games, every game was unique and not found in the training dataset by the 20th move. This should be unsurprising considering there are more possible games of chess than atoms in the universe.
+I also checked if it was playing unique games not found in its training dataset. There are often allegations that LLMs just memorize such a wide swath of the internet that they appear to generalize. Because I had access to the training dataset, I could easily examine this question. In a random sample of 100 games, every game was unique and not found in the training dataset by the 10th turn (20 total moves). This should be unsurprising considering that there are more possible games of chess than atoms in the universe.
 
 # Chess-GPT's Internal World Model
 
@@ -45,7 +45,7 @@ To better interpret the internal predictions of my model, I created some visual 
 
 ![3 heatmaps of the linear probe for black king location](/images/chess_world_models/king_probe.png)
 
-We see a very similar result for the location of the white pawns, although the model is less confident. This board state comes from the 12th move in a chess game, and the model is extremely confident that no white pawns are in either side'The LLMs were character level models rather than using byte-pair encoding and tokenization. From manually inspecting gpt-3.5 tokenization, it looks like a standard tokenizer has slightly over 1 character per token for a PGN string, excluding spaces. As my model had a vocabulary of just 32 tokens, I was able to reduce my model size by 25 million parameters compared to using a standard tokenizer with a vocabulary of 50,257 tokens. During training, I ensured that every batch began with “;1.”, a delimiter token followed by a new game. I did try training a model by randomly sampling blocks that usually began in the middle of a game, although it’s 1024 context length meant that it usually also received the beginning of a game later on. The model still learned to play chess. I would be curious what sort of cursed heuristics that model learned to infer the board state when receiving an input that starts in the middle of a chess game.s back rank.
+We see a very similar result for the location of the white pawns, although the model is less confident. This board state comes from the 12th move in a chess game, and the model is extremely confident that no white pawns are in either side's back rank.
 
 ![3 heatmaps of the linear probe for white pawn location](/images/chess_world_models/pawn_probe.png)
 
