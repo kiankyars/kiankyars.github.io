@@ -87,6 +87,10 @@ Other potential directions:
 
 ## Appendix
 
+# Corrections
+
+In my original article, I had a graph with a stacked bar chart of Chess-GPT's games against Stockfish, with bars for wins, draws, and losses. I noticed that there was an unusually high amount of draws against Stockfish levels 5 through 9. After some inspection, I realized that I had mistakenly inflated the draw rate. The cause was the following: Chess-GPT has an context size of 1024 characters, enough for approximately 180 moves. My analysis code mistakenly categorized an active game at 180 moves as a draw. While a game at 180 moves is more likely to result in a draw than average, it definitely isn't certain. I used the following strategy to redo the graph: At every active game, I used Stockfish to assign a centipawn advantage at move 180. Any player with more than 100 centipawn advantage received a win. All other games were a draw. 77% of these games were Stockfish wins. The old, inaccurate bar graph can be viewed [here](https://adamkarvonen.github.io/images/chess_world_models/inaccurate-50M-Chess-GPT-win-rate.png) and the old, inaccurate line chart can be viewed [here](https://adamkarvonen.github.io/images/chess_world_models/inaccurate-llm-win-rate.png). This does not change the Elo rating of Chess-GPT, but it's definitely a mistake for which I apologize.
+
 # Technical probing details
 
 Both Neel Nanda and I trained our probes to predict "my piece / their piece" instead of "white piece / black piece". To predict "white piece / black piece", you just have to train the linear probe on the model's activations at every move. To predict "my piece / their piece", you have to train the linear probe on the model's activations at every white XOR black move.
