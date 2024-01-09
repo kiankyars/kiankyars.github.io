@@ -14,10 +14,14 @@ Outside of work, I race dirt bikes. I race A class in hard enduro, and B class i
 
 [Applying GPT-4 to SAW Formal Verification - Galois, Inc.](https://galois.com/blog/2023/08/applying-gpt-4-to-saw-formal-verification/)
 
-## Publications
+## Papers
 
 [Leveraging Manifold Learning and Relationship Equity Management for Symbiotic Explainable Artificial Intelligence](https://openaccess.cms-conferences.org/publications/book/978-1-958651-69-8/article/978-1-958651-69-8_18)
 
 Sourya Dey, Adam Karvonen, Ethan Lew, Donya Quick, Panchapakesan Shyamshankar, Ted Hille, Matt LeBeau, Eric Davis
 
 *9th International Conference on Human Factors in Robots, Drones and Unmanned Systems -- affiliated to 14th International Conference on Applied Human Factors and Ergonomics (AHFE)*
+
+[FRIGATE: Uniting Hierarchical Planning and Model-Based Systems Engineering to Automate Failure Recovery Planning](https://www.researchgate.net/publication/377113907_FRIGATE_Uniting_Hierarchical_Planning_and_Model-Based_Systems_Engineering_to_Automate_Failure_Recovery_Planning)
+
+Jim Carciofini, Mark Boddy, Adam Karvonen, Jake Peterson, Stephen B. Johnson, Tyler Smith, Ryan Peroutka
