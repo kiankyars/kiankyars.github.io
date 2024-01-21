@@ -113,7 +113,7 @@ The LLMs were character level models rather than using byte-pair encoding and to
 All code, models, and datasets are open source.
 To train, test, or visualize linear probes on the LLMs, please visit: [https://github.com/adamkarvonen/chess_llm_interpretability](https://github.com/adamkarvonen/chess_llm_interpretability)
 
-To play the nanoGPT model against Stockfish, please visit: [https://github.com/adamkarvonen/chess_gpt_eval/tree/local_llama](https://github.com/adamkarvonen/chess_gpt_eval/tree/local_llama)
+To play the nanoGPT model against Stockfish, please visit: [https://github.com/adamkarvonen/chess_gpt_eval/tree/master/nanogpt](https://github.com/adamkarvonen/chess_gpt_eval/tree/master/nanogpt)
 
 To train a Chess-GPT from scratch, please visit: [https://github.com/adamkarvonen/nanoGPT](https://github.com/adamkarvonen/nanoGPT)
 
