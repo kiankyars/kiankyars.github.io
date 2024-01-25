@@ -137,10 +137,16 @@ There are some caveats for the following graph: Unfortunately, I accidentally de
 
 ![A line chart comparing various LLM's win rates against Stockfish](/images/chess_world_models/llm-win-rate.png)
 
-# Probe accuracy per layer on an 8 Layer Network
+# Probe accuracy per layer on in 8 and 16 layer networks
 
-![A bar chart of accuracy per layer for Elo](/images/chess_world_models/accuracy_per_layer_elo.png)
+An interesting note: The 8 layer network can calculate a 98% accurate board state by layer 5. However, the 16 layer network doesn't calculate an accurate board state until layer 11. This indicates that the network is calculating many things in parallel, rather than calculating the board state as soon as possible and then planning from there.
 
-![A bar chart of accuracy per layer for board state classification](/images/chess_world_models/board_state_accuracy.png)
+![A bar chart of accuracy per layer for Elo in a 8 layer network](/images/chess_world_models/8layer_skill_probe_sweep_results.png)
+
+![A bar chart of accuracy per layer for board state classification in a 8 layer network](/images/chess_world_models/8layer_piece_probe_sweep_results.png)
+
+![A bar chart of accuracy per layer for Elo in a 16 layer network](/images/chess_world_models/16layer_skill_probe_sweep_results.png)
+
+![A bar chart of accuracy per layer for board state classification in a 16 layer network](/images/chess_world_models/16layer_piece_probe_sweep_results.png)
 
 [^1]: Lichess's Elo ratings appear to run high. The average chess.com Elo is around 800. A quick google shows that many believe Lichess ratings are on average a few hundred Elo higher than other websites' Elo ratings.
