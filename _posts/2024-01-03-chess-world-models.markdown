@@ -133,7 +133,7 @@ Wandb training loss curves and model configs can be viewed here: [https://api.wa
 | 16 Layer Model trained on Lichess Games | 12 | 89.2% | 98.6% | 99.8% |
 | 16 Layer Model trained on Stockfish Games | 12 | N/A | 99.2% | 99.7% |
 
-There are some caveats for the following graph: Unfortunately, I accidentally deleted part of the logs for the 16 layer Stockfish model, but I believe it was trained on around 120 billion input characters. All other models were trained for a total of 60 billion input characters. The models were trained for several epochs - the datasets ranged in size from 4 - 7 billion characters. The labels stand for the dataset from hugging face that the model was trained on as well as the number of layers in the model. In this graph, for 1 game a win counts as 1 point, a draw as 0.5, and a loss as 0. We lose some information compared to a stacked bar chart, but I felt it would be too crowded.
+There are some caveats for the following graph: The 16 layer Stockfish model was trained on 130 billion input characters. All other models were trained for a total of 60 billion input characters. The models were trained for several epochs - the datasets ranged in size from 4 - 7 billion characters. The labels stand for the dataset from hugging face that the model was trained on as well as the number of layers in the model. In this graph, for 1 game a win counts as 1 point, a draw as 0.5, and a loss as 0. We lose some information compared to a stacked bar chart, but I felt it would be too crowded.
 
 ![A line chart comparing various LLM's win rates against Stockfish](/images/chess_world_models/llm-win-rate.png)
 
