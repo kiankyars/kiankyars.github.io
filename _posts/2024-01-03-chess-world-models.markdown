@@ -61,9 +61,9 @@ For this move in this chess game, the linear probe perfectly reconstructs the st
 
 Because Chess-GPT learned to predict the next move in a competitive game, rather than a game uniformly sampled from a game tree, there are interesting latent variables we can probe for. In particular, I hypothesized that to better predict the next character, it would learn to estimate the skill level of the players involved.
 
-Initially, I trained the probe on a regression task, where its task is to predict the Elo of the White player. It would do this by training on the internal activations of the model between moves 25 and 35, as it would be extremely difficult to predict player skill early in the game. However, the majority of the games in the Lichess dataset are between 1550 Elo and 1930 Elo, which is a relatively narrow band[^1]. The linear probe trained on Chess-GPT had an average error of 150 Elo, which seemed good at first glance. However, a linear probe trained on a randomly initialized model had an average error of 215 Elo. The narrow window of Elo in most games made it difficult to discern the model's level of knowledge. Distinguishing between a 1700 and 1900 Elo player just seems like a very difficult task.
+Initially, I trained the probe on a regression task, where its task is to predict the Elo of the White player. It would do this by training on the internal activations of the model between moves 25 and 35, as it would be extremely difficult to predict player skill early in the game. However, the majority of the games in the Lichess dataset are between 1500 Elo and 1880 Elo, which is a relatively narrow band[^1]. The linear probe trained on Chess-GPT had an average error of 150 Elo, which seemed good at first glance. However, a linear probe trained on a randomly initialized model had an average error of 215 Elo. The narrow window of Elo in most games made it difficult to discern the model's level of knowledge. Distinguishing between a 1700 and 1900 Elo player just seems like a very difficult task.
 
-So, I then trained the probe on a classification task, where it had to identify players below an Elo of 1550 or above an Elo of 2050. In this case, the probe performed much better. A probe trained on a randomly initialized model correctly classified 66% of players, while a probe trained on Chess-GPT correctly classified 89% of players.
+So, I then trained the probe on a classification task, where it had to identify players below an Elo of 1516 or above an Elo of 2029. In this case, the probe performed much better. A probe trained on a randomly initialized model correctly classified 66% of players, while a probe trained on Chess-GPT correctly classified 89% of players.
 
 To an extent, this is unsurprising. This reminds me of the OpenAI's 2017 [Sentiment Neuron](https://openai.com/research/unsupervised-sentiment-neuron) paper. In it, they trained an LSTM to predict the next character in Amazon reviews. When they trained a linear probe on the model's internals using just 232 labeled examples, it became a state of the art sentiment classifier. OpenAI wrote then that "We believe the phenomenon is not specific to our model, but is instead a general property of certain large neural networks that are trained to predict the next step or dimension in their inputs". With this context, it's almost an expected result.
 
@@ -93,6 +93,10 @@ If interested in discussion or collaboration, feel free to contact me via email.
 # Corrections
 
 In my original article, I had a graph with a stacked bar chart of Chess-GPT's games against Stockfish, with bars for wins, draws, and losses. I noticed that there was an unusually high amount of draws against Stockfish levels 5 through 9. After some inspection, I realized that I had mistakenly inflated the draw rate. The cause was the following: Chess-GPT has an context size of 1024 characters, enough for approximately 180 moves. My analysis code mistakenly categorized an active game at 180 moves as a draw. While a game at 180 moves is more likely to result in a draw than average, it definitely isn't certain. I used the following strategy to redo the graph: At every active game, I used Stockfish to assign a centipawn advantage at move 180. Any player with more than 100 centipawn advantage received a win. All other games were a draw. 77% of these games were Stockfish wins. The old, inaccurate bar graph can be viewed [here](https://adamkarvonen.github.io/images/chess_world_models/inaccurate-50M-Chess-GPT-win-rate.png) and the old, inaccurate line chart can be viewed [here](https://adamkarvonen.github.io/images/chess_world_models/inaccurate-llm-win-rate.png). This does not change the Elo rating of Chess-GPT, but it's definitely a mistake for which I apologize.
+
+# Updates
+
+2024/03/23: I wrote up the results of this blog post in a paper titled "Emergent World Models and Latent Variable Estimation in Chess-Playing Language Models". I reran some of the experiments here with larger sample sizes to improve rigor (for example, Chess-GPT was benchmarked with 1,000 games against Stockfish, not 100). I also improved the quality of some figures, and used log probabilities in my probe heatmaps instead of logits. I also added an appendix section discussing Stockfish Elo estimation.
 
 # Technical probing details
 
@@ -133,20 +137,20 @@ Wandb training loss curves and model configs can be viewed here: [https://api.wa
 | 16 Layer Model trained on Lichess Games | 12 | 89.2% | 98.6% | 99.8% |
 | 16 Layer Model trained on Stockfish Games | 12 | N/A | 99.2% | 99.7% |
 
-There are some caveats for the following graph: The 16 layer Stockfish model was trained on 130 billion input characters. All other models were trained for a total of 60 billion input characters. The models were trained for several epochs - the datasets ranged in size from 4 - 7 billion characters. The labels stand for the dataset from hugging face that the model was trained on as well as the number of layers in the model. In this graph, for 1 game a win counts as 1 point, a draw as 0.5, and a loss as 0. We lose some information compared to a stacked bar chart, but I felt it would be too crowded.
+All models were trained for a total of 60 billion input characters. The models were trained for several epochs - the datasets ranged in size from 4 - 7 billion characters. The labels stand for the dataset from hugging face that the model was trained on as well as the number of layers in the model. In this graph, for 1 game a win counts as 1 point, a draw as 0.5, and a loss as 0. We lose some information compared to a stacked bar chart, but I felt it would be too crowded.
 
 ![A line chart comparing various LLM's win rates against Stockfish](/images/chess_world_models/llm-win-rate.png)
 
 # Probe accuracy per layer on in 8 and 16 layer networks
 
-An interesting note: The 8 layer network can calculate a 98% accurate board state by layer 5. However, the 16 layer network doesn't calculate an accurate board state until layer 11. This indicates that the network is calculating many things in parallel, rather than calculating the board state as soon as possible and then planning from there.
+An interesting note: The 8 layer network can calculate a 98% accurate board state by layer 5. However, the 16 layer network doesn't calculate an accurate board state until layer 11. This indicates that the network is calculating many things in parallel, rather than calculating the board state as soon as possible and then planning from there. Oddly, the skill probes trained on randomized models become more accurate on deeper layers.
 
-![A bar chart of accuracy per layer for Elo in a 8 layer network](/images/chess_world_models/8layer_skill_probe_sweep_results.png)
-
-![A bar chart of accuracy per layer for board state classification in a 8 layer network](/images/chess_world_models/8layer_piece_probe_sweep_results.png)
-
-![A bar chart of accuracy per layer for Elo in a 16 layer network](/images/chess_world_models/16layer_skill_probe_sweep_results.png)
-
-![A bar chart of accuracy per layer for board state classification in a 16 layer network](/images/chess_world_models/16layer_piece_probe_sweep_results.png)
+![A bar chart of accuracy per layer for Elo and board state in 4 different models](/images/chess_world_models/probe_acc_markers_graph.png)
 
 [^1]: Lichess's Elo ratings appear to run high. The average chess.com Elo is around 800. A quick google shows that many believe Lichess ratings are on average a few hundred Elo higher than other websites' Elo ratings.
+
+# Stockfish Elo Estimate
+
+Elo estimation of Stockfish levels is complex with several variables at play. An official estimate of Stockfish 16 Elos can be obtained in a commit on the official [Stockfish repo](https://github.com/official-stockfish/Stockfish/commit/a08b8d4). In this case, Stockfish 16 level 0 is Elo 1,320. The official Stockfish testing was performed using 120 seconds per move, which is prohibitively expensive for tens of thousands of games on GPU machines. The particular processor being used per machine is another variable.
+
+To estimate the Elo of Stockfish level 0 at 0.1 seconds per move, I had it play 1,000 games as white against Stockfish level 0 with 0.1, 1.0 and 10.0 seconds per move. The win rate of 0.1 vs 0.1 seconds was 51%, 0.1 vs 1.0 seconds was 45%, and 0.1 vs 10.0 seconds was 45%. At low Stockfish levels, a 100x decrease in search time makes little difference in Stockfish's win rate. In contrast, at higher Stockfish levels, decreasing search time makes a significant difference in win rate. Thus, a reasonable approximation of Stockfish 16 level 0 with 0.1 seconds per move is Elo 1300.
