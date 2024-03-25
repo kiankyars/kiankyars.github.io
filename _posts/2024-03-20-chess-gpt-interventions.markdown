@@ -122,6 +122,8 @@ All code, models, and datasets can be found at:
 
 If interested in discussion or collaboration, feel free to contact me via email.
 
+I am currently open to machine learning job opportunities. If you found this post interesting and think I could be a good fit for your team, feel free to reach out via [email](adam.karvonen@gmail.com) or [LinkedIn](https://www.linkedin.com/in/adam-karvonen/).
+
 [^1]: In matrix multiplication, multiplying a 1 x 512 matrix (or vector) by a 512 x 2 matrix produces a 1 x 2 matrix (or vector) as the result. The first row of 512 numbers, when multipled via dot product with the 512 dimensional activation, produces a score for "low skill player". The second row of 512 numbers produces a score for "high skill player" when multipled with the activation.
 
 # Appendix
