@@ -9,6 +9,8 @@ categories: machine_learning
 
 # Introduction
 
+Note: This work has since been turned into [a paper](https://arxiv.org/abs/2403.15498), but the average reader will probably prefer the blog post.
+
 Among the many recent developments in ML, there were two I found interesting and wanted to dig into further. The first was `gpt-3.5-turbo-instruct`'s ability to [play chess at 1800 Elo](https://github.com/adamkarvonen/chess_gpt_eval). The fact that an LLM could learn to play chess well from random text scraped off the internet seemed almost magical. The second was Kenneth Li's [Emergent World Representations](https://arxiv.org/abs/2210.13382) paper. There is an excellent [summary on The Gradient](https://thegradient.pub/othello/) and a [follow-up from Neel Nanda](https://www.neelnanda.io/mechanistic-interpretability/othello). In it, they trained a 25 million parameter GPT to predict the next character in an Othello game. It learns to accurately make moves in games unseen in its training dataset, and using both non-linear and linear probes it was found that the model accurately tracks the state of the board.
 
 However, this only worked for a model trained on a synthetic dataset of games uniformly sampled from the Othello game tree. They tried the same techniques on a model trained using games played by humans and had poor results. To me, this seemed like a major caveat to the findings of the paper which may limit its real world applicability. We cannot, for example, generate code by uniformly sampling from a code tree.
@@ -85,6 +87,8 @@ Other potential directions:
 - Investigate why the model sometimes fails to make a legal move or model the true state of the board.
 - How does the model compute the state of the board, or the location of a specific piece?
 - I fine-tuned GPT-2 on a 50 / 50 mix of OpenWebText and chess games, and it learned to play chess and continued to output plausible looking text. Maybe there's something interesting to look at there?
+
+Part two: [Manipulating Chess-GPT's World Model](https://adamkarvonen.github.io/machine_learning/2024/03/20/chess-gpt-interventions.html)
 
 If interested in discussion or collaboration, feel free to contact me via email. There is also this [Twitter thead](https://twitter.com/a_karvonen/status/1743666230127411389) for public discussion purposes.
 

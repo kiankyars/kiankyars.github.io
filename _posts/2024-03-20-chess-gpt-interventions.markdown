@@ -7,6 +7,8 @@ categories: machine_learning
 
 ## Manipulating Chess-GPT's World Model
 
+Note: This work has since been turned into [a paper](https://arxiv.org/abs/2403.15498), but the average reader will probably prefer the blog post.
+
 In my previous [post](https://adamkarvonen.github.io/machine_learning/2024/01/03/chess-world-models.html) I introduced Chess-GPT, a language model I trained to predict the next character in a game of chess given a PGN string (1.e4 e5 2.Nf3 ...). Through the process of training to output the next character, it learns to compute the state of the chess board and to estimate the skill level of the players in the game given an arbitrary PGN string as input. I demonstrated this using linear probes, which are classifiers that take the model's activations as input and predict the board state or player skill level as output. Chess-GPT also played chess well, with the best model playing at approximately 1500 Elo.
 
 I presented evidence that the model learned to compute a world model in order to perform next character prediction, but I did not have the time to validate these representations by using them to intervene on the model's activations. In other [related](https://arxiv.org/abs/2210.13382) [work](https://arxiv.org/abs/2309.00941), the authors used the probes to edit Othello GPT's internal activations, getting it to output legal moves under the "make believe" state of the board. I wanted to add rigor to my work and establish a causal link between the internal board state and skill representations and the model outputs. If there was a causal link, I should be able to increase and decrease the model's skill level and edit its internal state of the board.
