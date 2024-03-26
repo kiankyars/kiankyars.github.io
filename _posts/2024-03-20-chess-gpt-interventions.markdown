@@ -66,7 +66,7 @@ Here's my intuition for why this works: The linear probe for low skill is traine
 
 I also explored the technique of [contrastive activations](https://arxiv.org/abs/2312.06681). In this technique, we collect the average GPT intermediate state activation per layer in 2,000 high skill games and 2,000 low skill games between turns 25 and 35. Once again, we subtract the average low skill activation from the average high skill activation to produce a skill vector. As with the probe-based intervention, this produces a 512 dimensional vector that we can add or subtract to the residual stream or final bias term. In practice, contrastive activations worked slightly better than probe derived interventions.
 
-To test the effectiveness of this intervention, I had Chess-GPT play 30,000 games against Stockfish 16 across 6 configurations. The first three configurations had Chess-GPT play against Stockfish starting from the standard chess starting position. The last three had the board initialized with 20 randomly selected moves.
+To test the effectiveness of this intervention, I had Chess-GPT play 30,000 games against Stockfish 16 level 0 across 6 configurations. The first three configurations had Chess-GPT play against Stockfish starting from the standard chess starting position. The last three had the board initialized with 20 randomly selected moves.
 
 The resulting win rates are in this table:
 
