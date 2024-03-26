@@ -118,7 +118,7 @@ These experiments significantly strength the findings of my previous blog post, 
 
 This adds further evidence that language models can develop a world model through the process of next token prediction and self supervised learning. Whatever is going on inside these models is much more sophisticated than surface-level stastics. The success of the interventions adds further evidence that it is possible to directly influence model behavior in predictable ways using simple tools.
 
-However, the fact that these interventions are only partially successful highlights the limitations of our current understanding of machine learning models. The current state of interpretability in machine learning is still fairly primitive and comparable to the early, pre-microscope days in biology. More research is needed to develop more precise and reliable methods of understanding language models. Fortunately, there are exciting new innovations such as [Sparse Autoencoders](https://transformer-circuits.pub/2023/monosemantic-features) which have shown promising results.
+However, the fact that these interventions are only partially successful highlights the limitations of our current understanding of machine learning models. The current state of interpretability in machine learning is still fairly primitive and comparable to the early, pre-microscope days in biology. More research is needed to develop more precise and reliable methods of understanding language models. Fortunately, there are exciting new innovations such as [Sparse](https://transformer-circuits.pub/2023/monosemantic-features) [Autoencoders](https://arxiv.org/abs/2309.08600) which have shown promising results.
 
 All code, models, and datasets can be found at: 
 
