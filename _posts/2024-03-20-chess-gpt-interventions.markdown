@@ -126,7 +126,7 @@ All code, models, and datasets can be found at:
 
 If interested in discussion or collaboration, feel free to contact me via email.
 
-I am currently open to job opportunities. If you found this post interesting and think I could be a good fit for your team, feel free to reach out via [email](adam.karvonen@gmail.com) or [LinkedIn](https://www.linkedin.com/in/adam-karvonen/).
+I am currently open to job opportunities. If you found this post interesting and think I could be a good fit for your team, feel free to reach out via [email](https://adamkarvonen.github.io/about/) or [LinkedIn](https://www.linkedin.com/in/adam-karvonen/).
 
 There is also this [Twitter thead](https://twitter.com/a_karvonen/status/1772266045048336582) for public discussion purposes.
 
