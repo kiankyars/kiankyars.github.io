@@ -7,7 +7,7 @@ categories: machine_learning
 
 ## Manipulating Chess-GPT's World Model
 
-Note: This work has since been turned into [a paper](https://arxiv.org/abs/2403.15498), but the average reader will probably prefer the blog post.
+*Note: This work has since been turned into [a paper](https://arxiv.org/abs/2403.15498), but the average reader will probably prefer the blog post.*
 
 In my previous [post](https://adamkarvonen.github.io/machine_learning/2024/01/03/chess-world-models.html) I introduced Chess-GPT, a language model I trained to predict the next character in a game of chess given a PGN string (1.e4 e5 2.Nf3 ...). Through the process of training to output the next character, it learns to compute the state of the chess board and to estimate the skill level of the players in the game given an arbitrary PGN string as input. I demonstrated this using linear probes, which are classifiers that take the model's activations as input and predict the board state or player skill level as output. Chess-GPT also played chess well, with the best model playing at approximately 1500 Elo.
 
