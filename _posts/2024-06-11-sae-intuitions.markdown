@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Intuitive Explanation of Sparse Autoencoders for Mechanistic Interpretability of LLMs"
+title:  "An Intuitive Explanation of Sparse Autoencoders for LLM Interpretability"
 date:   2024-06-11 13:46:58 -0600
 categories: machine_learning
 ---
