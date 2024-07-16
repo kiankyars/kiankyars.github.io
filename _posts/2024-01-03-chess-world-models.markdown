@@ -9,7 +9,7 @@ categories: machine_learning
 
 # Introduction
 
-*Note: This work has since been turned into [a paper](https://arxiv.org/abs/2403.15498), but the average reader will probably prefer the blog post. There is also a second blog post, [Manipulating Chess-GPT's World model](https://adamkarvonen.github.io/machine_learning/2024/03/20/chess-gpt-interventions.html).*
+*Note: This work has since been turned into [a paper accepted to the Conference on Language Modeling](https://arxiv.org/abs/2403.15498v2), but the average reader will probably prefer the blog post. There is also a second blog post, [Manipulating Chess-GPT's World model](https://adamkarvonen.github.io/machine_learning/2024/03/20/chess-gpt-interventions.html).*
 
 Among the many recent developments in ML, there were two I found interesting and wanted to dig into further. The first was `gpt-3.5-turbo-instruct`'s ability to [play chess at 1800 Elo](https://github.com/adamkarvonen/chess_gpt_eval). The fact that an LLM could learn to play chess well from random text scraped off the internet seemed almost magical. The second was Kenneth Li's [Emergent World Representations](https://arxiv.org/abs/2210.13382) paper. There is an excellent [summary on The Gradient](https://thegradient.pub/othello/) and a [follow-up from Neel Nanda](https://www.neelnanda.io/mechanistic-interpretability/othello). In it, they trained a 25 million parameter GPT to predict the next character in an Othello game. It learns to accurately make moves in games unseen in its training dataset, and using both non-linear and linear probes it was found that the model accurately tracks the state of the board.
 

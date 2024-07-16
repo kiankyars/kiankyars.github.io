@@ -18,11 +18,11 @@ Outside of work, I race dirt bikes. I race A class in hard enduro, and B class i
 
 ## Papers
 
-[Emergent World Models and Latent Variable Estimation in Chess-Playing Language Models](https://arxiv.org/abs/2403.15498)
+[Emergent World Models and Latent Variable Estimation in Chess-Playing Language Models](https://arxiv.org/abs/2403.15498v2)
 
 Adam Karvonen
 
-*Submitted to the 2024 Conference on Language Modeling*
+*Accepted to the 2024 Conference on Language Modeling*
 
 [Leveraging Manifold Learning and Relationship Equity Management for Symbiotic Explainable Artificial Intelligence](https://openaccess.cms-conferences.org/publications/book/978-1-958651-69-8/article/978-1-958651-69-8_18)
 
