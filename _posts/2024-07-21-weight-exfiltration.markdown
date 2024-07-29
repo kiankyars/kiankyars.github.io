@@ -25,7 +25,7 @@ Why This Could Work
 
 If the amount of outgoing data is within a few orders of magnitude of the model size itself, it's possible that a few tricks like this could make it almost impossible to exfiltrate model weights before the model is deprecated (assuming that the data center has perfect physical security). It appears that this perplexity filter would stack with Ryan's proposed text compression scheme.
 
-We don't even have to filter all outgoing data. If there was 1 gigabyte of unfiltered bandwidth per day, it would take 2,000 days to transfer GPT-4's 2 terabytes of weights out (although this could be reduced by compression schemes). This could also enable tolerating a very high false positive rate on the perplexity filter. 100 megabytes of flagged outputs per day is no problem, as that would require millions of days to transfer 2 terabytes of data.
+We don't even have to filter all outgoing data. If there was 1 gigabyte of unfiltered bandwidth per day, it would take 2,000 days to transfer GPT-4's 2 terabytes of weights out (although this could be reduced by compression schemes). This could also enable tolerating a very high false positive rate on the perplexity filter. 100 megabytes of flagged outputs per day is no problem, as that would require 20,000 days to transfer 2 terabytes of data.
 
 Image and audio outputs could be more challenging. A potential solution is adding weak models to compress / decompress audio and images. These models could both reduce bandwidth and potentially act as a filter, similar to the perplexity filter for text.  
   
