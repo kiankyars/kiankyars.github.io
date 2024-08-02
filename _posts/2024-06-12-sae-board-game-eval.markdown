@@ -5,7 +5,7 @@ date:   2024-06-12 13:46:58 -0600
 categories: machine_learning
 ---
 
-*This blog post discusses a collaborative research paper on sparse autoencoders (SAEs), specifically focusing on SAE evaluations and a new training method we call `p-annealing`. As the first author, I primarily contributed to the evaluation portion of our work. The views expressed here are my own and do not necessarily reflect the perspectives of my co-authors. You can access our full paper [TODO](TODO).*
+*This blog post discusses a collaborative research paper on sparse autoencoders (SAEs), specifically focusing on SAE evaluations and a new training method we call `p-annealing`. As the first author, I primarily contributed to the evaluation portion of our work. The views expressed here are my own and do not necessarily reflect the perspectives of my co-authors. You can access our full paper [here](https://arxiv.org/abs/2408.00113).*
 
 **Key Results**
 
@@ -28,7 +28,7 @@ In our research on evaluating Sparse Autoencoders (SAEs) using board games, we h
 
 For an explanation of sparse autoencoders, refer to my [Introduction to SAEs](https://adamkarvonen.github.io/machine_learning/2024/06/11/sae-intuitions.html).
 
-Sparse Autoencoders (SAEs) have recently become popular for interpretability of machine learning models. Using SAEs, we can begin to break down a model's computation into [understandable components](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html). As a result, there have been a flurry of new SAE architectures and loss functions, such as the [BatchTopK SAE](https://www.lesswrong.com/posts/Nkx6yWZNbAsfvic98/batchtopk-a-simple-improvement-for-topk-saes), Google Deepmind's [Gated SAE](https://arxiv.org/abs/2404.16014) and [JumpReLU SAE](https://arxiv.org/abs/2407.14435), our [p-annealing TODO](TODO), and OpenAI's [TopK SAE](https://arxiv.org/abs/2406.04093v1).
+Sparse Autoencoders (SAEs) have recently become popular for interpretability of machine learning models. Using SAEs, we can begin to break down a model's computation into [understandable components](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html). As a result, there have been a flurry of new SAE architectures and loss functions, such as the [BatchTopK SAE](https://www.lesswrong.com/posts/Nkx6yWZNbAsfvic98/batchtopk-a-simple-improvement-for-topk-saes), Google Deepmind's [Gated SAE](https://arxiv.org/abs/2404.16014) and [JumpReLU SAE](https://arxiv.org/abs/2407.14435), our [p-annealing](https://arxiv.org/abs/2408.00113), and OpenAI's [TopK SAE](https://arxiv.org/abs/2406.04093v1).
 
 Unfortunately, we don't have reliable metrics that we can use to compare the new approaches. The main metric currently used is "we looked at activating inputs for a range of features and gave a gut reaction on interpretability of the features". This is a major limitation for the field.
 
@@ -153,14 +153,14 @@ The best coverage performance or the brightest color in the Pareto optimal elbow
 
 <figure>
   <img src="/images/sae_board_game_eval/chess_3var_low_coverage.png" alt="Chess 3var plot">
-  <figcaption>This 3 variable plot has the proxy metrics of L0 on the x-axis and Loss recovered on the Y axis, while color corresponds to the coverage score for Chess low-level BSPs. We differentiate between training methods with shapes. Every point is an SAE trained with different hyperparameters.</figcaption>
+  <figcaption>This 3 variable plot has the proxy metrics of L0 on the x-axis and Loss recovered on the Y axis, while color corresponds to the coverage score for Chess low-level BSPs. We differentiate between training methods with shapes. Every point is an SAE trained with different hyperparameters. Note that TopK was not included in the original paper.</figcaption>
 </figure>
 
 Using our metrics, we can clearly differentiate between training methods and measure progress that is invisible to existing metrics. In this case, we typically see the best performance from SAEs trained with p-annealing, even though their performance is very similar to gated SAEs under proxy metrics. There are also parallel lines within training methods, representing SAEs trained with different expansion factors. These differences are also hiddden within existing metrics.
 
 <figure>
   <img src="/images/sae_board_game_eval/chess_2var_low_coverage.png" alt="Chess 2var plot">
-  <figcaption>In this scatter plot, we have L0 on the x-axis and coverage for Chess low-level BSPs on the y axis.</figcaption>
+  <figcaption>In this scatter plot, we have L0 on the x-axis and coverage for Chess low-level BSPs on the y axis. Note that TopK was not included in the original paper.</figcaption>
 </figure>
 
 ## Limitations
