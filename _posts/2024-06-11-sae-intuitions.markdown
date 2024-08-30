@@ -139,6 +139,8 @@ There's several layers to difficulties with measurements in SAEs. Our proxy metr
 
 Our training loss function doesn't directly correspond to our proxy metrics, and our proxy metrics are only proxies for our subjective evaluations of feature interpretability. There's an additional layer of mismatch, as our subjective interpretability evaluations are proxies for our true goal of "how does this model work". There's a possibility that some important concepts within LLMs are not easily interpretable, and we could ignore these by blindly optimizing interpretability.
 
+For a more detailed discussion of SAE evaluation methods and an evaluation approach using board game model SAEs, refer to my blog post on [Evaluating Sparse Autoencoders with Board Game Models](https://adamkarvonen.github.io/machine_learning/2024/06/12/sae-board-game-eval.html).
+
 ## Conclusion
 
 The field of interpretability has a long way to go, but SAEs represent real progress. They enable interesting new applications, such as an unsupervised method to find steering vectors like the "Golden Gate Bridge" steering vector. SAEs have also made it easier to find circuits in language models, which can potentially be used to [remove unwanted biases](https://arxiv.org/abs/2403.19647) from the internals of the model.
