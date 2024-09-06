@@ -5,7 +5,7 @@ date:   2024-06-11 13:46:58 -0600
 categories: machine_learning
 ---
 
-Sparse Autoencoders (SAEs) have recently become popular for interpretability of machine learning models (although SAEs have been around since [1997](https://www.sciencedirect.com/science/article/pii/S0042698997001697)). Machine learning models and LLMs are becoming more powerful and useful, but they are still black boxes, and we don't understand how they do the things that they are capable of. It seems like it would be useful if we could understand how they work.
+Sparse Autoencoders (SAEs) have recently become popular for interpretability of machine learning models (although sparse dictionary learning has been around since [1997](https://www.sciencedirect.com/science/article/pii/S0042698997001697)). Machine learning models and LLMs are becoming more powerful and useful, but they are still black boxes, and we don't understand how they do the things that they are capable of. It seems like it would be useful if we could understand how they work.
 
 Using SAEs, we can begin to break down a model's computation into [understandable components](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html). There are [several](https://transformer-circuits.pub/2023/monosemantic-features#setup-autoencoder) [existing](https://www.lesswrong.com/posts/LnHowHgmrMbWtpkxx/intro-to-superposition-and-sparse-autoencoders-colab) explanations of SAEs, and I wanted to create a brief writeup from a different angle with an intuitive explanation of how they work.
 
