@@ -151,6 +151,8 @@ They also represent an early milestone that companies such as Anthropic have aim
 
 For further study of Sparse Autoencoders, I recommend [Callum McDougal's Colab notebook](https://www.lesswrong.com/posts/LnHowHgmrMbWtpkxx/intro-to-superposition-and-sparse-autoencoders-colab).
 
+Acknowledgements: I am grateful to Justis Mills, Can Rager, Oscar Obeso, and Slava Chalnev for their valuable feedback on this post.
+
 [^1]: The ReLU activation function is simply `y = max(0, x)`. That is, any negative input is set to 0.
 [^2]: There are typically also bias terms at various points, including the encoder and decoder layers.
 [^3]: Note that this function would intervene on a single layer and that the SAE should have been trained on the same location as the model activations. For example, if the intervention was performed between layers 6 and 7 then the SAE should have been trained on the model activations between layers 6 and 7. Interventions can also be performed simultaneously on multiple layers.
