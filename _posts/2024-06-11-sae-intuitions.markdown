@@ -75,7 +75,7 @@ class SparseAutoEncoder(nn.Module):
         return reconstructed_model_activations_D, encoded_representation_F
 ```
 
-The loss function for a standard autoencoder is based on the accuracy of input reconstruction. To introduce sparsity, the most straightforward approach is to add a sparsity penalty to the SAE's loss function. This most common form of this penalty is calculated by taking the L1 loss of the SAE's encoded representation (not the SAE weights) and multiplying it by an L1 coefficient. The L1 coefficient is a crucial hyperparameter in SAE training, as it determines the trade-off between achieving sparsity and maintaining reconstruction accuracy.
+The loss function for a standard autoencoder is based on the accuracy of input reconstruction. To introduce sparsity, early SAE implementations added a sparsity penalty to the SAE's loss function. This most common form of this penalty is calculated by taking the L1 loss of the SAE's encoded representation (not the SAE weights) and multiplying it by an L1 coefficient. The L1 coefficient is a crucial hyperparameter in SAE training, as it determines the trade-off between achieving sparsity and maintaining reconstruction accuracy.
 
 Note that we aren't optimizing for interpretability. Instead, we obtain interpretable SAE features as a side effect of optimizing for sparsity and reconstruction.
 
@@ -94,6 +94,8 @@ def calculate_loss(autoencoder: SparseAutoEncoder, model_activations_BD: torch.T
     loss = l2_loss + l1_loss
     return loss
 ```
+
+UPDATE 11/29/2024: I think the Vanilla ReLU SAE is fairly outdated and should not be used except as a baseline. My preferred SAE is the [TopK](https://cdn.openai.com/papers/sparse-autoencoders.pdf) SAE, as it significantly improves on the sparsity / reconstruction accuracy trade-off, the desired sparsity can be directly set without tuning a sparsity penalty, and it has good training stability. The TopK SAE is very similar to the ReLU SAE. Instead of a ReLU and a sparsity penalty, you simply retain the top k activation values and zero out the rest. In this case, the k hyperparameter directly sets the desired sparsity. Here is an example TopK [implementation](https://github.com/saprmarks/dictionary_learning/blob/main/trainers/top_k.py#L45). Other strong alternatives are the [BatchTopK](https://www.alignmentforum.org/posts/Nkx6yWZNbAsfvic98/batchtopk-a-simple-improvement-for-topk-saes) and [JumpReLU](https://arxiv.org/abs/2407.14435) SAEs.
 
 <figure>
   <img src="/images/sae_intuitions/SAE_forward_pass.png" alt="Diagram of a sparse autoencoder forward pass">
