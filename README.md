@@ -4,3 +4,5 @@
 - My current homepage is https://sites.ualberta.ca/~kkyars/
 
 - My contact information can be found there
+
+- I like to run and subscribe to the quantified self
