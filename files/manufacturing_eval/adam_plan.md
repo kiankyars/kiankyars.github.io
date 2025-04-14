@@ -16,7 +16,9 @@ Flip the part around. Use a 0.187 (3/16) collet for concentricity. Control stick
 
 Op 3 (Mill Op):
 
-Due to chatter concerns, hold the part horizontally in a vise using aluminum soft jaws. A collet is another option, but I'm a bit concerned about chatter as the stick out would be maybe a 4:1 or 5:1 ratio. There is no stick out if holding the part horizontally in a vise. It's not ideal to hold a round object in a vise, but we don't have to make major cuts, so we can hold on without a ton of vise pressure which shouldn't scratch the part.
+I would debate between two options. A collet is a nice option, but I'm a bit concerned about chatter as the stick out would be maybe a 4:1 or 5:1 ratio and the endmill looks like it requires radiused corners, increasing tool pressure. I would probably try this first and see if I can trial and error to get a smooth cut.
+
+If the collet doesn't work, I would try putting the part horizontally in a vise, which is more rigid but could be more fiddly / time consuming to set up. I will give my vise plan below. There is no stick out if holding the part horizontally in a vise, so chatter is less of a concern. It's not ideal to hold a round object in a vise, but we don't have to make major cuts, so we can hold on without a ton of vise pressure which shouldn't scratch the part.
 
 Another concern - how to deburr the threaded holes if they are not blind holes. I think I'll spot drill in the first op, leaving a chamfer, and put the theaded holes in in the second half of this op, so the tap is the last tool used. The threads should be burr free then.
 
@@ -28,6 +30,6 @@ You may need to use a bit of scotch brite to debur the flats, but given that the
 
 Op 4 (Mill Op):
 
-Use the vise the grab the flats and place the main diameter down on a reference surface such as parallels or a cut surface in soft jaws. To grab the flats, either cut a small step in some soft jaws, or use something like small gauge blocks between the flat and the vise jaw. Soft jaws would be nice for a higher quantity run, but gauge blocks could be faster for a small quantity run. The gauge block approach would be a bit fiddly when setting up though.
+Use the vise the grab the flats and place the main diameter down on a reference surface such as parallels or a cut surface in soft jaws. This ensures the part is oriented correctly in all 6 dimensions (rotation and translation). To grab the flats, either cut a small step in some soft jaws, or use something like small gauge blocks between the flat and the vise jaw. Soft jaws would be nice for a higher quantity run, but gauge blocks could be faster for a small quantity run. The gauge block approach would be a bit fiddly when setting up though.
 
 Use a small diameter spot drill with clearance that doesn't hit the large diameter to spot drill the cross hole, then drill the cross hole. Hand debur the opposite side.
