@@ -40,6 +40,13 @@ Additional details, including a more detailed description of the mistakes AI mod
 
 My high level impression when reading the response is “someone who can parrot textbook knowledge but doesn’t know what they’re talking about”. The models are very eager to give textbook knowledge about e.g. recommended cutting speeds, but are completely incorrect on important practical details. This matches my conversations with friends and former colleagues in manufacturing and construction: current LLMs are seen as almost entirely useless for the core, hands-on aspects of their jobs.
 
+### This Evaluation Only Scratches the Surface
+
+This task of generating a text plan is one of the easiest parts of the job. Real machining demands managing many details behind every high-level step. Just selecting a cutting tool involves considering tip radius, toolholder collision clearance, cutting tool rigidity, coating, speeds/feeds, and more—often with direct trade-offs, like clearance versus rigidity. Many factors like ensuring tool clearances against the part and fixture are inherently spatial, which is impossible to evaluate fully via text. If models fail this badly on the describable aspects, their grasp of the underlying physical realities is likely far worse.
+
+Handling these details only yields one part. As Elon Musk likes to say, the real challenge is manufacturing efficiently at scale. This demands a whole other level of optimization: evaluating different sequences of operations for speed and simplicity, designing effective workholding, choosing the right machines, and balancing cost, time, and quality. Since current models can't even generate a physically sound plan for one simple part, tackling the multi-variable optimization needed for efficient production seems entirely out of reach.
+
+
 ### Why do LLM’s struggle with physical tasks?
 
 The obvious reason why LLMs struggle here is a lack of data. Physical tasks like machining rely heavily on tacit knowledge and countless subtle details learned through experience. These nuances aren't typically documented anywhere.
@@ -82,7 +89,7 @@ There’s a lot of uncertainty and tension here. For example, if manufacturing b
 
 While it’s unclear how long this uneven automation gap might persist, its existence seems likely. Surprisingly few in AI research discuss this \- perhaps because many in the field aren’t very familiar with manufacturing or other physical-world domains. Anyone working in policy, planning their career, or concerned about social stability should start considering the implications of a partial automation scenario seriously.
 
-*Acknowledgements: I am grateful to Neel Nanda and Kevin Liu for valuable feedback on this post.*
+*Acknowledgements: I am grateful to Neel Nanda, Kevin Liu, and Tim Butler for valuable feedback on this post.*
 
 ---
 
@@ -110,9 +117,9 @@ Gemini’s plan is the only one worth reviewing, as it doesn’t have the major 
 
 **Failure to Identify Risk:** Gemini 2.5 consistently fails to recognize that the part, with a length-to-diameter ratio clearly exceeding 10:1 (based on provided dimensions in the prompt), is highly susceptible to chatter and deflection. The common heuristic (L:D \> 3:1 requires special attention) seems completely missed. This should be an obvious red flag, yet surprisingly it's ignored, undermining many of its proposed operations.
 
-When explicitly prompted about chatter concerns for a "long slender part," Gemini applies textbook solutions poorly. It suggests using a tailstock, common for long parts. However, for this specific small-diameter brass part, a tailstock is often not the best approach. There's minimal area for the tailstock center, and the required axial pressure can easily cause the slender part to bow, especially in soft brass. 
+When explicitly prompted about chatter concerns for a "long slender part," Gemini applies textbook solutions poorly. It suggests using a tailstock, common for long parts. However, for this specific small-diameter brass part, a tailstock is often not the best approach. There's minimal area for the tailstock center, and the required axial pressure can easily cause the slender part to bow, like a stiff spaghetti noodle buckling under axial pressure, especially in soft brass. Chatter and deflection are also still a concern. It will probably involve trial and error to get the process to work.
 
-It makes the issue much worse by making poor machining decisions while using the tailstock. It recommends operations like turning the small diameter near the collet *(Turn Small Diameter 1 (Near Collet))*. Machining the smallest diameter right next to the collet (at the point of maximum leverage) makes the part much less rigid and increases the likelihood of deflection. Adding threads here *(Turn Thread Diameter 1 (Near Collet))* requires area for lead in and lead out of the turning tool, further lengthening the unsupported, slender section and making bowing significantly worse, like a stiff spaghetti noodle buckling under axial pressure.
+Gemini's lack of physical grounding is further exposed by its plan to *Turn Small Diameter 1 (Near Collet)*. This step implies cutting a 90-degree internal shoulder directly adjacent to the collet face. In practice, this is physically impossible with standard turning tools, which can’t reach into that corner due to tool geometry. Machinists typically address this with a grooving tool, which is specifically designed to cut square shoulders, or a back turning tool, which approaches the feature from behind to reach the back-facing surface. Both approaches introduce real-world trade-offs. Grooving tools can generate higher tool pressure, which risks deflection and chatter. Back turning tools, on the other hand, often require additional part stick-out to clear the spindle and may introduce blending issues.
 
 **Missing the Practical Solution:** The standard, effective solution for a small, slender part like this often runs counter to basic textbook advice. Instead of multiple light passes, you might start with significantly oversized stock (e.g., 3/4" diameter for this 3/16" part) and machine the final diameter in a single, deep pass. This keeps the part supported by bulk material during the cut, maintaining a low effective L:D ratio and preventing chatter/bowing. It's a common technique taught by mentors that I have used several times. However, it directly contradicts typical guidelines, and Gemini fails to consider it.
 
