@@ -24,6 +24,8 @@ Although this part is simple, even frontier models like O1-Pro or Gemini 2.5 Pro
 
 **Most Models Have Truly Horrible Visual Abilities:** For two years, I've observed essentially zero improvement in visual capabilities among models from Anthropic and OpenAI. They always miss obvious features like the flats cut into the round surface, holes, or even hallucinate nonexistent features such as holes drilled along the part’s length. I have never seen Claude 3.5, Claude 3.7 (thinking and non-thinking), GPT-4.5, GPT-4o, or O1-Pro produce a reasonable description of the part. Without vision abilities, creating a manufacturing plan is completely hopeless.
 
+Interestingly, many of these models also score at or above the level of some human experts on visual reasoning benchmarks like [MMMU](https://mmmu-benchmark.github.io/#leaderboard). That which is easy to measure often doesn't correlate with real world usefulness.
+
 **Gemini 2.5 Pro Makes Significant Vision Progress**: I was surprised when I saw Gemini 2.5 make major progress in vision capabilities. On roughly one out of four attempts, it identifies most of the major features without extra hallucinations, though it still always misses subtle details like the corner radius on the milled flats. Some details it captures are genuinely impressive. For example, I have to look closely to identify the two flats positioned exactly 180 degrees apart. However, this improved vision mostly serves to reveal deeper, unresolved issues.
 
 ### Physical Reasoning Errors
