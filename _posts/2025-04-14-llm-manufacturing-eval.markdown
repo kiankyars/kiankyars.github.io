@@ -11,7 +11,7 @@ Since the GPT-4 release, I've evaluated frontier models on a basic manufacturing
 
 (Estimated reading time: 7 minutes, 14 minutes with appendix)
 
-# The Evaluation
+## The Evaluation
 
 
 ![The brass part](/images/llm_manufacturing_eval/brass_parts_crop.png)
@@ -20,13 +20,13 @@ My evaluation is simple \- I ask for a detailed plan to machine this part using 
 
 Although this part is simple, even frontier models like O1-Pro or Gemini 2.5 Pro consistently make major mistakes. These mistakes can be split into two categories \- visual abilities and physical reasoning skills.
 
-## Visual Errors
+### Visual Errors
 
 **Most Models Have Truly Horrible Visual Abilities:** For two years, I've observed essentially zero improvement in visual capabilities among models from Anthropic and OpenAI. They always miss obvious features like the flats cut into the round surface, holes, or even hallucinate nonexistent features such as holes drilled along the part’s length. I have never seen Claude 3.5, Claude 3.7 (thinking and non-thinking), GPT-4.5, GPT-4o, or O1-Pro produce a reasonable description of the part. Without vision abilities, creating a manufacturing plan is completely hopeless.
 
 **Gemini 2.5 Pro Makes Significant Vision Progress**: I was surprised when I saw Gemini 2.5 make major progress in vision capabilities. On roughly one out of four attempts, it identifies most of the major features without extra hallucinations, though it still always misses subtle details like the corner radius on the milled flats. Some details it captures are genuinely impressive. For example, I have to look closely to identify the two flats positioned exactly 180 degrees apart. However, this improved vision mostly serves to reveal deeper, unresolved issues.
 
-## Physical Reasoning Errors
+### Physical Reasoning Errors
 
 Previously, it was hard to separate visual misunderstandings from deeper physical reasoning problems. Now, even when working from an accurate visual interpretation, Gemini 2.5 still produces machining plans filled with practical mistakes, such as:
 
@@ -38,7 +38,7 @@ Additional details, including a more detailed description of the mistakes AI mod
 
 My high level impression when reading the response is “someone who can parrot textbook knowledge but doesn’t know what they’re talking about”. The models are very eager to give textbook knowledge about e.g. recommended cutting speeds, but are completely incorrect on important practical details. This matches my conversations with friends and former colleagues in manufacturing and construction: current LLMs are seen as almost entirely useless for the core, hands-on aspects of their jobs.
 
-# Why do LLM’s struggle with physical tasks?
+### Why do LLM’s struggle with physical tasks?
 
 The obvious reason why LLMs struggle here is a lack of data. Physical tasks like machining rely heavily on tacit knowledge and countless subtle details learned through experience. These nuances aren't typically documented anywhere.
 
@@ -48,7 +48,7 @@ This highlights a major difference from fields like software engineering or law.
 
 As a result, LLMs are great at regurgitating some of the textbook knowledge available, but this is very insufficient.
 
-# Improving on physical tasks may be difficult
+### Improving on physical tasks may be difficult
 
 Empirically, frontier models are currently bad at these tasks. Is this just a temporary hurdle that will soon be overcome? I’m not sure, and I have speculative arguments for both why future progress might be difficult and why it might be easier than expected.
 
@@ -64,7 +64,7 @@ However, there are also reasons why this could be easier than expected:
 
 **Synthetic Data:** There are obvious approaches that haven’t been well explored. For example, we can create a lot of data using simulations, although there will be a gap between simulation and reality. For this specific manufacturing process (CNC machining), CAM software can accurately simulate most operations. However, there are a ton of diverse manufacturing processes, many of which don’t have good simulation solutions.
 
-# Potential Implications of Uneven Automation
+### Potential Implications of Uneven Automation
 
 If this trend holds, we might face a period where remote work sees significant automation while skilled physical jobs remain largely untouched by AI. This “automation gap window” could last for an unknown duration and carries potential implications:
 
@@ -76,13 +76,15 @@ If this trend holds, we might face a period where remote work sees significant a
 
 There’s a lot of uncertainty and tension here. For example, if manufacturing becomes a strategic bottleneck, the government may be able to fend off popular opposition to AI.
 
-# Conclusion
+### Conclusion
 
 While it’s unclear how long this uneven automation gap might persist, its existence seems likely. Surprisingly few in AI research discuss this \- perhaps because many in the field aren’t very familiar with manufacturing or other physical-world domains. Anyone working in policy, planning their career, or concerned about social stability should start considering the implications of a partial automation scenario seriously.
 
 *Acknowledgements: I am grateful to Neel Nanda and Kevin Liu for valuable feedback on this post.*
 
-# Appendix
+---
+
+## Appendix
 
 Here are links to plans generated by [Claude 3.7 Thinking](https://github.com/adamkarvonen/adamkarvonen.github.io/blob/main/files/manufacturing_eval/claude_3_7_thinking_plan.md), [GPT-4.5](https://github.com/adamkarvonen/adamkarvonen.github.io/blob/main/files/manufacturing_eval/gpt-4_5_plan.md), [O1-Pro](https://github.com/adamkarvonen/adamkarvonen.github.io/blob/main/files/manufacturing_eval/o1_pro_plan.md), and [Gemini 2.5 Pro](https://github.com/adamkarvonen/adamkarvonen.github.io/blob/main/files/manufacturing_eval/gemini_2_5_pro_plan.md). My plan for machining the part is [here](https://github.com/adamkarvonen/adamkarvonen.github.io/blob/main/files/manufacturing_eval/adam_plan.md). Below I have detailed descriptions of various errors made by the models.
 
