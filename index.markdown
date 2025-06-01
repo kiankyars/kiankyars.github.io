@@ -1,6 +1,21 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: Home
 ---
+
+# Blog
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small></li>
+  {% endfor %}
+</ul>
+
+[Subscribe via RSS](/blog/feed.xml)
+
+# Papers
+
+<!-- Add your papers here, e.g.: -->
+<ul>
+  <li><a href="/blog/papers/your-paper.pdf">Your Paper Title</a></li>
+</ul> 
