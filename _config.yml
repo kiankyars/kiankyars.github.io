@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Adam Karvonen
-email: adam.karvonen@gmail.com
-description: Adam Karvonen's personal website
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://adamkarvonen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: a_karvonen
-github_username:  adamkarvonen
+title: Kian Kyars
+email: kkyars@ualberta.ca
+description: Kian Kyars's personal blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://sites.ualberta.ca/~kkyars" # the base hostname & protocol for your site
+twitter_username: neuralkian
+github_username: kiankyars
 
 # Build settings
 theme: minima
