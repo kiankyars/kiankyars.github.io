@@ -2,37 +2,4 @@
   <a href="/blog/">Home</a>
   <a href="/blog/pages/about">About</a>
   <a href="/blog/pages/now">Now</a>
-  <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
-</nav>
-<style>
-.site-nav {
-  display: flex;
-  gap: 1.5em;
-  align-items: center;
-  margin: 1em 0 1em 1em;
-}
-.site-nav a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1em;
-}
-</style>
-<script>
-  // Dark mode logic
-  function setDarkMode(enabled) {
-    document.documentElement.setAttribute('data-theme', enabled ? 'dark' : 'light');
-    localStorage.setItem('darkMode', enabled);
-    document.getElementById('dark-mode-toggle').textContent = enabled ? '☀️' : '🌙';
-  }
-  function detectSystemTheme() {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-  (function() {
-    const saved = localStorage.getItem('darkMode');
-    const enabled = saved === null ? detectSystemTheme() : saved === 'true';
-    setDarkMode(enabled);
-    document.getElementById('dark-mode-toggle').onclick = function() {
-      setDarkMode(document.documentElement.getAttribute('data-theme') !== 'dark');
-    };
-  })();
-</script> 
+</nav> 

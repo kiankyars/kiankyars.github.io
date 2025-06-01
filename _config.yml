@@ -27,10 +27,11 @@ twitter_username: neuralkian
 github_username: kiankyars
 
 # Build settings
-theme: minima
+theme: "minimal-mistakes-jekyll"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
