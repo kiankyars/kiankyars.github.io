@@ -1,8 +1,10 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: single
+title: "About"
+permalink: /pages/about/
 ---
+
+This is the about page. Add your content here.
 
 I am mostly interested in machine learning and software engineering. Lately, a lot of my focus has been on Large Language Models - both in using them as a tool when combined with formal methods, and in understanding and interpreting them.
 

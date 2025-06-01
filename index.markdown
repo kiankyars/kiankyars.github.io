@@ -11,11 +11,4 @@ title: Home
   {% endfor %}
 </ul>
 
-[Subscribe via RSS](/blog/feed.xml)
-
-# Papers
-
-<!-- Add your papers here, e.g.: -->
-<ul>
-  <li><a href="/blog/papers/your-paper.pdf">Your Paper Title</a></li>
-</ul> 
+[Subscribe via RSS](/blog/feed.xml) 
