@@ -22,7 +22,7 @@ title: Kian Kyars
 email: kkyars@ualberta.ca
 description: Kian Kyars's personal blog
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://sites.ualberta.ca/~kkyars" # the base hostname & protocol for your site
+url: "https://kiankyars.github.io" # the base hostname & protocol for your site
 twitter_username: neuralkian
 github_username: kiankyars
 
@@ -30,6 +30,7 @@ github_username: kiankyars
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
