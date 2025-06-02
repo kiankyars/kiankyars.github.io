@@ -3,7 +3,6 @@ layout: post
 title:  "Controlled CoT Intervention: Measuring CoT Determinism"
 date:   2025-03-25
 categories: machine_learning
-permalink: /blog/cot-intervention/
 ---
 
 ## Measuring Chain-of-Thought Determinism in Language Models
