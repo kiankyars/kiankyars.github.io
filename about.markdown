@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "About"
-permalink: /pages/about/
+permalink: /about/
 ---
 
 This is the about page. Add your content here.
