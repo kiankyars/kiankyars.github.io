@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Controlled CoT Intervention: Measuring CoT Determinism"
-date:   2025-03-25 16:46:58 -0600
+date:   2025-03-25
 categories: machine_learning
 permalink: /blog/cot-intervention/
 ---
