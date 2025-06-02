@@ -21,7 +21,7 @@
 title: Kian Kyars
 email: kkyars@ualberta.ca
 description: Kian Kyars's personal blog
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kiankyars.github.io" # the base hostname & protocol for your site
 twitter_username: neuralkian
 github_username: kiankyars
