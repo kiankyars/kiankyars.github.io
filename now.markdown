@@ -7,10 +7,10 @@ permalink: /now/
 ## What I'm doing now
 
 - Finished my final year of undergrad
-- Working on the factorio learning environment. https://github.com/JackHopkins/factorio-learning-environment
+- Working on the [factorio learning environment](https://github.com/JackHopkins/factorio-learning-environment).
 - Exploring model interpretability and prompt engineering
 
-_Last updated: May 2025_
+_Last updated: June 2025_
 
 ### What I'm currently reading
 
