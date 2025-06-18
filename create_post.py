@@ -16,18 +16,16 @@ if not os.path.exists(filepath):
     with open(filepath, "w") as f:
         f.write(f"""---
 layout: post
-title:  \"Weekly Victories\"
+title:  \"Weekly Victories for {date_str}\"
 date:   {date_str}
 categories: reflection
 ---
 
-## Weekly Victories
-
-1. Victory #1:
+Victory #1:
    
-2. Victory #2:
+Victory #2:
    
-3. Victory #3:
+Victory #3:
    
 """)
     print(f"Created: {filepath}")
