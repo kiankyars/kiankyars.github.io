@@ -8,6 +8,7 @@ permalink: /now/
 
 - Finished my final year of undergrad
 - Working on the [factorio learning environment](https://github.com/JackHopkins/factorio-learning-environment)
+- Living life with people I love
 
 _Last updated: June 2025_
 
