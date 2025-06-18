@@ -16,7 +16,7 @@ if not os.path.exists(filepath):
     with open(filepath, "w") as f:
         f.write(f"""---
 layout: post
-title:  \"Weekly Victories for {date_str}\"
+title:  \"Weekly Victories\"
 date:   {date_str}
 categories: reflection
 ---
