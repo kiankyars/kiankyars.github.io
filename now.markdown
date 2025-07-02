@@ -10,7 +10,7 @@ permalink: /now/
 - Working on the [factorio learning environment](https://github.com/JackHopkins/factorio-learning-environment)
 - Living life with people I love
 
-_Last updated: {{ site.time | date: "%B %Y" }}_
+_Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}_
 
 ### What I'm currently reading
 
