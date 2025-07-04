@@ -12,7 +12,7 @@ Victory #2:
 - Grokked python packaging in two days, I'm a pypi wizard now.
    
 Victory #3:
-- Submitted the THIRD revision of my article for the [Columbia Math Journal](https://journals.library.columbia.edu/index.php/cjum/index), I have been exploited and will never submit to an undergraduate journal again (good thing I can't anyway since I'm done school), but at least I'll have a fire journal publication come August 😈.
+- Submitted the THIRD revision of my article to the [Columbia Math Journal](https://journals.library.columbia.edu/index.php/cjum/index), I have been exploited and will never submit to an undergraduate journal again (good thing I can't anyway since I'm done school), but at least I'll have a fire journal publication come August 😈.
 - Took all of wednesday to do, not counting the days of stress from the previous revisions in March and April.
 
 Bonus:
