@@ -10,9 +10,9 @@ Victory #1:
 - ![](/images/2025-07-11-weekly-victories/strava.png)
 
 Victory #2:
-- Did the rock workout (only half of it because meeting).
+- Did the rock workout (only half of it because of a meeting).
 - ![](/images/2025-07-11-weekly-victories/rock.jpeg)
-- Feels (still feeling it) 10x after compared to the 50 k, and I only did half!
+- Feels (still feeling it) 10x worse after compared to the 50 k, and I only did half!
 
 Victory #3:
 - Very satisfying and fulfilling work on [FLE](https://jackhopkins.github.io/factorio-learning-environment/), especially on thursday (demon mode learning openai dota 2 paper and code monkeying).
