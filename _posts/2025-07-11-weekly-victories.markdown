@@ -7,11 +7,11 @@ categories: reflection
 
 Victory #1:
 - Ran 50 km ferda boys.
-- ![](/images/2025-07-11-weekly-victories/strava.png)
+- ![](/imgs/2025-07-11-weekly-victories/strava.png)
 
 Victory #2:
 - Did the rock workout (only half of it because of a meeting).
-- ![](/images/2025-07-11-weekly-victories/rock.jpeg)
+- ![](/imgs/2025-07-11-weekly-victories/rock.jpeg)
 - Feels (still feeling it) 10x worse after compared to the 50 k, and I only did half!
 
 Victory #3:

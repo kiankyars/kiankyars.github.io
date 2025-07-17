@@ -24,3 +24,4 @@ Bonus 1:
 
 Bonus 2:
 - Got second out of 10 in poker after not playing for years
+- ![](imgs/2025-07-04-weekly-victories/poker.jpeg)

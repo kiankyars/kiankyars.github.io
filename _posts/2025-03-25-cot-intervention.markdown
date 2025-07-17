@@ -27,13 +27,13 @@ This resulted in a dataset of 100 formal logic questions, each with 10 CoT answe
 
 ## Branching Factor Analysis
 
-![Branching factor comparison between correct and incorrect paths](/blog/images/cot-intervention/branching_factor.png)
+![Branching factor comparison between correct and incorrect paths](/blog/imgs/cot-intervention/branching_factor.png)
 
 Reasoning paths that yield correct answers tend to have lower branching factors, suggesting more deterministic steps. In contrast, incorrect paths show higher branching, indicating greater uncertainty or divergence. The first step, being manually planted, maintains a branching factor of 1.
 
 ## Similarity Divergence
 
-![Similarity divergence between correct and incorrect paths](/blog/images/cot-intervention/similarity_divergence.png)
+![Similarity divergence between correct and incorrect paths](/blog/imgs/cot-intervention/similarity_divergence.png)
 
 Correct paths maintain higher similarity, suggesting consistency in reasoning. Incorrect paths diverge more, reflecting erratic decision-making. The first step shows perfect similarity since it's consistently the same. SentenceTransformer was used to embed the reasoning steps in both experiments.
 
