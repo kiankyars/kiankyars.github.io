@@ -15,7 +15,7 @@ Victory #2:
 - Feels (still feeling it) 10x worse after compared to the 50 k, and I only did half!
 
 Victory #3:
-- Very satisfying and fulfilling work on [FLE](https://jackhopkins.github.io/factorio-learning-environment/), especially on thursday (demon mode learning openai dota 2 paper and code monkeying).
+- Very satisfying and fulfilling work on [FLE](https://jackhopkins.github.io/factorio-learning-environment/), especially on Thursday (demon mode learning openai dota 2 paper and code monkeying).
 
 Bonus 1:
 - Tried to go viral by launching [twtr](https://github.com/kiankyars/twtr), ngmi.
