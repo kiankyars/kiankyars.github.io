@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Directory for posts
 POSTS_DIR = "_posts"
@@ -8,7 +8,7 @@ POSTS_DIR = "_posts"
 now = datetime.now()
 
 date_str = now.strftime("%Y-%m-%d")
-filename = f"{date_str}-weekly-victories.markdown"
+filename = f"{date_str}-weekly-victories.md"
 filepath = os.path.join(POSTS_DIR, filename)
 
 # Avoid overwriting if already exists
