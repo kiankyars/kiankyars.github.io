@@ -28,8 +28,7 @@ Victory #2:
 - 
 
 Victory #3:
-- 
-""")
+- """)
     print(f"Created: {filepath}")
 else:
     print(f"Post already exists: {filepath}")
