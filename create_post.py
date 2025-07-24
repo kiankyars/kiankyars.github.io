@@ -1,14 +1,19 @@
 import os
-from datetime import datetime, timedelta
-
-# Directory for posts
-POSTS_DIR = "_posts"
+from datetime import datetime
+import sys
 
 # Get today's date
 now = datetime.now()
 
 date_str = now.strftime("%Y-%m-%d")
-filename = f"{date_str}-weekly-victories.md"
+arg = sys.argv[1]
+if arg == "w":
+    filename = f"{date_str}-weekly-victories.md"
+    POSTS_DIR = f"_posts/weekly-victories"
+else:
+    filename = f"{date_str}-{arg}.md"
+    POSTS_DIR = f"_posts/blog"
+
 filepath = os.path.join(POSTS_DIR, filename)
 
 # Avoid overwriting if already exists
