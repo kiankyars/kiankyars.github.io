@@ -4,7 +4,7 @@ title: "Graphs"
 permalink: /graphs/
 --- 
 
-Graphs about AGI/datacenter scaling which are provoking:
+Graphs about AGI, datacenter scaling, and capital which are provoking:
 
 ![](imgs/graphs/gdp.png)
 ![](imgs/graphs/nvidia.jpeg)
