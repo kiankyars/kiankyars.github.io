@@ -6,8 +6,7 @@ permalink: /now/
 
 ## What I'm doing now
 
-- Finished my final year of undergrad
-- Working on the [factorio learning environment](https://github.com/JackHopkins/factorio-learning-environment)
+- Finished school
 - Living life with people I love
 
 _Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}_ GMT
