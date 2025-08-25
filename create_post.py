@@ -16,12 +16,10 @@ else:
 
 filepath = os.path.join(POSTS_DIR, filename)
 
-# Avoid overwriting if already exists
-if not os.path.exists(filepath):
-    with open(filepath, "w") as f:
-        f.write(f"""---
+with open(filepath, "w") as f:
+    f.write(f"""---
 layout: post
-title:  \"Weekly Victories\"
+title:  {"Weekly Victories" if arg == "w" else arg.replace("-", " ").title()}
 date:   {date_str}
 categories: reflection
 ---
@@ -35,5 +33,3 @@ Victory #2:
 Victory #3:
 - """)
     print(f"Created: {filepath}")
-else:
-    print(f"Post already exists: {filepath}")
