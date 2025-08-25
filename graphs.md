@@ -2,7 +2,7 @@
 layout: default
 title: "Graphs"
 permalink: /graphs/
---- 
+---
 
 Graphs about AGI, datacenter scaling, and capital which are provoking:
 

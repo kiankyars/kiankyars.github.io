@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Controlled CoT Intervention: Measuring CoT Determinism"
-date:   2025-03-25
+title: "Controlled CoT Intervention: Measuring CoT Determinism"
+date: 2025-03-25
 categories: machine_learning
 ---
 
@@ -52,5 +52,5 @@ This investigation opens several avenues for future research:
 
 # Resources
 
-* [Colab Notebook](https://colab.research.google.com/drive/1iEMNwrRTidxH32ZUuA50NOo7LG6zXyv0)
-* [Dataset on Hugging Face](https://huggingface.co/datasets/kyars/CoTIntervention)
+- [Colab Notebook](https://colab.research.google.com/drive/1iEMNwrRTidxH32ZUuA50NOo7LG6zXyv0)
+- [Dataset on Hugging Face](https://huggingface.co/datasets/kyars/CoTIntervention)

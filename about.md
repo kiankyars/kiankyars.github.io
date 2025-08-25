@@ -2,7 +2,7 @@
 layout: default
 title: "About"
 permalink: /about/
---- 
+---
 
 I am mostly interested in machine learning and software engineering. Lately, a lot of my focus has been on Large Language Models.
 
