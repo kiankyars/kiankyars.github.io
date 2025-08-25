@@ -21,7 +21,7 @@ with open(filepath, "w") as f:
 layout: post
 title:  {"Weekly Victories" if arg == "w" else arg.replace("-", " ").title()}
 date:   {date_str}
-categories: reflection
+categories: {'''reflection
 ---
 
 Victory #1:
@@ -31,5 +31,5 @@ Victory #2:
 - 
 
 Victory #3:
-- """)
-    print(f"Created: {filepath}")
+- ''' if arg == "w" else "\n---"}""")
+print(f"Created: {filepath}")
