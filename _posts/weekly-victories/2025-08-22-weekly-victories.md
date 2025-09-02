@@ -17,3 +17,7 @@ Victory #2:
 Victory #3:
 
 - Planning and thinking about what's next for me after FR8!
+
+Bonus 1:
+
+- Attended a mormon church service, peculiar experience.
