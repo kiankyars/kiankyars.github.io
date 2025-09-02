@@ -18,7 +18,7 @@ Victory #2:
 
 Victory #3:
 - Met Thomas Wolfe
-![](/imgs/2025-08-29-weekly-victories/)
+![](/imgs/2025-08-29-weekly-victories/uspb.HEIC)
 
 Bonus 1:
 
