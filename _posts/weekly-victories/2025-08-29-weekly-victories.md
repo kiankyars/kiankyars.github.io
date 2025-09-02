@@ -17,7 +17,7 @@ Victory #2:
 ![](/imgs/2025-08-29-weekly-victories/demoday.png)
 
 Victory #3:
-- Met Thomas Wolfe
+- Met Thomas Wolfe at demo day
 ![](/imgs/2025-08-29-weekly-victories/uspb.HEIC)
 
 Bonus 1:
