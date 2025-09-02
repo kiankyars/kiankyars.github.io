@@ -1,24 +1,27 @@
 ---
 layout: post
-title:  Weekly Victories
-date:   2025-08-29
+title: Weekly Victories
+date: 2025-08-29
 categories: reflection
 ---
 
 MY LAST WEEKLY VICTORY POST FROM FR8, VERY SAD!
 
 Victory #1:
+
 - RAN A FUCKING MARATHON
 - Knee was affected by painful IT band syndrome after the 30th kilometer, but we still clutched up. I couldn't bend my knee the next day and walked with a straight leg, It was funny. Because of pistol squats, which are literally the best remedy to IT band syndrome, instead of taking three months to recover, it only took me three days.
-![](/imgs/2025-08-29-weekly-victories/marathon.png)
+  ![](/imgs/2025-08-29-weekly-victories/marathon.png)
 
 Victory #2:
+
 - Going crazy for demo day of course!
-![](/imgs/2025-08-29-weekly-victories/demoday.png)
+  ![](/imgs/2025-08-29-weekly-victories/demoday.png)
 
 Victory #3:
+
 - Met Thomas Wolfe
-![](/imgs/2025-08-29-weekly-victories/uspb.HEIC)
+  ![](/imgs/2025-08-29-weekly-victories/uspb.HEIC)
 
 Bonus 1:
 
