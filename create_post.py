@@ -34,5 +34,6 @@ Victory #2:
 
 Victory #3:
              
-- ''' if arg == "w" else "\n---"}""")
+- 
+''' if arg == "w" else "\n---"}""")
 print(f"Created: {filepath}")
