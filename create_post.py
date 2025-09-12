@@ -25,15 +25,15 @@ categories: {'''reflection
 ---
 
 Victory #1:
-             
+
 - 
 
 Victory #2:
-             
+
 - 
 
 Victory #3:
-             
+
 - 
 ''' if arg == "w" else "\n---"}""")
 print(f"Created: {filepath}")
