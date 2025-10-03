@@ -11,7 +11,7 @@ Victory #1:
 
 Victory #2:
 
-- Invitied and went to Drumheller for one night the next Tuesday by Andreas and Jerick, who also drove me back to Edmonton. It really warmed mt heart that they invitied me back, had a fun trip and I ate a horse at the hotel continental breakfast as per usual.
+- Invited and went to Drumheller for one night on Tuesday with Andreas and Jerick, who also drove me back to Edmonton. It really warmed my heart that they invited me back, had a fun trip and I ate a horse at the hotel continental breakfast as per usual.
 
 Victory #3:
 
@@ -19,7 +19,7 @@ Victory #3:
 
 Bonus 1:
 
-- Ich bin zum Stammtisch meiner Universität gegangen für das erstes mal und hat mein deutsch gut benutzt, es war schön obwhol es dort wenig zu essen gab (es gab nur Pommes).
+- Ich bin zum Stammtisch meiner Universität für das erstes mal gegangen und hat mein deutsch gut benutzt, es war schön obwhol es dort wenig zu essen gab (es gab nur Pommes).
 
 Bonus 2:
 

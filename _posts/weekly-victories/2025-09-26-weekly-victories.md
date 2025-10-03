@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Weekly Victories
-date: 2025-09-19
+date: 2025-09-26
 categories: reflection
 ---
 
