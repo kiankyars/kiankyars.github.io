@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Weekly Victories
-date:   2025-10-03
+title: Weekly Victories
+date: 2025-10-03
 categories: reflection
 ---
 
@@ -11,7 +11,7 @@ Victory #1:
 
 Victory #2:
 
-- Invitied and went to Drumheller for one night the next Tuesday by the guys who drove me back to Edmonton, really warmed mt heart that they invitied me back, really fun trip and I ate a horse at the hotel continental breakfast as per usual. 
+- Invitied and went to Drumheller for one night the next Tuesday by Andreas and Jerick, who also drove me back to Edmonton. It really warmed mt heart that they invitied me back, had a fun trip and I ate a horse at the hotel continental breakfast as per usual.
 
 Victory #3:
 
