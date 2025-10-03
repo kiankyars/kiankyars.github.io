@@ -19,4 +19,4 @@ Victory #3:
 
 Bonus 1:
 
-- Took the big friendly giant (my enduro bike) for a rip the day after I got back
+- Took the big friendly giant (my enduro bike) for a rip the day after I got back home.
