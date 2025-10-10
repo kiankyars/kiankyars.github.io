@@ -20,3 +20,8 @@ Victory #3:
 Bonus 1:
 
 - Took the big friendly giant (my enduro bike) for a rip the day after I got back home.
+
+Bonus 2:
+
+- Passed the baton to the next leader of the UofARC.
+- ![](/imgs/2025-09-19-weekly-victories/collage.jpg)
