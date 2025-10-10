@@ -22,7 +22,7 @@ Victory #3:
 
 Bonus 1:
 
-- Reunited with my boy Ian at stairs
+- Reunited with my boy Ian at stairs.
 - ![](/imgs/2025-10-10-weekly-victories/stairs.jpg)
 
 Bonus 2:
