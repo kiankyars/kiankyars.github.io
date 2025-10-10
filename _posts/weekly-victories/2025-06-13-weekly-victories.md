@@ -16,3 +16,5 @@ Victory #2:
 Victory #3:
 
 - Pacemaker for 5k race for the first time with Henri for 20 minute 5k: do hard things.
+- ![](/imgs/2025-06-13-weekly-victories/helsinki5k1.jpeg)
+- ![](/imgs/2025-06-13-weekly-victories/helsinki5k2.jpeg)
