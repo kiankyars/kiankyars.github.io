@@ -23,8 +23,9 @@ categories: life
 - Powdered greens as a leafy vegetable substitute/meal shakes (I prefer overnight oats though)
 - Focusmate
 - Plant-based diet
-  - ![](/imgs/2025-10-11-good-and-bad/Daily%20Dozen%20–%20Poster%20Metric.pdf)
-- Extinguish candles with a lid
+  - ![](/imgs/2025-10-11-good-and-bad/12.jpg)
+- Extinguish candles with a lid (prevents particulate matter in air)
+- Vitamin D supplements in winter
 
 # Bad Things
 
