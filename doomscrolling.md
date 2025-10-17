@@ -14,4 +14,4 @@ permalink: /doomscrolling/
 
 ## October
 
-#### 1 (youtube doomscrolling)
+#### 3 (youtube doomscrolling, number two and three are due to my sudden obsession with competitive food eaters (beardmeatsfood))
