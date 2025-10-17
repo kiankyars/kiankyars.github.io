@@ -2,7 +2,7 @@
 layout: post
 title: Dumb Phone
 date: 2025-09-04
-categories:
+categories: life
 ---
 
 I met a really cool guy named Rasmus who is making lightfriend.ai, which makes light/dumb phones that only have camera, text, and calling, smart through sms. This is really fucking cool and if there wasn't so much friction and ecosystem cost to switching I totally would use it, but I prefer to keep my iPhone and make it as dumb as possible, and this blog post is a guide on how to do exactly that. The suggestions I make are principally for IOS, but I imagine there are equivalencies for everything I mention on Android.

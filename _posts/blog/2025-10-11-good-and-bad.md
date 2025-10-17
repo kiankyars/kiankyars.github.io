@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Good And Bad
-date:   2025-10-11
-categories: 
+title: Good And Bad
+date: 2025-10-11
+categories: life
 ---
 
 # Good Things
@@ -23,21 +23,21 @@ categories:
 - Powdered greens as a leafy vegetable substitute/meal shakes (I prefer overnight oats though)
 - Focusmate
 - Plant-based diet
-    - ![](/imgs/2025-10-11-good-and-bad/Daily%20Dozen%20–%20Poster%20Metric.pdf)
+  - ![](/imgs/2025-10-11-good-and-bad/Daily%20Dozen%20–%20Poster%20Metric.pdf)
 - Extinguish candles with a lid
 
 # Bad Things
 
 - Sodium lauryl sulfate
 - Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)
-    - Non-stick cookware (Teflon)
-    - Waterproof clothing and outdoor gear
-    - Fast food packaging and containers
-    - Stain-resistant carpets and furniture
-    - Dental floss
-    - Cosmetics and personal care products
-    - Firefighting foam
-    - Electronics and semiconductors
+  - Non-stick cookware (Teflon)
+  - Waterproof clothing and outdoor gear
+  - Fast food packaging and containers
+  - Stain-resistant carpets and furniture
+  - Dental floss
+  - Cosmetics and personal care products
+  - Firefighting foam
+  - Electronics and semiconductors
 - Phthalates (in plastics, fragrances, vinyl)
 - Bisphenol A (BPA) and BPS (in food containers, receipts)
 - Parabens (in cosmetics and personal care)
