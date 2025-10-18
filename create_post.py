@@ -19,8 +19,8 @@ filepath = os.path.join(POSTS_DIR, filename)
 with open(filepath, "w") as f:
     f.write(f"""---
 layout: post
-title:  {"Weekly Victories" if arg == "w" else arg.replace("-", " ").title()}
-date:   {date_str}
+title: {"Weekly Victories" if arg == "w" else arg.replace("-", " ").title()}
+date: {date_str}
 categories: {'''reflection
 ---
 
