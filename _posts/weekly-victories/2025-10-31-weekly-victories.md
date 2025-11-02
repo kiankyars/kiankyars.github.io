@@ -7,7 +7,7 @@ categories: reflection
 
 Victory #1:
 
-- Our solar system went live on Tuesday!
+- Our solar panels went live on Tuesday!
 
 Victory #2:
 
