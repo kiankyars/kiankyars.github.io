@@ -3,6 +3,26 @@
 
 {%- include head.html -%}
 
+    <!-- Inline CSS to prevent mobile nav overlap -->
+    <style>
+      .site-nav {
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
+        background: white;
+      }
+
+      /* Improve mobile layout spacing */
+      @media (max-width: 768px) {
+        .site-nav .wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+          padding: 10px 0;
+        }
+      }
+    </style>
+
 <body>
     <nav class="site-nav">
         <div class="wrapper">
