@@ -7,6 +7,7 @@ permalink: /now/
 ## What I'm doing now
 
 - Finished school
+- Working at a startup
 - Living life with people I love
 
 _Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}_ GMT
