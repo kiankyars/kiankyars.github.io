@@ -17,7 +17,7 @@ Victory #2:
 
 Victory #3:
 
-- Beauty 16 run on Wednesday with Nantte, talking about the foundations of FR8 and doing hard things; great running week with overall ~100km ran.
+- Beauty 16 run on Wednesday with Nantte, talking about the foundations of FR8 and doing hard things; great running week with overall ~100 km ran.
 
 Bonus 1:
 
