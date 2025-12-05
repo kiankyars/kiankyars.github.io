@@ -16,6 +16,18 @@ permalink: /tools/
 ## Apps
 - Strava
 - Focusmate
+- RemNote
+- Raycast
+- Vorta
+- superwhisper
+- ActivityWatch ( This app tracks the time you spend on Macs on your app, but I have never actually used the information that it gives and it's not really that well presented. So I should be using a paid product for this purpose but even then I don't see how I would extract that much value from it.)
+
+## Safari Extensions
+- Focus for YouTube
+- Accelerate
+- Ghostery
+- Glasp Web Highliter
+- ScreenZen
 
 ## Leisure
 - Anna's Archive for books
