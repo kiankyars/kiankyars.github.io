@@ -15,6 +15,7 @@ permalink: /tools/
 
 ## Apps
 - Strava
+- Focusmate
 
 ## Leisure
 - Anna's Archive for books
