@@ -11,7 +11,7 @@ Victory #1:
 
 Victory #2:
 
-- I volunteered for six hours in total with grade five students. On Monday I did three hours and on Tuesday I did another three hours, and both were incredible and without a doubt the reason for my success. I had lost touch with volunteering and interacting with people the last while and week especially, but now that I've restarted that, things are going really well.
+- I volunteered for six hours in total with grade five students. On Monday I did three hours and on Tuesday I did another three hours, and both were incredible and without a doubt the reason for my success. I had lost touch with volunteering and interacting with people the in last little while and this week especially, but now things are going splendidly well.
 
 Victory #3:
 
