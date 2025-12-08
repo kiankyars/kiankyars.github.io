@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Investing In AI
-
 date: 2025-12-06
-categories: 
+categories: finance
 ---
 
 I've been trying to increase my exposure to investments which will appreciate with overall positive AI sentiment and progress, and here are my thoughts:

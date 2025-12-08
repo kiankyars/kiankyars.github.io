@@ -2,7 +2,7 @@
 layout: post
 title: "iPhone Hygiene"
 date: 2025-07-15
-categories: tutorial
+categories: productivity
 ---
 
 1. Enable [2FA](https://support.apple.com/en-us/102660)

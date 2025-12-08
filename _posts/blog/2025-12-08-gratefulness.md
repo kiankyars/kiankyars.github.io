@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Gratefullness
+title: Gratefulness
 date: 2025-12-08
-categories: 
+categories: life
 ---
 
 I recently made a tweet:

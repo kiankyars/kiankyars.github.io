@@ -10,8 +10,6 @@ permalink: /now/
 - Working at a startup
 - Living life with people I love
 
-_Last updated: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}_ GMT
-
 ### What I'm currently reading
 
 <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
