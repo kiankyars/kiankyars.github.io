@@ -16,3 +16,7 @@ Victory #2:
 Victory #3:
 
 - Did a 39 km run, was good for the mind.
+
+Bonus 1:
+
+- Cleaned up this site.
