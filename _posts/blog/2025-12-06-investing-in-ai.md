@@ -5,7 +5,7 @@ date: 2025-12-06
 categories: finance
 ---
 
-I've been trying to increase my exposure to investments which will appreciate with overall positive AI sentiment and progress, and here are my thoughts:
+I want to increase my exposure to investments which will appreciate with overall positive AI sentiment and progress, and here are my thoughts:
 
 Currently my portfolio is composed of perhaps 80-90% equity in companies like Nvidia, Google, Meta, Microsoft, etc., which are directly involved in developing Frontier AI, the rest being in US and International ETFs.
 
@@ -15,6 +15,6 @@ Despite the above sentence, I grokked all of the basic option principles today b
 
 Otherwise, I'm interested in latent industries and sectors which will implicitly receive AI investment, with the classical examples being modular nuclear reactor developers, fiber optic companies, which connect the data centers, as well as semiconductor manufacturers.
 
-I'm trying to tune my thinking by projecting myself five months ahead and thinking for what missed opportunity I will tell myself, "wow, why didn't I invest in that in December 2025?" However, this is of course an exercise which is much easier in hindsight than in the moment.
+I want to tune my thinking by projecting myself five months ahead and thinking for what missed opportunity I will tell myself, "wow, why didn't I invest in that in December 2025?" However, this is of course an exercise which is much easier in hindsight than in the moment.
 
 With that being said, I conclude that for now I'm going to focus on cloud providers and big tech because it's the most direct bet on AI. And to be honest, unless something happens to Taiwan, I'm really bullish on continued bubble-esque investment; nevertheless, I am very much candid in saying I know nothing about investing and that PhD investors might eat me up, which has already happened in the past, by the way. This is why I only invest money I can lose. Since losing money still isn't fun, I should perhaps be risk-averse with respect to options, even though I feel there's much to be had. Notwithstanding, my risk-aversion level is most people's highest risk level, so I should already be contented by that.

@@ -22,7 +22,7 @@ Victory #3:
 
 Bonus 1:
 
-- Tried to go viral by launching [twtr](https://github.com/kiankyars/twtr), ngmi.
+- Attempt to go viral by launching [twtr](https://github.com/kiankyars/twtr), ngmi.
 
 Bonus 2:
 
