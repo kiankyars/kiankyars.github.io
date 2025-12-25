@@ -7,7 +7,7 @@ categories: reflection
 
 Victory #1:
 
-- Yearly reunion w/ the boys
+- Yearly reunion w/ the boys, bets are currently on where the 2026 reunion will happen.
     - December 19th, 2025
 - ![](/imgs/2025-12-19-weekly-victories/2025.jpg)
     - December 22nd, 2024
@@ -15,22 +15,32 @@ Victory #1:
 
 Victory #2:
 
-- Presented ARC at the Cohere Monthly Lightning Talks.
+- Presented ARC during the Cohere Monthly Lightning Talks.
 
 Victory #3:
 
-- Switched things up this week in the spirit of not doing the same thing that's not working and expecting a different result.
-- I went to the library near my house from Monday to Wednesday and then the one by my mom's work on Thursday, and although it wasn't ideal, it was better than being alone at home. After a trough on Wednesday, the week recovered fast for an amazing Friday and end of the week.
+- Switched things up this week in the spirit of not doing the same thing that's not working and expecting a different result: I went to the library near my house from Monday to Wednesday and then the one by my mom's work on Thursday, and although it wasn't ideal (noise, commute, etc.), it was better than being alone at home. After a trough on Wednesday where I really wasn't feeling well, the week was only uphill from there; I had an amazing Friday with the boys and weekend.
 
 Bonus 1:
 
-- Talked with my mom about my current struggles.
+- Talked with my mom about my current struggles after procrastinating it and delaying it because I needed to "gather my thoughts".
 
 Bonus 2:
 
-- Reconnected with a lot of people.
+- Reconnected with a lot of people over whatsapp and met new people, great to be doing high-agency things like this.
 
 Bonus 3:
 
-- 
-wasted to much time exploring
+- Wasted too much time exploring options to keep busy which was negative (masters, other programs), but I'm not mad at myself either because that's much better than doomscrolling, etc.
+
+Bonus 4:
+
+- Skated on the new rink by my house for the first time.
+
+Bonus 5:
+
+- Thought about long-term goals and plans, which I had neglected since the end of university.
+
+Bonus 5:
+
+- Made some delicious pizza.
