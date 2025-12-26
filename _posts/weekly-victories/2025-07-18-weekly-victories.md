@@ -15,4 +15,4 @@ Victory #2:
 
 Victory #3:
 
-- Recovered my [phone](https://kiankyars.github.io/tutorial/2025/07/15/iphone-hygiene.html) from the Gypsy robber.
+- Recovered my [phone](https://kiankyars.github.io/productivity/2025/07/15/iphone-hygiene.html) from the Gypsy robber.
