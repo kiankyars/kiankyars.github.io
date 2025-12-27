@@ -7,13 +7,17 @@ categories: machine_learning
 
 It turns out there aren't any explanations online on the difference between : and ... for Numpy and PyTorch!
 
-Colon (:): Means 'select all elements along this dimension'. For example, `tensor[:, 0]` selects all rows along the first column.
+Colon means 'select all elements along this dimension'. For example, `tensor[:, 0]` selects all rows along the first column.
 
-Ellipsis (...): The ellipsis is a shorthand for 'as many colons as needed to specify a full range of dimensions'. It fills in missing dimensions with full slices (:). This is particularly useful for higher-dimensional tensors.
+Ellipsis means 'as many colons as needed to specify a full range of dimensions'. It fills in missing dimensions with colons. This is particularly useful for higher-dimensional tensors.
 
-They are equivalent when the ellipsis can be unambiguously replaced by one or more colons to match the tensor's dimensions. For example, for a 2D tensor, `tensor[..., 0]` is equivalent to `tensor[:, 0]` because the ... expands to a single : to fill the first dimension.
+They are equivalent when the ellipsis can be replaced by one or more colons to match the tensor's dimensions. For example, for a 2D tensor, `tensor[..., 0]` is equivalent to `tensor[:, 0]` because the ... expands to a single : to fill the first dimension.
 
-However, they are not always equivalent. Consider a 3D tensor `tensor_3d`. `tensor_3d[..., 0]` would mean `tensor_3d[:, :, 0]` (select all rows and columns for the first element of the last dimension). But `tensor_3d[:, 0]` would mean `tensor_3d[:, 0, :]` (select all elements from the first dimension, the first element from the second dimension, and all elements from the third dimension).
+However, consider a 3D tensor `tensor_3d`. `tensor_3d[..., 0]` would mean `tensor_3d[:, :, 0]` (select all rows and columns for the first element of the last dimension). But `tensor_3d[:, 0]` would mean `tensor_3d[:, 0, :]` (select all elements from the first dimension, the first element from the second dimension, and all elements from the third dimension).
+
+Here's my drawing of `tensor_3d` with the two slices shaded in order:
+
+<img src="/imgs/colon-vs-ellipsis/tensor_3d.jpg" width="200"/>
 
 Let me show you with an example:
 ```python
