@@ -48,11 +48,11 @@ Victory #8:
 
 Victory #9:
 
-- Shabe Yalda with Anahita first and then Maryam, we laughed and ate a lot.
+- Shabe Yalda with Anahita first and then Maryam, we laughed and ate a lot (I ate too much).
 
 Victory #10:
 
-- Even though I eat pancakes every weekend courtesy of my mother, they were especially tasty this week.
+- Even though I eat pancakes every weekend courtesy of my mother, they were especially tasty this weekend.
 
 Victory #11:
 
