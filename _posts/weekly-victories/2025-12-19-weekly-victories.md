@@ -8,10 +8,10 @@ categories: reflection
 Victory #1:
 
 - Yearly reunion w/ the boys, bets are currently on where the 2026 reunion will happen.
-    - December 19th, 2025
-- ![](/imgs/2025-12-19-weekly-victories/2025.jpg)
-    - December 22nd, 2024
-- ![](/imgs/2025-12-19-weekly-victories/2024.jpg)
+- December 19th, 2025
+    - ![](/imgs/2025-12-19-weekly-victories/2025.jpg)
+- December 22nd, 2024
+    - ![](/imgs/2025-12-19-weekly-victories/2024.jpg)
 
 Victory #2:
 
