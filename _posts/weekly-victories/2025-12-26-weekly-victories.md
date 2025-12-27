@@ -22,26 +22,38 @@ Victory #3:
 
 - Restarted deepwork consistently; we locked in!
 
-Bonus 1:
+Victory #4:
 
 - Caught up with Samarth after 4 years.
     - ![](/imgs/2025-12-26-weekly-victories/stacked.jpeg)
 
-Bonus 2:
+Victory #5:
 
-- Checked out new library by our house
+- Checked out the new library by our house, it's way better and 3x bigger!
 
-Bonus 3:
+Victory #6:
 
-- Shabe yalda, pancakes, monday terrible, Jean-Luc
+- Did a google meet with Jean-Luc, who I hadn't spoken to since leaving France in 2023.
 
-Bonus 4:
+Victory #7:
 
 - Painted warhammers with Dev and ate KFC for first time.
     - ![](/imgs/2025-12-26-weekly-victories/kfc.jpg)
 
-Bonus 5:
+Victory #8:
 
 - Spent quality time with mom, including making another amazing pizza.
     - ![](/imgs/2025-12-26-weekly-victories/pizza.jpeg)
     - ![](/imgs/2025-12-26-weekly-victories/santa.jpeg)
+
+Victory #9:
+
+- Shabe Yalda with Anahita first and then Maryam, we laughed and ate a lot.
+
+Victory #10:
+
+- Even though I eat pancakes every weekend courtesy of my mother, they were especially tasty this week.
+
+Victory #11:
+
+- Monday was hell (didn't sleep Sunday-Monday), but my resilience is so strong that I was back to 100% Tuesday.

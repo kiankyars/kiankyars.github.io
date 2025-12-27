@@ -20,11 +20,11 @@ Victory #3:
 - Productive meeting with mom's accountant
 - There's still so much to learn, of course. Tax optimization in the corporate world is insanely complex, but I think it's kind of cool too.
 
-Bonus 1:
+Victory #4:
 
 - Reunited with my boy Ian at stairs.
 - ![](/imgs/2025-10-10-weekly-victories/stairs.jpg)
 
-Bonus 2:
+Victory #5:
 
 - Monday and Tuesday were both wasted days, Monday was worse, just wasted time on Youtube.

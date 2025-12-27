@@ -20,6 +20,6 @@ Victory #3:
 
 - Shaved my beard after > 2 months (refer to supercell picture).
 
-Bonus 1:
+Victory #4:
 
 - Nice boat ride through the Espoo archipelago on Wednesday with the people from Espoo who make FR8 possible, very grateful to them!

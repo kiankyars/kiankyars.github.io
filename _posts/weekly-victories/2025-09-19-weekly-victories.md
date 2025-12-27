@@ -17,11 +17,11 @@ Victory #3:
 
 - Yoga class on Thursday with Steve the goat.
 
-Bonus 1:
+Victory #4:
 
 - Took the big friendly giant (my enduro bike) for a rip the day after I got back home.
 
-Bonus 2:
+Victory #5:
 
 - Passed the baton to the next leader of the UofARC.
 - ![](/imgs/2025-09-19-weekly-victories/collage.jpg)

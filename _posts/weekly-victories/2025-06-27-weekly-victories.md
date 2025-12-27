@@ -19,7 +19,7 @@ Victory #3:
 
 - Beauty 16 run on Wednesday with Nantte, talking about the foundations of FR8 and doing hard things; great running week with overall ~100 km ran.
 
-Bonus 1:
+Victory #4:
 
 - Finished USPB series and will get recognition from Thomas Wolf.
 - ![Saturday](/imgs/2025-06-27-weekly-victories/saturday.jpeg)

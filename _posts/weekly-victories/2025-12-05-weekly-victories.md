@@ -17,6 +17,6 @@ Victory #3:
 
 - Did an interview on Monday morning for a TA position in a deep learning upskill course happening in London. My interviewer told me I did well and I just explained the transformer to him, I find out the result next Monday.
 
-Bonus 1:
+Victory #4:
 
 - Went on a few walks with my good friend Elliot and they were really enjoyable.

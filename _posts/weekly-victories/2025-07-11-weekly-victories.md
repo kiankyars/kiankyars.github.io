@@ -20,14 +20,14 @@ Victory #3:
 
 - Very satisfying and fulfilling work on [FLE](https://jackhopkins.github.io/factorio-learning-environment/), especially on Thursday (demon mode learning openai dota 2 paper and code monkeying).
 
-Bonus 1:
+Victory #4:
 
 - Attempt to go viral by launching [twtr](https://github.com/kiankyars/twtr), ngmi.
 
-Bonus 2:
+Victory #5:
 
 - Spoke with [Lukas](https://lukaspetersson.com), great insights.
 
-Bonus 3:
+Victory #6:
 
 - I think I went to the sauna every day this week, ngl doesn't seem to help me fall asleep but is amazing nonetheless.

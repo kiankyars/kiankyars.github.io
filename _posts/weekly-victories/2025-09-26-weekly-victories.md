@@ -17,6 +17,6 @@ Victory #3:
 
 - Meeting amazing people and having fun while suffering on the bike trup.
 
-Bonus 1:
+Victory #4:
 
 - Got the job offer! 😉

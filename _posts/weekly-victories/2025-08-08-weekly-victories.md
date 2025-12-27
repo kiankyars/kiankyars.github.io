@@ -22,6 +22,6 @@ Victory #3:
 - Did a 30 km run on Tuesday, felt a mild runner's high, and found a beautiful lake, that was great!
 - ![](/imgs/2025-08-08-weekly-victories/berries.jpeg)
 
-Bonus 1:
+Victory #4:
 
 - Participated in a Finnish sitsit on Friday night, will remember that!

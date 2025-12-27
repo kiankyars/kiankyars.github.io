@@ -17,10 +17,10 @@ Victory #3:
 
 - Restarted daily walks with my uncle, will continue until he leaves at the end of the month!
 
-Bonus 1:
+Victory #4:
 
 - Ich bin zum Stammtisch meiner Universität für das erstes mal gegangen und hat mein deutsch gut benutzt, es war schön obwhol es dort wenig zu essen gab (es gab nur Pommes).
 
-Bonus 2:
+Victory #5:
 
 - Finished editing all of the videos from my cycling trip!

@@ -17,10 +17,10 @@ Victory #3:
 
 - Made a Wikipedia account, and contributed to various pages, which was fun.
 
-Bonus 1:
+Victory #4:
 
 - Decluttered a lot of bookmarks and was scared by Safari twice thinking that it had deleted my tabs, but I clutched them back both times, and I also decluttered my room.
 
-Bonus 2:
+Victory #5:
 
 - Played Battlefield 3 on my Xbox 360 on Sunday as a reward for clutching the Safari tabs, but it honestly is a shit game.

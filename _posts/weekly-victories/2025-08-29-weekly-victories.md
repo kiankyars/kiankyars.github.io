@@ -24,26 +24,26 @@ Victory #3:
 - Met Thomas Wolfe
 - ![](/imgs/2025-08-29-weekly-victories/uspb.HEIC)
 
-Bonus 1:
+Victory #4:
 
 - Amazing run with Nantte on Thursday to discuss my LIFE plans and ambitions and hopes and desires and intentions.
 
-Bonus 2:
+Victory #5:
 
 - Future employement prospects are great.
 
-Bonus 3:
+Victory #6:
 
 - 🤞 I will be biking from Edmonton to Vancouver in September via Highway 3.
 
-Bonus 4:
+Victory #7:
 
 - Started sleeping with my phone in the same room so I can tell siri what my dreams were right when I wake up before I instantly forget.
 
-Bonus 5:
+Victory #8:
 
 - FR8 people are so fucking awesome man.
 
-Bonus 6:
+Victory #9:
 
 - Nils' Titbits, iykyk.
