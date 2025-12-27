@@ -6,4 +6,3 @@ categories: life
 ---
 
 Truly committing oneself to a singular priority over many months is insanely difficult. The more experience I ammase, the more I think that this is what separates the followers from the creators.
-
