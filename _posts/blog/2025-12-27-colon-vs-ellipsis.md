@@ -2,7 +2,7 @@
 layout: post
 title: Colon Vs Ellipsis
 date: 2025-12-27
-categories: 
+categories: machine_learning
 ---
 
 It turns out there aren't any explanations online on the difference between : and ... for Numpy and PyTorch!
