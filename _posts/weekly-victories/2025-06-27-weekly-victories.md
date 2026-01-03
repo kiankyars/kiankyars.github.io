@@ -8,12 +8,12 @@ categories: reflection
 Victory #1:
 
 - Attended AI Builder night in Helsinki on Thursday.
-- ![LLM Night](/imgs/2025-06-27-weekly-victories/llmnight.jpeg)
+- ![](/imgs/2025-06-27-weekly-victories/llmnight.jpeg)
 
 Victory #2:
 
 - 1:30 am catan game on Friday (technically Saturday).
-- ![Friday](/imgs/2025-06-27-weekly-victories/friday.jpeg)
+- ![](/imgs/2025-06-27-weekly-victories/friday.jpeg)
 
 Victory #3:
 
@@ -22,4 +22,4 @@ Victory #3:
 Victory #4:
 
 - Finished USPB series and will get recognition from Thomas Wolf.
-- ![Saturday](/imgs/2025-06-27-weekly-victories/saturday.jpeg)
+- ![](/imgs/2025-06-27-weekly-victories/saturday.jpeg)
