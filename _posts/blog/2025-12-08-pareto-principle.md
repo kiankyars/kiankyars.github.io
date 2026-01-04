@@ -9,3 +9,4 @@ categories: life
 
 - Shovelling snow
 - Scraping food off of the plate
+- I made a course about pipeline parallelism and 80% of the work took 20% of the time and the remaining 20% of the work took 80% of the time.

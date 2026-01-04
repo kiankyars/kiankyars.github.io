@@ -15,7 +15,7 @@ They are equivalent when the ellipsis can be replaced by one or more colons to m
 
 However, consider a 3D tensor `tensor_3d`. `tensor_3d[..., 0]` would mean `tensor_3d[:, :, 0]` (select all rows and columns for the first element of the last dimension). But `tensor_3d[:, 0]` would mean `tensor_3d[:, 0, :]` (select all elements from the first dimension, the first element from the second dimension, and all elements from the third dimension).
 
-Here's my drawing of `tensor_3d` with the two slices shaded in order:
+I drew `tensor_3d` with the two slices shaded in order:
 
 <img src="/imgs/colon-vs-ellipsis/tensor_3d.jpg" width="200"/>
 
@@ -28,13 +28,11 @@ print("Original 3D Tensor shape:", tensor_3d.shape)
 print("Original 3D Tensor:\n", tensor_3d)
 
 print("\n--- Using Ellipsis (...) ---")
-# tensor_3d[..., 0] means tensor_3d[:, :, 0]
 result_ellipsis = tensor_3d[..., 0]
 print("Result of tensor_3d[..., 0] shape:", result_ellipsis.shape)
 print("Result of tensor_3d[..., 0]:\n", result_ellipsis)
 
 print("\n--- Using Colon (:) ---")
-# tensor_3d[:, 0] means tensor_3d[:, 0, :]
 result_colon = tensor_3d[:, 0]
 print("Result of tensor_3d[:, 0] shape:", result_colon.shape)
 print("Result of tensor_3d[:, 0]:\n", result_colon)
