@@ -4,6 +4,10 @@ title: "Projects"
 permalink: /projects/
 ---
 
+### [2025](https://github.com/kiankyars/2025)
+
+A project which projects your high agency and low agency futures based on your journals, fully private.
+
 ### [langviz](https://github.com/kiankyars/langviz)
 
 Fun language visualization tool to test my iteration speed. Globe.GL is sick!
