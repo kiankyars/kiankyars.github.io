@@ -6,8 +6,7 @@ permalink: /now/
 
 ## What I'm doing now
 
-- Finished school
-- Working at a startup
+- Quit at a startup, doing something new
 - Living life with people I love
 
 ### What I'm currently reading

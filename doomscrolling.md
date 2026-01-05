@@ -20,6 +20,10 @@ permalink: /doomscrolling/
 
 #### 3 (I lacked three times in the last week of the month, smh!)
 
-## Decemeber
+## December
 
 #### 0 (so proud of myself, this is how you bring momentum into the new year!)
+
+## January
+
+#### 0 so far
