@@ -6,12 +6,11 @@ import sys
 now = datetime.now()
 
 date_str = now.strftime("%Y-%m-%d")
-arg = sys.argv[1]
-if arg == "w":
+if sys.argv[1] == "w":
     filename = f"{date_str}-weekly-victories.md"
     POSTS_DIR = f"_posts/weekly-victories"
 else:
-    filename = f"{date_str}-{arg}.md"
+    filename = f"{date_str}-{sys.argv[1]}.md"
     POSTS_DIR = f"_posts/blog"
 
 filepath = os.path.join(POSTS_DIR, filename)
@@ -19,21 +18,10 @@ filepath = os.path.join(POSTS_DIR, filename)
 with open(filepath, "w") as f:
     f.write(f"""---
 layout: post
-title: {"Weekly Victories" if arg == "w" else arg.replace("-", " ").title()}
+title: {"Weekly Victories" if sys.argv[1] == "w" else sys.argv[1].replace("-", " ").title()}
 date: {date_str}
-categories: {'''reflection
+categories: {f'''reflection
 ---
 
-Victory #1:
-
-- 
-
-Victory #2:
-
-- 
-
-Victory #3:
-
-- 
-''' if arg == "w" else "\n---"}""")
+{'\n'.join([f'Victory #{n}:\n\n- \n' for n in range(int(sys.argv[2]))])}''' if sys.argv[1] == "w" else "\n---"}""")
 print(f"Created: {filepath}")

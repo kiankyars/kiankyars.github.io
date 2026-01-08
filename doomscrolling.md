@@ -4,7 +4,7 @@ title: "Doomscrolling"
 permalink: /doomscrolling/
 ---
 
-### Here I track how many times per month I doomscroll as a great heuristic for my life well-being and productivity
+Here I track how many times per month I doomscroll as a heuristic for my life well-being and productivity
 
 # 2025
 
@@ -23,6 +23,8 @@ permalink: /doomscrolling/
 ## December
 
 #### 0 (so proud of myself, this is how you bring momentum into the new year!)
+
+# 2026
 
 ## January
 

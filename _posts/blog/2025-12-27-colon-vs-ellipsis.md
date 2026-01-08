@@ -7,15 +7,15 @@ categories: machine_learning
 
 It turns out there aren't any explanations online on the difference between : and ... for Numpy and PyTorch!
 
-Colon means 'select all elements along this dimension'. For example, `tensor[:, 0]` selects all rows along the first column.
+Colon means *select all elements along this dimension*. For example, `tensor[:, 0]` selects all rows along the first column.
 
-Ellipsis means 'as many colons as needed to specify a full range of dimensions'. It fills in missing dimensions with colons. This is particularly useful for higher-dimensional tensors.
+Ellipsis means *as many colons as needed to specify a full range of dimensions*. It fills in missing dimensions with colons. This is particularly useful for higher-dimensional tensors.
 
-They are equivalent when the ellipsis can be replaced by one or more colons to match the tensor's dimensions. For example, for a 2D tensor, `tensor[..., 0]` is equivalent to `tensor[:, 0]` because the ... expands to a single : to fill the first dimension.
+The ellipsis can be replaced by one or more colons to match the tensor's dimensions, consider a 3D tensor `tensor_3d`. `tensor_3d[..., 0]` is equivalent to `tensor_3d[:, :, 0]` because the ... expands to fill the first two dimensions.
 
-However, consider a 3D tensor `tensor_3d`. `tensor_3d[..., 0]` would mean `tensor_3d[:, :, 0]` (select all rows and columns for the first element of the last dimension). But `tensor_3d[:, 0]` would mean `tensor_3d[:, 0, :]` (select all elements from the first dimension, the first element from the second dimension, and all elements from the third dimension).
+`tensor_3d[..., 0]` and `tensor_3d[:, :, 0]` both mean select all rows and columns for the first element of the last dimension, but `tensor_3d[:, 0]` and `tensor_3d[:, 0, :]` mean select all elements from the first dimension, the first element from the second dimension, and all elements from the third dimension.
 
-I drew `tensor_3d` with the two slices shaded in order:
+I drew `tensor_3d` with the two different slices in order:
 
 <img src="/imgs/colon-vs-ellipsis/tensor_3d.jpg" width="200"/>
 
