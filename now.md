@@ -6,12 +6,11 @@ permalink: /now/
 
 ## What I'm doing now
 
-- Quit at a startup, doing something new
-- Living life with people I love
+- In SF
+- LISA RESIDENCY
 
 ### What I'm currently reading
 
-<!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
 <style type="text/css" media="screen">
   .gr_custom_container_1748819217 {
     /* customize your Goodreads widget container here*/

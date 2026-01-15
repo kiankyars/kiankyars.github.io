@@ -4,6 +4,12 @@ title: "About"
 permalink: /about/
 ---
 
-I am mostly interested in machine learning and software engineering. Lately, a lot of my focus has been on Large Language Models.
+I am passionate about 5 things.
 
-Outside of work, I enjoy [running](https://www.strava.com/athletes/kyars), creating [technical content](https://www.youtube.com/@neuralkian), and going into [Wikipedia](https://en.wikipedia.org/wiki/User:Kyars) rabbit holes.
+- learning
+- teaching
+- running
+- languages
+- travelling
+
+To that end, I teach [technical content](https://www.youtube.com/@neuralkian), and contribute to [Wikipedia](https://en.wikipedia.org/wiki/User:Kyars).
