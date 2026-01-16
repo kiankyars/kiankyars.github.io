@@ -3,8 +3,6 @@ layout: default
 title: Blog
 ---
 
-## Blog
-
 {% for post in site.posts %}
 {% if post.title != "Weekly Victories" %}
 
