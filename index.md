@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Kian Kyars
 ---
 
@@ -43,10 +44,6 @@ title: Kian Kyars
       <a href="https://calendar.app.google/zCVm4G9X42sqKqfX8" class="icon">
         <img src="./icons/calendar.svg" alt="Co-working">
         <span>Co-working</span>
-      </a>
-      <a href="mailto:kkyars@ualberta.ca" class="icon">
-        <img src="./icons/email.svg" alt="Email">
-        <span>Email</span>
       </a>
       <a href="https://kiankyars.github.io/" class="icon">
         <img src="./icons/blog.svg" alt="Blog">

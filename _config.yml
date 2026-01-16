@@ -6,13 +6,16 @@ url: "https://kiankyars.github.io"
 twitter_username: neuralkian
 github_username: kiankyars
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: default
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minima:
+  skin: auto
+  header_pages:
+    - pages/about.md
+    - pages/now.md
+    - pages/projects.md
+    - pages/doomscrolling.md
+    - pages/weekly-victories.md
+    - pages/blog.md
