@@ -2,26 +2,24 @@ import os
 from datetime import datetime
 import sys
 
-# Get today's date
-now = datetime.now()
+date_str = datetime.now().strftime("%Y-%m-%d")
+is_weekly = sys.argv[1] == "w"
 
-date_str = now.strftime("%Y-%m-%d")
-if sys.argv[1] == "w":
-    filename = f"{date_str}-weekly-victories.md"
-    POSTS_DIR = f"_posts/weekly-victories"
-else:
-    filename = f"{date_str}-{sys.argv[1]}.md"
-    POSTS_DIR = f"_posts/blog"
+filename = f"{date_str}-{'weekly-victories' if is_weekly else sys.argv[1]}.md"
+post_dir = f"_posts/{'weekly-victories' if is_weekly else 'blog'}"
+filepath = os.path.join(post_dir, filename)
 
-filepath = os.path.join(POSTS_DIR, filename)
+title = "Weekly Victories" if is_weekly else sys.argv[1].replace("-", " ").title()
+categories = "reflection" if is_weekly else ""
+content = '\n'.join([f'Victory #{n}:\n\n- \n' for n in range(int(sys.argv[2]))]) if is_weekly else ""
 
 with open(filepath, "w") as f:
     f.write(f"""---
 layout: post
-title: {"Weekly Victories" if sys.argv[1] == "w" else sys.argv[1].replace("-", " ").title()}
+title: {title}
 date: {date_str}
-categories: {f'''reflection
+categories: {categories}
 ---
 
-{'\n'.join([f'Victory #{n}:\n\n- \n' for n in range(int(sys.argv[2]))])}''' if sys.argv[1] == "w" else "\n---"}""")
+{content}""")
 print(f"Created: {filepath}")
