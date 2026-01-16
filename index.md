@@ -6,7 +6,6 @@ layout: default
 
 <div class="container">
   <div class="content">
-    <h1 class="title">Hello, I'm Kian</h1>
     <div class="icons">
       <a href="https://github.com/kiankyars" class="icon">
         <img src="./icons/github.svg" alt="GitHub">
