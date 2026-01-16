@@ -3,6 +3,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+nav {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
     min-height: 90vh;
     display: flex;

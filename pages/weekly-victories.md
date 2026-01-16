@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Weekly Victories"
 permalink: /weekly-victories/
 ---
