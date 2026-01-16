@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
-
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {%- include head.html -%}
-
-    <style>
-      .site-nav { position: sticky !important; top: 0; z-index: 1000; background: white; }
-      @media (max-width: 768px) {
-        .site-nav .wrapper { display: flex; flex-wrap: wrap; gap: 12px; padding: 10px 0; }
-      }
-    </style>
-
+<style>
+  .site-nav { position: sticky !important; top: 0; z-index: 1000; background: white; }
+  @media (max-width: 768px) {
+    .site-nav .wrapper { display: flex; flex-wrap: wrap; gap: 12px; padding: 10px 0; }
+  }
+</style>
 <body>
-    <nav class="site-nav">
-        <div class="wrapper">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/now">Now</a>
-            <a href="/projects">Projects</a>
-            <a href="/doomscrolling">Doomscrolling</a>
-            <a href="/weekly-victories">Weekly Victories</a>
-            <a href="/blog">Blog</a>
-        </div>
-    </nav> 
-
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-    </main>
-
-  </body>
-
+{%- include nav.html -%}
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">{{ content }}</div>
+</main>
+</body>
 </html>
