@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Kian Kyars
 ---
 
 <link rel="stylesheet" href="/assets/styles.css">
