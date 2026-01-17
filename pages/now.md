@@ -7,7 +7,6 @@ permalink: /now/
 ## What I'm doing now
 
 - In SF
-- LISA RESIDENCY
 
 ### What I'm currently reading
 
