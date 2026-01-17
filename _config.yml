@@ -1,9 +1,6 @@
-title: Kian Kyars
 email: kiankyars@gmail.com
-description: Kian Kyars's personal blog
-baseurl: "/"
-url: "https://kiankyars.github.io"
 
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
