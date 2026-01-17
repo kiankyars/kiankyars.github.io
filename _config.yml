@@ -7,11 +7,11 @@ url: "https://kiankyars.github.io"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-minima:
-  header_pages:
-    - pages/about.md
-    - pages/now.md
-    - pages/projects.md
-    - pages/doomscrolling.md
-    - pages/weekly-victories.md
-    - pages/blog.md
+
+header_pages:
+  - pages/about.md
+  - pages/now.md
+  - pages/projects.md
+  - pages/doomscrolling.md
+  - pages/weekly-victories.md
+  - pages/blog.md
