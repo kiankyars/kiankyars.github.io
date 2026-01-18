@@ -7,7 +7,7 @@ categories: reflection
 
 Victory #0:
 
-- 
+- Went skiing with my mom.
 
 Victory #1:
 
@@ -27,4 +27,4 @@ Victory #4:
 
 L #1:
 
-- Doing this a day late.
+- Doing this a week late.
