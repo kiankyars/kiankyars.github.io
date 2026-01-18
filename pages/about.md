@@ -11,4 +11,4 @@ I am passionate about 4 things.
 - natural languages
 - travelling
 
-To that end, I teach [technical content](https://www.youtube.com/@neuralkian), and contribute to [Wikipedia](https://en.wikipedia.org/wiki/User:Kyars).
+I teach [technical content](https://www.youtube.com/@neuralkian), and contribute to [Wikipedia](https://en.wikipedia.org/wiki/User:Kyars).
