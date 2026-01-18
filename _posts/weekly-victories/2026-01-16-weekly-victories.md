@@ -24,3 +24,7 @@ Victory #3:
 Victory #4:
 
 - Last week of work and getting tasks done which I was delaying for years.
+
+Victory #5:
+
+- Went to airport to say goodbye to family who were visting.

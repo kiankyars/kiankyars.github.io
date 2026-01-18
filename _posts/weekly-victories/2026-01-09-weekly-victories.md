@@ -11,20 +11,28 @@ Victory #0:
 
 Victory #1:
 
-- 
+- Honest life conversations with my mom on Friday.
 
 Victory #2:
 
-- 
+- Told my colleagues I'm resigning, which was quite nerve-wracking
 
 Victory #3:
 
-- 
+- Played a lot of hockey.
 
 Victory #4:
 
-- 
+- Cried after getting rejected from a program, crying is good!
+
+Victory #5:
+
+- Went to Anahita's house with lots of good food.
+
+L #0:
+
+- Doing this a 8 days late.
 
 L #1:
 
-- Doing this a week late.
+- Way too many highs and lows this week–bipolar.
