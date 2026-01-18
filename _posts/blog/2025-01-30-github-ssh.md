@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Github Ssh
+title: Github SSH
 date: 2025-01-30
-categories: 
+categories: software
 ---
-
-# SSH Key Setup Guide
 
 Follow these numbered steps to set up your SSH key for GitHub:
 

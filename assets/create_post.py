@@ -3,9 +3,12 @@ from datetime import datetime
 import sys
 
 # Get today's date
-now = datetime.now()
+date = datetime.now()
+if not sys.argv[3]:
+    date_str = date.strftime("%Y-%m-%d")
+else:
+    date_str = date.strftime(f"%Y-%m-%{sys.argv[3]}")
 
-date_str = now.strftime("%Y-%m-%d")
 if sys.argv[1] == "w":
     filename = f"{date_str}-weekly-victories.md"
     POSTS_DIR = f"_posts/weekly-victories"

@@ -27,4 +27,4 @@ Victory #4:
 
 Victory #5:
 
-- Went to airport to say goodbye to family who were visting.
+- Went to airport to say goodbye to family who were visting on Saturday and had deep conversations with my cousin.
