@@ -33,7 +33,7 @@ Reasoning paths that yield correct answers tend to have lower branching factors,
 
 ## Similarity Divergence
 
-![](/imgs/cot-intervention/similarity_divergence.png)
+![](/imgs/2025-03-25-cot-intervention/similarity_divergence.png)
 
 Correct paths maintain higher similarity, suggesting consistency in reasoning. Incorrect paths diverge more, reflecting erratic decision-making. The first step shows perfect similarity since it's consistently the same. SentenceTransformer was used to embed the reasoning steps in both experiments.
 
