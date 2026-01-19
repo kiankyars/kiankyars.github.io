@@ -17,7 +17,7 @@ The ellipsis can be replaced by one or more colons to match the tensor's dimensi
 
 I drew `tensor_3d` with the two different slices in order:
 
-<img src="/imgs/colon-vs-ellipsis/tensor_3d.jpg" width="200"/>
+<img src="/imgs/2025-12-27-colon-vs-ellipsis/tensor_3d.jpg" width="200"/>
 
 Let me show you with an example:
 ```python

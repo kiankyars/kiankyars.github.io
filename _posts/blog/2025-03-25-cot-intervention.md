@@ -27,7 +27,7 @@ This resulted in a dataset of 100 formal logic questions, each with 10 CoT answe
 
 ## Branching Factor Analysis
 
-![](/imgs/cot-intervention/branching_factor.png)
+![](/imgs/2025-03-25-cot-intervention/branching_factor.png)
 
 Reasoning paths that yield correct answers tend to have lower branching factors, suggesting more deterministic steps. In contrast, incorrect paths show higher branching, indicating greater uncertainty or divergence. The first step, being manually planted, maintains a branching factor of 1.
 
