@@ -4,10 +4,10 @@ import sys
 
 # Get today's date
 date = datetime.now()
-if not sys.argv[3]:
-    date_str = date.strftime("%Y-%m-%d")
-else:
+if len(sys.argv) == 4:
     date_str = date.strftime(f"%Y-%m-%{sys.argv[3]}")
+else:
+    date_str = date.strftime("%Y-%m-%d")
 
 if sys.argv[1] == "w":
     filename = f"{date_str}-weekly-victories.md"
