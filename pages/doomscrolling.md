@@ -13,7 +13,7 @@ Here I track how many times per month I doomscroll as a heuristic for my life we
 
 ## October
 
-#### 3 (youtube doomscrolling, number two and three are due to my sudden obsession with competitive food eaters (beardmeatsfood))
+#### 3 (Youtube doomscrolling, number two and three are due to my sudden obsession with competitive food eater beardmeatsfood!)
 
 ## November
 
@@ -21,7 +21,7 @@ Here I track how many times per month I doomscroll as a heuristic for my life we
 
 ## December
 
-#### 0 (so proud of myself, this is how you bring momentum into the new year!)
+#### 0 (So proud of myself, this is how you bring momentum into the new year!)
 
 # 2026
 
