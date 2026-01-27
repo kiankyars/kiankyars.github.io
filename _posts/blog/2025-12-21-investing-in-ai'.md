@@ -11,4 +11,4 @@ ASML targets are as high as 1200 euros, and MU targets are $330!
 
 What's the best intrument?
 
-Buying stock and holding is low agency. You need leverage, but margin is too dangerous for you, then choose LEAPS (Long-Term Equity Anticipation Securities).
+Buying stock and holding is low agency. You need leverage, but if margin is too dangerous for you, then choose LEAPS (Long-Term Equity Anticipation Securities).
