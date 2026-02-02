@@ -12,7 +12,7 @@ Victory #1:
 Victory #2:
 
 - Had some nice weather.
-    - ![](/imgs/2026-01-02-weekly-victories/weather.PNG)
+  - ![](/imgs/2026-01-02-weekly-victories/weather.PNG)
 
 Victory #3:
 
@@ -41,7 +41,7 @@ Victory #8:
 
 I'm also going to do a daily summary because why not?
 
-On December 27th, we were supposed to go to our relative's house for a birthday dinner, but they unfortunately became sick, so it was cancelled, and I instead locked in for the entire day on micro peepee and didn't eat until 7 p.m. in the evening, because I wanted to finish it before eating. I had some nice oatmeal and banana peanut butter bagel for dinner and got a lot of the series done. In fact, the first 80% was finished that day. 
+On December 27th, we were supposed to go to our relative's house for a birthday dinner, but they unfortunately became sick, so it was cancelled, and I instead locked in for the entire day on micro peepee and didn't eat until 7 p.m. in the evening, because I wanted to finish it before eating. I had some nice oatmeal and banana peanut butter bagel for dinner and got a lot of the series done. In fact, the first 80% was finished that day.
 
 On the following Sunday the 28th, I continued grinding on the series and I was home alone because my mom was on call and my sister was in Camrose. But it was still a great period of productivity. The fact remained though that I didn't finish G pipe or 1F1B due to the technical complexity. But I can't complain and then I went to the rink with Elliot in the evening and we talked about startup ideas, I told myself once I came back that I would finish the series but I was just too tired and you can't record content when you're tired. I also learned some key computer engineering concepts this day, such as race conditions and deadlock.
 

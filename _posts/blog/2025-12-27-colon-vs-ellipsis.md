@@ -7,9 +7,9 @@ categories: machine_learning
 
 It turns out there aren't any explanations online on the difference between : and ... for Numpy and PyTorch!
 
-Colon means *select all elements along this dimension*. For example, `tensor[:, 0]` selects all rows along the first column.
+Colon means _select all elements along this dimension_. For example, `tensor[:, 0]` selects all rows along the first column.
 
-Ellipsis means *as many colons as needed to specify a full range of dimensions*. It fills in missing dimensions with colons. This is particularly useful for higher-dimensional tensors.
+Ellipsis means _as many colons as needed to specify a full range of dimensions_. It fills in missing dimensions with colons. This is particularly useful for higher-dimensional tensors.
 
 The ellipsis can be replaced by one or more colons to match the tensor's dimensions, consider a 3D tensor `tensor_3d`. `tensor_3d[..., 0]` is equivalent to `tensor_3d[:, :, 0]` because the ... expands to fill the first two dimensions.
 
@@ -20,6 +20,7 @@ I drew `tensor_3d` with the two different slices in order:
 <img src="/imgs/2025-12-27-colon-vs-ellipsis/tensor_3d.jpg" width="200"/>
 
 Let me show you with an example:
+
 ```python
 import torch
 
@@ -37,6 +38,7 @@ result_colon = tensor_3d[:, 0]
 print("Result of tensor_3d[:, 0] shape:", result_colon.shape)
 print("Result of tensor_3d[:, 0]:\n", result_colon)
 ```
+
 ```text
 Original 3D Tensor shape: torch.Size([2, 3, 4])
 Original 3D Tensor:
