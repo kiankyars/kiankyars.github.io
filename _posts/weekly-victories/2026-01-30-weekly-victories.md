@@ -31,11 +31,11 @@ Victory #5:
 
 Victory #6:
 
-- 
+- Met Dwarkesh
 
 Victory #7:
 
-- 
+- Jane Street game night.
 
 Victory #8:
 
