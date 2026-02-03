@@ -41,7 +41,7 @@ Victory #7:
 
 Victory #8:
 
-- Volunteered at Alcatraz island, great to meet Sheila, Allison, Hans, and Morgan.
+- Volunteered at Alcatraz island, great to meet Shelagh, Allison, Hans, and Morgan.
 
 Victory #9:
 
