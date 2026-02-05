@@ -12,3 +12,8 @@ ASML targets are as high as 1200 euros, and MU targets are $330!
 What's the best intrument?
 
 Buying stock and holding is low agency. You need leverage, but if margin is too dangerous for you, then choose LEAPS (Long-Term Equity Anticipation Securities).
+
+Feb 3, 2026 at 12:25 Update:
+
+- Beyond the financial loss the option has literally been preoccuping me since Friday
+- I shouldn't have invested in short-term options (greed took over)

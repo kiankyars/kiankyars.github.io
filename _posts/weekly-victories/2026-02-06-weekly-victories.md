@@ -16,15 +16,15 @@ Victory #1:
 
 Victory #2:
 
-- 
+- Co-worked at the SPC office.
 
 Victory #3:
 
-- 
+- Slept on the proverbial SF couch.
 
 Victory #4:
 
-- 
+- Made course on Open Claw.
 
 Victory #5:
 
