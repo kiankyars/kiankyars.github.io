@@ -3,6 +3,11 @@ title: "Projects"
 permalink: /projects/
 ---
 
+### freeCodeCamp courses
+
+- [Course 1](https://www.youtube.com/watch?v=n1sfrc-RjyM)
+- [Course 2](https://www.youtube.com/watch?v=D5F8kp_azzw)
+
 ### [2025](https://github.com/kiankyars/2025)
 
 A project which projects your high agency and low agency futures based on your journals, fully private.
