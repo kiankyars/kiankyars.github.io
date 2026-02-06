@@ -5,8 +5,8 @@ permalink: /projects/
 
 ### freeCodeCamp courses
 
-- [Course 1](https://www.youtube.com/watch?v=n1sfrc-RjyM)
-- [Course 2](https://www.youtube.com/watch?v=D5F8kp_azzw)
+- [OpenClaw – autonomous agent & messaging gateway](https://www.youtube.com/watch?v=n1sfrc-RjyM)
+- [Pipeline parallelism from scratch](https://www.youtube.com/watch?v=D5F8kp_azzw)
 
 ### [2025](https://github.com/kiankyars/2025)
 
