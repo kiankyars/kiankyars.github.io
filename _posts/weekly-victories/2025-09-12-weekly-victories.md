@@ -5,14 +5,14 @@ date: 2025-09-12
 categories: reflection
 ---
 
-Victory #1:
+Victory #0:
 
 - Went to my cousin's wedding on Sunday which was very amusing.
 
-Victory #2:
+Victory #1:
 
 - Donated plasma for the first time.
 
-Victory #3:
+Victory #2:
 
 - Spending quality time with my family in Ottawa.

@@ -5,18 +5,18 @@ date: 2025-12-12
 categories: reflection
 ---
 
-Victory #1:
+Victory #0:
 
 - Restarted using FocusMate!
 
-Victory #2:
+Victory #1:
 
 - Uploaded videos daily until Wednesday, will make up for it by uploading three videos today.
 
-Victory #3:
+Victory #2:
 
 - Did a 39 km run, was good for the mind.
 
-Victory #4:
+Victory #3:
 
 - Cleaned up this site.

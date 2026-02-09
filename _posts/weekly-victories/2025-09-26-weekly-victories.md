@@ -5,18 +5,18 @@ date: 2025-09-26
 categories: reflection
 ---
 
-Victory #1:
+Victory #0:
 
 - Embarked on cycling journey through the rockies.
 
-Victory #2:
+Victory #1:
 
 - Attended second wedding this month, so much fun to celebrate!
 
-Victory #3:
+Victory #2:
 
 - Meeting amazing people and having fun while suffering on the bike trup.
 
-Victory #4:
+Victory #3:
 
 - Got the job offer! 😉
