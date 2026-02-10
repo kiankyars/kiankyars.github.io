@@ -1,48 +1,48 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .content {
-    text-align: center;
+  text-align: center;
 }
 
 .title {
-    font-size: 2rem;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 80px);
-    gap: 0.75rem;
-    margin: 1rem auto 0;
-    max-width: 560px;
-    width: 100%;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
+  gap: 0.75rem;
+  margin: 1rem auto 0;
+  max-width: 560px;
+  width: 100%;
+  justify-content: center;
 }
 
 .icon {
-    display: grid;
-    text-decoration: none;
-    color: inherit;
-    aspect-ratio: 1 / 1;
+  display: grid;
+  text-decoration: none;
+  color: inherit;
+  aspect-ratio: 1 / 1;
 }
 
 .icon img {
-    width: 40px;
-    height: 40px;
-    place-self: center;
+  width: 40px;
+  height: 40px;
+  place-self: center;
 }
 
 .icon span {
-    display: none;
+  display: none;
 }
