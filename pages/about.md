@@ -24,3 +24,7 @@ I identify as follows (I have not thought enough about the order yet to rank the
 - Learner
 - Teacher
 - Hard-worker
+
+I heavily prefer asymmetric longtail outcomes over guaranteed ones.
+
+I used to do weekly review but they were not effective so I stopped.

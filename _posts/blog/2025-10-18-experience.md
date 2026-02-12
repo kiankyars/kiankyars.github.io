@@ -16,3 +16,7 @@ I have quite a few learnings from [FR8](fr8.so) that I want to be more intention
 - how to be more confrontational (So as to not let oneself get thrown around)
   - take the viewpoint of "I'm not afraid to say harsh things if it is still to the benefit of the person you're telling it to, to the best of your knowledge
   - praise in public and criticize in private
+
+My FR8 Goals:
+
+- ![](/imgs/2025-10-18-experience/goals.jpeg)
