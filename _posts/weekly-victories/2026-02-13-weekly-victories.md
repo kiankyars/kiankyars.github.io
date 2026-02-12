@@ -24,7 +24,7 @@ Victory #3:
 
 Victory #4:
 
-- Co-worked from sf parc on Tuesday, great group of ambitious people there and got loads of work done! 
+- Co-worked from sf parc on Tuesday, great group of ambitious people there and got loads of work done!
 
 Victory #5:
 
@@ -37,11 +37,11 @@ Victory #6:
 
 Victory #7:
 
-- 
+-
 
 Victory #8:
 
-- 
+-
 
 L #0:
 
