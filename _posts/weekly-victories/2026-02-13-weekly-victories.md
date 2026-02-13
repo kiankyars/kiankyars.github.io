@@ -20,7 +20,7 @@ Victory #2:
 
 Victory #3:
 
-- Was at Mox on Monday, could not focus, but I at least setup the regex parallel claude agent.
+- Was at Mox on Monday, could not focus and the 90/30 club was mid, but I at least setup the regex parallel claude agent.
 
 Victory #4:
 
@@ -29,6 +29,11 @@ Victory #4:
 Victory #5:
 
 - Wednesday was an insane climax day, but also can't really say climax since it's only uphill from here.
+    - parallel agent expirements went nuts.
+    - Met with Bob from Antler.
+    - Attended SPC F&F day, great discussion with Bilal and attended the embodied AI group.
+    - Locked into RLMs and [presented](https://www.youtube.com/watch?v=UFJVc2IkyFY&t=2s) my work on parallel agents.
+    - Came up with a great idea while lying in bed from 10 pm to 1 am.
 
 Victory #6:
 
@@ -37,11 +42,17 @@ Victory #6:
 
 Victory #7:
 
--
+- Thursday
+    - Met with Nadia from EF, she asks great questions.
+    - Serendipitously ran into friends at South Park and had a great one-hour conversation where I learned many new concepts.
+    - SPC Demo Day
 
 Victory #8:
 
--
+- Friday
+    - Internet Archive
+    - Founders Inc
+    - ODF 27
 
 L #0:
 
