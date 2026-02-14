@@ -8,9 +8,9 @@ permalink: /awards/
 
 - **Antler VC Residency** (February 11, 2026) (International)  
   Offered a position in the Antler VC residency, a highly selective global startup generator with a 0.3% acceptance rate.
-- **Winner, Continual Learning Hackathon** (February 6, 2026) (National)  
-- **Winner, NVIDIA DGX Spark Hackathon** (January 25, 2026) (International)  
-- **Winner, Daytona Hack Sprint** (January 24, 2026) (International)  
+- <span id="continual-learning-hackathon-2026"></span>**Winner, Continual Learning Hackathon** (February 6, 2026) (National)  
+- <span id="nvidia-dgx-spark-hackathon-2026"></span>**Winner, NVIDIA DGX Spark Hackathon** (January 25, 2026) (International)  
+- <span id="daytona-hack-sprint-2026"></span>**Winner, Daytona Hack Sprint** (January 24, 2026) (International)  
 - **On Deck Founders (ODF) 27** (January 8, 2026) (International)  
 
 ---
