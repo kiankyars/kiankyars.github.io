@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}{% if page.title %} | {% endif %}Kian Kyars</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 0 10px;
+      color: #111;
+      background: #fff;
+    }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem; }
+    nav a { margin-right: 15px; font-weight: bold; color: #333; }
+    h1, h2, h3 { margin-top: 2rem; }
+    hr { border: 0; border-top: 1px solid #eee; margin: 2rem 0; }
+    blockquote { border-left: 3px solid #eee; padding-left: 1rem; color: #666; font-style: italic; }
+    small { color: #888; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/weekly-victories/">Weekly Victories</a>
+    <a href="/projects/">Projects</a>
+  </nav>
+
+  <main>
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+
+    {{ content }}
+  </main>
+
+  <footer>
+    <hr>
+    <small>&copy; {{ "now" | date: "%Y" }} Kian Kyars. Built with minimal HTML.</small>
+  </footer>
+
+</body>
+</html>
