@@ -7,6 +7,7 @@ plugins:
 
 header_pages:
   - pages/about.md
+  - pages/awards.md
   - pages/now.md
   - pages/projects.md
   - pages/doomscrolling.md
