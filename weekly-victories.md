@@ -7,9 +7,8 @@ permalink: /weekly-victories/
 {% for post in site.posts %}
   {% if post.title == "Weekly Victories" %}
     <div style="margin-bottom: 1rem;">
-      <a href="{{ post.url }}">
-        <strong>{{ post.date | date: "%B %d, %Y" }}</strong>
-      </a>
+      <small>{{ post.date | date: "%Y-%m-%d" }}</small> — 
+      <a href="{{ post.url }}"><strong>Victory Log</strong></a>
     </div>
   {% endif %}
 {% endfor %}
