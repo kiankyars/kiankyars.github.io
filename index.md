@@ -5,11 +5,6 @@ title: Home
 
 Researcher & Builder.
 
-### [Blog](/blog/) / [Weekly Victories](/weekly-victories/)
-
----
-
-### Elsewhere
 - [GitHub](https://github.com/kiankyars)
 - [X (Twitter)](https://twitter.com/neuralkian)
 - [LinkedIn](https://www.linkedin.com/in/kyars)
@@ -18,14 +13,6 @@ Researcher & Builder.
 - [Strava](https://www.strava.com/athletes/kyars)
 - [Technical YouTube](https://www.youtube.com/@neuralkian)
 - [Personal YouTube](https://www.youtube.com/@kiankyars)
-
----
-
-### Resources & Contact
 - [Curriculum Vitae](/assets/CV.pdf)
 - [Co-working Calendar](https://calendar.app.google/zCVm4G9X42sqKqfX8)
 - [Anonymous Feedback](https://forms.gle/mgTM1h5fR4qzw5JR7)
-
----
-
-> "I heavily prefer asymmetric longtail outcomes over guaranteed ones."
