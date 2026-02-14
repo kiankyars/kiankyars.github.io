@@ -1,17 +1,16 @@
-# Awards
+---
+layout: default
+title: Awards
+permalink: /awards/
+---
 
 ## 2026
 
 - **Antler VC Residency** (February 11, 2026) (International)  
-  Offered a position in the Antler VC residency, a highly selective global startup generator with an approximately 0.3% acceptance rate.
 - **Continual Learning Hackathon** (February 6, 2026) (National)  
-  Winner of the Continual Learning Hackathon, focused on developing AI models capable of autonomous, incremental learning.
 - **NVIDIA DGX Spark Hackathon** (January 25, 2026) (International)  
-  Winner of the NVIDIA DGX Spark Hackathon, utilizing NVIDIA's high-performance computing stack for AI innovation.
 - **Daytona Hack Sprint** (January 24, 2026) (International)  
-  Winner of the Daytona Hack Sprint, a competition centered on building and deploying functional AI agents.
 - **On Deck Founders (ODF) 27** (January 8, 2026) (International)  
-  Selected as an international member of the 27th cohort of On Deck Founders, a global community for top-tier builders and entrepreneurs.
 
 ---
 
@@ -20,7 +19,6 @@
 - **Edmonton Community Foundation Hilltop Award** (July 3, 2025) - $1,000 (Provincial)  
   Awarded to students demonstrating community service and involvement.
 - **FR8 Cohort 1.0** (June – September 2025) (International)  
-  Selected for the inaugural full-sized cohort of FR8, the world's first combined hacker hotel, startup incubator, and research lab in Finland.
 - **ISSS Future of Science Award** (April 3, 2025) - $1,000 (Institutional)  
   Awarded by the Interdepartmental Science Students’ Society for students who demonstrate interest in research and discovery within Science.
 - **Study Scholarships - Master Studies for All Academic Disciplines** (March 20, 2025) - Full-Ride (International)  
