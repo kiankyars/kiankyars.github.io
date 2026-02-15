@@ -8,12 +8,9 @@ permalink: /build/
 
 ### [OpenClaw – autonomous agent & messaging gateway](https://www.youtube.com/watch?v=n1sfrc-RjyM)
 
-
 ### [Pipeline parallelism from scratch](https://www.youtube.com/watch?v=D5F8kp_azzw)
 
-
 ### [Nanochat from scratch (playlist)](https://www.youtube.com/playlist?list=PLWVevi-n5pPxm2aahpbLCBUc_giHjIgg0)
-
 
 ### [Ultra-Scale Playbook from scratch (playlist)](https://www.youtube.com/playlist?list=PLWVevi-n5pPy-Y9swxvs5AiTwA_QzUXsr)
 

@@ -8,26 +8,38 @@ Here I track how many times per month I doomscroll as a heuristic for my life we
 
 # 2025
 
-| Month | Count |
-| --- | --- |
-| September | 1 |
-| October | 3 (Youtube doomscrolling, number two and three are due to my sudden obsession with competitive food eater beardmeatsfood!) |
-| November | 3 (I lacked three times in the last week of the month, smh!) |
-| December | 0 (So proud of myself, this is how you bring momentum into the new year!) |
+- **September**  
+  1
+- **October**  
+  3 (Youtube doomscrolling, number two and three are due to my sudden obsession with competitive food eater beardmeatsfood!)
+- **November**  
+  3 (I lacked three times in the last week of the month, smh!)
+- **December**  
+  0 (So proud of myself, this is how you bring momentum into the new year!)
 
 # 2026
 
-| Month | Count |
-| --- | --- |
-| January | 0 |
-| February | 0 so far |
-| March | - |
-| April | - |
-| May | - |
-| June | - |
-| July | - |
-| August | - |
-| September | - |
-| October | - |
-| November | - |
-| December | - |
+- **January**  
+  0
+- **February**  
+  0 so far
+- **March**  
+  -
+- **April**  
+  -
+- **May**  
+  -
+- **June**  
+  -
+- **July**  
+  -
+- **August**  
+  -
+- **September**  
+  -
+- **October**  
+  -
+- **November**  
+  -
+- **December**  
+  -
