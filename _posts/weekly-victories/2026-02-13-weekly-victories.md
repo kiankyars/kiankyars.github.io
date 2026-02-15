@@ -37,7 +37,7 @@ Victory #5:
 
 Victory #6:
 
-- Received many heart-warming comments about my Open Claw video.
+- Received many heart-warming comments about my Open Claw video, 200k+ views now!
 - ![](/imgs/2026-02-13-weekly-victories/feedback.png)
 
 Victory #7:
@@ -50,9 +50,9 @@ Victory #7:
 Victory #8:
 
 - Friday
-    - Internet Archive
-    - Founders Inc
-    - ODF 27
+    - Internet Archive tour (there was ice cream!)
+    - Great time spent with Bilal, Milo, and Otso
+    - Founders, Inc with Sam, Raphael, Elbert, and Rahul
 
 L #0:
 
