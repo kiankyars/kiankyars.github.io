@@ -60,4 +60,4 @@ Victory #10:
 
 L #0:
 
-- I just now remember as well that the most annoying thing this week was that I wasted two hours trying to recover some Safari tabs that I lost on my phone on the 24th. So I know what not to do in the future, which is to keep my tabs open until I've addressed them by either capturing it or deleting it knowingly.
+- I just now remember as well that the most annoying thing this week was that I wasted two hours recovering Safari tabs that I lost on my phone on the 24th. So I know what not to do in the future, which is to keep my tabs open until I've addressed them by either capturing it or deleting it knowingly.
