@@ -29,3 +29,5 @@ I used to do weekly review but they were ineffective so I stopped.
 I optimize for elegance
 
 You will not find the word "try" anywhere on this website except for here.
+
+> People I know who spend a lot of time revisiting old decisions are less effective because they mire themselves in what ifs and counterfactuals. So I really don't spend time on it.
