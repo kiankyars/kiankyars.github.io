@@ -6,7 +6,7 @@ permalink: /doomscrolling/
 
 Here I track how many times per month I doomscroll as a heuristic for my life well-being and productivity
 
-# 2025
+## 2025
 
 - September  
   1
@@ -17,29 +17,9 @@ Here I track how many times per month I doomscroll as a heuristic for my life we
 - December  
   0 (So proud of myself, this is how you bring momentum into the new year!)
 
-# 2026
+## 2026
 
 - January  
   0
 - February  
   0 so far
-- March  
-  -
-- April  
-  -
-- May  
-  -
-- June  
-  -
-- July  
-  -
-- August  
-  -
-- September  
-  -
-- October  
-  -
-- November  
-  -
-- December  
-  -
