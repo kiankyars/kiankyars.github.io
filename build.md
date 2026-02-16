@@ -38,7 +38,7 @@ Attention score matrix visualization tool.
 
 ### [rabbithole](https://github.com/kiankyars/rabbithole)
 
-Winner, Continual Learning Hackathon ([Awards](/awards/#continual-learning-hackathon-2026)).
+[Winner](/awards/#continual-learning-hackathon-2026), Continual Learning Hackathon.
 
 ### [hyper-engineer](https://github.com/kiankyars/hyper-engineer)
 
@@ -54,11 +54,11 @@ Negotiation and agent-based commerce experiments.
 
 ### [daytona](https://github.com/kiankyars/daytona)
 
-Winner, NVIDIA DGX Spark Hackathon ([Awards](/awards/#nvidia-dgx-spark-hackathon-2026)).
+[Winner](/awards/#nvidia-dgx-spark-hackathon-2026), NVIDIA DGX Spark Hackathon.
 
 ### [rabbitreview](https://github.com/skylerkimcodes/rabbitreview)
 
-Winner, Daytona Hack Sprint ([Awards](/awards/#daytona-hack-sprint-2026)).
+[Winner](/awards/#daytona-hack-sprint-2026), Daytona Hack Sprint.
 
 ### [2025](https://github.com/kiankyars/2025)
 
