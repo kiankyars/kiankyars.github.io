@@ -1,6 +1,6 @@
-# Kian Kyars Personal Website (Jekyll)
+# Kian Kyars Personal Website
 
-This project is a personal website and blog for Kian Kyars, built using Jekyll and hosted on GitHub Pages. It serves as a portfolio, blog, and repository of personal reflections.
+This project is a personal website and blog for Kian Kyars, hosted on GitHub Pages. It serves as a portfolio, blog, and repository of personal reflections.
 
 ## Project Structure
 
@@ -24,22 +24,15 @@ Use the `assets/create_post.py` script to generate new post files with the corre
 
 - **Blog Post:**
   ```bash
-  python3 assets/create_post.py my-post-slug placeholder
+  python3 assets/create_post.py my-post-slug
   ```
   Creates `_posts/blog/YYYY-MM-DD-my-post-slug.md`.
 
 - **Weekly Victory Post:**
   ```bash
-  python3 assets/create_post.py w <number_of_victories>
+  python3 assets/create_post.py w
   ```
-  Creates `_posts/weekly-victories/YYYY-MM-DD-weekly-victories.md` with `<number_of_victories>` placeholder sections.
-
-- **Date Override:**
-  Both commands accept an optional third argument to override the day of the month:
-  ```bash
-  python3 assets/create_post.py w 5 13
-  ```
-  (Creates a post for the 13th of the current month).
+  Creates `_posts/weekly-victories/YYYY-MM-DD-weekly-victories.md`.
 
 ## Content Conventions
 
