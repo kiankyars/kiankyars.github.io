@@ -2,7 +2,7 @@
 layout: post
 title: Questions
 date: 2026-02-14
-categories: 
+categories:
 ---
 
 - If you could do anything at all, what would you do?

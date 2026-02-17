@@ -8,10 +8,10 @@ permalink: /awards/
 
 - **Antler VC Residency** (February 11, 2026) (International)  
   Offered a position in the Antler VC residency, a highly selective global startup generator with a 0.3% acceptance rate.
-- <span id="continual-learning-hackathon-2026"></span>**Winner, Continual Learning Hackathon** (February 6, 2026) (National)  
-- <span id="nvidia-dgx-spark-hackathon-2026"></span>**Winner, NVIDIA DGX Spark Hackathon** (January 25, 2026) (International)  
-- <span id="daytona-hack-sprint-2026"></span>**Winner, Daytona Hack Sprint** (January 24, 2026) (International)  
-- **On Deck Founders (ODF) 27** (January 8, 2026) (International)  
+- <span id="continual-learning-hackathon-2026"></span>**Winner, Continual Learning Hackathon** (February 6, 2026) (National)
+- <span id="nvidia-dgx-spark-hackathon-2026"></span>**Winner, NVIDIA DGX Spark Hackathon** (January 25, 2026) (International)
+- <span id="daytona-hack-sprint-2026"></span>**Winner, Daytona Hack Sprint** (January 24, 2026) (International)
+- **On Deck Founders (ODF) 27** (January 8, 2026) (International)
 
 ---
 
@@ -34,7 +34,7 @@ permalink: /awards/
   Recognizes academic excellence in Alberta post-secondary students with a minimum GPA of 3.2.
 - **Taliani Group Scholarship in Computer Science** (November 1, 2024) - $2,000 (Provincial)  
   Awarded by the Al Rashid Education Foundation to recognize academic excellence in the field of Computer Science.
-- **University of Alberta Student Union Coca-Cola Scholarship** (October 7, 2024) - $1,000 (Institutional)  
+- **University of Alberta Student Union Coca-Cola Scholarship** (October 7, 2024) - $1,000 (Institutional)
 - **University of Alberta Opportunities Continuing Award** (September 13, 2024) - $3,200 (Institutional)  
   Awarded based on financial need and academic performance, with preference for equity-deserving groups.
 - **Kao Family Eisenco Scholarship** (August 29, 2024) - $1,800 (Institutional)  
