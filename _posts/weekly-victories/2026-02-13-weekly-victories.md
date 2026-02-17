@@ -53,6 +53,8 @@ Victory #8:
   - Internet Archive tour (there was ice cream!)
   - Great time spent with Bilal, Milo, and Otso
   - Founders, Inc with Sam, Raphael, Elbert, and Rahul
+  - [](/imgs/2026-02-13-weekly-victories/hamming1.jpeg)
+  - [](/imgs/2026-02-13-weekly-victories/hamming2.jpeg)
 
 L #0:
 
