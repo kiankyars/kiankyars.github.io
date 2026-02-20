@@ -1,0 +1,342 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Kian Kyars' CV},
+    pdfauthor={Kian Kyars},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+\usepackage{datetime2}
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.3 cm
+}{
+  0.2 cm
+}
+
+\renewcommand\labelitemi{$\circ$}
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \end{adjustwidth}
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+    \begin{header}
+        \textbf{\fontsize{24 pt}{24 pt}\selectfont Kian Kyars}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{\hrefWithoutArrow{mailto:kkyars@ualberta.ca}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}kkyars@ualberta.ca}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://sites.ualberta.ca/~kkyars}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}sites.ualberta.ca/~kkyars}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/kyars}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}kyars}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://github.com/kiankyars}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}kiankyars}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://x.com/neuralkian}{\color{black}{\footnotesize\faTwitter}\hspace*{0.13cm}neuralkian}}%
+    \end{header}
+
+    \section{Education}
+        \begin{twocolentry}
+            {C/O 2025 \textit{Grade: 3.9/4.0}} \textbf{BSc Computer Science, Honours - University of Alberta}
+        \end{twocolentry}
+        
+    \section{Experience}
+    
+        \begin{twocolentry}{October 2025 - January 2026}
+            \textbf{\href{https://www.noemon.com}{Noemon}}
+            
+            \textit{Machine Learning Engineer}
+
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed an ARC-AGI-2 refinement solver with a ReAct approach on the Pareto frontier
+                \item Created a context compaction technique improving 20\% on the open source SoTA
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+            June 2025 - August 2025
+        }
+            \textbf{\href{https://fr8.so}{fr8} Cohort 1.0}
+
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed the \href{https://github.com/JackHopkins/factorio-learning-environment/}{Factorio Learning Environment}: an open-ended benchmark for LLM agents
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            September 2024 - June 2025
+        }
+            \textbf{Data-Driven Network and Cyber Security (DANS) Lab}
+
+            \textit{Undergraduate Research Assistant}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Finetuned Qwen2.5, Llama 3, and DeepSeek R1 7-8B models with unsloth for provenance graph construction
+                \item Performed adaptive anomaly detection locally on system logs with equivalent performance to GPT-4o
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            January 2025 - April 2025
+        }
+            \textbf{MANGA NLP Lab}
+
+            \textit{Undergraduate Research Assistant}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Re-implemented Flora: a low-rank adaptation optimizer using random projections for gradient compression
+                \item Empirical training speed increases up to 25\% compared to LoRA w/ AdamW in 3B and 7B parameter LLMs
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            May 2023 - August 2023
+        }
+            \textbf{Hochschule für Technik und Wirtschaft Dresden}
+
+            \textit{Summer Research Intern}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item DAAD RISE Intern in reinforcement learning on the 7-DOF Franka Emika Robot arm
+                \item Trained using Nvidia Omniverse Isaac Sim to perform block manipulation tasks using TRPO and PPO
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+    \section{Projects}
+        \begin{twocolentry}{
+            February 2026
+        }
+            \textbf{\href{https://www.youtube.com/watch?v=n1sfrc-RjyM}{OpenClaw Course}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Tutorial on setting up an autonomous agent \& messaging gateway with Open Claw; 250k+ views
+            \end{highlights}
+        \end{onecolentry}
+        
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+            January 2026
+        }
+            \textbf{\href{https://www.youtube.com/watch?v=D5F8kp_azzw}{Pipeline Parallelism from Scratch}}
+        \end{twocolentry}
+        
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+            October 2025
+        }
+            \textbf{\href{https://github.com/kiankyars/DeepLearning}{nanochat from Scratch}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Re-implemented and trained nanochat on an 8XH100 node with DeepSpeed ZeRO-2
+            \end{highlights}
+        \end{onecolentry}
+        
+        \vspace{0.2 cm}
+        
+        \begin{twocolentry}{
+            June 2025
+        }
+            \textbf{\href{https://github.com/kiankyars/Ultra-Scale-Playbook-Series}{Hugging Face Ultra Scale Playbook Series}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Created a \href{https://youtube.com/playlist?list=PLWVevi-n5pPy-Y9swxvs5AiTwA_QzUXsr&si=TpY9vB9jMqNBk3aZ}{16-part video series} covering the Hugging Face Ultra Scale Playbook to teach myself large-scale GPU orchestration through teaching others, recognized by Hugging Face CSO Thomas Wolf
+            \end{highlights}
+        \end{onecolentry}
+        
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            August 2024 - April 2025
+        }
+            \textbf{Founder - \href{https://www.instagram.com/uofarunclub/}{UofA Run Club} (UofARC)}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Created a weekly run club to gather community members together bright and early
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            March 2024 - April 2025
+        }
+            \textbf{Founder - \href{https://kiankyars.github.io/uofacarpool/}{UofACarpool}}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Wrote algorithm and website for matching service that pairs university commuters to carpool together
+                \item Featured on the \href{https://thegatewayonline.ca/2024/10/u-of-a-carpool-aims-to-make-campus-more-eco-friendly/}{University Newspaper}
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+    \section{Interests}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Avid language learner (French and German) and runner (longest distance: 50 kilometers)
+            \end{highlights}
+        \end{onecolentry}
+        
+\end{document}

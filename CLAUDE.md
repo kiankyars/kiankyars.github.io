@@ -11,28 +11,51 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
   - `default.html`: The main wrapper for all pages.
   - `post.html`: Template specifically for blog posts.
 - `imgs/`: Post-specific images, typically organized into subdirectories named after the post date and slug (e.g., `imgs/2026-02-12-sqlite/`).
-- `assets/`:
-  - `create_post.py`: A utility script to automate the creation of new posts with proper front matter.
-  - `CV.pdf`, `main.pdf`: Static documents.
 - Root Markdown files: Main site pages (`index.md`, `about.md`, `blog.md`, `build.md`, `now.md`, `publications.md`, `weekly-victories.md`).
 
 ## Development Workflows
 
 ### Creating New Content
 
-Use the `assets/create_post.py` script to generate new post files with the correct front matter.
+Use the `create_post.py` script to generate new post files with the correct front matter.
 
 - **Blog Post:**
   ```bash
-  python3 assets/create_post.py my-post-slug
+  python3 create_post.py my-post-slug
   ```
   Creates `_posts/blog/YYYY-MM-DD-my-post-slug.md`.
 
 - **Weekly Victory Post:**
   ```bash
-  python3 assets/create_post.py w
+  python3 create_post.py w
   ```
   Creates `_posts/weekly-victories/YYYY-MM-DD-weekly-victories.md`.
+
+## Related Projects
+
+### microddp (`/Users/kian/Developer/microddp`)
+
+A course teaching Data Parallelism (DDP) from scratch using PyTorch distributed.
+
+**Run commands** (always prefix with `PYTHONPATH=.`):
+```bash
+PYTHONPATH=. torchrun --nproc-per-node=N <script>
+```
+
+**Source files** (`src/`):
+- `comms.py` — `init_distributed()`, `cleanup()`
+- `model.py` — `FullMLP(dim, depth)`
+- `allreduce.py` — 4 all-reduce implementations (`allreduce1`–`allreduce4`)
+- `optimisations.py` — `register_hooks(model)`, `register_bucketed_hooks(model)`
+- `manual.py` — reference single-process manual data parallel
+- `main.py` — reference distributed DDP with hooks
+- `examples.py` — performance comparison benchmarks
+
+**Lab files** (`my_work/`):
+- `step1_manual.py` — simulate 2 GPUs, average gradients by hand
+- `step2_sandbox.py` — exercises with `dist.all_reduce`, broadcast, reduce
+- `step3_allreduce.py` — implement naive all-reduce from scratch
+- `step4_ddp.py` — full DDP training loop with gradient hooks
 
 ## Content Conventions
 

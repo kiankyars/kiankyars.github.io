@@ -17,6 +17,7 @@ Victory #1:
 Victory #2:
 
 - Co-worked from the Commons in Hayes Valley during the super bowl, wasn't that nice of a place tbh, this was honestly a pretty good signal that I should start to taper down exploration in favour of exploitation.
+- Definitely should have gone to the EF house to watch the Super Bowl though.
 
 Victory #3:
 
@@ -29,7 +30,7 @@ Victory #4:
 Victory #5:
 
 - Wednesday was an insane climax day, but also can't really say climax since it's only uphill from here.
-  - parallel agent expirements went nuts.
+  - Parallel agent expirements went nuts.
   - Met with Bob from Antler.
   - Attended SPC F&F day, great discussion with Bilal and attended the embodied AI group.
   - Locked into RLMs and [presented](https://www.youtube.com/watch?v=UFJVc2IkyFY&t=2s) my work on parallel agents.
