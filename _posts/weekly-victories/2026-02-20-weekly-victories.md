@@ -9,7 +9,8 @@ categories: reflection
 
 - I attended a hackathon but didn't participate.
 - Finished reading Dune.
-- Missed out on Yosemite/ODF
+- Missed out on Yosemite/ODF.
+- I also re-wrote my entire homepage on this day, not the best use of time avec recul.
 
 ### Sunday
 

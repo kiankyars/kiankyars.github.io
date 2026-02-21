@@ -3,7 +3,11 @@ from datetime import datetime, timedelta
 import sys
 import calendar
 
-# Get today's date
+# Run from repo root so _posts/ paths work whether script is run from misc/ or repo root
+_script_dir = os.path.dirname(os.path.abspath(__file__))
+_repo_root = os.path.dirname(_script_dir) if os.path.basename(_script_dir) == "misc" else _script_dir
+os.chdir(_repo_root)
+
 date = datetime.now()
 
 if len(sys.argv) < 2:

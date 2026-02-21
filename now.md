@@ -6,7 +6,7 @@ permalink: /now/
 
 ## What I'm doing now
 
-- In SF building a generational company.
+- In SF.
 
 ### What I'm currently reading
 

@@ -12,22 +12,23 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
   - `post.html`: Template specifically for blog posts.
 - `imgs/`: Post-specific images, typically organized into subdirectories named after the post date and slug (e.g., `imgs/2026-02-12-sqlite/`).
 - Root Markdown files: Main site pages (`index.md`, `about.md`, `blog.md`, `build.md`, `now.md`, `publications.md`, `weekly-victories.md`).
+- `misc/`: CV/resume and scripts — `CV.tex` (build with `make` in `misc/` → `CV.pdf`), `create_post.py`, and other PDFs (e.g. `main.pdf`).
 
 ## Development Workflows
 
 ### Creating New Content
 
-Use the `create_post.py` script to generate new post files with the correct front matter.
+Use the `misc/create_post.py` script to generate new post files with the correct front matter (run from repo root).
 
 - **Blog Post:**
   ```bash
-  python3 create_post.py my-post-slug
+  python3 misc/create_post.py my-post-slug
   ```
   Creates `_posts/blog/YYYY-MM-DD-my-post-slug.md`.
 
 - **Weekly Victory Post:**
   ```bash
-  python3 create_post.py w
+  python3 misc/create_post.py w
   ```
   Creates `_posts/weekly-victories/YYYY-MM-DD-weekly-victories.md`.
 
