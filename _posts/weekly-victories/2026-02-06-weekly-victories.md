@@ -29,6 +29,7 @@ Victory #4:
 Victory #5:
 
 - Went to Alcatraz then co-worked at the SPC office on Wednesday.
+- Should have gone to the Open Claw event with Shahvir.
 
 Victory #6:
 
