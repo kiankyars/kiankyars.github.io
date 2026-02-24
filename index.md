@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-Researcher & Builder.
-
 - [GitHub](https://github.com/kiankyars)
 - [X](https://twitter.com/neuralkian)
 - [LinkedIn](https://www.linkedin.com/in/kyars)
