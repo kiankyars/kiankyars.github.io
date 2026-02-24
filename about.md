@@ -17,7 +17,7 @@ permalink: /about/
 
 ---
 
-- I identify as follows (not ranked by importance):
+- I identify as follows (I have not thought enough about the order yet to rank them by importance):
   - Canadian
   - Runner
   - Human
