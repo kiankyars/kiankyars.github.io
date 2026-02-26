@@ -14,3 +14,4 @@ title: Home
 - [Co-working Calendar](https://calendar.app.google/zCVm4G9X42sqKqfX8)
 - [Anonymous Feedback](https://forms.gle/mgTM1h5fR4qzw5JR7)
 - [Wikipedia](https://en.wikipedia.org/wiki/User:Kyars)
+- [Substack](https://kiankyars.substack.com)
