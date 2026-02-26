@@ -2,7 +2,7 @@
 layout: post
 title: Investing In AI'
 date: 2025-12-21
-categories: life
+categories: finance
 ---
 
 I received my [MarketSenseAI](https://marketsense-ai.com/blog/ai-automation-and-digital-infrastructure-cycle-2025-12-16?utm_source=email) newsletter last month, and saw that Micron, WD, and Sandisk are up 200% and 300% YTD respectively, wow!
