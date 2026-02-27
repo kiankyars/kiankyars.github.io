@@ -28,12 +28,21 @@ categories: reflection
 
 ### Wednesday
 
-- Akash + Venice Hackathon.
+- Akash + Venice Hackathon VICTORY, LFG!.
+- GREAT Day, momentum is finally turning in my favour :).
+- Said hi to many people throughout the day on the street, lot's of positive vibes.
+- Did yoga at SFP for the first time!
+- Called family in France, Germany and Iran!
+- Had cool conversations with the hackathon participants about geography, Hawaii, etc.
 
 ### Thursday
 
-- 
+- Great interview with Judgment Labs and going to do a work trial there now.
+- Candid hour spent at SFP, although I failed to ask a girl out, sitll have Friday!
+- Evening at Mox, discussing the AI Race with David Kruger.
+- Kept the daily blog streak alive!
 
 ### Friday
 
-- 
+- 27 km run ferda!
+- Yoga at SFP again and meetup with Ivar!
