@@ -15,7 +15,7 @@ categories: reflection
 
 ### Sunday
 
-- Went to EF hackathon, didn't competer, did nothing there tbh, bad day for me overall.
+- Went to EF hackathon, didn't compete, did nothing there tbh, bad day for me overall.
 
 ### Monday
 
@@ -46,3 +46,4 @@ categories: reflection
 
 - 27 km run ferda!
 - Yoga at SFP again and meetup with Ivar!
+- Grinding at Antler.
