@@ -15,11 +15,11 @@ categories: reflection
 
 ### Sunday
 
-- Went to EF hackathon, didn't compete, did nothing there tbh, bad day for me overall.
+- Went to EF hackathon, didn't compete, did nothing there tbh, bad day for me overall, was just sat in the chair ruminating (low-agency, even though I'm high-agency).
 
 ### Monday
 
-- Had a better day, went to Mox, met Michael from Toronto, attended the SRS meeting, then went home.
+- Had a better day, went to Mox, met Michael from Toronto, attended the SRS meeting (that one guy showed up more than an hour late then acted as if all was normal), then went home.
 
 ### Tuesday
 
@@ -28,17 +28,17 @@ categories: reflection
 
 ### Wednesday
 
-- Akash + Venice Hackathon VICTORY, LFG!.
+- Akash + Venice Hackathon VICTORY, LFG!
 - GREAT Day, momentum is finally turning in my favour :).
 - Said hi to many people throughout the day on the street, lot's of positive vibes.
 - Did yoga at SFP for the first time!
 - Called family in France, Germany and Iran!
-- Had cool conversations with the hackathon participants about geography, Hawaii, etc.
+- Had cool conversations with the hackathon participants (Brian, Jacob, and Emmanuel) about geography, Hawaii, etc.
 
 ### Thursday
 
 - Great interview with Judgment Labs and going to do a work trial there now.
-- Candid hour spent at SFP, although I failed to ask a girl out, sitll have Friday!
+- Candid hour spent at SFP, although I failed to ask a girl out, still have Friday!
 - Evening at Mox, discussing the AI Race with David Kruger.
 - Kept the daily blog streak alive!
 

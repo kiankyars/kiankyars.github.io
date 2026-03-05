@@ -7,23 +7,45 @@ categories: reflection
 
 ### Saturday
 
-- 
+- Big run day, even though park run lacked!
+- Great morning spent with Will!
+- Mom and Sister came to SF!
+- Walked around SF with Mom and Sister, in particular:
+    - Mission
+    - Portreo Hill (open house)
+    - Dog Patch
+    - Mission Bay
+    - China Basin
+    - South Park
+    - FiDi
+- We played Catan at EF!
+
 
 ### Sunday
 
-- 
+- Walked around downtown with my mom in the morning.
+- Went to the Asian Art Museum, great one!
+- Went to Japan Town with mom and sister, in fact the same place I was at last week!
 
 ### Monday
 
-- 
+- Point Reyes!
+- Tony's Pizza!
 
 ### Tuesday
 
-- 
+- Flower observatory and walk with mom.
+- China town souvenir shopping!
+- Apple store union square and eat at the bite on Mission and 6th, lol!
+- The lady fell down the stairs at the hotel, luckily nothing broke.
 
 ### Wednesday
 
-- 
+- Last day with family :(
+- Read high agency with mom!
+- Yoga was fire, talked to that one rocket ship woman.
+- Meet Rio, catchup with Gavin and Rio plus others!
+- So excited for tomorrow!
 
 ### Thursday
 
