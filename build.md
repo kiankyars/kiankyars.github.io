@@ -36,6 +36,10 @@ Automated podcast advertisements with voice cloning.
 
 Attention score matrix visualization tool.
 
+### [dayops](https://github.com/kiankyars/dayops)
+
+[Winner](/awards/#open-agents-hackathon-2026), Open Agents Hackathon. [[devpost](https://devpost.com/software/dayops)] [[hackathon](https://open-agents-hackathon.devpost.com)] [[announcement](https://x.com/AskVenice/status/2027207601323131084)]
+
 ### [rabbithole](https://github.com/kiankyars/rabbithole)
 
 [Winner](/awards/#continual-learning-hackathon-2026), Continual Learning Hackathon.

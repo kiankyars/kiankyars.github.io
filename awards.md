@@ -6,6 +6,7 @@ permalink: /awards/
 
 ## 2026
 
+- <span id="open-agents-hackathon-2026"></span>**Winner, Open Agents Hackathon** (February 25, 2026) (International)
 - **Antler VC Residency** (February 11, 2026) (International)  
   Offered a position in the Antler VC residency, a highly selective global startup generator with a 0.3% acceptance rate.
 - <span id="continual-learning-hackathon-2026"></span>**Winner, Continual Learning Hackathon** (February 6, 2026) (National)
