@@ -49,8 +49,12 @@ categories: reflection
 
 ### Thursday
 
-- 
+- Great interview with judgement labs!
+- Lacked at the nevermined hacakthon, never again!
 
 ### Friday
 
-- 
+- Ate too much food again!
+- Yoga with Mark :)
+- Became sick :(
+- Bad day overall for me, wasn't productive and become locked up by the end of the day.
