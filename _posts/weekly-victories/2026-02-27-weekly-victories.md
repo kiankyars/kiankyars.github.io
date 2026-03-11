@@ -47,3 +47,4 @@ categories: reflection
 - 27 km run ferda!
 - Yoga at SFP again and meetup with Ivar!
 - Grinding at Antler.
+- ![](/imgs/2026-02-27-weekly-victories/union-square.jpeg)

@@ -31,6 +31,8 @@ categories: reflection
 
 - Point Reyes!
 - Tony's Pizza!
+- Never had this many unread messages
+    - ![](/imgs/2026-03-06-weekly-victories/homescreen.png)
 
 ### Tuesday
 
