@@ -21,20 +21,24 @@ categories: reflection
 ### Monday
 
 - Sick
-- Preparing my TN application!
+- Preparing my TN application! (paid off)
 
 ### Tuesday
 
-- 
+- No longer sick!
+- Insane productivity. Started it out at Entrepreneurs First, after packing everything for my trip.
+- Decided I'm not going to Alcatraz, which was such an amazing decision cause I was so locked in on the Nathan Lambert textbook.
+- Took the BART to SFO, talked with Raina and mom at Seattle, and then arrived in Vancouver.
 
 ### Wednesday
 
-- 
+- Spent the whole day in Vancouver with dad, was nice, but the weather there is ass!
 
 ### Thursday
 
-- 
+- LFG GOT THE FUCKING TN VISA 🚀🚀🚀🚀
+- Did a lap at Salesforce Park just because of the victory? What a big dub for me
 
 ### Friday
 
-- 
+- First day at JLABS 🤩
