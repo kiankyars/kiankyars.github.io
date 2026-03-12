@@ -1,0 +1,209 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Mehrdad Kyars Resume},
+    pdfauthor={Mehrdad Kyars},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+\usepackage{datetime2}
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.3 cm
+}{
+  0.2 cm
+}
+
+\renewcommand\labelitemi{$\circ$}
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \end{adjustwidth}
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+    \begin{header}
+        \textbf{\fontsize{24 pt}{24 pt}\selectfont Mehrdad Kyars}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{\color{black}{\footnotesize\faMapMarker*}\hspace*{0.13cm}North Vancouver, BC}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{tel:+16044426517}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}604 442 6517}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:kyarspeyk@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}kyarspeyk@gmail.com}}%
+    \end{header}
+
+    \section{Professional Summary}
+        \begin{onecolentry}
+            Safety-focused professional driver with 30+ years of passenger and commercial driving experience in Canada across taxi, rideshare, and long-haul trucking roles. Strong record of safe vehicle operation, customer service, pre- and post-trip inspections, documentation, punctual service, and calm decision-making in traffic, changing weather, and public-facing environments.
+        \end{onecolentry}
+
+    \section{Core Qualifications}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Safe vehicle operation in city traffic, highways, night driving, and adverse weather conditions
+                \item Passenger service, public interaction, route navigation, and professional customer rapport
+                \item Pre- and post-trip inspections, vehicle cleanliness, issue reporting, and basic maintenance awareness
+                \item Driver's daily logs (DLL), trip documentation, dispatch communication, schedule adherence, and changing shifts
+                \item Calm independent work, sound judgment under pressure, and practical repair skills
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Experience}
+        \begin{twocolentry}{January 2025 - Present}
+            \textbf{Uber / Lyft}
+
+            \textit{Driver, Greater Vancouver, British Columbia}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Transport passengers safely throughout Greater Vancouver while maintaining courteous, professional service
+                \item Adapt driving to traffic, weather, and changing shifts with strong focus on safety, comfort, and punctual arrivals
+                \item Perform routine cleaning, pre- and post-trip inspections, and basic upkeep to keep vehicle road-ready
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{March 2020 - January 2025}
+            \textbf{CPX Coastal Pacific Express}
+
+            \textit{Long Haul Truck Driver, Surrey, British Columbia}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Operated tractor-trailers on long-haul routes, completing deliveries safely and on schedule
+                \item Completed trailer hook-ups, equipment configuration changes, inspections, DLLs, and freight documentation
+                \item Loaded and unloaded products at warehouses and customer locations using hand jacks and forklifts
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{June 1994 - August 2017}
+            \textbf{Alberta Co-op Taxi}
+
+            \textit{Taxi Driver, Edmonton, Alberta}
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Provided safe, dependable taxi service, including airport and high-demand pickups, in a busy public-facing role
+                \item Assisted passengers with luggage, handled fares, communicated with dispatch, and maintained a clean vehicle
+                \item Built strong customer rapport through punctual service and calm handling of busy traffic situations
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Education}
+        \begin{twocolentry}{September 1976 - April 1980}
+            \textbf{University of Isfahan}
+
+            \textit{Bachelor of Science in Physics, Isfahan, Iran}
+        \end{twocolentry}
+
+\end{document}
