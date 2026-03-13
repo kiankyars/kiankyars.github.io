@@ -22,4 +22,6 @@ Here I track how many times per month I doomscroll as a heuristic for my life we
 - January  
   - 0
 - February  
-  - 0 so far
+  - 0
+- March  
+  - 0

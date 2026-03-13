@@ -15,3 +15,6 @@ I intend on running rigorous self-experiments on my health through biohacking an
 
 - Feb 23, 2026 at 17:46
   - Haven't been relaxed lately so I think the magnesium ashwagandha pills aren't causaully significant.
+
+- Mar 13, 2026
+  - I haven't been taking any supplements since BOM when I ran out of the magnesium pills (not sure if they were helpful, didn't have any specific observations). Was sick from March 7 to 12—not having zinc then was a mistake. Not sure what the sickness was due to; could have been overeating and also eating food that someone else ate from.
