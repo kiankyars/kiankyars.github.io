@@ -38,7 +38,12 @@ categories: reflection
 
 - LFG GOT THE FUCKING TN VISA 🚀🚀🚀🚀
 - Did a lap at Salesforce Park just because of the victory? What a big dub for me
+    - Took the gondola for the first time too!
+- Had a great day at EF locked in on the RLHF book
+- Talked w/ Sidd for the first time in a long time
 
 ### Friday
 
 - First day at JLABS 🤩
+- Practiced German w/ ChatGPT on walk back home
+- Yoga flow keeping me right
