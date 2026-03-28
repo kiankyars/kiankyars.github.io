@@ -1,0 +1,944 @@
+[
+  {
+    "city": "Beijing",
+    "slug": "beijing",
+    "wikidata_pop": 21893095,
+    "sc_pop": 20462610,
+    "tallest_m": 528.0,
+    "error": null,
+    "m_per_capita": 2.580316000744773e-05,
+    "mm_per_1000": 0.025803160007447732
+  },
+  {
+    "city": "Chengdu",
+    "slug": "chengdu",
+    "wikidata_pop": 20937757,
+    "sc_pop": 13568357,
+    "tallest_m": 284.0,
+    "error": null,
+    "m_per_capita": 2.0931053037593275e-05,
+    "mm_per_1000": 0.020931053037593277
+  },
+  {
+    "city": "Shenzhen",
+    "slug": "shenzhen",
+    "wikidata_pop": 17494398,
+    "sc_pop": 12356820,
+    "tallest_m": 599.0,
+    "error": null,
+    "m_per_capita": 4.847525496041862e-05,
+    "mm_per_1000": 0.04847525496041862
+  },
+  {
+    "city": "Dhaka",
+    "slug": "dhaka",
+    "wikidata_pop": 16800000,
+    "sc_pop": 10356500,
+    "tallest_m": 171.0,
+    "error": null,
+    "m_per_capita": 1.6511369671220974e-05,
+    "mm_per_1000": 0.016511369671220973
+  },
+  {
+    "city": "Mumbai",
+    "slug": "mumbai",
+    "wikidata_pop": 15414288,
+    "sc_pop": 20411274,
+    "tallest_m": 301.0,
+    "error": null,
+    "m_per_capita": 1.4746752211547403e-05,
+    "mm_per_1000": 0.014746752211547403
+  },
+  {
+    "city": "Lagos",
+    "slug": "lagos",
+    "wikidata_pop": 15070000,
+    "sc_pop": 540,
+    "tallest_m": 160.0,
+    "error": null,
+    "m_per_capita": 0.2962962962962963,
+    "mm_per_1000": 296.2962962962963
+  },
+  {
+    "city": "Ho Chi Minh City",
+    "slug": "ho-chi-minh-city",
+    "wikidata_pop": 14002598,
+    "sc_pop": 8993082,
+    "tallest_m": 461.0,
+    "error": null,
+    "m_per_capita": 5.126162532488862e-05,
+    "mm_per_1000": 0.05126162532488862
+  },
+  {
+    "city": "Tianjin",
+    "slug": "tianjin",
+    "wikidata_pop": 13866009,
+    "sc_pop": 13589078,
+    "tallest_m": 530.0,
+    "error": null,
+    "m_per_capita": 3.9001910210538195e-05,
+    "mm_per_1000": 0.0390019102105382
+  },
+  {
+    "city": "S\u00e3o Paulo",
+    "slug": "sao-paulo",
+    "wikidata_pop": 11451999,
+    "sc_pop": null,
+    "tallest_m": 172.0,
+    "error": null
+  },
+  {
+    "city": "Lahore",
+    "slug": "lahore",
+    "wikidata_pop": 11126285,
+    "sc_pop": 6310888,
+    "tallest_m": 106.0,
+    "error": null,
+    "m_per_capita": 1.6796368434996785e-05,
+    "mm_per_1000": 0.016796368434996788
+  },
+  {
+    "city": "Harbin",
+    "slug": "harbin",
+    "wikidata_pop": 10009854,
+    "sc_pop": 5242897,
+    "tallest_m": 270.0,
+    "error": null,
+    "m_per_capita": 5.14982461032517e-05,
+    "mm_per_1000": 0.051498246103251696
+  },
+  {
+    "city": "Lima",
+    "slug": "lima",
+    "wikidata_pop": 9943800,
+    "sc_pop": 7737002,
+    "tallest_m": 140.0,
+    "error": null,
+    "m_per_capita": 1.8094864134712645e-05,
+    "mm_per_1000": 0.018094864134712646
+  },
+  {
+    "city": "Seoul",
+    "slug": "seoul",
+    "wikidata_pop": 9668465,
+    "sc_pop": 10349312,
+    "tallest_m": 555.0,
+    "error": null,
+    "m_per_capita": 5.362675316001682e-05,
+    "mm_per_1000": 0.05362675316001682
+  },
+  {
+    "city": "Tokyo",
+    "slug": "tokyo",
+    "wikidata_pop": 9640742,
+    "sc_pop": 9733276,
+    "tallest_m": 327.0,
+    "error": null,
+    "m_per_capita": 3.3596088305725635e-05,
+    "mm_per_1000": 0.033596088305725635
+  },
+  {
+    "city": "Ningbo",
+    "slug": "ningbo",
+    "wikidata_pop": 9404283,
+    "sc_pop": 3731203,
+    "tallest_m": 409.0,
+    "error": null,
+    "m_per_capita": 0.00010961612112768991,
+    "mm_per_1000": 0.10961612112768991
+  },
+  {
+    "city": "Nanjing",
+    "slug": "nanjing",
+    "wikidata_pop": 9314685,
+    "sc_pop": 8847372,
+    "tallest_m": 450.0,
+    "error": null,
+    "m_per_capita": 5.0862561221569524e-05,
+    "mm_per_1000": 0.05086256122156952
+  },
+  {
+    "city": "Mexico City",
+    "slug": "mexico-city",
+    "wikidata_pop": 9209944,
+    "sc_pop": 12294193,
+    "tallest_m": 266.0,
+    "error": null,
+    "m_per_capita": 2.1636231023866308e-05,
+    "mm_per_1000": 0.021636231023866307
+  },
+  {
+    "city": "Changchun",
+    "slug": "changchun",
+    "wikidata_pop": 9066906,
+    "sc_pop": null,
+    "tallest_m": 283.0,
+    "error": null
+  },
+  {
+    "city": "Kuala Lumpur",
+    "slug": "kuala-lumpur",
+    "wikidata_pop": 9000280,
+    "sc_pop": 1982112,
+    "tallest_m": 679.0,
+    "error": null,
+    "m_per_capita": 0.00034256389144508484,
+    "mm_per_1000": 0.3425638914450848
+  },
+  {
+    "city": "New York City",
+    "slug": "new-york-city",
+    "wikidata_pop": 8804190,
+    "sc_pop": 8804194,
+    "tallest_m": 541.0,
+    "error": null,
+    "m_per_capita": 6.14479871752031e-05,
+    "mm_per_1000": 0.06144798717520309
+  },
+  {
+    "city": "London",
+    "slug": "london",
+    "wikidata_pop": 8799728,
+    "sc_pop": 8982000,
+    "tallest_m": 306.0,
+    "error": null,
+    "m_per_capita": 3.406813627254509e-05,
+    "mm_per_1000": 0.03406813627254509
+  },
+  {
+    "city": "Hong Kong",
+    "slug": "hong-kong",
+    "wikidata_pop": 7413070,
+    "sc_pop": 7547652,
+    "tallest_m": 484.0,
+    "error": null,
+    "m_per_capita": 6.412590299605758e-05,
+    "mm_per_1000": 0.06412590299605758
+  },
+  {
+    "city": "Yangon",
+    "slug": "yangon",
+    "wikidata_pop": 6874000,
+    "sc_pop": 4477638,
+    "tallest_m": 122.0,
+    "error": null,
+    "m_per_capita": 2.724650809198957e-05,
+    "mm_per_1000": 0.02724650809198957
+  },
+  {
+    "city": "Prayagraj",
+    "slug": "prayagraj",
+    "wikidata_pop": 5954391,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Pune",
+    "slug": "pune",
+    "wikidata_pop": 5945000,
+    "sc_pop": 3124458,
+    "tallest_m": 110.0,
+    "error": null,
+    "m_per_capita": 3.520610614705014e-05,
+    "mm_per_1000": 0.035206106147050144
+  },
+  {
+    "city": "Surat",
+    "slug": "surat",
+    "wikidata_pop": 5935000,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Singapore",
+    "slug": "singapore",
+    "wikidata_pop": 5866139,
+    "sc_pop": 5685807,
+    "tallest_m": 284.0,
+    "error": null,
+    "m_per_capita": 4.994893424979075e-05,
+    "mm_per_1000": 0.04994893424979075
+  },
+  {
+    "city": "Ankara",
+    "slug": "ankara",
+    "wikidata_pop": 5803482,
+    "sc_pop": 3517182,
+    "tallest_m": 195.0,
+    "error": null,
+    "m_per_capita": 5.5442112463898656e-05,
+    "mm_per_1000": 0.05544211246389866
+  },
+  {
+    "city": "Addis Ababa",
+    "slug": "addis-ababa",
+    "wikidata_pop": 5704000,
+    "sc_pop": 3860000,
+    "tallest_m": 209.0,
+    "error": null,
+    "m_per_capita": 5.4145077720207254e-05,
+    "mm_per_1000": 0.054145077720207255
+  },
+  {
+    "city": "Bangkok",
+    "slug": "bangkok",
+    "wikidata_pop": 5676648,
+    "sc_pop": 10539415,
+    "tallest_m": 315.0,
+    "error": null,
+    "m_per_capita": 2.9887806865940852e-05,
+    "mm_per_1000": 0.029887806865940853
+  },
+  {
+    "city": "Abidjan",
+    "slug": "abidjan",
+    "wikidata_pop": 5616633,
+    "sc_pop": 6321017,
+    "tallest_m": 120.0,
+    "error": null,
+    "m_per_capita": 1.8984286863965087e-05,
+    "mm_per_1000": 0.018984286863965086
+  },
+  {
+    "city": "Sydney",
+    "slug": "sydney",
+    "wikidata_pop": 5450496,
+    "sc_pop": 5231147,
+    "tallest_m": 271.0,
+    "error": null,
+    "m_per_capita": 5.180508213590633e-05,
+    "mm_per_1000": 0.05180508213590633
+  },
+  {
+    "city": "Alexandria",
+    "slug": "alexandria",
+    "wikidata_pop": 5362517,
+    "sc_pop": 8075,
+    "tallest_m": 135.0,
+    "error": null,
+    "m_per_capita": 0.01671826625386997,
+    "mm_per_1000": 16.71826625386997
+  },
+  {
+    "city": "Melbourne",
+    "slug": "melbourne",
+    "wikidata_pop": 5350705,
+    "sc_pop": 4967733,
+    "tallest_m": 317.0,
+    "error": null,
+    "m_per_capita": 6.38118030900614e-05,
+    "mm_per_1000": 0.0638118030900614
+  },
+  {
+    "city": "Khartoum",
+    "slug": "khartoum",
+    "wikidata_pop": 5345000,
+    "sc_pop": 1974647,
+    "tallest_m": 130.0,
+    "error": null,
+    "m_per_capita": 6.583455169455604e-05,
+    "mm_per_1000": 0.06583455169455604
+  },
+  {
+    "city": "Kabul",
+    "slug": "kabul",
+    "wikidata_pop": 5333284,
+    "sc_pop": 4434550,
+    "tallest_m": 105.0,
+    "error": null,
+    "m_per_capita": 2.3677712507469756e-05,
+    "mm_per_1000": 0.023677712507469754
+  },
+  {
+    "city": "Johannesburg",
+    "slug": "johannesburg",
+    "wikidata_pop": 4803262,
+    "sc_pop": 5635127,
+    "tallest_m": 228.0,
+    "error": null,
+    "m_per_capita": 4.046049006526384e-05,
+    "mm_per_1000": 0.04046049006526384
+  },
+  {
+    "city": "Dar es Salaam",
+    "slug": "dar-es-salaam",
+    "wikidata_pop": 4715000,
+    "sc_pop": 5383728,
+    "tallest_m": 160.0,
+    "error": null,
+    "m_per_capita": 2.9719183435715922e-05,
+    "mm_per_1000": 0.02971918343571592
+  },
+  {
+    "city": "Giza",
+    "slug": "giza",
+    "wikidata_pop": 4458135,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Lanzhou",
+    "slug": "lanzhou",
+    "wikidata_pop": 4359446,
+    "sc_pop": 3000000,
+    "tallest_m": 313.0,
+    "error": null,
+    "m_per_capita": 0.00010433333333333334,
+    "mm_per_1000": 0.10433333333333333
+  },
+  {
+    "city": "Kano",
+    "slug": "kano",
+    "wikidata_pop": 4348000,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Bamako",
+    "slug": "bamako",
+    "wikidata_pop": 4227569,
+    "sc_pop": 1809106,
+    "tallest_m": 80.0,
+    "error": null,
+    "m_per_capita": 4.42207366511415e-05,
+    "mm_per_1000": 0.044220736651141505
+  },
+  {
+    "city": "New Taipei",
+    "slug": "new-taipei",
+    "wikidata_pop": 4046037,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Amman",
+    "slug": "amman",
+    "wikidata_pop": 4007526,
+    "sc_pop": 1275857,
+    "tallest_m": 188.0,
+    "error": null,
+    "m_per_capita": 0.00014735193677661368,
+    "mm_per_1000": 0.14735193677661368
+  },
+  {
+    "city": "Dubai",
+    "slug": "dubai",
+    "wikidata_pop": 3944751,
+    "sc_pop": 3478300,
+    "tallest_m": 828.0,
+    "error": null,
+    "m_per_capita": 0.00023804732196762787,
+    "mm_per_1000": 0.23804732196762787
+  },
+  {
+    "city": "Kumasi",
+    "slug": "kumasi",
+    "wikidata_pop": 3903480,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Los Angeles",
+    "slug": "los-angeles",
+    "wikidata_pop": 3898747,
+    "sc_pop": 3898747,
+    "tallest_m": 335.0,
+    "error": null,
+    "m_per_capita": 8.592504207120903e-05,
+    "mm_per_1000": 0.08592504207120903
+  },
+  {
+    "city": "Busan",
+    "slug": "busan",
+    "wikidata_pop": 3453198,
+    "sc_pop": 3678555,
+    "tallest_m": 412.0,
+    "error": null,
+    "m_per_capita": 0.00011200050019640865,
+    "mm_per_1000": 0.11200050019640864
+  },
+  {
+    "city": "Madrid city",
+    "slug": "madrid-city",
+    "wikidata_pop": 3332035,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Casablanca",
+    "slug": "casablanca",
+    "wikidata_pop": 3215935,
+    "sc_pop": 3665954,
+    "tallest_m": 136.0,
+    "error": null,
+    "m_per_capita": 3.7098119616339975e-05,
+    "mm_per_1000": 0.03709811961633998
+  },
+  {
+    "city": "C\u1ea7n Th\u01a1",
+    "slug": "cn-th",
+    "wikidata_pop": 3207000,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Faisalabad",
+    "slug": "faisalabad",
+    "wikidata_pop": 3203846,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Santa Cruz de la Sierra",
+    "slug": "santa-cruz-de-la-sierra",
+    "wikidata_pop": 3151676,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Kanpur",
+    "slug": "kanpur",
+    "wikidata_pop": 3067700,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Taichung",
+    "slug": "taichung",
+    "wikidata_pop": 3033885,
+    "sc_pop": 1040725,
+    "tallest_m": 225.0,
+    "error": null,
+    "m_per_capita": 0.00021619544067837324,
+    "mm_per_1000": 0.21619544067837326
+  },
+  {
+    "city": "Bras\u00edlia",
+    "slug": "brasilia",
+    "wikidata_pop": 2996899,
+    "sc_pop": 2207718,
+    "tallest_m": 127.0,
+    "error": null,
+    "m_per_capita": 5.7525462944089776e-05,
+    "mm_per_1000": 0.05752546294408978
+  },
+  {
+    "city": "Kuwait City",
+    "slug": "kuwait-city",
+    "wikidata_pop": 2989000,
+    "sc_pop": 3298000,
+    "tallest_m": 413.0,
+    "error": null,
+    "m_per_capita": 0.0001252274105518496,
+    "mm_per_1000": 0.1252274105518496
+  },
+  {
+    "city": "Sanaa",
+    "slug": "sanaa",
+    "wikidata_pop": 2957000,
+    "sc_pop": null,
+    "tallest_m": 80.0,
+    "error": null
+  },
+  {
+    "city": "Tashkent",
+    "slug": "tashkent",
+    "wikidata_pop": 2956384,
+    "sc_pop": 1978028,
+    "tallest_m": 267.0,
+    "error": null,
+    "m_per_capita": 0.00013498292238532517,
+    "mm_per_1000": 0.1349829223853252
+  },
+  {
+    "city": "Bursa",
+    "slug": "bursa",
+    "wikidata_pop": 2901396,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Pyongyang",
+    "slug": "pyongyang",
+    "wikidata_pop": 2863000,
+    "sc_pop": 3222000,
+    "tallest_m": 274.0,
+    "error": null,
+    "m_per_capita": 8.504034761018e-05,
+    "mm_per_1000": 0.08504034761018
+  },
+  {
+    "city": "Da Nang",
+    "slug": "da-nang",
+    "wikidata_pop": 2819900,
+    "sc_pop": 988561,
+    "tallest_m": 167.0,
+    "error": null,
+    "m_per_capita": 0.00016893241792868623,
+    "mm_per_1000": 0.16893241792868624
+  },
+  {
+    "city": "Omdurman",
+    "slug": "omdurman",
+    "wikidata_pop": 2805396,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Toronto",
+    "slug": "toronto",
+    "wikidata_pop": 2794356,
+    "sc_pop": 2794356,
+    "tallest_m": 298.0,
+    "error": null,
+    "m_per_capita": 0.00010664353432418776,
+    "mm_per_1000": 0.10664353432418776
+  },
+  {
+    "city": "Kaohsiung",
+    "slug": "kaohsiung",
+    "wikidata_pop": 2733964,
+    "sc_pop": 1519711,
+    "tallest_m": 348.0,
+    "error": null,
+    "m_per_capita": 0.00022899090682373163,
+    "mm_per_1000": 0.2289909068237316
+  },
+  {
+    "city": "Brisbane",
+    "slug": "brisbane",
+    "wikidata_pop": 2706966,
+    "sc_pop": 2582007,
+    "tallest_m": 270.0,
+    "error": null,
+    "m_per_capita": 0.00010456981720034066,
+    "mm_per_1000": 0.10456981720034067
+  },
+  {
+    "city": "Damascus",
+    "slug": "damascus",
+    "wikidata_pop": 2685360,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Guayaquil",
+    "slug": "guayaquil",
+    "wikidata_pop": 2650288,
+    "sc_pop": 2723665,
+    "tallest_m": 136.0,
+    "error": null,
+    "m_per_capita": 4.993271933222331e-05,
+    "mm_per_1000": 0.04993271933222331
+  },
+  {
+    "city": "Chittagong",
+    "slug": "chittagong",
+    "wikidata_pop": 2581643,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": null
+  },
+  {
+    "city": "Fortaleza",
+    "slug": "fortaleza",
+    "wikidata_pop": 2578483,
+    "sc_pop": 2400000,
+    "tallest_m": 166.0,
+    "error": null,
+    "m_per_capita": 6.916666666666666e-05,
+    "mm_per_1000": 0.06916666666666667
+  },
+  {
+    "city": "Ibadan",
+    "slug": "ibadan",
+    "wikidata_pop": 2550593,
+    "sc_pop": 3649000,
+    "tallest_m": 105.0,
+    "error": null,
+    "m_per_capita": 2.8775006851192107e-05,
+    "mm_per_1000": 0.02877500685119211
+  },
+  {
+    "city": "Medell\u00edn",
+    "slug": "medellin",
+    "wikidata_pop": 2529403,
+    "sc_pop": 1999979,
+    "tallest_m": 175.0,
+    "error": null,
+    "m_per_capita": 8.750091875964697e-05,
+    "mm_per_1000": 0.08750091875964698
+  },
+  {
+    "city": "Havana",
+    "slug": "havana",
+    "wikidata_pop": 2492618,
+    "sc_pop": 2163824,
+    "tallest_m": 154.0,
+    "error": null,
+    "m_per_capita": 7.117029850856632e-05,
+    "mm_per_1000": 0.07117029850856632
+  },
+  {
+    "city": "Luanda",
+    "slug": "luanda",
+    "wikidata_pop": 2487444,
+    "sc_pop": 2776168,
+    "tallest_m": 145.0,
+    "error": null,
+    "m_per_capita": 5.223026848519254e-05,
+    "mm_per_1000": 0.05223026848519254
+  },
+  {
+    "city": "Cali",
+    "slug": "cali",
+    "wikidata_pop": 2471474,
+    "sc_pop": 2392877,
+    "tallest_m": 183.0,
+    "error": null,
+    "m_per_capita": 7.64769772955317e-05,
+    "mm_per_1000": 0.0764769772955317
+  },
+  {
+    "city": "Xining",
+    "slug": "xining",
+    "wikidata_pop": 2467965,
+    "sc_pop": 1677177,
+    "tallest_m": 219.0,
+    "error": null,
+    "m_per_capita": 0.00013057655810925145,
+    "mm_per_1000": 0.13057655810925145
+  },
+  {
+    "city": "Lusaka",
+    "slug": "lusaka",
+    "wikidata_pop": 2467563,
+    "sc_pop": 1267440,
+    "tallest_m": 90.0,
+    "error": null,
+    "m_per_capita": 7.100927854572998e-05,
+    "mm_per_1000": 0.07100927854572997
+  },
+  {
+    "city": "Taipei",
+    "slug": "taipei",
+    "wikidata_pop": 2442991,
+    "sc_pop": 7871900,
+    "tallest_m": 508.0,
+    "error": null,
+    "m_per_capita": 6.453334010848715e-05,
+    "mm_per_1000": 0.06453334010848714
+  },
+  {
+    "city": "Yaound\u00e9",
+    "slug": "yaounde",
+    "wikidata_pop": 2440462,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Antalya",
+    "slug": "antalya",
+    "wikidata_pop": 2426356,
+    "sc_pop": 1344000,
+    "tallest_m": null,
+    "error": null
+  },
+  {
+    "city": "Nagpur",
+    "slug": "nagpur",
+    "wikidata_pop": 2405665,
+    "sc_pop": 4653570,
+    "tallest_m": null,
+    "error": null
+  },
+  {
+    "city": "Ghaziabad",
+    "slug": "ghaziabad",
+    "wikidata_pop": 2375820,
+    "sc_pop": 1199191,
+    "tallest_m": null,
+    "error": null
+  },
+  {
+    "city": "Algiers",
+    "slug": "algiers",
+    "wikidata_pop": 2364230,
+    "sc_pop": 2364230,
+    "tallest_m": 264.0,
+    "error": null,
+    "m_per_capita": 0.00011166426278323175,
+    "mm_per_1000": 0.11166426278323174
+  },
+  {
+    "city": "Taoyuan",
+    "slug": "taoyuan",
+    "wikidata_pop": 2352683,
+    "sc_pop": null,
+    "tallest_m": 124.0,
+    "error": null
+  },
+  {
+    "city": "Belo Horizonte",
+    "slug": "belo-horizonte",
+    "wikidata_pop": 2315560,
+    "sc_pop": 2721564,
+    "tallest_m": 121.0,
+    "error": null,
+    "m_per_capita": 4.445972977302757e-05,
+    "mm_per_1000": 0.04445972977302757
+  },
+  {
+    "city": "Caracas",
+    "slug": "caracas",
+    "wikidata_pop": 2245744,
+    "sc_pop": 3000000,
+    "tallest_m": 225.0,
+    "error": null,
+    "m_per_capita": 7.5e-05,
+    "mm_per_1000": 0.075
+  },
+  {
+    "city": "Konya",
+    "slug": "konya",
+    "wikidata_pop": 2232374,
+    "sc_pop": 1390051,
+    "tallest_m": 163.0,
+    "error": null,
+    "m_per_capita": 0.00011726188463588747,
+    "mm_per_1000": 0.11726188463588746
+  },
+  {
+    "city": "Almaty",
+    "slug": "almaty",
+    "wikidata_pop": 2228675,
+    "sc_pop": 1977011,
+    "tallest_m": 168.0,
+    "error": null,
+    "m_per_capita": 8.497676543023786e-05,
+    "mm_per_1000": 0.08497676543023787
+  },
+  {
+    "city": "Santo Domingo",
+    "slug": "santo-domingo",
+    "wikidata_pop": 2201941,
+    "sc_pop": 12394,
+    "tallest_m": 161.0,
+    "error": null,
+    "m_per_capita": 0.012990156527351944,
+    "mm_per_1000": 12.990156527351944
+  },
+  {
+    "city": "Lom\u00e9",
+    "slug": "lome",
+    "wikidata_pop": 2188376,
+    "sc_pop": 749700,
+    "tallest_m": 102.0,
+    "error": null,
+    "m_per_capita": 0.00013605442176870748,
+    "mm_per_1000": 0.1360544217687075
+  },
+  {
+    "city": "Harare",
+    "slug": "harare",
+    "wikidata_pop": 2150000,
+    "sc_pop": 1542813,
+    "tallest_m": 120.0,
+    "error": null,
+    "m_per_capita": 7.778000315009012e-05,
+    "mm_per_1000": 0.07778000315009012
+  },
+  {
+    "city": "Brazzaville",
+    "slug": "brazzaville",
+    "wikidata_pop": 2145783,
+    "sc_pop": 1982000,
+    "tallest_m": 106.0,
+    "error": null,
+    "m_per_capita": 5.348133198789102e-05,
+    "mm_per_1000": 0.05348133198789102
+  },
+  {
+    "city": "Perth",
+    "slug": "perth",
+    "wikidata_pop": 2141834,
+    "sc_pop": 2907000,
+    "tallest_m": 253.0,
+    "error": null,
+    "m_per_capita": 8.703130374957e-05,
+    "mm_per_1000": 0.08703130374957001
+  },
+  {
+    "city": "Phnom Penh",
+    "slug": "phnom-penh",
+    "wikidata_pop": 2129371,
+    "sc_pop": 1573544,
+    "tallest_m": 228.0,
+    "error": null,
+    "m_per_capita": 0.00014489585292816725,
+    "mm_per_1000": 0.14489585292816726
+  },
+  {
+    "city": "Haiphong",
+    "slug": "haiphong",
+    "wikidata_pop": 2124500,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Mogadishu",
+    "slug": "mogadishu",
+    "wikidata_pop": 2120000,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Rawalpindi",
+    "slug": "rawalpindi",
+    "wikidata_pop": 2098231,
+    "sc_pop": 5402379,
+    "tallest_m": null,
+    "error": null
+  },
+  {
+    "city": "Vadodara",
+    "slug": "vadodara",
+    "wikidata_pop": 2065771,
+    "sc_pop": 1822221,
+    "tallest_m": null,
+    "error": null
+  },
+  {
+    "city": "Rajkot",
+    "slug": "rajkot",
+    "wikidata_pop": 2043000,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  },
+  {
+    "city": "Gujranwala",
+    "slug": "gujranwala",
+    "wikidata_pop": 2027001,
+    "sc_pop": null,
+    "tallest_m": null,
+    "error": "404"
+  }
+]

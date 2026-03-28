@@ -1,0 +1,802 @@
+[
+  {
+    "city": "Dubai",
+    "wikidata_pop": 3944751,
+    "tallest_m": 828.0,
+    "m_per_resident": 0.00020989917994824008,
+    "micrometres_per_resident": 209.8991799482401,
+    "rank": 1
+  },
+  {
+    "city": "Taipei",
+    "wikidata_pop": 2442991,
+    "tallest_m": 508.0,
+    "m_per_resident": 0.00020794182213524325,
+    "micrometres_per_resident": 207.94182213524326,
+    "rank": 2
+  },
+  {
+    "city": "Kuwait City",
+    "wikidata_pop": 2989000,
+    "tallest_m": 413.0,
+    "m_per_resident": 0.00013817330210772833,
+    "micrometres_per_resident": 138.17330210772832,
+    "rank": 3
+  },
+  {
+    "city": "Kaohsiung",
+    "wikidata_pop": 2733964,
+    "tallest_m": 348.0,
+    "m_per_resident": 0.00012728770386149927,
+    "micrometres_per_resident": 127.28770386149927,
+    "rank": 4
+  },
+  {
+    "city": "Busan",
+    "wikidata_pop": 3453198,
+    "tallest_m": 412.0,
+    "m_per_resident": 0.00011930969495522701,
+    "micrometres_per_resident": 119.30969495522702,
+    "rank": 5
+  },
+  {
+    "city": "Perth",
+    "wikidata_pop": 2141834,
+    "tallest_m": 253.0,
+    "m_per_resident": 0.00011812306649348175,
+    "micrometres_per_resident": 118.12306649348174,
+    "rank": 6
+  },
+  {
+    "city": "Algiers",
+    "wikidata_pop": 2364230,
+    "tallest_m": 264.0,
+    "m_per_resident": 0.00011166426278323175,
+    "micrometres_per_resident": 111.66426278323175,
+    "rank": 7
+  },
+  {
+    "city": "Phnom Penh",
+    "wikidata_pop": 2129371,
+    "tallest_m": 228.0,
+    "m_per_resident": 0.00010707387298878401,
+    "micrometres_per_resident": 107.07387298878402,
+    "rank": 8
+  },
+  {
+    "city": "Toronto",
+    "wikidata_pop": 2794356,
+    "tallest_m": 298.0,
+    "m_per_resident": 0.00010664353432418776,
+    "micrometres_per_resident": 106.64353432418777,
+    "rank": 9
+  },
+  {
+    "city": "Caracas",
+    "wikidata_pop": 2245744,
+    "tallest_m": 225.0,
+    "m_per_resident": 0.0001001895140318754,
+    "micrometres_per_resident": 100.1895140318754,
+    "rank": 10
+  },
+  {
+    "city": "Brisbane",
+    "wikidata_pop": 2706966,
+    "tallest_m": 270.0,
+    "m_per_resident": 9.974266392706817e-05,
+    "micrometres_per_resident": 99.74266392706816,
+    "rank": 11
+  },
+  {
+    "city": "Pyongyang",
+    "wikidata_pop": 2863000,
+    "tallest_m": 274.0,
+    "m_per_resident": 9.570380719524974e-05,
+    "micrometres_per_resident": 95.70380719524974,
+    "rank": 12
+  },
+  {
+    "city": "Tashkent",
+    "wikidata_pop": 2956384,
+    "tallest_m": 267.0,
+    "m_per_resident": 9.031303105415264e-05,
+    "micrometres_per_resident": 90.31303105415265,
+    "rank": 13
+  },
+  {
+    "city": "Xining",
+    "wikidata_pop": 2467965,
+    "tallest_m": 219.0,
+    "m_per_resident": 8.873707690344069e-05,
+    "micrometres_per_resident": 88.7370769034407,
+    "rank": 14
+  },
+  {
+    "city": "Los Angeles",
+    "wikidata_pop": 3898747,
+    "tallest_m": 335.0,
+    "m_per_resident": 8.592504207120903e-05,
+    "micrometres_per_resident": 85.92504207120902,
+    "rank": 15
+  },
+  {
+    "city": "Haiphong",
+    "wikidata_pop": 2124500,
+    "tallest_m": 180.0,
+    "m_per_resident": 8.472581783949164e-05,
+    "micrometres_per_resident": 84.72581783949164,
+    "rank": 16
+  },
+  {
+    "city": "Kuala Lumpur",
+    "wikidata_pop": 9000280,
+    "tallest_m": 679.0,
+    "m_per_resident": 7.544209735697112e-05,
+    "micrometres_per_resident": 75.44209735697112,
+    "rank": 17
+  },
+  {
+    "city": "Almaty",
+    "wikidata_pop": 2228675,
+    "tallest_m": 168.0,
+    "m_per_resident": 7.538111209575195e-05,
+    "micrometres_per_resident": 75.38111209575196,
+    "rank": 18
+  },
+  {
+    "city": "Madrid city",
+    "wikidata_pop": 3332035,
+    "tallest_m": 249.0,
+    "m_per_resident": 7.47291069871715e-05,
+    "micrometres_per_resident": 74.7291069871715,
+    "rank": 19
+  },
+  {
+    "city": "Taichung",
+    "wikidata_pop": 3033885,
+    "tallest_m": 225.0,
+    "m_per_resident": 7.416233641024627e-05,
+    "micrometres_per_resident": 74.16233641024627,
+    "rank": 20
+  },
+  {
+    "city": "Cali",
+    "wikidata_pop": 2471474,
+    "tallest_m": 183.0,
+    "m_per_resident": 7.404488171835917e-05,
+    "micrometres_per_resident": 74.04488171835916,
+    "rank": 21
+  },
+  {
+    "city": "Santo Domingo",
+    "wikidata_pop": 2201941,
+    "tallest_m": 161.0,
+    "m_per_resident": 7.311730877439495e-05,
+    "micrometres_per_resident": 73.11730877439496,
+    "rank": 22
+  },
+  {
+    "city": "Konya",
+    "wikidata_pop": 2232374,
+    "tallest_m": 163.0,
+    "m_per_resident": 7.30164390017085e-05,
+    "micrometres_per_resident": 73.0164390017085,
+    "rank": 23
+  },
+  {
+    "city": "Lanzhou",
+    "wikidata_pop": 4359446,
+    "tallest_m": 313.0,
+    "m_per_resident": 7.179811379702834e-05,
+    "micrometres_per_resident": 71.79811379702834,
+    "rank": 24
+  },
+  {
+    "city": "Medell\u00edn",
+    "wikidata_pop": 2529403,
+    "tallest_m": 175.0,
+    "m_per_resident": 6.918628625015468e-05,
+    "micrometres_per_resident": 69.18628625015468,
+    "rank": 25
+  },
+  {
+    "city": "Hong Kong",
+    "wikidata_pop": 7413070,
+    "tallest_m": 484.0,
+    "m_per_resident": 6.529008899147048e-05,
+    "micrometres_per_resident": 65.29008899147048,
+    "rank": 26
+  },
+  {
+    "city": "Fortaleza",
+    "wikidata_pop": 2578483,
+    "tallest_m": 166.0,
+    "m_per_resident": 6.43789390893793e-05,
+    "micrometres_per_resident": 64.3789390893793,
+    "rank": 27
+  },
+  {
+    "city": "Havana",
+    "wikidata_pop": 2492618,
+    "tallest_m": 154.0,
+    "m_per_resident": 6.178243116273733e-05,
+    "micrometres_per_resident": 61.78243116273733,
+    "rank": 28
+  },
+  {
+    "city": "New York City",
+    "wikidata_pop": 8804190,
+    "tallest_m": 541.0,
+    "m_per_resident": 6.144801509281376e-05,
+    "micrometres_per_resident": 61.448015092813755,
+    "rank": 29
+  },
+  {
+    "city": "Bursa",
+    "wikidata_pop": 2901396,
+    "tallest_m": 173.0,
+    "m_per_resident": 5.9626469465043725e-05,
+    "micrometres_per_resident": 59.626469465043726,
+    "rank": 30
+  },
+  {
+    "city": "Melbourne",
+    "wikidata_pop": 5350705,
+    "tallest_m": 317.0,
+    "m_per_resident": 5.9244529459202105e-05,
+    "micrometres_per_resident": 59.244529459202106,
+    "rank": 31
+  },
+  {
+    "city": "Da Nang",
+    "wikidata_pop": 2819900,
+    "tallest_m": 167.0,
+    "m_per_resident": 5.922195822546899e-05,
+    "micrometres_per_resident": 59.22195822546899,
+    "rank": 32
+  },
+  {
+    "city": "Ghaziabad",
+    "wikidata_pop": 2375820,
+    "tallest_m": 140.0,
+    "m_per_resident": 5.8927023090974906e-05,
+    "micrometres_per_resident": 58.927023090974906,
+    "rank": 33
+  },
+  {
+    "city": "Luanda",
+    "wikidata_pop": 2487444,
+    "tallest_m": 145.0,
+    "m_per_resident": 5.829276960606952e-05,
+    "micrometres_per_resident": 58.29276960606952,
+    "rank": 34
+  },
+  {
+    "city": "Vadodara",
+    "wikidata_pop": 2065771,
+    "tallest_m": 120.0,
+    "m_per_resident": 5.8089691451763046e-05,
+    "micrometres_per_resident": 58.089691451763045,
+    "rank": 35
+  },
+  {
+    "city": "Seoul",
+    "wikidata_pop": 9668465,
+    "tallest_m": 555.0,
+    "m_per_resident": 5.7403114144799616e-05,
+    "micrometres_per_resident": 57.403114144799616,
+    "rank": 36
+  },
+  {
+    "city": "Harare",
+    "wikidata_pop": 2150000,
+    "tallest_m": 120.0,
+    "m_per_resident": 5.5813953488372095e-05,
+    "micrometres_per_resident": 55.81395348837209,
+    "rank": 37
+  },
+  {
+    "city": "Bangkok",
+    "wikidata_pop": 5676648,
+    "tallest_m": 315.0,
+    "m_per_resident": 5.54904936857103e-05,
+    "micrometres_per_resident": 55.4904936857103,
+    "rank": 38
+  },
+  {
+    "city": "New Taipei",
+    "wikidata_pop": 4046037,
+    "tallest_m": 220.0,
+    "m_per_resident": 5.4374193809893486e-05,
+    "micrometres_per_resident": 54.374193809893484,
+    "rank": 39
+  },
+  {
+    "city": "Rawalpindi",
+    "wikidata_pop": 2098231,
+    "tallest_m": 112.0,
+    "m_per_resident": 5.337829819500331e-05,
+    "micrometres_per_resident": 53.37829819500331,
+    "rank": 40
+  },
+  {
+    "city": "Taoyuan",
+    "wikidata_pop": 2352683,
+    "tallest_m": 124.0,
+    "m_per_resident": 5.2705783142055265e-05,
+    "micrometres_per_resident": 52.70578314205527,
+    "rank": 41
+  },
+  {
+    "city": "Nagpur",
+    "wikidata_pop": 2405665,
+    "tallest_m": 126.75,
+    "m_per_resident": 5.2688134050252216e-05,
+    "micrometres_per_resident": 52.688134050252216,
+    "rank": 42
+  },
+  {
+    "city": "Belo Horizonte",
+    "wikidata_pop": 2315560,
+    "tallest_m": 121.0,
+    "m_per_resident": 5.2255178013094025e-05,
+    "micrometres_per_resident": 52.255178013094024,
+    "rank": 43
+  },
+  {
+    "city": "Antalya",
+    "wikidata_pop": 2426356,
+    "tallest_m": 125.0,
+    "m_per_resident": 5.151758439404605e-05,
+    "micrometres_per_resident": 51.51758439404605,
+    "rank": 44
+  },
+  {
+    "city": "Guayaquil",
+    "wikidata_pop": 2650288,
+    "tallest_m": 136.0,
+    "m_per_resident": 5.131517782218385e-05,
+    "micrometres_per_resident": 51.31517782218385,
+    "rank": 45
+  },
+  {
+    "city": "Sydney",
+    "wikidata_pop": 5450496,
+    "tallest_m": 271.0,
+    "m_per_resident": 4.9720245643699214e-05,
+    "micrometres_per_resident": 49.720245643699215,
+    "rank": 46
+  },
+  {
+    "city": "Chittagong",
+    "wikidata_pop": 2581643,
+    "tallest_m": 128.0,
+    "m_per_resident": 4.958082895272507e-05,
+    "micrometres_per_resident": 49.58082895272507,
+    "rank": 47
+  },
+  {
+    "city": "Brazzaville",
+    "wikidata_pop": 2145783,
+    "tallest_m": 106.0,
+    "m_per_resident": 4.93992169758079e-05,
+    "micrometres_per_resident": 49.399216975807896,
+    "rank": 48
+  },
+  {
+    "city": "Singapore",
+    "wikidata_pop": 5866139,
+    "tallest_m": 284.0,
+    "m_per_resident": 4.8413445368410126e-05,
+    "micrometres_per_resident": 48.41344536841012,
+    "rank": 49
+  },
+  {
+    "city": "Nanjing",
+    "wikidata_pop": 9314685,
+    "tallest_m": 450.0,
+    "m_per_resident": 4.831081244293285e-05,
+    "micrometres_per_resident": 48.31081244293285,
+    "rank": 50
+  },
+  {
+    "city": "Johannesburg",
+    "wikidata_pop": 4803262,
+    "tallest_m": 228.0,
+    "m_per_resident": 4.746774171386029e-05,
+    "micrometres_per_resident": 47.46774171386029,
+    "rank": 51
+  },
+  {
+    "city": "Amman",
+    "wikidata_pop": 4007526,
+    "tallest_m": 188.0,
+    "m_per_resident": 4.6911735569525935e-05,
+    "micrometres_per_resident": 46.91173556952594,
+    "rank": 52
+  },
+  {
+    "city": "Lom\u00e9",
+    "wikidata_pop": 2188376,
+    "tallest_m": 102.0,
+    "m_per_resident": 4.6609906158722264e-05,
+    "micrometres_per_resident": 46.60990615872226,
+    "rank": 53
+  },
+  {
+    "city": "Damascus",
+    "wikidata_pop": 2685360,
+    "tallest_m": 123.0,
+    "m_per_resident": 4.580391455894182e-05,
+    "micrometres_per_resident": 45.80391455894182,
+    "rank": 54
+  },
+  {
+    "city": "Santa Cruz de la Sierra",
+    "wikidata_pop": 3151676,
+    "tallest_m": 140.0,
+    "m_per_resident": 4.442080975328682e-05,
+    "micrometres_per_resident": 44.42080975328682,
+    "rank": 55
+  },
+  {
+    "city": "Ningbo",
+    "wikidata_pop": 9404283,
+    "tallest_m": 409.0,
+    "m_per_resident": 4.349082221366584e-05,
+    "micrometres_per_resident": 43.49082221366584,
+    "rank": 56
+  },
+  {
+    "city": "Omdurman",
+    "wikidata_pop": 2805396,
+    "tallest_m": 120.0,
+    "m_per_resident": 4.2774709880530234e-05,
+    "micrometres_per_resident": 42.77470988053023,
+    "rank": 57
+  },
+  {
+    "city": "Bras\u00edlia",
+    "wikidata_pop": 2996899,
+    "tallest_m": 127.0,
+    "m_per_resident": 4.237713716745209e-05,
+    "micrometres_per_resident": 42.37713716745209,
+    "rank": 58
+  },
+  {
+    "city": "Casablanca",
+    "wikidata_pop": 3215935,
+    "tallest_m": 136.0,
+    "m_per_resident": 4.228941194396031e-05,
+    "micrometres_per_resident": 42.28941194396031,
+    "rank": 59
+  },
+  {
+    "city": "Faisalabad",
+    "wikidata_pop": 3203846,
+    "tallest_m": 135.0,
+    "m_per_resident": 4.213685676527523e-05,
+    "micrometres_per_resident": 42.13685676527523,
+    "rank": 60
+  },
+  {
+    "city": "Ibadan",
+    "wikidata_pop": 2550593,
+    "tallest_m": 105.0,
+    "m_per_resident": 4.1166897266635644e-05,
+    "micrometres_per_resident": 41.166897266635644,
+    "rank": 61
+  },
+  {
+    "city": "Rajkot",
+    "wikidata_pop": 2043000,
+    "tallest_m": 80.0,
+    "m_per_resident": 3.915810083210964e-05,
+    "micrometres_per_resident": 39.158100832109646,
+    "rank": 62
+  },
+  {
+    "city": "Yaound\u00e9",
+    "wikidata_pop": 2440462,
+    "tallest_m": 95.0,
+    "m_per_resident": 3.892705561487948e-05,
+    "micrometres_per_resident": 38.92705561487948,
+    "rank": 63
+  },
+  {
+    "city": "Tianjin",
+    "wikidata_pop": 13866009,
+    "tallest_m": 530.0,
+    "m_per_resident": 3.822296668060723e-05,
+    "micrometres_per_resident": 38.222966680607236,
+    "rank": 64
+  },
+  {
+    "city": "Addis Ababa",
+    "wikidata_pop": 5704000,
+    "tallest_m": 209.0,
+    "m_per_resident": 3.664095371669004e-05,
+    "micrometres_per_resident": 36.64095371669004,
+    "rank": 65
+  },
+  {
+    "city": "Lusaka",
+    "wikidata_pop": 2467563,
+    "tallest_m": 90.0,
+    "m_per_resident": 3.6473232902260243e-05,
+    "micrometres_per_resident": 36.47323290226024,
+    "rank": 66
+  },
+  {
+    "city": "C\u1ea7n Th\u01a1",
+    "wikidata_pop": 3207000,
+    "tallest_m": 115.0,
+    "m_per_resident": 3.585905830994699e-05,
+    "micrometres_per_resident": 35.85905830994699,
+    "rank": 67
+  },
+  {
+    "city": "London",
+    "wikidata_pop": 8799728,
+    "tallest_m": 306.0,
+    "m_per_resident": 3.477380209933761e-05,
+    "micrometres_per_resident": 34.773802099337615,
+    "rank": 68
+  },
+  {
+    "city": "Shenzhen",
+    "wikidata_pop": 17494398,
+    "tallest_m": 599.0,
+    "m_per_resident": 3.423953199189821e-05,
+    "micrometres_per_resident": 34.23953199189821,
+    "rank": 69
+  },
+  {
+    "city": "Dar es Salaam",
+    "wikidata_pop": 4715000,
+    "tallest_m": 160.0,
+    "m_per_resident": 3.393425238600212e-05,
+    "micrometres_per_resident": 33.93425238600212,
+    "rank": 70
+  },
+  {
+    "city": "Tokyo",
+    "wikidata_pop": 9640742,
+    "tallest_m": 327.0,
+    "m_per_resident": 3.391855108247892e-05,
+    "micrometres_per_resident": 33.91855108247892,
+    "rank": 71
+  },
+  {
+    "city": "Ankara",
+    "wikidata_pop": 5803482,
+    "tallest_m": 195.0,
+    "m_per_resident": 3.36005177581321e-05,
+    "micrometres_per_resident": 33.6005177581321,
+    "rank": 72
+  },
+  {
+    "city": "Ho Chi Minh City",
+    "wikidata_pop": 14002598,
+    "tallest_m": 461.0,
+    "m_per_resident": 3.2922461960273373e-05,
+    "micrometres_per_resident": 32.922461960273374,
+    "rank": 73
+  },
+  {
+    "city": "Kanpur",
+    "wikidata_pop": 3067700,
+    "tallest_m": 100.0,
+    "m_per_resident": 3.2597711640642824e-05,
+    "micrometres_per_resident": 32.59771164064282,
+    "rank": 74
+  },
+  {
+    "city": "Giza",
+    "wikidata_pop": 4458135,
+    "tallest_m": 142.0,
+    "m_per_resident": 3.1851884252047103e-05,
+    "micrometres_per_resident": 31.851884252047103,
+    "rank": 75
+  },
+  {
+    "city": "Gujranwala",
+    "wikidata_pop": 2027001,
+    "tallest_m": 64.0,
+    "m_per_resident": 3.1573738740138754e-05,
+    "micrometres_per_resident": 31.573738740138754,
+    "rank": 76
+  },
+  {
+    "city": "Changchun",
+    "wikidata_pop": 9066906,
+    "tallest_m": 283.0,
+    "m_per_resident": 3.121241137825847e-05,
+    "micrometres_per_resident": 31.21241137825847,
+    "rank": 77
+  },
+  {
+    "city": "Mexico City",
+    "wikidata_pop": 9209944,
+    "tallest_m": 266.0,
+    "m_per_resident": 2.888182599155869e-05,
+    "micrometres_per_resident": 28.88182599155869,
+    "rank": 78
+  },
+  {
+    "city": "Pune",
+    "wikidata_pop": 5945000,
+    "tallest_m": 165.0,
+    "m_per_resident": 2.7754415475189235e-05,
+    "micrometres_per_resident": 27.754415475189234,
+    "rank": 79
+  },
+  {
+    "city": "Sanaa",
+    "wikidata_pop": 2957000,
+    "tallest_m": 80.0,
+    "m_per_resident": 2.705444707473791e-05,
+    "micrometres_per_resident": 27.054447074737908,
+    "rank": 80
+  },
+  {
+    "city": "Harbin",
+    "wikidata_pop": 10009854,
+    "tallest_m": 270.0,
+    "m_per_resident": 2.697342039154617e-05,
+    "micrometres_per_resident": 26.97342039154617,
+    "rank": 81
+  },
+  {
+    "city": "Mogadishu",
+    "wikidata_pop": 2120000,
+    "tallest_m": 55.0,
+    "m_per_resident": 2.5943396226415094e-05,
+    "micrometres_per_resident": 25.943396226415093,
+    "rank": 82
+  },
+  {
+    "city": "Alexandria",
+    "wikidata_pop": 5362517,
+    "tallest_m": 135.0,
+    "m_per_resident": 2.5174745366774595e-05,
+    "micrometres_per_resident": 25.174745366774594,
+    "rank": 83
+  },
+  {
+    "city": "Khartoum",
+    "wikidata_pop": 5345000,
+    "tallest_m": 130.0,
+    "m_per_resident": 2.432179607109448e-05,
+    "micrometres_per_resident": 24.321796071094482,
+    "rank": 84
+  },
+  {
+    "city": "Beijing",
+    "wikidata_pop": 21893095,
+    "tallest_m": 528.0,
+    "m_per_resident": 2.411719311499813e-05,
+    "micrometres_per_resident": 24.11719311499813,
+    "rank": 85
+  },
+  {
+    "city": "Abidjan",
+    "wikidata_pop": 5616633,
+    "tallest_m": 120.0,
+    "m_per_resident": 2.1365113227088187e-05,
+    "micrometres_per_resident": 21.365113227088187,
+    "rank": 86
+  },
+  {
+    "city": "Mumbai",
+    "wikidata_pop": 15414288,
+    "tallest_m": 320.0,
+    "m_per_resident": 2.075995985023765e-05,
+    "micrometres_per_resident": 20.759959850237653,
+    "rank": 87
+  },
+  {
+    "city": "Kabul",
+    "wikidata_pop": 5333284,
+    "tallest_m": 105.0,
+    "m_per_resident": 1.9687682111059527e-05,
+    "micrometres_per_resident": 19.687682111059527,
+    "rank": 88
+  },
+  {
+    "city": "Bamako",
+    "wikidata_pop": 4227569,
+    "tallest_m": 80.0,
+    "m_per_resident": 1.8923404916631757e-05,
+    "micrometres_per_resident": 18.923404916631757,
+    "rank": 89
+  },
+  {
+    "city": "Prayagraj",
+    "wikidata_pop": 5954391,
+    "tallest_m": 110.0,
+    "m_per_resident": 1.8473761632381885e-05,
+    "micrometres_per_resident": 18.473761632381887,
+    "rank": 90
+  },
+  {
+    "city": "Yangon",
+    "wikidata_pop": 6874000,
+    "tallest_m": 122.0,
+    "m_per_resident": 1.774803607797498e-05,
+    "micrometres_per_resident": 17.74803607797498,
+    "rank": 91
+  },
+  {
+    "city": "Kumasi",
+    "wikidata_pop": 3903480,
+    "tallest_m": 65.0,
+    "m_per_resident": 1.6651808130181274e-05,
+    "micrometres_per_resident": 16.651808130181273,
+    "rank": 92
+  },
+  {
+    "city": "Surat",
+    "wikidata_pop": 5935000,
+    "tallest_m": 92.73,
+    "m_per_resident": 1.5624262847514745e-05,
+    "micrometres_per_resident": 15.624262847514744,
+    "rank": 93
+  },
+  {
+    "city": "S\u00e3o Paulo",
+    "wikidata_pop": 11451999,
+    "tallest_m": 172.0,
+    "m_per_resident": 1.5019211929725108e-05,
+    "micrometres_per_resident": 15.019211929725108,
+    "rank": 94
+  },
+  {
+    "city": "Kano",
+    "wikidata_pop": 4348000,
+    "tallest_m": 62.0,
+    "m_per_resident": 1.4259429622815087e-05,
+    "micrometres_per_resident": 14.259429622815087,
+    "rank": 95
+  },
+  {
+    "city": "Lima",
+    "wikidata_pop": 9943800,
+    "tallest_m": 140.0,
+    "m_per_resident": 1.4079124680705566e-05,
+    "micrometres_per_resident": 14.079124680705567,
+    "rank": 96
+  },
+  {
+    "city": "Chengdu",
+    "wikidata_pop": 20937757,
+    "tallest_m": 284.0,
+    "m_per_resident": 1.3564012611284007e-05,
+    "micrometres_per_resident": 13.564012611284006,
+    "rank": 97
+  },
+  {
+    "city": "Lahore",
+    "wikidata_pop": 11126285,
+    "tallest_m": 150.0,
+    "m_per_resident": 1.3481588868162195e-05,
+    "micrometres_per_resident": 13.481588868162195,
+    "rank": 98
+  },
+  {
+    "city": "Lagos",
+    "wikidata_pop": 15070000,
+    "tallest_m": 160.0,
+    "m_per_resident": 1.0617120106171201e-05,
+    "micrometres_per_resident": 10.617120106171201,
+    "rank": 99
+  },
+  {
+    "city": "Dhaka",
+    "wikidata_pop": 16800000,
+    "tallest_m": 171.0,
+    "m_per_resident": 1.0178571428571429e-05,
+    "micrometres_per_resident": 10.178571428571429,
+    "rank": 100
+  }
+]
