@@ -28,6 +28,7 @@ categories: reflection
 - Deep-cleaned the apartment
 - Had the insane time insights, etc., after the long walk with Milo.
 - Run with Mandeep was good
+- Most insane yoga session to date, very excellent!
 
 ### Thursday
 
