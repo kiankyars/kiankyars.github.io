@@ -36,3 +36,8 @@ permalink: /about/
 ---
 
 > People I know who spend a lot of time revisiting old decisions are less effective because they mire themselves in what ifs and counterfactuals. So I really don't spend time on it.
+
+---
+
+> The Great Man … is colder, harder, less hesitating, and without fear of “opinion”; he lacks the virtues that accompany respect and “respectability,” and altogether everything that is the “virtue of the herd.” If he cannot lead, he goes alone… . He knows he is incommunicable: he finds it tasteless to be familiar… . When not speaking to himself, he wears a mask. There is a solitude within him that is inaccessible to praise or blame.
+— FRIEDRICH NIETZSCHE, The Will to Power
