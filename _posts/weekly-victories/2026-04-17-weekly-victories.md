@@ -19,7 +19,7 @@ categories: reflection
 ### Monday
 
 - Restarted yoga!
-- Met DYLAN PATEL!
+- Met DYLAN PATEL! (destiny)
 - One month work anniversary :)
 
 ### Tuesday

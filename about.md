@@ -4,6 +4,10 @@ title: "About"
 permalink: /about/
 ---
 
+I operate by [Crocker's rule](http://sl4.org/crocker.html).
+
+___
+
 - I am passionate about 3 things:
   - education
   - running
