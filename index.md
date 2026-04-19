@@ -7,6 +7,7 @@ title: Home
 - [X](https://twitter.com/neuralkian)
 - [LinkedIn](https://www.linkedin.com/in/kyars)
 - [Google Scholar](https://scholar.google.com/citations?user=tVqRWjoAAAAJ&hl=en)
+- [RLVR book](https://rlvrbook.com)
 - [Medium](https://medium.com/@kyars)
 - [Goodreads](https://www.goodreads.com/user/show/108079212-kian)
 - [Strava](https://www.strava.com/athletes/kyars)
