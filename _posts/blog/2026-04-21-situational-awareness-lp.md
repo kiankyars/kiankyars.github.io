@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Situational Awareness LP: a public-record history
+title: Situational Awareness LP
 date: 2026-04-21
 categories: investing
 ---
