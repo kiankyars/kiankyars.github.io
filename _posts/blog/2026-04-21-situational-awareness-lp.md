@@ -26,22 +26,20 @@ As of **April 21, 2026**, the latest public 13F for SALP is the filing for **Dec
 
 ## Timeline
 
-| Date | What the public record says | Source |
-|---|---|---|
-| 2024-05-06 | Bloomberg's LEI record says the **Situational Awareness LP** legal entity was created in Delaware on this date. | [Bloomberg LEI](https://lei.bloomberg.com/leis/view/254900Q1483NSNRJ0W04) |
-| 2024-06-14 | Leopold publishes **"SITUATIONAL AWARENESS: The Decade Ahead."** | [For Our Posterity](https://www.forourposterity.com/) |
-| 2024-09-23 | **Situational Awareness Partners LP** files its first Form D: indefinite 506(b) offering, **$5 million** minimum, first sale not yet occurred. | [Initial onshore Form D](https://www.sec.gov/Archives/edgar/data/2038540/000093583624000602/xslFormDX08/primary_doc.xml) |
-| 2024-10-04 | Bloomberg's LEI record shows a **legal-form change** effective on this date. | [Bloomberg LEI](https://lei.bloomberg.com/leis/view/254900Q1483NSNRJ0W04) |
-| 2024-11-01 | Later Form D/A says this was the onshore fund's **first sale date**. | [2025 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583625000591/xslFormDX08/primary_doc.xml) |
-| 2024-12-05 | A separate filing appears for **"Situational Awareness LP Nov 2024 a Series of CGF2021 LLC"**: a Sydecar-administered Delaware series vehicle that sold **$24.975 million** to **32 investors**. | [Series vehicle Form D](https://www.sec.gov/Archives/edgar/data/2047424/000204742424000001/xslFormDX08/primary_doc.xml) |
-| 2024-12-11 | **Situational Awareness Offshore LP** files Form D from the Cayman Islands, showing **$24.042 million** sold to **2 investors** and a **$5 million** minimum. | [Offshore Form D](https://assets.disclosurequest.com/Archives/edgar/data/2048430/000093583624000752/xslFormDX01/primary_doc.html) |
-| 2025-02-11 | SALP files its first public 13F, for **2024-Q4**. | [Q4 2024 13F](https://www.sec.gov/Archives/edgar/data/2045724/000093583625000120/0000935836-25-000120-index.htm) |
-| 2025-08-19 | SALP files a **Core Scientific 13D**, disclosing **17,682,918 shares**, **5.8%** ownership, and **$213.19 million** of working capital used. | [Core Scientific 13D](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000543/xslSCHEDULE_13D_X01/primary_doc.xml) |
-| 2025-09-08 | Onshore Form D/A says **$997,910,000** had been sold to **65 investors**. | [2025 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583625000591/xslFormDX08/primary_doc.xml) |
-| 2025-10-14 | Core Scientific **13D/A** discloses **28,756,478 shares** and **9.4%** ownership. | [Core Scientific 13D/A](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000638/xslSCHEDULE_13D_X01/primary_doc.xml) |
-| 2026-02-11 | SALP files its latest public 13F to date, for **2025-Q4**: **29 line items** and **$5,516,758,344** of disclosed 13F value. | [Q4 2025 13F](https://www.sec.gov/Archives/edgar/data/2045724/000204572426000002/0002045724-26-000002-index.html) |
-| 2026-03-10 | Onshore Form D/A says **$1,762,326,027** had been sold to **93 investors**. | [2026 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583626000153/xslFormDX08/primary_doc.xml) |
-| 2026-03-30 | Latest public Form ADV shows SALP at **77 Federal Street, 4th Floor**, **$9.278 billion** of RAUM, and a 2-fund structure. | [Form ADV](https://reports.adviserinfo.sec.gov/reports/ADV/333011/PDF/333011.pdf) |
+- **2024-05-06**: Bloomberg's LEI record says the **Situational Awareness LP** legal entity was created in Delaware on this date. Source: [Bloomberg LEI](https://lei.bloomberg.com/leis/view/254900Q1483NSNRJ0W04)
+- **2024-06-14**: Leopold publishes **"SITUATIONAL AWARENESS: The Decade Ahead."** Source: [For Our Posterity](https://www.forourposterity.com/)
+- **2024-09-23**: **Situational Awareness Partners LP** files its first Form D: indefinite 506(b) offering, **$5 million** minimum, first sale not yet occurred. Source: [Initial onshore Form D](https://www.sec.gov/Archives/edgar/data/2038540/000093583624000602/xslFormDX08/primary_doc.xml)
+- **2024-10-04**: Bloomberg's LEI record shows a **legal-form change** effective on this date. Source: [Bloomberg LEI](https://lei.bloomberg.com/leis/view/254900Q1483NSNRJ0W04)
+- **2024-11-01**: Later Form D/A says this was the onshore fund's **first sale date**. Source: [2025 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583625000591/xslFormDX08/primary_doc.xml)
+- **2024-12-05**: A separate filing appears for **"Situational Awareness LP Nov 2024 a Series of CGF2021 LLC"**: a Sydecar-administered Delaware series vehicle that sold **$24.975 million** to **32 investors**. Source: [Series vehicle Form D](https://www.sec.gov/Archives/edgar/data/2047424/000204742424000001/xslFormDX08/primary_doc.xml)
+- **2024-12-11**: **Situational Awareness Offshore LP** files Form D from the Cayman Islands, showing **$24.042 million** sold to **2 investors** and a **$5 million** minimum. Source: [Offshore Form D](https://assets.disclosurequest.com/Archives/edgar/data/2048430/000093583624000752/xslFormDX01/primary_doc.html)
+- **2025-02-11**: SALP files its first public 13F, for **2024-Q4**. Source: [Q4 2024 13F](https://www.sec.gov/Archives/edgar/data/2045724/000093583625000120/0000935836-25-000120-index.htm)
+- **2025-08-19**: SALP files a **Core Scientific 13D**, disclosing **17,682,918 shares**, **5.8%** ownership, and **$213.19 million** of working capital used. Source: [Core Scientific 13D](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000543/xslSCHEDULE_13D_X01/primary_doc.xml)
+- **2025-09-08**: Onshore Form D/A says **$997,910,000** had been sold to **65 investors**. Source: [2025 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583625000591/xslFormDX08/primary_doc.xml)
+- **2025-10-14**: Core Scientific **13D/A** discloses **28,756,478 shares** and **9.4%** ownership. Source: [Core Scientific 13D/A](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000638/xslSCHEDULE_13D_X01/primary_doc.xml)
+- **2026-02-11**: SALP files its latest public 13F to date, for **2025-Q4**: **29 line items** and **$5,516,758,344** of disclosed 13F value. Source: [Q4 2025 13F](https://www.sec.gov/Archives/edgar/data/2045724/000204572426000002/0002045724-26-000002-index.html)
+- **2026-03-10**: Onshore Form D/A says **$1,762,326,027** had been sold to **93 investors**. Source: [2026 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583626000153/xslFormDX08/primary_doc.xml)
+- **2026-03-30**: Latest public Form ADV shows SALP at **77 Federal Street, 4th Floor**, **$9.278 billion** of RAUM, and a 2-fund structure. Source: [Form ADV](https://reports.adviserinfo.sec.gov/reports/ADV/333011/PDF/333011.pdf)
 
 ## What the firm record says now
 
