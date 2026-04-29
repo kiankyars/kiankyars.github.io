@@ -37,6 +37,6 @@ categories: reflection
 ### Friday
 
 - Encountered Daniela Amodei.
-- Great german lanugage session.
+- Great german language session with gemini.
 
 One thing to note as well is that on Thursday and Friday, I had a lingering knee sensation in my right knee, which was worrying me. I wasn't able to follow my training plan on those two days, and that definitely had a slight negative effect on me, we're good now!
