@@ -29,21 +29,24 @@ I intend on running rigorous self-experiments on my health through biohacking an
 
 ### L-theanine trial log
 
-Auto-fill target: Polar sleep score/charge and Polar training status if available. Manual fill: capsule/time, energy, composure, and notes. For composure, 5 means calm and settled; 1 means anxious or unsettled.
+Auto-fill target: Polar sleep score/charge and Polar training status if available. Manual fill: capsule/time, energy, and composure. For composure, 5 means calm and settled; 1 means anxious or unsettled.
 
-| Date | Capsule/time | Energy (1-5) | Composure (1-5) | Notes | Sleep score (1-100) | Sleep charge (1-5) | Cardio load status |
-|---|---|---:|---:|---|---:|---:|---|
-| 2026-04-27 | 10h00 | 5 | 4 | Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up. | 52 | 1 | maintaining |
-| 2026-04-28 | 18h30 | 5 | 5 | Excellent day, concentration-wise, as usual. I started crashing at 9 PM due to fatigue, so in an ideal world I would have gone home already, but had to finish my task. Otherwise, I also ate quite a lot in the evening, which is not ideal. | Watch didn't record sleep, but it was poor quality | detraining |
-| 2026-04-29 | 09h00 | 5 | 4 |  |  |  |  |
-| 2026-04-30 |  |  |  |  |  |  |  |
-| 2026-05-01 |  |  |  |  |  |  |  |
-| 2026-05-02 |  |  |  |  |  |  |  |
-| 2026-05-03 |  |  |  |  |  |  |  |
-| 2026-05-04 |  |  |  |  |  |  |  |
-| 2026-05-05 |  |  |  |  |  |  |  |
-| 2026-05-06 |  |  |  |  |  |  |  |
-| 2026-05-07 |  |  |  |  |  |  |  |
-| 2026-05-08 |  |  |  |  |  |  |  |
-| 2026-05-09 |  |  |  |  |  |  |  |
-| 2026-05-10 |  |  |  |  |  |  |  |
+| Date | Capsule/time | Energy (1-5) | Composure (1-5) | Sleep score (1-100) | Sleep charge (1-5) | Cardio load status |
+|---|---|---:|---:|---:|---:|---|
+| 2026-04-27[^1] | 10h00 | 5 | 4 | 52 | 1 | maintaining |
+| 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | | detraining |
+| 2026-04-29 | 09h00 | 5 | 4 | 74 | 4 | maintaining |
+| 2026-04-30 | 10h00 | 4 | 4 |  |  |  |
+| 2026-05-01 |  |  |  |  |  |  |
+| 2026-05-02 |  |  |  |  |  |  |
+| 2026-05-03 |  |  |  |  |  |  |
+| 2026-05-04 |  |  |  |  |  |  |
+| 2026-05-05 |  |  |  |  |  |  |
+| 2026-05-06 |  |  |  |  |  |  |
+| 2026-05-07 |  |  |  |  |  |  |
+| 2026-05-08 |  |  |  |  |  |  |
+| 2026-05-09 |  |  |  |  |  |  |
+| 2026-05-10 |  |  |  |  |  |  |
+
+[^1]: Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up.
+[^2]: Excellent day, concentration-wise, as usual. I started crashing at 9 PM due to fatigue, so in an ideal world I would have gone home already, but had to finish my task. Otherwise, I also ate quite a lot in the evening, which is not ideal.
