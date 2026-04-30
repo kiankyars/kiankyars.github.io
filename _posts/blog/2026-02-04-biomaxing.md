@@ -34,7 +34,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | Date | Capsule/time | Energy (1-5) | Composure (1-5) | Sleep score (1-100) | Sleep charge (1-5) | Cardio load status |
 |---|---|---:|---:|---:|---:|---|
 | 2026-04-27[^1] | 10h00 | 5 | 4 | 52 | 1 | maintaining |
-| 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | | detraining |
+| 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | ditto | detraining |
 | 2026-04-29 | 09h00 | 5 | 4 | 74 | 4 | maintaining |
 | 2026-04-30 | 10h00 | 4 | 4 |  |  |  |
 | 2026-05-01 |  |  |  |  |  |  |
