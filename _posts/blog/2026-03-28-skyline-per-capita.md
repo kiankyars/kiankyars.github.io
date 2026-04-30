@@ -5,25 +5,25 @@ date: 2026-03-28
 categories: data
 ---
 
-Someone on the internet (me, today) asked which great cities allocate the most vertical metres of supertall to each resident. Not total floorspace, not skyline mass, not aesthetic charm: the blunt ratio of **architectural height of the tallest completed high-rise** divided by **headcount**, for a fixed list of mega-agglomerations.
+I calculated the vertical metres of supertall architecture per resident for the world's largest cities. This metric divides the **architectural height of the tallest completed high-rise** by the municipal **headcount**.
 
-The toy version is obvious. A hundred people sharing one 100 m tower get **1 metre of pinnacle per person**. Double the population without raising the spire and you halve the ratio. The question is what happens when you run the same arithmetic on real municipalities at nine-figure scale, where politics, geology, airport flight paths, and CTBUH definitions all interfere with the clean parable.
+A hundred people sharing a 100 m tower get **1 metre of pinnacle per person**. Doubling the population halves the ratio. At municipal scales, geology, flight paths, and CTBUH definitions complicate the calculation.
 
 ## The metric
 
-For each city *i*, let *H<sub>i</sub>* be the tallest completed building in the urban jurisdiction tracked by the [CTBUH Skyscraper Center](https://www.skyscrapercenter.com/) (municipal population in their city facts panel when present), and *P<sub>i</sub>* residential population from [Wikidata](https://www.wikidata.org/) property [P1082](https://www.wikidata.org/wiki/Property:P1082) using the **March 2026** snapshot returned by their public SPARQL endpoint. The ratio is *R<sub>i</sub> = H<sub>i</sub> / P<sub>i</sub>*.
+For each city *i*, *H<sub>i</sub>* represents the tallest completed building tracked by the [CTBUH Skyscraper Center](https://www.skyscrapercenter.com/). *P<sub>i</sub>* represents the residential population from [Wikidata](https://www.wikidata.org/) property [P1082](https://www.wikidata.org/wiki/Property:P1082) using the **March 2026** snapshot. The ratio is *R<sub>i</sub> = H<sub>i</sub> / P<sub>i</sub>*.
 
-When Skyscraper Center had no city page, I took the tallest figure from curated national tables on Wikipedia (India, Bangladesh, Pakistan summaries) or a short list of hand-checked municipal sources documented in the build script. Where both existed, I used the **maximum** of the Center height and the national-table height (mainly to correct under-reported figures in some South Asian extracts), never a fuzzy cross-match across unrelated cities.
+When the Skyscraper Center lacked a city page, I used the tallest figure from curated national Wikipedia tables (India, Bangladesh, Pakistan) or hand-checked municipal sources. Where both existed, I used the **maximum** of the Center height and the national-table height to correct under-reported figures in South Asian extracts.
 
-*R<sub>i</sub>* is tiny, so the tables below multiply by 10<sup>6</sup> and report **micrometres of pinnacle per resident** (µm / person). Dubai at roughly 210 µm is handing each inhabitant about **0.21 millimetres** of Burj Khalifa if you insist on visualising it that way. The point of the scaling is comparative: Dhaka and Lagos sit in the low tens of micrometres because a tower that looks heroic in silhouette still disappears inside a demographic ocean.
+*R<sub>i</sub>* produces tiny values. The tables below multiply the result by 10<sup>6</sup> to report **micrometres of pinnacle per resident** (µm / person). Dubai allocates each inhabitant about **0.21 millimetres** of the Burj Khalifa. The scaling facilitates comparison. Dhaka and Lagos sit in the low tens of micrometres because their massive populations absorb the height of their tallest towers.
 
 ## Who made the cut
 
-Wikidata typing is messier than it has any right to be. I took the **hundred most populous** distinct English labels among entities whose `instance of` is exactly [`Q515`](https://www.wikidata.org/wiki/Q515) (`city`). That captures Beijing and omits Shanghai, because Shanghai’s ontology uses more specific “city in China” classes instead. Delhi and Guangzhou fall out for similar reasons. The ranking is therefore **not** “the world population top hundred by any single census definition”; it is “the hundred largest things Wikidata confidently calls `city` in the narrow sense.” Treat the set as a large stratified sample of the urban human experiment, not as a claim to completeness.
+I selected the **hundred most populous** distinct English labels among Wikidata entities typed exactly as [`Q515`](https://www.wikidata.org/wiki/Q515) (`city`). This captures Beijing but omits Shanghai, Delhi, and Guangzhou, which use more specific regional classifications. The ranking represents a stratified sample of the hundred largest entities Wikidata confidently classifies as a `city`.
 
 ## What the numbers do
 
-The distribution is **right-skewed** but not lawless. After the micrometre conversion the mean is about **54 µm**, the median near **48 µm**, and the 90th percentile lands just under **100 µm**. Below that mass you find city-states, affluent second cities, and petro-capital skylines. Above it you find the ultra-dense South Asian and West African basins where even a respectable tower leaves almost no per-capita trace.
+The distribution skews right. The mean sits at **54 µm**, the median near **48 µm**, and the 90th percentile lands just under **100 µm**. City-states, affluent second cities, and petro-capitals dominate the upper percentiles. Ultra-dense South Asian and West African basins occupy the bottom, where tall towers leave almost no per-capita trace.
 
 ### Upper tiers (selected)
 
@@ -45,9 +45,9 @@ The distribution is **right-skewed** but not lawless. After the micrometre conve
 | 14 | Xining | 219 | 2,467,965 | 88.7 |
 | 15 | Los Angeles | 335 | 3,898,747 | 85.9 |
 
-Dubai and Taipei are effectively tied once you account for rounding: different politics, similar order-of-magnitude story about **small denominator populations carrying very tall symbolic needles**. American coastal hubs (Los Angeles, later New York in the full table) land mid-pack not because their towers are short (they are not) but because Wikidata populations for consolidated cities swallow a lot of people.
+Dubai and Taipei share similar ratios resulting from small denominator populations and very tall buildings. American coastal hubs like Los Angeles land mid-pack because their consolidated Wikidata populations dilute the impact of their skyscrapers.
 
-Chinese administrative cities split into surreal land-area units; several megacity prefectures occupy the **lower third** despite skyscrapers exceeding 400 m, because *P<sub>i</sub>* includes millions of exurban residents who will never set foot in the central business district tall zone. That is not a bug in the algebra; it is the algebra **punishing inclusive municipal boundaries**.
+Chinese megacity prefectures occupy the lower third despite building skyscrapers exceeding 400 m. Their population figures (*P<sub>i</sub>*) include millions of exurban residents outside the central business district. The algebra mathematically penalizes these inclusive municipal boundaries.
 
 ### Basement floor (selected)
 
@@ -66,14 +66,14 @@ Chinese administrative cities split into surreal land-area units; several megaci
 | 99 | Lagos | 160 | 15,070,000 | 10.6 |
 | 100 | Dhaka | 171 | 16,800,000 | 10.2 |
 
-Dhaka finishes last with **~10.2 µm** despite an earnest 171 m roof: the numerator is fine; the denominator is the demographic equivalent of a neutron star. If you wanted a policy reading, it is not “build tall”; it is “tall is a feeble lever when housing demand scales like compound interest.”
+Dhaka finishes last with **10.2 µm**, despite a 171 m tower. The denominator dwarfs the numerator. Tall buildings fail to impact per-capita metrics when housing demand scales exponentially.
 
-## How seriously to take this
+## Caveats
 
-Not very, and also quite a lot. The ranking is fragile to **boundary choice**: swap city-proper for metropolitan definitions and Taipei, Toronto, and Los Angeles dance several slots without changing a single steel beam. It ignores slums, informal floors, and anything below high-rise prestige thresholds. It treats one spire as the stand-in for an entire vertical program. It cannot know whether you *wanted* skyline ego or flood-safe mass timber.
+The ranking depends entirely on boundary definitions. Swapping city-proper boundaries for metropolitan areas shifts Taipei, Toronto, and Los Angeles significantly. The metric ignores slums, informal housing, and buildings below high-rise thresholds. It uses a single spire to represent an entire skyline and ignores architectural intent like flood safety or aesthetic prestige.
 
-What survives those caveats is the reminder that **extensive growth** (more bodies) and **intensive growth** (higher steel) are logged on different ledgers. Most public conversations fuse them into a single aesthetic judgement. Separating them with a brutish ratio does not solve urban planning. It does make the trade-off legible: you can always win the height arms race in the photograph; you cannot automatically win it in the denominator.
+Extensive growth (population) and intensive growth (building height) scale independently. The ratio makes this trade-off legible. A city can build the world's tallest tower, but rapid population growth will erase its per-capita impact.
 
 Full machine-readable rankings (all 100 rows) live alongside the Jekyll tree in [`misc/skyline_per_capita_ranked.json`](https://github.com/kiankyars/kiankyars.github.io/blob/main/misc/skyline_per_capita_ranked.json). The reproducible merge logic is `misc/build_skyline_rankings.py`, with raw Skyscraper Center passes cached by `misc/skyline_per_capita_data.py`.
 
-If you redo the scrape in five years, check whether Dubai still anchors the top: the exciting scientific result would not be a reshuffle, but a **systematic decline** in the ratio across emerging markets as populations outrun even aggressive vertical construction. That would tell you something about asymptotics that photographs never will.
+Future scrapes should check whether Dubai retains the top rank. A systematic decline across emerging markets would indicate populations outrunning vertical construction.
