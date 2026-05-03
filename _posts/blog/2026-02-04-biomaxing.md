@@ -36,11 +36,11 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-04-27[^1] | 10h00 | 5 | 4 | 52 | 1 | maintaining |
 | 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | ditto | detraining |
 | 2026-04-29 | 09h00 | 5 | 4 | 74 | 4 | maintaining |
-| 2026-04-30 | 10h00 | 4 | 4 |  |  |  |
-| 2026-05-01 |  |  |  |  |  |  |
-| 2026-05-02 |  |  |  |  |  |  |
-| 2026-05-03 |  |  |  |  |  |  |
-| 2026-05-04 |  |  |  |  |  |  |
+| 2026-04-30 | 10h00 | 4 | 4 | 65 | 2 | maintaining |
+| 2026-05-01[^3] | 09h30 | 5 | 2 |  |  |  |
+| 2026-05-02[^4] |  |  |  |  |  | maintaining |
+| 2026-05-03[^5] | 08h00 | 2 | 2 |  |  | detraining |
+| 2026-05-04[^6] | 07h53 | 4 | 3 |  |  |  |
 | 2026-05-05 |  |  |  |  |  |  |
 | 2026-05-06 |  |  |  |  |  |  |
 | 2026-05-07 |  |  |  |  |  |  |
@@ -50,3 +50,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 
 [^1]: Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up.
 [^2]: Excellent day, concentration-wise, as usual. I started crashing at 9 PM due to fatigue, so in an ideal world I would have gone home already, but had to finish my task. Otherwise, I also ate quite a lot in the evening, which is not ideal.
+[^3]: 2026-05-01: This day was terrible. I did not plan, and for that reason I failed.
+[^4]: 2026-05-02: I was out hiking all day, so I did not take the pill. Polar exercise log returned one long `HIKING` workout with cardio load `389.543` (`VERY_HIGH`).
+[^5]: 2026-05-03: Not a great day at all for me. I think I've had some accumulated sleep deprivation since April 30th, which has not helped at all. Polar exercise log has a short 06:48 run with cardio load `15.7855` (`VERY_LOW`).
+[^6]: 2026-05-04: Today will be different. I will succeed.

@@ -29,8 +29,8 @@ categories: reflection
 
 ### Thursday
 
-- 
+- Moved to new place!
 
 ### Friday
 
-- 
+- This was supposed to be a good day, but I did not plan and it flopped, and I caved into social media and was very non-disciplined.
