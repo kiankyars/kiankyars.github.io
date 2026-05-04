@@ -53,4 +53,4 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^3]: 2026-05-01: This day was terrible. I did not plan, and for that reason I failed.
 [^4]: 2026-05-02: I was out hiking all day, so I did not take the pill. Polar exercise log returned one long `HIKING` workout with cardio load `389.543` (`VERY_HIGH`).
 [^5]: 2026-05-03: Not a great day at all for me. I think I've had some accumulated sleep deprivation since April 30th, which has not helped at all. Polar exercise log has a short 06:48 run with cardio load `15.7855` (`VERY_LOW`).
-[^6]: 2026-05-04: Today will be different. I will succeed.
+[^6]: 2026-05-04: Today will be different. I will succeed. Aujourd'hui c'est le premier jour de ma vie que j'ai vécu le sevrage de la caféine.
