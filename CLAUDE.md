@@ -32,16 +32,6 @@ Use the `misc/create_post.py` script to generate new post files with the correct
   ```
   Creates `_posts/weekly-victories/YYYY-MM-DD-weekly-victories.md`.
 
-### Updating the biomaxing L-theanine trial table
-
-`_posts/blog/2026-02-04-biomaxing.md` has a daily table of Polar sleep score/charge and cardio-load status. To auto-fill empty cells from Polar AccessLink:
-
-```bash
-python3 misc/update_biomaxing.py
-```
-
-Idempotent — only writes empty cells. Reads `POLAR_ACCESS_TOKEN` from `~/.env`. Date conventions and token-refresh instructions are documented in the script's docstring. The general-purpose Polar OAuth helper lives at `~/obsidian/scripts/polar_accesslink.py`.
-
 ## Related Projects
 
 ### microddp (`/Users/kian/Developer/microddp`)
