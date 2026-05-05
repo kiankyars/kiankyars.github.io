@@ -37,10 +37,10 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | ditto | detraining |
 | 2026-04-29 | 09h00 | 5 | 4 | 74 | 4 | maintaining |
 | 2026-04-30 | 10h00 | 4 | 4 | 65 | 2 | maintaining |
-| 2026-05-01[^3] | 09h30 | 5 | 2 |  |  |  |
-| 2026-05-02[^4] |  |  |  |  |  | maintaining |
-| 2026-05-03[^5] | 08h00 | 2 | 2 |  |  | detraining |
-| 2026-05-04[^6] | 07h53 | 4 | 3 |  |  |  |
+| 2026-05-01[^3] | 09h30 | 5 | 2 | 63 | 2 | productive |
+| 2026-05-02[^4] | n/a | n/a |  | 69 | 3 | maintaining |
+| 2026-05-03[^5] | 08h00 | 2 | 2 | 72 | 4 | detraining |
+| 2026-05-04[^6] | 07h53 | 4 | 3 |  |  | maintaining |
 | 2026-05-05 |  |  |  |  |  |  |
 | 2026-05-06 |  |  |  |  |  |  |
 | 2026-05-07 |  |  |  |  |  |  |
