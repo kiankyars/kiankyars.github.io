@@ -7,11 +7,11 @@ categories: reflection
 
 ### Saturday
 
-- Sixty kilometres in mountains.
+- Sixty kilometres in the mountains.
 
 ### Sunday
 
-- Horrible regression day; at least I was able to speak with family
+- Horrible regression day; at least I was able to speak with family!
 
 ### Monday
 

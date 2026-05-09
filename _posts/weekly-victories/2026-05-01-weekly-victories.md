@@ -42,4 +42,5 @@ categories: reflection
 - My mom could tell I was not doing well when we spoke on the phone
 - The lesson is to plan every god damn day!
 
-Stayed at work late most days this week despite being the first one in the office as well, not good!
+- Stayed at work late most days this week despite being the first one in the office as well, not good!
+    - May 4, 2026 at 17:41 I promise to leave at 20h00 moving forward.

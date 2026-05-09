@@ -5,6 +5,8 @@ date: 2026-04-24
 categories: physics
 ---
 
+![Fick's law diagram showing random particle crossings, a concentration gradient, and net flux](/imgs/2026-04-24-diffusion/ficks-law-web.png)
+
 Imagine a square box divided into thin vertical slices. At the beginning, all the particles are packed into the slices on the left.
 
 Each particle jitters randomly. In a tiny unit of time, some particles in each slice cross left and some cross right. No particle knows where the empty space is. There is no little wind pushing them toward equilibrium.

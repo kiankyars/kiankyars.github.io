@@ -5,27 +5,25 @@ date: 2026-03-28
 categories: data
 ---
 
-I calculated the vertical metres of supertall architecture per resident for the world's largest cities. This metric divides the **architectural height of the tallest completed high-rise** by the municipal **headcount**.
-
-A hundred people sharing a 100 m tower get **1 metre of pinnacle per person**. Doubling the population halves the ratio. At municipal scales, geology, flight paths, and CTBUH definitions complicate the calculation.
+I calculated the vertical metres of supertall architecture per resident for the world's largest cities.
 
 ## The metric
 
 For each city *i*, *H<sub>i</sub>* represents the tallest completed building tracked by the [CTBUH Skyscraper Center](https://www.skyscrapercenter.com/). *P<sub>i</sub>* represents the residential population from [Wikidata](https://www.wikidata.org/) property [P1082](https://www.wikidata.org/wiki/Property:P1082) using the **March 2026** snapshot. The ratio is *R<sub>i</sub> = H<sub>i</sub> / P<sub>i</sub>*.
 
-When the Skyscraper Center lacked a city page, I used the tallest figure from curated national Wikipedia tables (India, Bangladesh, Pakistan) or hand-checked municipal sources. Where both existed, I used the **maximum** of the Center height and the national-table height to correct under-reported figures in South Asian extracts.
+When the Skyscraper Center lacked a city page, I used the tallest figure from curated national Wikipedia tables (India, Bangladesh, Pakistan) or hand-checked municipal sources.
 
-*R<sub>i</sub>* produces tiny values. The tables below multiply the result by 10<sup>6</sup> to report **micrometres of pinnacle per resident** (µm / person). Dubai allocates each inhabitant about **0.21 millimetres** of the Burj Khalifa. The scaling facilitates comparison. Dhaka and Lagos sit in the low tens of micrometres because their massive populations absorb the height of their tallest towers.
+*R<sub>i</sub>* produces tiny values. The tables below multiply the result by 10<sup>6</sup> to report **micrometres of pinnacle per resident** (µm / person). Dubai allocates each inhabitant about **0.21 millimetres** of the Burj Khalifa.
 
-## Who made the cut
+## Criterion
 
-I selected the **hundred most populous** distinct English labels among Wikidata entities typed exactly as [`Q515`](https://www.wikidata.org/wiki/Q515) (`city`). This captures Beijing but omits Shanghai, Delhi, and Guangzhou, which use more specific regional classifications. The ranking represents a stratified sample of the hundred largest entities Wikidata confidently classifies as a `city`.
+I selected the **hundred most populous** distinct English labels among Wikidata entities typed exactly as [`Q515`](https://www.wikidata.org/wiki/Q515) (`city`). This captures Beijing but omits Shanghai, Delhi, and Guangzhou, which use more specific regional classifications.
 
-## What the numbers do
+## Number Math Fun
 
-The distribution skews right. The mean sits at **54 µm**, the median near **48 µm**, and the 90th percentile lands just under **100 µm**. City-states, affluent second cities, and petro-capitals dominate the upper percentiles. Ultra-dense South Asian and West African basins occupy the bottom, where tall towers leave almost no per-capita trace.
+City-states, affluent second cities, and petro-capitals dominate the upper percentiles. Ultra-dense South Asian and West African basins occupy the bottom.
 
-### Upper tiers (selected)
+### Top 15
 
 | Rank | City | Tallest (m) | Pop (Wikidata) | µm / resident |
 |---:|---|---:|---:|---:|
@@ -45,11 +43,7 @@ The distribution skews right. The mean sits at **54 µm**, the median near **48 
 | 14 | Xining | 219 | 2,467,965 | 88.7 |
 | 15 | Los Angeles | 335 | 3,898,747 | 85.9 |
 
-Dubai and Taipei share similar ratios resulting from small denominator populations and very tall buildings. American coastal hubs like Los Angeles land mid-pack because their consolidated Wikidata populations dilute the impact of their skyscrapers.
-
-Chinese megacity prefectures occupy the lower third despite building skyscrapers exceeding 400 m. Their population figures (*P<sub>i</sub>*) include millions of exurban residents outside the central business district. The algebra mathematically penalizes these inclusive municipal boundaries.
-
-### Basement floor (selected)
+### Basement
 
 | Rank | City | Tallest (m) | Pop (Wikidata) | µm / resident |
 |---:|---|---:|---:|---:|
@@ -66,14 +60,4 @@ Chinese megacity prefectures occupy the lower third despite building skyscrapers
 | 99 | Lagos | 160 | 15,070,000 | 10.6 |
 | 100 | Dhaka | 171 | 16,800,000 | 10.2 |
 
-Dhaka finishes last with **10.2 µm**, despite a 171 m tower. The denominator dwarfs the numerator. Tall buildings fail to impact per-capita metrics when housing demand scales exponentially.
-
-## Caveats
-
-The ranking depends entirely on boundary definitions. Swapping city-proper boundaries for metropolitan areas shifts Taipei, Toronto, and Los Angeles significantly. The metric ignores slums, informal housing, and buildings below high-rise thresholds. It uses a single spire to represent an entire skyline and ignores architectural intent like flood safety or aesthetic prestige.
-
-Extensive growth (population) and intensive growth (building height) scale independently. The ratio makes this trade-off legible. A city can build the world's tallest tower, but rapid population growth will erase its per-capita impact.
-
 Full machine-readable rankings (all 100 rows) live alongside the Jekyll tree in [`misc/skyline_per_capita_ranked.json`](https://github.com/kiankyars/kiankyars.github.io/blob/main/misc/skyline_per_capita_ranked.json). The reproducible merge logic is `misc/build_skyline_rankings.py`, with raw Skyscraper Center passes cached by `misc/skyline_per_capita_data.py`.
-
-Future scrapes should check whether Dubai retains the top rank. A systematic decline across emerging markets would indicate populations outrunning vertical construction.
