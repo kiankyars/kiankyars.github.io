@@ -15,11 +15,12 @@ categories: reflection
 
 ### Monday
 
-- 
+- Bought a bike.
 
 ### Tuesday
 
-- 
+- Bike stolen.
+- Bought another bike.
 
 ### Wednesday
 
@@ -32,3 +33,5 @@ categories: reflection
 ### Friday
 
 - 
+
+The worst week I've had for the longest I can remember.
