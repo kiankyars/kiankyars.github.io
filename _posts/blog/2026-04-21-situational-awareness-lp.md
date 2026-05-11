@@ -5,24 +5,17 @@ date: 2026-04-21
 categories: investing
 ---
 
-Situational Awareness LP is already the kind of fund that attracts mythology. Leopold Aschenbrenner wrote a viral AGI essay, raised money quickly, and by late 2025 the public equity book had become large enough that every new filing triggered another round of commentary.
+As of **April 21, 2026**, the latest public 13F for SALP is the filing for **December 31, 2025**, filed on **February 11, 2026**. The **March 31, 2026** quarter is not due until **May 15, 2026**, because Form 13F is due within 45 days after quarter-end.
 
-I wanted the opposite: one post that sticks as closely as possible to the public record.
+## Background
 
-This reconstruction uses the fund's [official site](https://situationalawarenesslp.com/), the [about page](https://situationalawarenesslp.com/about), Leopold Aschenbrenner's own [For Our Posterity site](https://www.forourposterity.com/), the SEC [Form ADV](https://reports.adviserinfo.sec.gov/reports/ADV/333011/PDF/333011.pdf), the onshore and offshore [Form D](https://www.sec.gov/Archives/edgar/data/2038540/000093583624000602/0000935836-24-000602-index.htm) [sequence](https://www.sec.gov/Archives/edgar/data/2038540/000093583625000591/0000935836-25-000591-index.htm) [and](https://www.sec.gov/Archives/edgar/data/2038540/000093583626000153/0000935836-26-000153-index.htm), the separate [Sydecar-administered series vehicle filing](https://www.sec.gov/Archives/edgar/data/2047424/000204742424000001/xslFormDX08/primary_doc.xml), every public SALP [13F filing](https://www.sec.gov/Archives/edgar/data/2045724/000093583625000120/0000935836-25-000120-index.htm), the SEC Data Library's [Form 13F data sets page](https://www.sec.gov/data-research/sec-markets-data/form-13f-data-sets), [Core Scientific 13D](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000543/0000935836-25-000543-index.htm), [13D/A](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000638/0000935836-25-000638-index.htm), and the SEC's own [Form 13F FAQ](https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-about-form-13f). I also cross-checked the latest filing against the bulk data export for the December 2025 / January 2026 / February 2026 reporting cycle from that SEC Data Library Form 13F data-sets release. When I infer something rather than directly observe it, I say so.
-
-As of **April 21, 2026**, the latest public 13F for SALP is the filing for **December 31, 2025**, filed on **February 11, 2026**. The **March 31, 2026** quarter is not due until **May 15, 2026**, because Form 13F is due within 45 days after quarter-end, per the SEC FAQ.
-
-## The short version
-
-- The official SALP website says the firm was founded by Leopold Aschenbrenner in 2024, and the homepage says **September 2024**.
+- SALP's website says Leopold Aschenbrenner founded the firm in **September 2024**.
 - Leopold's own site says he founded an AGI-focused investment firm with anchor investments from **Patrick Collison, John Collison, Nat Friedman, and Daniel Gross**.
 - The main onshore fund, **Situational Awareness Partners LP**, filed its first Form D on **September 23, 2024**; a later amendment says the actual first sale happened on **November 1, 2024**.
 - By the onshore fund's **March 10, 2026** Form D/A, it had sold **$1,762,326,027** of interests to **93 investors**.
 - The offshore feeder, **Situational Awareness Offshore LP**, filed on **December 11, 2024** and disclosed **$24,042,356** sold to **2 investors**.
-- The latest public Form ADV, dated **March 30, 2026**, shows **$9,278,344,000** of regulatory assets under management across **2 pooled investment vehicle clients**.
+- The latest public Form ADV (required SEC filing with details on ownership, control, and clients), dated **March 30, 2026**, shows **$9,278,344,000** of regulatory assets under management across **2 pooled investment vehicle clients**.
 - The public 13F book grew from **$254.8 million** at **December 31, 2024** to **$5.5168 billion** at **December 31, 2025**.
-- In the public record I could verify, the only SALP Schedule 13D sequence was **Core Scientific**: **5.8%** on the initial 13D and **9.4%** on the amendment.
 
 ## Timeline
 
@@ -41,11 +34,7 @@ As of **April 21, 2026**, the latest public 13F for SALP is the filing for **Dec
 - **2026-03-10**: Onshore Form D/A says **$1,762,326,027** had been sold to **93 investors**. Source: [2026 onshore Form D/A](https://www.sec.gov/Archives/edgar/data/2038540/000093583626000153/xslFormDX08/primary_doc.xml)
 - **2026-03-30**: Latest public Form ADV shows SALP at **77 Federal Street, 4th Floor**, **$9.278 billion** of RAUM, and a 2-fund structure. Source: [Form ADV](https://reports.adviserinfo.sec.gov/reports/ADV/333011/PDF/333011.pdf)
 
-## What the firm record says now
-
-The official SALP homepage describes the firm as a **global equity investor focused on AI**, headquartered in San Francisco, founded by Leopold Aschenbrenner in September 2024. The about page says SALP invests both in companies building AI and in companies that AI may help or hurt.
-
-The latest Form ADV adds much more structure:
+## Record
 
 - Principal office: **77 Federal Street, 4th Floor, San Francisco, CA 94107**.
 - Other offices: **0**.
@@ -59,40 +48,25 @@ The latest Form ADV adds much more structure:
 - Approximate private fund ownership by the adviser and related persons: **4%**.
 - Approximate private fund ownership by non-U.S. persons: **14%**.
 
-The ADV also lays out the control structure unusually clearly. On Schedule A, the direct owners of the adviser are reported with ownership-code bands rather than exact percentages:
+## Ownership
 
 - **Leopold Aschenbrenner**: Chief Investment Officer and limited partner, ownership code **D** = **50% to less than 75%**.
 - **Carl Shulman**: Director of Research and limited partner, ownership code **C** = **25% to less than 50%**.
 - **Nicholas Gross-Whitaker**: Chief Operating Officer and limited partner, ownership code **A** = **5% to less than 10%**.
 - **Situational Awareness LLC** is listed as general partner, and Schedule B says Leopold owns that LLC as manager with ownership code **E** = **75% or more**.
 
-The March 2026 ADV also shows the service-provider stack:
+## Service Providers
 
 - Auditor: **KPMG LLP** in Walnut Creek.
 - Prime brokers: **BofA Securities Prime** and **Goldman Sachs & Co. LLC**.
 - Custodians: **BofA Securities Prime**, **Citizens Financial Group**, and **Goldman Sachs**.
 - Administrator: **Stone Coast Fund Services LLC** in Portland, Maine.
 
-One underappreciated ADV detail: the miscellaneous schedule says the **two funds managed by SALP were not required to conduct their initial audit for 2024**, and that the **first audit covers November 1, 2024 through December 31, 2025**. That lines up neatly with the later Form D/A first-sale date of **November 1, 2024**.
+## What 13F leaves out
 
-## What 13F can and cannot tell you
+Form 13F does not show private investments, many non-U.S. holdings, shorts, non-reportable swaps or derivatives, bonds, credit instruments, or cash.
 
-This matters a lot here.
-
-The SEC's Form 13F FAQ says Form 13F covers **Section 13(f) securities**: mostly U.S.-listed equities, ETF shares, and certain options and warrants. Securities not on the official 13(f) list do not belong in the filing. The same FAQ says the filing must report issuer name, class, shares, and fair market value, and that regular quarterly 13Fs are due within **45 days** after quarter-end.
-
-So a 13F is not "the whole fund." It leaves out, among other things:
-
-- private investments,
-- many non-U.S. holdings,
-- shorts,
-- swaps and other derivatives that are not 13(f) reportable,
-- bonds and credit instruments,
-- and plain cash.
-
-That gap is large for SALP. The latest public 13F shows **$5.5168 billion** of 13(f) securities at **December 31, 2025**. The March 30, 2026 ADV shows **$9.2783 billion** of RAUM. The visible 13F book is therefore only about **59.5%** of the gross asset base visible in the adviser filing.
-
-One tiny but revealing filing detail: summing every Q4 2025 XML line item yields **$5,516,758,345**, because the information table includes a stray **1 share of Intel common stock valued at $37** in addition to the giant Intel call position. The SEC summary page total is **$5,516,758,344**. For percentages below, I use the **official summary-page total**.
+The latest public 13F shows **$5.5168 billion** of 13(f) securities at **December 31, 2025**. The March 30, 2026 ADV shows **$9.2783 billion** of RAUM. The visible 13F book is therefore only about **59.5%** of the gross asset base visible in the adviser filing.
 
 ## Public 13F growth
 
@@ -110,7 +84,7 @@ That is a **21.6x** increase in public 13F value in four quarters.
 
 ### 2024-Q4: the starter book
 
-The first 13F is tiny compared with what comes later: just **6 names** and **$254.8 million**. But the theme is already obvious. This is not an "AI software" portfolio. It is power, cooling, hardware plumbing, and data-center-adjacent infrastructure.
+The first 13F is small but already thematic: power, cooling, hardware plumbing, and data-center-adjacent infrastructure rather than AI software.
 
 - Public 13F value: $254.8m across 6 line items.
 - Option mix: common 100.0%, calls 0.0%, puts 0.0%.
@@ -127,9 +101,9 @@ The first 13F is tiny compared with what comes later: just **6 names** and **$25
 
 ### 2025-Q1: scale-up and the first huge convex bet
 
-By March 31, 2025 the public book is already above **$1.0 billion**. The big new wrinkle is obvious: SALP is willing to use options aggressively, and the defining expression is the **Intel call**.
+By March 31, 2025, the public book is above **$1.0 billion**. The new feature is aggressive option use, led by the **Intel call**.
 
-This quarter also shows the first recognizable SALP public-book mix of power, AI-capacity bottlenecks, and hosting/data-center names: CoreWeave, Core Scientific, Applied Digital, IREN, Vistra, EQT, and Broadcom, all appearing together.
+This quarter also shows the first recognizable public-book mix of power, AI-capacity bottlenecks, and hosting/data-center names: CoreWeave, Core Scientific, Applied Digital, IREN, Vistra, EQT, and Broadcom.
 
 - Public 13F value: $1005.6m across 12 line items.
 - Option mix: common 54.3%, calls 45.7%, puts 0.0%.
@@ -152,9 +126,9 @@ This quarter also shows the first recognizable SALP public-book mix of power, AI
 
 ### 2025-Q2: concentrated, hedged, and much larger
 
-June 30, 2025 is a much more concentrated book. The two headline lines are the continuing **Intel call** and a very large **VanEck Semiconductor ETF (SMH) put**. That pairing says SALP was willing to keep specific upside optionality while also hedging a chunk of the broader semiconductor complex.
+June 30, 2025 is more concentrated. The two headline lines are the continuing **Intel call** and a very large **VanEck Semiconductor ETF (SMH) put**. That pairing kept specific upside optionality while hedging part of the broader semiconductor complex.
 
-Notably, **CoreWeave disappears completely** in this quarter's public filing, only to come back much larger later.
+Notably, **CoreWeave disappears completely** in this quarter's public filing.
 
 - Public 13F value: $2123.0m across 9 line items.
 - Option mix: common 51.8%, calls 21.4%, puts 26.9%.
@@ -172,9 +146,7 @@ Notably, **CoreWeave disappears completely** in this quarter's public filing, on
 | IREN LIMITED | Common/equity | $93.3m | 6,400,384 |
 | APPLIED DIGITAL CORP | Common/equity | $66.4m | 6,591,800 |
 
-### 2025-Q3: the portfolio becomes a full AI-supply-chain map
-
-This is where SALP's public book stops looking like a concentrated infrastructure trade and starts looking like a broad thesis map.
+### 2025-Q3: the portfolio becomes an AI-supply-chain map
 
 The September 30, 2025 13F expands to **28 line items** and mixes:
 
@@ -184,8 +156,6 @@ The September 30, 2025 13F expands to **28 line items** and mixes:
 - storage and memory,
 - selected power names,
 - and large option overlays on CoreWeave, Intel, Nvidia, TSMC, Micron, Broadcom, and **SMH**.
-
-My inference: by Q3, the public book is no longer just "AI beneficiaries." It is a bottleneck portfolio: compute, power, hosting, optics, storage, and hedges around the obvious consensus AI winners.
 
 - Public 13F value: $4138.4m across 28 line items.
 - Option mix: common 54.2%, calls 24.4%, puts 21.4%.
@@ -224,7 +194,7 @@ My inference: by Q3, the public book is no longer just "AI beneficiaries." It is
 
 ### 2025-Q4: from broad hedges to harder single-name conviction
 
-The December 31, 2025 filing is the latest public quarter and the most revealing.
+The December 31, 2025 filing is the latest public quarter and the most revealing one.
 
 By value, the public book is now dominated by:
 
@@ -234,7 +204,7 @@ By value, the public book is now dominated by:
 - **Lumentum** at about **8.7%**,
 - **Core Scientific** at about **7.6%**.
 
-What changed is almost more interesting than the size:
+The quarter-to-quarter shift is more important than the size:
 
 - the large broad semiconductor hedge is mostly gone,
 - the **Nvidia**, **TSMC**, **Micron**, **Broadcom**, and **SMH** public-option hedges disappear,
@@ -278,7 +248,7 @@ What changed is almost more interesting than the size:
 | BABCOCK & WILCOX ENTERPRISES | Common/equity | $8.6m | 1,353,900 |
 | INTEL CORP | Common/equity | $0.0m | 1 |
 
-## The quarter-to-quarter changes that mattered
+## Quarter-to-quarter changes
 
 ### 2024-Q4 to 2025-Q1
 
@@ -298,7 +268,9 @@ SALP added **Babcock & Wilcox**, **Bitfarms**, **CleanSpark**, **Infosys put**, 
 
 ## Core Scientific: the only verified 13D campaign
 
-The 13F tables tell you quarter-end snapshots. The **Core Scientific** 13D sequence tells you how SALP behaved between snapshots.
+The 13F tables show quarter-end snapshots. The **Core Scientific** 13D sequence shows how SALP traded between snapshots.
+
+Core Scientific is not a science concept here; it is a public digital-infrastructure company. It began as a large bitcoin-mining operator, but the relevant investment angle is its powered sites and high-density compute hosting capacity.
 
 The initial **August 19, 2025** Schedule 13D says:
 
@@ -306,7 +278,7 @@ The initial **August 19, 2025** Schedule 13D says:
 - equal to **5.8%** of the class,
 - and the fund had used **$213,190,431.12** of working capital to buy the stock.
 
-That same filing is also where the structure becomes public in plain English: SALP is the adviser, **SAF AI GP LP** is the general partner, **Situational Awareness LLC** is the adviser's GP, **Situational Awareness Partners LP** is the fund, **Leopold Aschenbrenner** is the managing partner/control person, and **Carl Shulman** is the **co-portfolio manager**.
+The same filing also lays out the control structure: SALP is the adviser, **SAF AI GP LP** is the general partner, **Situational Awareness LLC** is the adviser's GP, **Situational Awareness Partners LP** is the fund, **Leopold Aschenbrenner** is the managing partner/control person, and **Carl Shulman** is the **co-portfolio manager**.
 
 The amended **October 14, 2025** 13D/A says the position had risen to:
 
@@ -319,11 +291,11 @@ The amendment's Exhibit 99.2 shows that SALP traded around the stake instead of 
 - then a long sequence of **purchases** from **September 9** through **October 14**,
 - including a final **2,306,152-share** purchase on **October 14, 2025** at **$19.0684** per share.
 
-That is the clearest example in the public record of SALP expressing high-conviction single-name size outside the passive quarterly 13F rhythm.
+That is the clearest public example of SALP expressing high-conviction single-name size outside the quarterly 13F rhythm.
 
 ## What the holdings actually say
 
-My read, and this is now interpretation rather than raw filing fact, is that SALP's public portfolio is best understood as a view on **AI bottlenecks**, not a generic AI basket.
+My read, now interpretation rather than raw filing fact, is that SALP's public portfolio is a view on **AI bottlenecks**, not a generic AI basket.
 
 The recurring clusters are:
 
@@ -334,32 +306,31 @@ The recurring clusters are:
 - **storage / memory / semiconductor supply**: Intel, Sandisk, Tower, Onto, Western Digital, Seagate;
 - **overlay hedges**: the large Intel calls throughout 2025, the Q2 **SMH put**, and the Q3 puts on **Nvidia**, **TSMC**, **Micron**, and **Broadcom**.
 
-The important point is that the book is not "long Nvidia, long Microsoft, long AI software." In fact, by the latest public quarter, the biggest disclosed public exposures are **CoreWeave**, **Bloom Energy**, **Intel calls**, **Lumentum**, and **Core Scientific**. That is a much more specific thesis than the usual AI-manager caricature.
+The book is not "long Nvidia, long Microsoft, long AI software." By the latest public quarter, the biggest disclosed public exposures are **CoreWeave**, **Bloom Energy**, **Intel calls**, **Lumentum**, and **Core Scientific**. That is a more specific thesis than the usual AI-manager caricature.
 
 ## What I could not verify
 
-There are still limits to what the public record can show.
+The public record still has hard limits.
 
 - I could not verify any public SALP LP letters, quarterly deck, or investor memo produced by the fund itself beyond the official website and Leopold's public writing site.
 - I cannot see the short book, private positions, swaps, most non-13F instruments, or the exact relationship of the separate **CGF2021/Sydecar** series vehicle to the main master-feeder structure.
 - I also cannot cleanly separate which parts of the visible public book are pure directional longs and which are paired or hedged positions without access to internal netting, primes, or letters.
 
-So the right conclusion is not "this is everything the fund owns." The right conclusion is: **this is the most complete reconstruction of what the public record actually lets you see**.
+So the conclusion is not "this is everything the fund owns." It is: **this is the most complete reconstruction the public record allows**.
 
 ## Bottom line
 
-If you strip away the mythology, the public record says this:
-
-- SALP was assembled quickly in 2024 around Leopold Aschenbrenner's AI thesis.
-- It raised capital fast: the onshore Form D/A alone went from zero sold in September 2024 to **$997.9m** sold by September 2025 and **$1.762bn** by March 2026.
+- The onshore Form D/A went from zero sold in September 2024 to **$997.9m** sold by September 2025 and **$1.762bn** by March 2026.
 - By March 2026 the adviser reported **$9.278bn** of RAUM across two pooled vehicles.
 - The public 13F book grew from **$254.8m** at the end of 2024 to **$5.5168bn** at the end of 2025.
 - The public book consistently targeted AI bottlenecks: power, hosting, miners, optics, storage, and selective optionality.
 - The only clearly visible over-5% 13D sequence was **Core Scientific**, where SALP moved from **5.8%** to **9.4%** in less than two months.
 
-That is already enough to say something stronger than the usual summary: SALP is not just an "AI hedge fund." In the public filings, it looks like a very specific wager that the winners from the AGI buildout will not just be model vendors, but the companies controlling the **power, sites, interconnect, storage, and financial convexity around the buildout itself**.
+That is enough to say something stronger than the usual summary: SALP is not just an "AI hedge fund." In the public filings, it looks like a specific wager that the AGI buildout will reward not just model vendors, but also the companies controlling **power, sites, interconnect, storage, and financial convexity around the buildout itself**.
 
 ## Sources
+
+This reconstruction uses the fund's [official site](https://situationalawarenesslp.com/), the [about page](https://situationalawarenesslp.com/about), Leopold Aschenbrenner's own [For Our Posterity site](https://www.forourposterity.com/), the SEC [Form ADV](https://reports.adviserinfo.sec.gov/reports/ADV/333011/PDF/333011.pdf), the onshore and offshore [Form D](https://www.sec.gov/Archives/edgar/data/2038540/000093583624000602/0000935836-24-000602-index.htm) [sequence](https://www.sec.gov/Archives/edgar/data/2038540/000093583625000591/0000935836-25-000591-index.htm) [and](https://www.sec.gov/Archives/edgar/data/2038540/000093583626000153/0000935836-26-000153-index.htm), the separate [Sydecar-administered series vehicle filing](https://www.sec.gov/Archives/edgar/data/2047424/000204742424000001/xslFormDX08/primary_doc.xml), every public SALP [13F filing](https://www.sec.gov/Archives/edgar/data/2045724/000093583625000120/0000935836-25-000120-index.htm), the SEC Data Library's [Form 13F data sets page](https://www.sec.gov/data-research/sec-markets-data/form-13f-data-sets), [Core Scientific 13D](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000543/0000935836-25-000543-index.htm), [13D/A](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000638/0000935836-25-000638-index.htm), and the SEC's own [Form 13F FAQ](https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-about-form-13f).
 
 - [Situational Awareness LP homepage](https://situationalawarenesslp.com/)
 - [Situational Awareness LP about page](https://situationalawarenesslp.com/about)
@@ -379,5 +350,6 @@ That is already enough to say something stronger than the usual summary: SALP is
 - [Core Scientific initial Schedule 13D](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000543/xslSCHEDULE_13D_X01/primary_doc.xml)
 - [Core Scientific Schedule 13D/A](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000638/xslSCHEDULE_13D_X01/primary_doc.xml)
 - [Core Scientific Exhibit 99.2, transactions in the past 60 days](https://www.sec.gov/Archives/edgar/data/1839341/000093583625000638/ex99290days.htm)
+- [Core Scientific company site](https://corescientific.com/)
 - [SEC FAQ on Form 13F](https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-about-form-13f)
 - [Bloomberg LEI record for Situational Awareness LP](https://lei.bloomberg.com/leis/view/254900Q1483NSNRJ0W04)
