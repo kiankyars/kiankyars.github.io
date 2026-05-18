@@ -5,20 +5,34 @@ date: 2026-05-18
 categories: investing
 ---
 
-SALP filed its **2026-Q1 (Jan-Mar) 13F** today, **2026-05-18**, signed by CCO **Christopher Zellner** on the **2026-05-15** deadline. Refer to the [original post]({% post_url 2026/blog/2026-04-21-situational-awareness-lp %}) for fund history, structure, ownership, prior quarters, and find this blog's tldr [here](https://x.com/i/status/2056448567104135561)..
+SALP filed its **2026-Q1 (Jan-Mar) 13F** today, signed by CCO **Christopher Zellner** on the **2026-05-15** deadline. Refer to the [original post]({% post_url 2026/blog/2026-04-21-situational-awareness-lp %}) for fund history, structure, ownership, prior quarters, and find this blog's tldr [here](https://x.com/i/status/2056448567104135561).
 
 ## Headline
 
 - Public 13F value:
     - **$13,676,657,577** across **42 line items**
     - **2.48x** the prior quarter and the largest QoQ jump since 2025-Q1.
-- Instrument mix flips from 70.9% common / 28.9% calls / 0.2% puts at 2025-Q4 to **28.2% common / 10.0% calls / 61.9% puts** at 2026-Q1.
+- Instrument mix:
+    - 2025-Q4: 70.9% common / 28.9% calls / 0.2% puts.
+    - 2026-Q1: **28.2% common / 10.0% calls / 61.9% puts**.
 - Option overlay (calls + puts) alone is **$9.82bn**, which is larger than the entire 2025-Q4 13F.
 - Top 10 issuer concentration: 82.9%.
 
 ## The put book
 
-Seven of the top ten lines are puts: **Nvidia ($1.57bn underlying), Oracle ($1.07bn), Broadcom ($1.01bn), AMD ($969m), Micron ($584m), TSM ($535m), ASML ($494m), Intel ($159m), Corning ($21m), Infosys ($7m)**. The **VanEck Semiconductor ETF (SMH) put** is back at **$2.04bn**, the single largest disclosed line.
+Seven of the top ten lines are puts. Disclosed long puts, by value of underlying:
+
+- **VanEck Semiconductor ETF (SMH)**: $2.04bn (single largest disclosed line)
+- **Nvidia**: $1.57bn
+- **Oracle**: $1.07bn
+- **Broadcom**: $1.01bn
+- **AMD**: $969m
+- **Micron**: $584m
+- **TSM**: $535m
+- **ASML**: $494m
+- **Intel**: $159m
+- **Corning**: $21m
+- **Infosys**: $7m
 
 ## The Intel flip
 
@@ -37,25 +51,25 @@ The **20,237,400-share** Intel call that anchored the public book for four strai
 
 ## New issuers (vs. 2025-Q4)
 
-- **AMD** — put + small common
-- **ASML** — put + token common
-- **Broadcom** — put (last seen 2025-Q3)
-- **Corning** — put + token common
+- **AMD**: put + small common
+- **ASML**: put + token common
+- **Broadcom**: put (last seen 2025-Q3)
+- **Corning**: put + token common
 - **HIVE Digital**
-- **Oracle** — put
+- **Oracle**: put
 - **SharonAI**
-- **T1 Energy** — a 10,000,000-share line at **$43.9m**
+- **T1 Energy**: a 10,000,000-share line at **$43.9m**
 
 ## Full exits (vs. 2025-Q4)
 
-- **Lumentum** — $478.6m
-- **Cipher Mining** — $154.5m
-- **EQT** — $133.0m common + $37.5m call
-- **Coherent** — $88.6m
-- **Tower Semiconductor** — $84.9m
-- **Kilroy** — $49.6m
-- **Hut 8** — $39.5m
-- **Liberty Energy** — $10.5m
+- **Lumentum**: $478.6m
+- **Cipher Mining**: $154.5m
+- **EQT**: $133.0m common + $37.5m call
+- **Coherent**: $88.6m
+- **Tower Semiconductor**: $84.9m
+- **Kilroy**: $49.6m
+- **Hut 8**: $39.5m
+- **Liberty Energy**: $10.5m
 
 ## Full holdings
 
