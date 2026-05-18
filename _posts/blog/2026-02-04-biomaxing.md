@@ -41,7 +41,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-05-02[^4] | n/a | n/a |  | 69 | 3 | maintaining |
 | 2026-05-03[^5] | 08h00 | 2 | 2 | 72 | 4 | detraining |
 | 2026-05-04[^6] | 07h53 | 4 | 3 |  |  | maintaining |
-| 2026-05-05 |  |  |  |  |  |  |
+| 2026-05-05 | 10h00 | 2 | 2 |  |  |  |
 | 2026-05-06 |  |  |  |  |  |  |
 | 2026-05-07 |  |  |  |  |  |  |
 | 2026-05-08 |  |  |  |  |  |  |
