@@ -70,13 +70,13 @@ The latest public 13F shows **$5.5168 billion** of 13(f) securities at **Decembe
 
 ## Public 13F growth
 
-| Quarter | Report date | Filed | Line items | Official 13F value | QoQ change |
-|---|---|---|---:|---:|---:|
-| 2024-Q4 | 2024-12-31 | 2025-02-11 | 6 | $254.8m | n/a |
-| 2025-Q1 | 2025-03-31 | 2025-05-14 | 12 | $1,005.6m | +294.6% |
-| 2025-Q2 | 2025-06-30 | 2025-08-14 | 9 | $2,123.0m | +111.1% |
-| 2025-Q3 | 2025-09-30 | 2025-11-14 | 28 | $4,138.4m | +94.9% |
-| 2025-Q4 | 2025-12-31 | 2026-02-11 | 29 | $5,516.8m | +33.3% |
+| Quarter | Report date | Filed      | Line items | Official 13F value | QoQ change |
+| ------- | ----------- | ---------- | ---------: | -----------------: | ---------: |
+| 2024-Q4 | 2024-12-31  | 2025-02-11 |          6 |            $254.8m |        n/a |
+| 2025-Q1 | 2025-03-31  | 2025-05-14 |         12 |          $1,005.6m |    +294.6% |
+| 2025-Q2 | 2025-06-30  | 2025-08-14 |          9 |          $2,123.0m |    +111.1% |
+| 2025-Q3 | 2025-09-30  | 2025-11-14 |         28 |          $4,138.4m |     +94.9% |
+| 2025-Q4 | 2025-12-31  | 2026-02-11 |         29 |          $5,516.8m |     +33.3% |
 
 That is a **21.6x** increase in public 13F value in four quarters.
 
@@ -90,14 +90,14 @@ The first 13F is small but already thematic: power, cooling, hardware plumbing, 
 - Option mix: common 100.0%, calls 0.0%, puts 0.0%.
 - Top 10 issuer concentration: 100.0%.
 
-| Holding | Instrument | Value | Shares |
-|---|---:|---:|---:|
-| MARVELL TECHNOLOGY INC | Common/equity | $86.8m | 785,896 |
-| VISTRA CORP | Common/equity | $59.1m | 428,397 |
-| VERTIV HOLDINGS CO | Common/equity | $51.7m | 455,146 |
-| TALEN ENERGY CORP | Common/equity | $28.0m | 138,878 |
-| CONSTELLATION ENERGY CORP | Common/equity | $21.6m | 96,400 |
-| MODINE MFG CO | Common/equity | $7.7m | 66,367 |
+| Holding                   |    Instrument |  Value |  Shares |
+| ------------------------- | ------------: | -----: | ------: |
+| MARVELL TECHNOLOGY INC    | Common/equity | $86.8m | 785,896 |
+| VISTRA CORP               | Common/equity | $59.1m | 428,397 |
+| VERTIV HOLDINGS CO        | Common/equity | $51.7m | 455,146 |
+| TALEN ENERGY CORP         | Common/equity | $28.0m | 138,878 |
+| CONSTELLATION ENERGY CORP | Common/equity | $21.6m |  96,400 |
+| MODINE MFG CO             | Common/equity |  $7.7m |  66,367 |
 
 ### 2025-Q1: scale-up and the first huge convex bet
 
@@ -109,20 +109,20 @@ This quarter also shows the first recognizable public-book mix of power, AI-capa
 - Option mix: common 54.3%, calls 45.7%, puts 0.0%.
 - Top 10 issuer concentration: 95.7%.
 
-| Holding | Instrument | Value | Shares |
-|---|---:|---:|---:|
-| Intel Corp | Call option | $459.6m | 20,237,400 |
-| Broadcom Inc | Common/equity | $117.2m | 700,000 |
-| Onto Innovation Inc | Common/equity | $71.2m | 586,717 |
-| Vistra Corp | Common/equity | $61.8m | 525,846 |
-| Modine Mfg Co | Common/equity | $55.0m | 716,824 |
-| EQT Corp | Common/equity | $52.9m | 989,398 |
-| CoreWeave Inc | Common/equity | $45.4m | 1,225,000 |
-| Constellation Energy Corp | Common/equity | $37.0m | 183,400 |
-| Core Scientific Inc New | Common/equity | $32.7m | 4,521,578 |
-| Talen Energy Corp | Common/equity | $29.6m | 148,395 |
-| Applied Digital Corp | Common/equity | $22.7m | 4,035,600 |
-| IREN Limited | Common/equity | $20.5m | 3,366,130 |
+| Holding                   |    Instrument |   Value |     Shares |
+| ------------------------- | ------------: | ------: | ---------: |
+| Intel Corp                |   Call option | $459.6m | 20,237,400 |
+| Broadcom Inc              | Common/equity | $117.2m |    700,000 |
+| Onto Innovation Inc       | Common/equity |  $71.2m |    586,717 |
+| Vistra Corp               | Common/equity |  $61.8m |    525,846 |
+| Modine Mfg Co             | Common/equity |  $55.0m |    716,824 |
+| EQT Corp                  | Common/equity |  $52.9m |    989,398 |
+| CoreWeave Inc             | Common/equity |  $45.4m |  1,225,000 |
+| Constellation Energy Corp | Common/equity |  $37.0m |    183,400 |
+| Core Scientific Inc New   | Common/equity |  $32.7m |  4,521,578 |
+| Talen Energy Corp         | Common/equity |  $29.6m |    148,395 |
+| Applied Digital Corp      | Common/equity |  $22.7m |  4,035,600 |
+| IREN Limited              | Common/equity |  $20.5m |  3,366,130 |
 
 ### 2025-Q2: concentrated, hedged, and much larger
 
@@ -134,17 +134,17 @@ Notably, **CoreWeave disappears completely** in this quarter's public filing.
 - Option mix: common 51.8%, calls 21.4%, puts 26.9%.
 - Top 10 issuer concentration: 100.0%.
 
-| Holding | Instrument | Value | Shares |
-|---|---:|---:|---:|
-| VANECK ETF TRUST | Put option | $570.1m | 2,044,100 |
-| INTEL CORP | Call option | $453.3m | 20,237,400 |
-| BROADCOM INC | Common/equity | $328.5m | 1,191,606 |
-| VISTRA CORP | Common/equity | $246.9m | 1,274,178 |
-| CORE SCIENTIFIC INC NEW | Common/equity | $136.5m | 7,994,038 |
-| EQT CORP | Common/equity | $125.1m | 2,145,345 |
-| CONSTELLATION ENERGY CORP | Common/equity | $103.0m | 319,200 |
-| IREN LIMITED | Common/equity | $93.3m | 6,400,384 |
-| APPLIED DIGITAL CORP | Common/equity | $66.4m | 6,591,800 |
+| Holding                   |    Instrument |   Value |     Shares |
+| ------------------------- | ------------: | ------: | ---------: |
+| VANECK ETF TRUST          |    Put option | $570.1m |  2,044,100 |
+| INTEL CORP                |   Call option | $453.3m | 20,237,400 |
+| BROADCOM INC              | Common/equity | $328.5m |  1,191,606 |
+| VISTRA CORP               | Common/equity | $246.9m |  1,274,178 |
+| CORE SCIENTIFIC INC NEW   | Common/equity | $136.5m |  7,994,038 |
+| EQT CORP                  | Common/equity | $125.1m |  2,145,345 |
+| CONSTELLATION ENERGY CORP | Common/equity | $103.0m |    319,200 |
+| IREN LIMITED              | Common/equity |  $93.3m |  6,400,384 |
+| APPLIED DIGITAL CORP      | Common/equity |  $66.4m |  6,591,800 |
 
 ### 2025-Q3: the portfolio becomes an AI-supply-chain map
 
@@ -161,36 +161,36 @@ The September 30, 2025 13F expands to **28 line items** and mixes:
 - Option mix: common 54.2%, calls 24.4%, puts 21.4%.
 - Top 10 issuer concentration: 84.7%.
 
-| Holding | Instrument | Value | Shares |
-|---|---:|---:|---:|
-| INTEL CORP | Call option | $679.0m | 20,237,400 |
-| COREWEAVE INC | Common/equity | $563.2m | 4,115,456 |
-| CORE SCIENTIFIC INC NEW | Common/equity | $362.0m | 20,180,534 |
-| IREN LIMITED | Common/equity | $338.9m | 7,220,421 |
-| COREWEAVE INC | Call option | $316.7m | 2,314,500 |
-| NVIDIA CORPORATION | Put option | $298.5m | 1,600,000 |
-| VISTRA CORP | Common/equity | $252.3m | 1,287,910 |
-| VANECK ETF TRUST | Put option | $195.8m | 600,000 |
-| COREWEAVE INC | Put option | $191.6m | 1,400,000 |
-| APPLIED DIGITAL CORP | Common/equity | $139.1m | 6,064,155 |
-| GALAXY DIGITAL INC. | Common/equity | $92.6m | 2,737,500 |
-| BROADCOM INC | Put option | $75.9m | 230,000 |
-| TAIWAN SEMICONDUCTOR MFG LTD | Put option | $75.4m | 270,000 |
-| CIPHER MINING INC | Common/equity | $72.3m | 5,740,493 |
-| RIOT PLATFORMS INC | Common/equity | $68.4m | 3,592,699 |
-| LUMENTUM HLDGS INC | Common/equity | $67.9m | 417,600 |
-| EQT CORP | Common/equity | $66.3m | 1,217,386 |
-| MICRON TECHNOLOGY INC | Put option | $50.2m | 300,000 |
-| SOLARIS ENERGY INFRAS INC | Common/equity | $46.0m | 1,150,300 |
-| BLOOM ENERGY CORP | Common/equity | $43.9m | 3,048,002 |
-| TOWER SEMICONDUCTOR LTD | Common/equity | $34.0m | 470,600 |
-| HUT 8 CORP | Common/equity | $20.9m | 599,000 |
-| WESTERN DIGITAL CORP | Common/equity | $18.3m | 152,821 |
-| COHERENT CORP | Common/equity | $16.6m | 154,400 |
-| BITDEER TECHNOLOGIES GROUP | Common/equity | $15.9m | 929,600 |
-| SANDISK CORP | Common/equity | $12.9m | 115,000 |
-| BLOOM ENERGY CORP | Call option | $12.3m | 145,800 |
-| SEAGATE TECHNOLOGY HLDNGS PL | Common/equity | $11.5m | 48,567 |
+| Holding                      |    Instrument |   Value |     Shares |
+| ---------------------------- | ------------: | ------: | ---------: |
+| INTEL CORP                   |   Call option | $679.0m | 20,237,400 |
+| COREWEAVE INC                | Common/equity | $563.2m |  4,115,456 |
+| CORE SCIENTIFIC INC NEW      | Common/equity | $362.0m | 20,180,534 |
+| IREN LIMITED                 | Common/equity | $338.9m |  7,220,421 |
+| COREWEAVE INC                |   Call option | $316.7m |  2,314,500 |
+| NVIDIA CORPORATION           |    Put option | $298.5m |  1,600,000 |
+| VISTRA CORP                  | Common/equity | $252.3m |  1,287,910 |
+| VANECK ETF TRUST             |    Put option | $195.8m |    600,000 |
+| COREWEAVE INC                |    Put option | $191.6m |  1,400,000 |
+| APPLIED DIGITAL CORP         | Common/equity | $139.1m |  6,064,155 |
+| GALAXY DIGITAL INC.          | Common/equity |  $92.6m |  2,737,500 |
+| BROADCOM INC                 |    Put option |  $75.9m |    230,000 |
+| TAIWAN SEMICONDUCTOR MFG LTD |    Put option |  $75.4m |    270,000 |
+| CIPHER MINING INC            | Common/equity |  $72.3m |  5,740,493 |
+| RIOT PLATFORMS INC           | Common/equity |  $68.4m |  3,592,699 |
+| LUMENTUM HLDGS INC           | Common/equity |  $67.9m |    417,600 |
+| EQT CORP                     | Common/equity |  $66.3m |  1,217,386 |
+| MICRON TECHNOLOGY INC        |    Put option |  $50.2m |    300,000 |
+| SOLARIS ENERGY INFRAS INC    | Common/equity |  $46.0m |  1,150,300 |
+| BLOOM ENERGY CORP            | Common/equity |  $43.9m |  3,048,002 |
+| TOWER SEMICONDUCTOR LTD      | Common/equity |  $34.0m |    470,600 |
+| HUT 8 CORP                   | Common/equity |  $20.9m |    599,000 |
+| WESTERN DIGITAL CORP         | Common/equity |  $18.3m |    152,821 |
+| COHERENT CORP                | Common/equity |  $16.6m |    154,400 |
+| BITDEER TECHNOLOGIES GROUP   | Common/equity |  $15.9m |    929,600 |
+| SANDISK CORP                 | Common/equity |  $12.9m |    115,000 |
+| BLOOM ENERGY CORP            |   Call option |  $12.3m |    145,800 |
+| SEAGATE TECHNOLOGY HLDNGS PL | Common/equity |  $11.5m |     48,567 |
 
 ### 2025-Q4: from broad hedges to harder single-name conviction
 
@@ -216,37 +216,37 @@ The quarter-to-quarter shift is more important than the size:
 - Option mix: common 70.9%, calls 28.9%, puts 0.2%.
 - Top 10 issuer concentration: 89.7%.
 
-| Holding | Instrument | Value | Shares |
-|---|---:|---:|---:|
-| BLOOM ENERGY CORP | Common/equity | $875.5m | 10,076,022 |
-| COREWEAVE INC | Call option | $774.4m | 10,814,500 |
-| INTEL CORP | Call option | $746.8m | 20,237,400 |
-| LUMENTUM HLDGS INC | Common/equity | $478.6m | 1,298,400 |
-| COREWEAVE INC | Common/equity | $436.7m | 6,098,812 |
-| CORE SCIENTIFIC INC NEW | Common/equity | $418.7m | 28,756,478 |
-| IREN LIMITED | Common/equity | $328.6m | 8,700,621 |
-| APPLIED DIGITAL CORP | Common/equity | $278.0m | 11,339,060 |
-| SANDISK CORP | Common/equity | $250.2m | 1,054,200 |
-| CIPHER MINING INC | Common/equity | $154.5m | 10,469,093 |
-| EQT CORP | Common/equity | $133.0m | 2,482,225 |
-| COHERENT CORP | Common/equity | $88.6m | 480,300 |
-| SOLARIS ENERGY INFRAS INC | Common/equity | $85.8m | 1,866,500 |
-| TOWER SEMICONDUCTOR LTD | Common/equity | $84.9m | 723,004 |
-| RIOT PLATFORMS INC | Common/equity | $78.1m | 6,167,700 |
-| KILROY RLTY CORP | Common/equity | $49.6m | 1,327,700 |
-| HUT 8 CORP | Common/equity | $39.5m | 860,200 |
-| EQT CORP | Call option | $37.5m | 700,000 |
-| BLOOM ENERGY CORP | Call option | $35.5m | 408,500 |
-| WHITEFIBER INC | Common/equity | $27.8m | 1,757,600 |
-| POWER SOLUTIONS INTL INC | Common/equity | $24.7m | 432,300 |
-| BITDEER TECHNOLOGIES GROUP | Common/equity | $20.0m | 1,788,000 |
-| CLEANSPARK INC | Common/equity | $16.6m | 1,640,400 |
-| BITFARMS LTD | Common/equity | $16.2m | 6,897,100 |
-| LIBERTY ENERGY INC | Common/equity | $10.5m | 567,200 |
-| INFOSYS LTD | Put option | $8.9m | 500,000 |
-| PROPETRO HLDG CORP | Common/equity | $8.7m | 910,300 |
-| BABCOCK & WILCOX ENTERPRISES | Common/equity | $8.6m | 1,353,900 |
-| INTEL CORP | Common/equity | $0.0m | 1 |
+| Holding                      |    Instrument |   Value |     Shares |
+| ---------------------------- | ------------: | ------: | ---------: |
+| BLOOM ENERGY CORP            | Common/equity | $875.5m | 10,076,022 |
+| COREWEAVE INC                |   Call option | $774.4m | 10,814,500 |
+| INTEL CORP                   |   Call option | $746.8m | 20,237,400 |
+| LUMENTUM HLDGS INC           | Common/equity | $478.6m |  1,298,400 |
+| COREWEAVE INC                | Common/equity | $436.7m |  6,098,812 |
+| CORE SCIENTIFIC INC NEW      | Common/equity | $418.7m | 28,756,478 |
+| IREN LIMITED                 | Common/equity | $328.6m |  8,700,621 |
+| APPLIED DIGITAL CORP         | Common/equity | $278.0m | 11,339,060 |
+| SANDISK CORP                 | Common/equity | $250.2m |  1,054,200 |
+| CIPHER MINING INC            | Common/equity | $154.5m | 10,469,093 |
+| EQT CORP                     | Common/equity | $133.0m |  2,482,225 |
+| COHERENT CORP                | Common/equity |  $88.6m |    480,300 |
+| SOLARIS ENERGY INFRAS INC    | Common/equity |  $85.8m |  1,866,500 |
+| TOWER SEMICONDUCTOR LTD      | Common/equity |  $84.9m |    723,004 |
+| RIOT PLATFORMS INC           | Common/equity |  $78.1m |  6,167,700 |
+| KILROY RLTY CORP             | Common/equity |  $49.6m |  1,327,700 |
+| HUT 8 CORP                   | Common/equity |  $39.5m |    860,200 |
+| EQT CORP                     |   Call option |  $37.5m |    700,000 |
+| BLOOM ENERGY CORP            |   Call option |  $35.5m |    408,500 |
+| WHITEFIBER INC               | Common/equity |  $27.8m |  1,757,600 |
+| POWER SOLUTIONS INTL INC     | Common/equity |  $24.7m |    432,300 |
+| BITDEER TECHNOLOGIES GROUP   | Common/equity |  $20.0m |  1,788,000 |
+| CLEANSPARK INC               | Common/equity |  $16.6m |  1,640,400 |
+| BITFARMS LTD                 | Common/equity |  $16.2m |  6,897,100 |
+| LIBERTY ENERGY INC           | Common/equity |  $10.5m |    567,200 |
+| INFOSYS LTD                  |    Put option |   $8.9m |    500,000 |
+| PROPETRO HLDG CORP           | Common/equity |   $8.7m |    910,300 |
+| BABCOCK & WILCOX ENTERPRISES | Common/equity |   $8.6m |  1,353,900 |
+| INTEL CORP                   | Common/equity |   $0.0m |          1 |
 
 ## Quarter-to-quarter changes
 

@@ -73,50 +73,50 @@ The **20,237,400-share** Intel call that anchored the public book for four strai
 
 ## Full holdings
 
-| Holding | Instrument | Value | Shares |
-|---|---:|---:|---:|
-| VANECK ETF TRUST | Put option | $2,042.7m | 5,327,900 |
-| NVIDIA CORPORATION | Put option | $1,568.3m | 8,992,300 |
-| ORACLE CORP | Put option | $1,072.9m | 7,293,000 |
-| BROADCOM INC | Put option | $1,006.2m | 3,251,100 |
-| ADVANCED MICRO DEVICES INC | Put option | $969.2m | 4,764,100 |
-| BLOOM ENERGY CORP | Common/equity | $878.7m | 6,485,408 |
-| SANDISK CORP | Common/equity | $724.4m | 1,140,119 |
-| MICRON TECHNOLOGY INC | Put option | $583.7m | 1,727,700 |
-| COREWEAVE INC | Common/equity | $556.1m | 7,177,919 |
-| TAIWAN SEMICONDUCTOR MFG LTD | Put option | $535.1m | 1,583,400 |
-| ASML HLDG NV N Y REGISTRY | Put option | $494.1m | 374,100 |
-| MICRON TECHNOLOGY INC | Call option | $422.3m | 1,250,000 |
-| IREN LIMITED | Common/equity | $401.0m | 11,698,835 |
-| CORE SCIENTIFIC INC NEW | Common/equity | $389.1m | 26,008,473 |
-| SANDISK CORP | Call option | $388.8m | 611,900 |
-| TAIWAN SEMICONDUCTOR MFG LTD | Call option | $354.8m | 1,050,000 |
-| APPLIED DIGITAL CORP | Common/equity | $320.0m | 13,478,438 |
-| INTEL CORP | Put option | $159.1m | 3,605,400 |
-| RIOT PLATFORMS INC | Common/equity | $142.2m | 11,502,137 |
-| COREWEAVE INC | Call option | $140.6m | 1,814,500 |
-| CLEANSPARK INC | Common/equity | $104.5m | 12,276,139 |
-| SOLARIS ENERGY INFRAS INC | Common/equity | $62.5m | 1,105,551 |
-| BLOOM ENERGY CORP | Call option | $55.3m | 408,500 |
-| T1 ENERGY INC | Common/equity | $43.9m | 10,000,000 |
-| BITFARMS LTD | Common/equity | $38.8m | 19,875,840 |
-| BITDEER TECHNOLOGIES GROUP | Common/equity | $29.8m | 3,439,450 |
-| POWER SOLUTIONS INTL INC | Common/equity | $26.3m | 432,300 |
-| CORNING INC | Put option | $21.0m | 154,600 |
-| WHITEFIBER INC | Common/equity | $20.9m | 1,757,600 |
-| ADVANCED MICRO DEVICES INC | Common/equity | $20.2m | 99,138 |
-| BABCOCK & WILCOX ENTERPRISES | Common/equity | $19.9m | 1,353,900 |
-| SHARONAI HOLDINGS INC | Common/equity | $18.1m | 796,108 |
-| PROPETRO HLDG CORP | Common/equity | $13.1m | 910,300 |
-| VANECK ETF TRUST | Common/equity | $10.3m | 26,950 |
-| INTEL CORP | Common/equity | $8.9m | 202,344 |
-| TAIWAN SEMICONDUCTOR MFG LTD | Common/equity | $7.6m | 22,423 |
-| INFOSYS LTD | Put option | $6.8m | 500,000 |
-| HIVE DIGITAL TECHNOLOGIES LT | Common/equity | $6.4m | 3,391,547 |
-| ASML HLDG NV N Y REGISTRY | Common/equity | $6.1m | 4,633 |
-| MICRON TECHNOLOGY INC | Common/equity | $5.9m | 17,362 |
-| CORNING INC | Common/equity | $0.7m | 5,283 |
-| NVIDIA CORPORATION | Common/equity | $0.5m | 2,855 |
+| Holding                      |    Instrument |     Value |     Shares |
+| ---------------------------- | ------------: | --------: | ---------: |
+| VANECK ETF TRUST             |    Put option | $2,042.7m |  5,327,900 |
+| NVIDIA CORPORATION           |    Put option | $1,568.3m |  8,992,300 |
+| ORACLE CORP                  |    Put option | $1,072.9m |  7,293,000 |
+| BROADCOM INC                 |    Put option | $1,006.2m |  3,251,100 |
+| ADVANCED MICRO DEVICES INC   |    Put option |   $969.2m |  4,764,100 |
+| BLOOM ENERGY CORP            | Common/equity |   $878.7m |  6,485,408 |
+| SANDISK CORP                 | Common/equity |   $724.4m |  1,140,119 |
+| MICRON TECHNOLOGY INC        |    Put option |   $583.7m |  1,727,700 |
+| COREWEAVE INC                | Common/equity |   $556.1m |  7,177,919 |
+| TAIWAN SEMICONDUCTOR MFG LTD |    Put option |   $535.1m |  1,583,400 |
+| ASML HLDG NV N Y REGISTRY    |    Put option |   $494.1m |    374,100 |
+| MICRON TECHNOLOGY INC        |   Call option |   $422.3m |  1,250,000 |
+| IREN LIMITED                 | Common/equity |   $401.0m | 11,698,835 |
+| CORE SCIENTIFIC INC NEW      | Common/equity |   $389.1m | 26,008,473 |
+| SANDISK CORP                 |   Call option |   $388.8m |    611,900 |
+| TAIWAN SEMICONDUCTOR MFG LTD |   Call option |   $354.8m |  1,050,000 |
+| APPLIED DIGITAL CORP         | Common/equity |   $320.0m | 13,478,438 |
+| INTEL CORP                   |    Put option |   $159.1m |  3,605,400 |
+| RIOT PLATFORMS INC           | Common/equity |   $142.2m | 11,502,137 |
+| COREWEAVE INC                |   Call option |   $140.6m |  1,814,500 |
+| CLEANSPARK INC               | Common/equity |   $104.5m | 12,276,139 |
+| SOLARIS ENERGY INFRAS INC    | Common/equity |    $62.5m |  1,105,551 |
+| BLOOM ENERGY CORP            |   Call option |    $55.3m |    408,500 |
+| T1 ENERGY INC                | Common/equity |    $43.9m | 10,000,000 |
+| BITFARMS LTD                 | Common/equity |    $38.8m | 19,875,840 |
+| BITDEER TECHNOLOGIES GROUP   | Common/equity |    $29.8m |  3,439,450 |
+| POWER SOLUTIONS INTL INC     | Common/equity |    $26.3m |    432,300 |
+| CORNING INC                  |    Put option |    $21.0m |    154,600 |
+| WHITEFIBER INC               | Common/equity |    $20.9m |  1,757,600 |
+| ADVANCED MICRO DEVICES INC   | Common/equity |    $20.2m |     99,138 |
+| BABCOCK & WILCOX ENTERPRISES | Common/equity |    $19.9m |  1,353,900 |
+| SHARONAI HOLDINGS INC        | Common/equity |    $18.1m |    796,108 |
+| PROPETRO HLDG CORP           | Common/equity |    $13.1m |    910,300 |
+| VANECK ETF TRUST             | Common/equity |    $10.3m |     26,950 |
+| INTEL CORP                   | Common/equity |     $8.9m |    202,344 |
+| TAIWAN SEMICONDUCTOR MFG LTD | Common/equity |     $7.6m |     22,423 |
+| INFOSYS LTD                  |    Put option |     $6.8m |    500,000 |
+| HIVE DIGITAL TECHNOLOGIES LT | Common/equity |     $6.4m |  3,391,547 |
+| ASML HLDG NV N Y REGISTRY    | Common/equity |     $6.1m |      4,633 |
+| MICRON TECHNOLOGY INC        | Common/equity |     $5.9m |     17,362 |
+| CORNING INC                  | Common/equity |     $0.7m |      5,283 |
+| NVIDIA CORPORATION           | Common/equity |     $0.5m |      2,855 |
 
 ## Read
 

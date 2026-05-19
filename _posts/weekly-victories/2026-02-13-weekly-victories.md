@@ -30,11 +30,11 @@ Victory #4:
 Victory #5:
 
 - Wednesday was an insane climax day, but also can't really say climax since it's only uphill from here.
-  - Parallel agent expirements went nuts.
-  - Met with Bob from Antler.
-  - Attended SPC F&F day, great discussion with Bilal and attended the embodied AI group.
-  - Locked into RLMs and [presented](https://www.youtube.com/watch?v=UFJVc2IkyFY&t=2s) my work on parallel agents.
-  - Came up with a great idea while lying in bed from 10 pm to 1 am.
+    - Parallel agent expirements went nuts.
+    - Met with Bob from Antler.
+    - Attended SPC F&F day, great discussion with Bilal and attended the embodied AI group.
+    - Locked into RLMs and [presented](https://www.youtube.com/watch?v=UFJVc2IkyFY&t=2s) my work on parallel agents.
+    - Came up with a great idea while lying in bed from 10 pm to 1 am.
 
 Victory #6:
 
@@ -44,18 +44,18 @@ Victory #6:
 Victory #7:
 
 - Thursday
-  - Met with Nadia from EF, she asks great questions.
-  - Serendipitously ran into friends at South Park and had a great one-hour conversation where I learned many new concepts.
-  - SPC Demo Day
+    - Met with Nadia from EF, she asks great questions.
+    - Serendipitously ran into friends at South Park and had a great one-hour conversation where I learned many new concepts.
+    - SPC Demo Day
 
 Victory #8:
 
 - Friday
-  - Internet Archive tour (there was ice cream!)
-  - Great time spent with Bilal, Milo, and Otso
-  - Founders, Inc with Sam, Raphael, Elbert, and Rahul
-  - [](/imgs/2026-02-13-weekly-victories/hamming1.jpeg)
-  - [](/imgs/2026-02-13-weekly-victories/hamming2.jpeg)
+    - Internet Archive tour (there was ice cream!)
+    - Great time spent with Bilal, Milo, and Otso
+    - Founders, Inc with Sam, Raphael, Elbert, and Rahul
+    - [](/imgs/2026-02-13-weekly-victories/hamming1.jpeg)
+    - [](/imgs/2026-02-13-weekly-victories/hamming2.jpeg)
 
 L #0:
 

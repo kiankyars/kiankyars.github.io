@@ -23,7 +23,7 @@ categories: life
 - Powdered greens as a leafy vegetable substitute/meal shakes (I prefer overnight oats though)
 - Focusmate
 - Plant-based diet
-  - ![](/imgs/2025-10-11-good-and-bad/12.jpg)
+    - ![](/imgs/2025-10-11-good-and-bad/12.jpg)
 - Extinguish candles with a lid (prevents particulate matter in air)
 - Vitamin D supplements in winter
 
@@ -31,14 +31,14 @@ categories: life
 
 - Sodium lauryl sulfate
 - Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)
-  - Non-stick cookware (Teflon)
-  - Waterproof clothing and outdoor gear
-  - Fast food packaging and containers
-  - Stain-resistant carpets and furniture
-  - Dental floss
-  - Cosmetics and personal care products
-  - Firefighting foam
-  - Electronics and semiconductors
+    - Non-stick cookware (Teflon)
+    - Waterproof clothing and outdoor gear
+    - Fast food packaging and containers
+    - Stain-resistant carpets and furniture
+    - Dental floss
+    - Cosmetics and personal care products
+    - Firefighting foam
+    - Electronics and semiconductors
 - Phthalates (in plastics, fragrances, vinyl)
 - Bisphenol A (BPA) and BPS (in food containers, receipts)
 - Parabens (in cosmetics and personal care)

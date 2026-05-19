@@ -25,4 +25,3 @@ Die with Zero by Bill Perkins is a personal finance book that argues against max
 
 - **Target audience:** The thesis is most relevant for people who are financially secure and likely to oversave.
 - **Longevity risk:** Spending down too aggressively can be risky if you live longer than expected or face high late-life medical costs.
- 

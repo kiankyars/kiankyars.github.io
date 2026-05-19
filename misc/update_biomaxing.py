@@ -9,7 +9,7 @@ Date conventions, verified against existing rows:
 
 Auth: reads POLAR_ACCESS_TOKEN from ~/.env or the environment.
 If the token is expired, refresh it with:
-  python3 ~/obsidian/scripts/polar_accesslink.py local-auth
+  python3 misc/polar_accesslink.py local-auth
 """
 
 import json

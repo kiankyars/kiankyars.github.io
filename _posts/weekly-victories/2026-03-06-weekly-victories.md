@@ -20,7 +20,6 @@ categories: reflection
     - FiDi
 - We played Catan at EF!
 
-
 ### Sunday
 
 - Walked around downtown with my mom in the morning.

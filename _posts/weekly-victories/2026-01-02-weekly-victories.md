@@ -12,7 +12,7 @@ Victory #0:
 Victory #1:
 
 - Had some nice weather.
-  - ![](/imgs/2026-01-02-weekly-victories/weather.PNG)
+    - ![](/imgs/2026-01-02-weekly-victories/weather.PNG)
 
 Victory #2:
 
@@ -21,7 +21,7 @@ Victory #2:
 Victory #3:
 
 - Spent quality time with mom, including making **another** amazing pizza, should have spent new year's eve though with her, that was an L.
-  - ![](/imgs/2026-01-02-weekly-victories/pizza.jpeg)
+    - ![](/imgs/2026-01-02-weekly-victories/pizza.jpeg)
 
 Victory #4:
 

@@ -6,12 +6,12 @@ permalink: /about/
 
 I operate by [Crocker's rule](http://sl4.org/crocker.html).
 
-___
+---
 
 - I am passionate about 3 things:
-  - education
-  - running
-  - natural languages
+    - education
+    - running
+    - natural languages
 
 ---
 
@@ -22,13 +22,13 @@ ___
 ---
 
 - I identify as follows (I have not thought enough about the order yet to rank them by importance):
-  - Canadian
-  - Runner
-  - Human
-  - Unreasonable optimist
-  - Learner
-  - Teacher
-  - Hard-worker
+    - Canadian
+    - Runner
+    - Human
+    - Unreasonable optimist
+    - Learner
+    - Teacher
+    - Hard-worker
 
 ---
 
