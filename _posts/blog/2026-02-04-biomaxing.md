@@ -30,18 +30,24 @@ I intend on running rigorous self-experiments on my health through biohacking an
 
 Auto-fill target: Polar sleep score/charge and Polar training status if available. Manual fill: capsule/time, energy, and composure. For composure, 5 means calm and settled; 1 means anxious or unsettled.
 
-| Date           | Capsule/time | Energy (1-5) | Composure (1-5) |                                Sleep score (1-100) | Sleep charge (1-5) | Cardio load status |
-| -------------- | ------------ | -----------: | --------------: | -------------------------------------------------: | -----------------: | ------------------ |
-| 2026-04-27[^1] | 10h00        |            5 |               4 |                                                 52 |                  1 | maintaining        |
-| 2026-04-28[^2] | 18h30        |            5 |               5 | Watch didn't record sleep, but it was poor quality |              ditto | detraining         |
-| 2026-04-29     | 09h00        |            5 |               4 |                                                 74 |                  4 | maintaining        |
-| 2026-04-30     | 10h00        |            4 |               4 |                                                 65 |                  2 | maintaining        |
-| 2026-05-01[^3] | 09h30        |            5 |               2 |                                                 63 |                  2 | productive         |
-| 2026-05-02[^4] | n/a          |          n/a |                 |                                                 69 |                  3 | maintaining        |
-| 2026-05-03[^5] | 08h00        |            2 |               2 |                                                 72 |                  4 | detraining         |
-| 2026-05-04[^6] | 07h53        |            4 |               3 |                                                    |                    | maintaining        |
-| 2026-05-05     | 10h00        |            2 |               2 |                                                    |                    |                    |
-| 2026-05-19[^7] | 9h45             |       3       |       3          |                                                    |                    |                    |
+| Date | Capsule/time | Energy (1-5) | Composure (1-5) | Sleep score (1-100) | Sleep charge (1-5) | Cardio load status |
+|--------------|-------------|---------------|----------------|---------------------|-------------------|-------------------|
+| 2026-04-27[^1] | 10h00 | 5 | 4 | 52 | 1 | maintaining |
+| 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | ditto | detraining |
+| 2026-04-29 | 09h00 | 5 | 4 | 74 | 4 | maintaining |
+| 2026-04-30 | 10h00 | 4 | 4 | 65 | 2 | maintaining |
+| 2026-05-01[^3] | 09h30 | 5 | 2 | 63 | 2 | productive |
+| 2026-05-02[^4] | n/a | n/a |  | 69 | 3 | maintaining |
+| 2026-05-03[^5] | 08h00 | 2 | 2 | 72 | 4 | detraining |
+| 2026-05-04[^6] | 07h53 | 4 | 3 | 74 | 4 | maintaining |
+| 2026-05-05 | 10h00 | 2 | 2 | 79 | 4 | productive |
+| 2026-05-19[^7] | 9h45 | 3 | 3 |  |  | overreaching |
+| 2026-05-20 | 9h30 | 3 | 3 |  |  | overreaching |
+| 2026-05-21 | 11h15 | 5 | 4 |  |  | productive |
+| 2026-05-22 | 10h35 | 5 | 5 |  |  |  |
+| 2026-05-25 | 11h20 | 4 | 5 |  |  |  |
+| 2026-05-26 | 9h35 | 5 | 5 |  |  |  |
+
 
 [^1]: Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up.
 
@@ -56,3 +62,5 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^6]: 2026-05-04: Today will be different. I will succeed. Aujourd'hui c'est le premier jour de ma vie que j'ai vécu le sevrage de la caféine.
 
 [^7]: 2026-05-19: Hiatus May 6 → May 18 — lost all my habits and was a degen. Resuming the trial today.
+
+[^8]: 2026-05-23: I was hiking all day and did not take the supplement. 2026-05-24: I was recovering/having a chill day, and also did not take the supplement.
