@@ -17,7 +17,8 @@ categories: reflection
 
 ### Monday
 
-- 
+- Was locking in at the office.
+- Got a [timelapse](https://x.com/neuralkian/status/2059118332020928919) in as well.
 
 ### Tuesday
 
