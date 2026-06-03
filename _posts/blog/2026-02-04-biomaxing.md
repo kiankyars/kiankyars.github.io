@@ -47,19 +47,19 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-05-22 | 10h35 | 5 | 5 | 68 | 3 | productive |
 | 2026-05-25 | 11h20 | 4 | 5 | 72 | 3 | productive |
 | 2026-05-26 | 9h35 | 5 | 5 |  |  | productive |
-| 2026-05-27 |   |   |  |  |  |   |
-| 2026-05-28 |   |   |  |  |  |   |
-| 2026-05-29 |   |   |  |  |  |   |
-| 2026-05-30 |   |   |  |  |  |   |
-| 2026-05-31 |   |   |  |  |  |   |
-| 2026-06-01 |   |   |  |  |  |   |
-| 2026-06-02 |   |   |  |  |  |   |
-| 2026-06-03 |   |   |  |  |  |   |
-| 2026-06-04 |   |   |  |  |  |   |
-| 2026-06-05 |   |   |  |  |  |   |
-| 2026-06-06 |   |   |  |  |  |   |
-| 2026-06-07 |   |   |  |  |  |   |
-| 2026-06-08 |   |   |  |  |  |   |
+| 2026-05-27 | 11h30 | 3 | 2 |  |  |  |
+| 2026-05-28 | 16h50 | 2 | 1 |  |  |  |
+| 2026-05-29 |  |  |  |  |  |  |
+| 2026-05-30 |  |  |  |  |  |  |
+| 2026-05-31 |  |  |  |  |  |  |
+| 2026-06-01 |  |  |  |  |  |  |
+| 2026-06-02 |  |  |  |  |  |  |
+| 2026-06-03 |  |  |  |  |  |  |
+| 2026-06-04 |  |  |  |  |  |  |
+| 2026-06-05 |  |  |  |  |  |  |
+| 2026-06-06 |  |  |  |  |  |  |
+| 2026-06-07 |  |  |  |  |  |  |
+| 2026-06-08 |  |  |  |  |  |  |
 
 
 [^1]: Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up.
