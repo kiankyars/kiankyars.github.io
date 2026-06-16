@@ -22,7 +22,8 @@ categories: reflection
 
 ### Tuesday
 
-- 
+- Went for coffee with Joe
+- Got insane poison oak exposure.
 
 ### Wednesday
 
