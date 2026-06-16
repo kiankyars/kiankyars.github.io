@@ -11,7 +11,7 @@ categories: reflection
 
 ### Sunday
 
-- 
+- met patrick collison at the moma
 
 ### Monday
 
@@ -31,4 +31,5 @@ categories: reflection
 
 ### Friday
 
+- great sync with the research team
 - 
