@@ -7,26 +7,24 @@ categories: reflection
 
 ### Saturday
 
-- early wake-up and an active morning, realizing how much I love it
+- early wake-up + hike pr
 
 ### Sunday
 
-- met patrick collison at the moma
+- met patrick collison at the moma, tired day, only 4 hours of sleep :(
 
 ### Monday
 
-- two new PRs done and addressed Sam's review comments
-- Bo Berluti meeting
+- Bo Berluti, working on prs for PII, restarted yoga I think
 
 ### Tuesday
 
-- deep work on the PR stack: got the merges moving and started a fourth PR for billing
+- Eng <> Research sync was productive
 
 ### Wednesday
 
-- addressed the open problems at work
-- caught up on all my emails
 - cleaned my room
+- caught up on all my emails
 
 ### Thursday
 
@@ -36,4 +34,5 @@ categories: reflection
 
 ### Friday
 
-- so honored that Joe read my semiconductor blog, people actually read my stuff
+- great sync with the research team
+- last work day, had to make it count!

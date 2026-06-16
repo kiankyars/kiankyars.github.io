@@ -35,6 +35,7 @@ categories: reflection
 
 - first treadmill session at the office
 - yoga, then locked in on the investments
+- Got denied by KLM again. What a frustrating experience over that entire week of just trying to get through to them and not succeeding
 
 ### Friday
 

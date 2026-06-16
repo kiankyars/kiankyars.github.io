@@ -16,7 +16,7 @@ categories: reflection
 ### Monday
 
 - evening hangout with my friend Dan
-- set my June goals (the roundabout, 15 km in 1:00)
+- set my June goals
 
 ### Tuesday
 
@@ -30,9 +30,8 @@ categories: reflection
 
 ### Thursday
 
-- kind of an awkward day tbh, but mapped out the roundabout run
+- awkward day
 
 ### Friday
 
 - saw the creator of Claude Code lol
-- great sync with the research team

@@ -26,7 +26,7 @@ categories: reflection
 
 ### Tuesday
 
-- yoga + deep work, closed out the S3 PR stack
+- born day
 
 ### Wednesday
 
