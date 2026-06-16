@@ -27,12 +27,17 @@ categories: reflection
 
 ### Wednesday
 
-- 
+- Sam shouted out my contributions to the office
+- Rishi sync, landed on regex over fine-tuning and talked pushing my own initiatives
+- finished the investment memo
 
 ### Thursday
 
-- 
+- first treadmill session at the office
+- yoga, then locked in on the investments
 
 ### Friday
 
-- 
+- Wealthsimple process kicked off
+- dug into precision/recall failure modes to make the dataset more reliable
+- pizza + chess, then a call with mom and Max

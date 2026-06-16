@@ -7,22 +7,16 @@ categories: reflection
 
 ### Saturday
 
-- last run in sf for a bit
-- played tennis with Viktoria
-- went to work for last time in a bit, had to rush to airport in a lyft
-- lost my almond butter :(
+- early wake-up and an active morning, realizing how much I love it
 
 ### Sunday
 
-- ate pancakes (lfg)
-- chill day at home with family
-- saw my boy vince
-- had family over for dinner
+- met patrick collison at the moma
 
 ### Monday
 
-- went to office with my mom
-- busy/stressful day, but we good
+- two new PRs done and addressed Sam's review comments
+- Bo Berluti meeting
 
 ### Tuesday
 
