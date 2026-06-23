@@ -30,12 +30,12 @@ categories: reflection
 
 ### Wednesday
 
-- 
+- Football w/ friends!
 
 ### Thursday
 
-- 
+- Camping
 
 ### Friday
 
--
+- Landon + Hadjieh
