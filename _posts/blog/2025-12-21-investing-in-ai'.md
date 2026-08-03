@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Investing In AI'
+title: "Investing in AI: Options"
 date: 2025-12-21
 categories: finance
 ---

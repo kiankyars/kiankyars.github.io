@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories"
+title: "Weekly Victories: August 22, 2025"
 date: 2025-08-22
 categories: reflection
 ---
@@ -8,7 +8,7 @@ categories: reflection
 Victory #0:
 
 - Longest bike ride to date in Finland.
-- ![](/imgs/2025-08-22-weekly-victories/bike.png)
+- ![Map of a long bike route through Helsinki and Espoo](/imgs/2025-08-22-weekly-victories/bike.png)
 
 Victory #1:
 

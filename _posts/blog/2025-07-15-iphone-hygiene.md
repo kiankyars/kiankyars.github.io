@@ -13,7 +13,7 @@ categories: productivity
 
 4. Go to Settings > Face ID (or Touch ID) & Passcode > Stolen Device Protection, and choose "Always" under Require Security Delay.
 
-# UPDATE
+## UPDATE
 
 I WROTE THE ABOVE THE MORNING BEFORE I FOUND MY PHONE, SO NOW I ACTUALLY GET TO APPLY MY OWN ADVICE TO MY NOW RETRIEVED PHONE, LFG!
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: February 6, 2026"
 date: 2026-02-6
 categories: reflection
 ---
@@ -8,7 +8,7 @@ categories: reflection
 Victory #0:
 
 - Went on a hike to Mount Tam.
-- ![](/imgs/2026-02-06-weekly-victories/tam.jpg)
+- ![Large hiking group posing on a rocky Mount Tam trail](/imgs/2026-02-06-weekly-victories/tam.jpg)
 
 Victory #1:
 

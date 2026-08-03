@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Build
+description: Projects, tools, and technical videos by Kian Kyars.
 permalink: /build/
 ---
 

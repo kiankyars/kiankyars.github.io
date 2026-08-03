@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories"
+title: "Weekly Victories: July 25, 2025"
 date: 2025-07-25
 categories: reflection
 ---

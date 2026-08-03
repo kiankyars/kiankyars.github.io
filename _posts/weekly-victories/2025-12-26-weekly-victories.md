@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: December 26, 2025"
 date: 2025-12-26
 categories: reflection
 ---
@@ -14,7 +14,7 @@ Victory #1:
 - christmas with family and friends
     - Hockey with Elliot and cappucino at his place afterwards on christmas eve
     - Vince on christmas eve and christmas
-        - ![](/imgs/2025-12-26-weekly-victories/tree.jpeg)
+        - ![Christmas tree with lights, ornaments, and presents](/imgs/2025-12-26-weekly-victories/tree.jpeg)
     - Zary's house on christmas
     - Firouzeh's house on boxing day
 
@@ -25,7 +25,7 @@ Victory #2:
 Victory #3:
 
 - Caught up with Samarth after 4 years.
-    - ![](/imgs/2025-12-26-weekly-victories/stacked.jpeg)
+    - ![Kian and Samarth catching up over breakfast](/imgs/2025-12-26-weekly-victories/stacked.jpeg)
 
 Victory #4:
 
@@ -38,13 +38,13 @@ Victory #5:
 Victory #6:
 
 - Painted warhammers with Dev and ate KFC for first time.
-    - ![](/imgs/2025-12-26-weekly-victories/kfc.jpg)
+    - ![Kian with a platter of Korean fried chicken](/imgs/2025-12-26-weekly-victories/kfc.jpg)
 
 Victory #7:
 
 - Spent quality time with mom, including making another amazing pizza.
-    - ![](/imgs/2025-12-26-weekly-victories/pizza.jpeg)
-    - ![](/imgs/2025-12-26-weekly-victories/santa.jpeg)
+    - ![Homemade pizza topped with tomatoes, spinach, peppers, and feta](/imgs/2025-12-26-weekly-victories/pizza.jpeg)
+    - ![Kian and his mother posing with a Santa hat](/imgs/2025-12-26-weekly-victories/santa.jpeg)
 
 Victory #8:
 

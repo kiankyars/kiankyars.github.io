@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "About"
+description: Beliefs, principles, and a few facts about Kian Kyars.
 permalink: /about/
 ---
 

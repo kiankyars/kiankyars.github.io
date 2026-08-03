@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories"
+title: "Weekly Victories: July 4, 2025"
 date: 2025-07-04
 categories: reflection
 ---
@@ -29,4 +29,4 @@ Victory #3:
 Victory #4:
 
 - Got second out of 10 in poker after not playing for years
-- ![](/imgs/2025-07-04-weekly-victories/poker.jpeg)
+- ![Friends gathered around a table after a poker game](/imgs/2025-07-04-weekly-victories/poker.jpeg)

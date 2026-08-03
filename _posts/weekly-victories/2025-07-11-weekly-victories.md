@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories"
+title: "Weekly Victories: July 11, 2025"
 date: 2025-07-11
 categories: reflection
 ---
@@ -8,12 +8,12 @@ categories: reflection
 Victory #0:
 
 - Ran 50 km ferda boys.
-- ![](/imgs/2025-07-11-weekly-victories/strava.png)
+- ![Map of the 50-kilometre running route through Helsinki and Espoo](/imgs/2025-07-11-weekly-victories/strava.png)
 
 Victory #1:
 
 - Did the rock workout (only half of it because of a meeting).
-- ![](/imgs/2025-07-11-weekly-victories/rock.jpeg)
+- ![Group selfie after the rock workout at a gym](/imgs/2025-07-11-weekly-victories/rock.jpeg)
 - Feels (still feeling it) 10x worse after compared to the 50 k, and I only did half!
 
 Victory #2:

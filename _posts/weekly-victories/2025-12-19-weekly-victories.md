@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: December 19, 2025"
 date: 2025-12-19
 categories: reflection
 ---
@@ -9,9 +9,9 @@ Victory #0:
 
 - Yearly reunion w/ the boys, bets are currently on where the 2026 reunion will happen.
 - December 19th, 2025
-    - ![](/imgs/2025-12-19-weekly-victories/2025.jpg)
+    - ![Friends gathered for their December 2025 reunion](/imgs/2025-12-19-weekly-victories/2025.jpg)
 - December 22nd, 2024
-    - ![](/imgs/2025-12-19-weekly-victories/2024.jpg)
+    - ![Friends gathered for their December 2024 reunion](/imgs/2025-12-19-weekly-victories/2024.jpg)
 
 Victory #1:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: February 13, 2026"
 date: 2026-02-13
 categories: reflection
 ---
@@ -12,7 +12,7 @@ Victory #0:
 Victory #1:
 
 - Spent the first part of Sunday at the Notion Hackathon. Notion HQ is super lit. Unfortunately did not win anything.
-- ![](/imgs/2026-02-13-weekly-victories/notion.jpg)
+- ![Kian working on a laptop at the Notion Hackathon](/imgs/2026-02-13-weekly-victories/notion.jpg)
 
 Victory #2:
 
@@ -39,7 +39,7 @@ Victory #5:
 Victory #6:
 
 - Received many heart-warming comments about my Open Claw video, 200k+ views now!
-- ![](/imgs/2026-02-13-weekly-victories/feedback.png)
+- ![Supportive viewer comment on Kian's OpenClaw video](/imgs/2026-02-13-weekly-victories/feedback.png)
 
 Victory #7:
 
@@ -54,8 +54,8 @@ Victory #8:
     - Internet Archive tour (there was ice cream!)
     - Great time spent with Bilal, Milo, and Otso
     - Founders, Inc with Sam, Raphael, Elbert, and Rahul
-    - [](/imgs/2026-02-13-weekly-victories/hamming1.jpeg)
-    - [](/imgs/2026-02-13-weekly-victories/hamming2.jpeg)
+    - ![Framed summary of Richard Hamming's lessons on full immersion](/imgs/2026-02-13-weekly-victories/hamming1.jpeg)
+    - ![Framed summary of Richard Hamming's advice in You and Your Research](/imgs/2026-02-13-weekly-victories/hamming2.jpeg)
 
 L #0:
 

@@ -1,0 +1,49 @@
+title: Kian Kyars
+tagline: Builder, researcher, and writer
+description: Kian Kyars is a Canadian builder and researcher in San Francisco working on AI systems and developer tools.
+url: https://kiankyars.github.io
+baseurl: ""
+lang: en
+timezone: America/Los_Angeles
+repository: kiankyars/kiankyars.github.io
+
+author:
+  name: Kian Kyars
+  url: https://kiankyars.github.io
+  twitter: neuralkian
+
+twitter:
+  username: neuralkian
+  card: summary_large_image
+
+social:
+  name: Kian Kyars
+  links:
+    - https://github.com/kiankyars
+    - https://twitter.com/neuralkian
+    - https://www.linkedin.com/in/kyars
+    - https://scholar.google.com/citations?user=tVqRWjoAAAAJ
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og.png
+
+exclude:
+  - AGENTS.md
+  - README.md
+  - docs
+  - misc
+  - resume
+  - scripts
+  - Gemfile
+  - Gemfile.lock

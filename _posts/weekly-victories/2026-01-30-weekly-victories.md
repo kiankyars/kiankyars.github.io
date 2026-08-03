@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: January 30, 2026"
 date: 2026-01-30
 categories: reflection
 ---
@@ -32,12 +32,12 @@ Victory #5:
 Victory #6:
 
 - Met Dwarkesh and Thomas Wolff (again).
-- ![](/imgs/2026-01-30-weekly-victories/dwarkesh.jpeg)
+- ![Kian with Dwarkesh Patel](/imgs/2026-01-30-weekly-victories/dwarkesh.jpeg)
 
 Victory #7:
 
 - Jane Street game night.
-- ![](/imgs/2026-01-30-weekly-victories/janestreet.jpeg)
+- ![Crowded game night at Jane Street](/imgs/2026-01-30-weekly-victories/janestreet.jpeg)
 
 Victory #8:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: September 19, 2025"
 date: 2025-09-19
 categories: reflection
 ---
@@ -24,4 +24,4 @@ Victory #3:
 Victory #4:
 
 - Passed the baton to the next leader of the UofARC.
-- ![](/imgs/2025-09-19-weekly-victories/collage.jpg)
+- ![Collage of University of Alberta Run Club group runs across the seasons](/imgs/2025-09-19-weekly-victories/collage.jpg)

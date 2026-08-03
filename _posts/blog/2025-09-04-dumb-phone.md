@@ -9,7 +9,7 @@ I met a really cool guy named Rasmus who is making lightfriend.ai, which makes l
 
 1. Grayscale
 
-    You should make your phone grayscale so that you decrease the dopamine you get from using it. As stated by [nat](nat.org), you should be careful about where you get your dopamine from. I unfortunately have the convienient triple-power button toggle which goes back to colour mode on my phone for instances where I want to show someone a photo and don't want to go three layers-deep in settings to switch it, but the trouble is that I often forget to switch back to grayscale afterwards. Therefore, if you want to be truly hardcore, then don't give yourself an easy way to reactivate colour.
+    You should make your phone grayscale so that you decrease the dopamine you get from using it. As stated by [nat](https://nat.org), you should be careful about where you get your dopamine from. I unfortunately have the convienient triple-power button toggle which goes back to colour mode on my phone for instances where I want to show someone a photo and don't want to go three layers-deep in settings to switch it, but the trouble is that I often forget to switch back to grayscale afterwards. Therefore, if you want to be truly hardcore, then don't give yourself an easy way to reactivate colour.
 
 2. Notifications
 

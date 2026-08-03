@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: February 27, 2026"
 date: 2026-02-27
 categories: reflection
 ---
@@ -8,10 +8,10 @@ categories: reflection
 ### Saturday
 
 - YC hackathon, Fabio lacked, uneventful day otherwise.
-    - ![](/imgs/2026-02-27-weekly-victories/yc1.jpg)
-    - ![](/imgs/2026-02-27-weekly-victories/yc2.jpg)
-    - ![](/imgs/2026-02-27-weekly-victories/yc3.jpg)
-    - ![](/imgs/2026-02-27-weekly-victories/yc4.jpg)
+    - ![Kian posing beside the Y Combinator sign](/imgs/2026-02-27-weekly-victories/yc1.jpg)
+    - ![Kian talking with teammates at the Y Combinator hackathon](/imgs/2026-02-27-weekly-victories/yc2.jpg)
+    - ![Kian presenting a hackathon demo with a teammate](/imgs/2026-02-27-weekly-victories/yc3.jpg)
+    - ![Hackathon team gathered around a laptop during their demo](/imgs/2026-02-27-weekly-victories/yc4.jpg)
 
 ### Sunday
 
@@ -47,4 +47,4 @@ categories: reflection
 - 27 km run ferda!
 - Yoga at SFP again and meetup with Ivar!
 - Grinding at Antler.
-- ![](/imgs/2026-02-27-weekly-victories/union-square.jpeg)
+- ![Map of historical landmarks in San Francisco's Union Square](/imgs/2026-02-27-weekly-victories/union-square.jpeg)

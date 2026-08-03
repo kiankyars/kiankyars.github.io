@@ -10,9 +10,12 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
 - `_layouts/`: Jekyll templates.
     - `default.html`: The main wrapper for all pages.
     - `post.html`: Template specifically for blog posts.
+- `assets/`: Shared stylesheet and site-level images, including social preview and favicon assets.
 - `imgs/`: Post-specific images, typically organized into subdirectories named after the post date and slug (e.g., `imgs/2026-02-12-sqlite/`).
 - Root Markdown files: Main site pages (`index.md`, `about.md`, `blog.md`, `build.md`, `now.md`, `publications.md`, `weekly-victories.md`).
 - `misc/`: CV/resume and scripts — `CV.tex` (build with `make` in `misc/` → `CV.pdf`), `create_post.py`, and other PDFs (e.g. `main.pdf`).
+- `scripts/check_site.rb`: Validates generated HTML, image alt text, headings, and local links.
+- `_config.yml` and `Gemfile`: GitHub Pages metadata, plugins, and the local Jekyll toolchain.
 
 ## Development Workflows
 
@@ -33,3 +36,17 @@ Use the `misc/create_post.py` script to generate new post files with the correct
     python3 misc/create_post.py w
     ```
     Creates `_posts/weekly-victories/YYYY-MM-DD-weekly-victories.md`.
+
+### Local Preview and Validation
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Before handing off site changes, run:
+
+```bash
+bundle exec jekyll build --strict_front_matter
+bundle exec ruby scripts/check_site.rb _site
+```

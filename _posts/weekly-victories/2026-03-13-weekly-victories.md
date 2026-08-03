@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: March 13, 2026"
 date: 2026-03-13
 categories: reflection
 ---

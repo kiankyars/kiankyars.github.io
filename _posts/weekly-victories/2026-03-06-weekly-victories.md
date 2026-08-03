@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: March 6, 2026"
 date: 2026-03-06
 categories: reflection
 ---
@@ -31,7 +31,7 @@ categories: reflection
 - Point Reyes!
 - Tony's Pizza!
 - Never had this many unread messages
-    - ![](/imgs/2026-03-06-weekly-victories/homescreen.png)
+    - ![iPhone home screen showing 82 unread messages](/imgs/2026-03-06-weekly-victories/homescreen.png)
 
 ### Tuesday
 

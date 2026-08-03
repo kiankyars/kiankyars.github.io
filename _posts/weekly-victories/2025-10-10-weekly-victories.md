@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weekly Victories
+title: "Weekly Victories: October 10, 2025"
 date: 2025-10-10
 categories: reflection
 ---
@@ -8,7 +8,7 @@ categories: reflection
 Victory #0:
 
 - Got second place.
-- ![](/imgs/2025-10-10-weekly-victories/nasa.JPG)
+- ![Kian receiving a second-place award at the NASA Space Apps event](/imgs/2025-10-10-weekly-victories/nasa.JPG)
 
 Victory #1:
 
@@ -23,7 +23,7 @@ Victory #2:
 Victory #3:
 
 - Reunited with my boy Ian at stairs.
-- ![](/imgs/2025-10-10-weekly-victories/stairs.jpg)
+- ![Kian and Ian reunited at the Edmonton stairs](/imgs/2025-10-10-weekly-victories/stairs.jpg)
 
 Victory #4:
 

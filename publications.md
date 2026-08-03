@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications
+description: Research papers and books by Kian Kyars.
 permalink: /publications/
 ---
 

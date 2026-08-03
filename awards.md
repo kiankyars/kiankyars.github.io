@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Awards
+description: Awards, scholarships, and programs earned by Kian Kyars.
 permalink: /awards/
 ---
 
