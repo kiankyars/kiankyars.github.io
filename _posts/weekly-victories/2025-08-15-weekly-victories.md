@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories: August 15, 2025"
+title: "Weekly Victories"
 date: 2025-08-15
 categories: reflection
 ---
@@ -14,7 +14,7 @@ Victory #0:
 Victory #1:
 
 - Met the fucking CEO of supercell, absolute GOAT!
-- ![FR8 group posing with the Supercell CEO at the Supercell office](/imgs/2025-08-15-weekly-victories/supercell.jpeg)
+- ![](/imgs/2025-08-15-weekly-victories/supercell.jpeg)
 
 Victory #2:
 

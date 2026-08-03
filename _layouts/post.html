@@ -2,37 +2,7 @@
 layout: default
 ---
 
-<article class="post">
-  <header class="post-header">
-    <p class="post-kicker">
-      {% if page.path contains '_posts/weekly-victories/' %}
-      <a href="{{ '/weekly-victories/' | relative_url }}">Weekly victories</a>
-      {% else %}
-      <a href="{{ '/blog/' | relative_url }}">Writing</a>
-      {% endif %}
-    </p>
-    <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      {% assign words = content | number_of_words %}
-      <span aria-hidden="true">&middot;</span>
-      <span>{{ words | divided_by: 200 | plus: 1 }} min read</span>
-    </div>
-    {% if page.description %}
-    <p class="lede">{{ page.description }}</p>
-    {% endif %}
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-  <footer class="post-footer">
-    {% if page.path contains '_posts/weekly-victories/' %}
-    <a href="{{ '/weekly-victories/' | relative_url }}">&larr; All weekly victories</a>
-    {% else %}
-    <a href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
-    {% endif %}
-    <a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
-  </footer>
+<article>
+  <small>{{ page.date | date: "%B %d, %Y" }}</small>
+  {{ content }}
 </article>

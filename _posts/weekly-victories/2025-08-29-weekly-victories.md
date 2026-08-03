@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories: August 29, 2025"
+title: Weekly Victories
 date: 2025-08-29
 categories: reflection
 ---
@@ -11,18 +11,18 @@ Victory #0:
 
 - RAN A FUCKING MARATHON
 - Knee was affected by painful IT band syndrome after the 30th kilometer, but we still clutched up. I couldn't bend my knee the next day and walked with a straight leg, It was funny. Because of pistol squats, which are literally the best remedy to IT band syndrome, instead of taking three months to recover, it only took me three days.
-- ![Map of the marathon route through Helsinki](/imgs/2025-08-29-weekly-victories/marathon1.png)
-- ![Kian running with a pace group during the Helsinki marathon](/imgs/2025-08-29-weekly-victories/marathon2.jpg)
+- ![](/imgs/2025-08-29-weekly-victories/marathon1.png)
+- ![](/imgs/2025-08-29-weekly-victories/marathon2.jpg)
 
 Victory #1:
 
 - Going crazy for demo day of course!
-- ![Demo Day presentation at the FR8 house](/imgs/2025-08-29-weekly-victories/demoday.png)
+- ![](/imgs/2025-08-29-weekly-victories/demoday.png)
 
 Victory #2:
 
 - Met Thomas Wolfe
-- ![Kian with Thomas Wolf holding the Ultra-Scale Playbook](/imgs/2025-08-29-weekly-victories/uspb.jpg)
+- ![](/imgs/2025-08-29-weekly-victories/uspb.jpg)
 
 Victory #3:
 

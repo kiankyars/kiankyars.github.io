@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories: June 12, 2026"
+title: Weekly Victories
 date: 2026-06-12
 categories: reflection
 ---
@@ -29,8 +29,8 @@ categories: reflection
 ### Thursday
 
 - catan night ferda
-- ![Five friends gathered around a game of Catan](/imgs/2026-06-12-weekly-victories/catan1.jpeg)
-- ![Six friends posing around their Catan board](/imgs/2026-06-12-weekly-victories/catan2.jpeg)
+- ![](/imgs/2026-06-12-weekly-victories/catan1.jpeg)
+- ![](/imgs/2026-06-12-weekly-victories/catan2.jpeg)
 
 ### Friday
 

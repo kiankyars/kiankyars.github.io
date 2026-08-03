@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories: October 24, 2025"
+title: Weekly Victories
 date: 2025-10-24
 categories: reflection
 ---
@@ -16,4 +16,4 @@ Victory #1:
 Victory #2:
 
 - Nice bike ride with the boys.
-- ![Map of a bike ride through Edmonton and Gold Bar](/imgs/2025-10-24-weekly-victories/goldbar.png)
+- ![](/imgs/2025-10-24-weekly-victories/goldbar.png)

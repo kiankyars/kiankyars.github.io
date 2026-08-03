@@ -1,11 +1,8 @@
 ---
 layout: default
 title: "Doomscrolling"
-description: A monthly personal log of doomscrolling incidents.
 permalink: /doomscrolling/
 ---
-
-<p class="updated">Last updated May 2026</p>
 
 Here I track how many times per month I doomscroll as a heuristic for my life well-being and productivity
 

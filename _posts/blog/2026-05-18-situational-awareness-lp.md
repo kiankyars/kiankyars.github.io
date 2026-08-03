@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Situational Awareness LP: 2026 Q1 Update"
+title: Situational Awareness LP
 date: 2026-05-18
 categories: investing
 ---
 
-SALP filed its **2026-Q1 (Jan-Mar) 13F** today, signed by CCO **Christopher Zellner** on the **2026-05-15** deadline. Refer to the [original post]({% post_url blog/2026-04-21-situational-awareness-lp %}) for fund history, structure, ownership, prior quarters, and find this blog's tldr [here](https://x.com/i/status/2056448567104135561).
+SALP filed its **2026-Q1 (Jan-Mar) 13F** today, signed by CCO **Christopher Zellner** on the **2026-05-15** deadline. Refer to the [original post]({% post_url 2026/blog/2026-04-21-situational-awareness-lp %}) for fund history, structure, ownership, prior quarters, and find this blog's tldr [here](https://x.com/i/status/2056448567104135561).
 
 ## Headline
 

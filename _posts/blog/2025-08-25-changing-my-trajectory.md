@@ -24,22 +24,22 @@ All good things (or rather all comfortable things) must come to an end and now w
 Here's a short chronology of some of the daily notes I took since I began this journey, I highly recommend a daily note taker since it kind of archives your life and remnote is effective because each day a daily document is created automatically, which is genius since it removes the very real friction of having to create a document which will halt many from taking notes.
 
 In November, I got into Less Wrong and Brian Johnston, even though I knew of him before, I hadn't really seen what he'd done in detail. And even though I don't subscribe to his beliefs fully, it's still humbling to see somebody that puts their health that high on a pedestal.
-![RemNote daily note about building a second brain](/imgs/2025-08-25-changing-my-trajectory/rem1.png)
+![](/imgs/2025-08-25-changing-my-trajectory/rem1.png)
 second brain thoughts
 
 ---
 
-![RemNote daily note linking to Linux learning and Patrick Collison's advice](/imgs/2025-08-25-changing-my-trajectory/rem2.png)
+![](/imgs/2025-08-25-changing-my-trajectory/rem2.png)
 patrick collison famous post and linux/bash command tutorial recommended by simon boehm
 
 ---
 
-![RemNote daily note about studying deep learning and starting an X account](/imgs/2025-08-25-changing-my-trajectory/rem3.png)
+![](/imgs/2025-08-25-changing-my-trajectory/rem3.png)
 December I made my X account with the intention to do more timelapses of my work which was a commitement to actually do shit
 
 ---
 
-![Six friends with laptops gathered on a couch during AI night](/imgs/2025-08-25-changing-my-trajectory/ainight.jpg)
+![](/imgs/2025-08-25-changing-my-trajectory/ainight.jpg)
 December 22nd, 2024 was a crazy night, I call it ainight. I have friends like Will, who taught courses at McGill University as an instructor at 21 years old, Ethan, who studeies EE and is doing an internship at Tesla, Elliot, who has millions of views in his tutorials, and Max who is 200 IQ, and the list goes on.
 
 ---

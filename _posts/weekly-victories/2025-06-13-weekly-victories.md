@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories: June 13, 2025"
+title: "Weekly Victories"
 date: 2025-06-13
 categories: reflection
 ---
@@ -16,5 +16,5 @@ Victory #1:
 Victory #2:
 
 - Pacemaker for 5k race for the first time with Henri for 20 minute 5k: do hard things.
-- ![Runners crossing the start line at a Helsinki road race](/imgs/2025-06-13-weekly-victories/helsinki5k1.jpeg)
-- ![Runners leaving the start line at a Helsinki road race](/imgs/2025-06-13-weekly-victories/helsinki5k2.jpeg)
+- ![](/imgs/2025-06-13-weekly-victories/helsinki5k1.jpeg)
+- ![](/imgs/2025-06-13-weekly-victories/helsinki5k2.jpeg)

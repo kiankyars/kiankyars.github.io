@@ -5,7 +5,7 @@ date: 2025-10-11
 categories: life
 ---
 
-## Good Things
+# Good Things
 
 - Padded Eyemasks
 - Nano-Hydroxyapatite toothpaste
@@ -23,11 +23,11 @@ categories: life
 - Powdered greens as a leafy vegetable substitute/meal shakes (I prefer overnight oats though)
 - Focusmate
 - Plant-based diet
-    - ![Dr. Greger's Daily Dozen checklist of foods, exercise, and vitamin B12](/imgs/2025-10-11-good-and-bad/12.jpg)
+    - ![](/imgs/2025-10-11-good-and-bad/12.jpg)
 - Extinguish candles with a lid (prevents particulate matter in air)
 - Vitamin D supplements in winter
 
-## Bad Things
+# Bad Things
 
 - Sodium lauryl sulfate
 - Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)
@@ -51,7 +51,7 @@ categories: life
 - Aerosols
 - Broiling/frying food (Releases particulate matter)
 
-## References
+# References
 
 - https://blog.aayushg.com/things/
 - https://www.sambowman.co/p/things-i-recommend-you-buy-and-use

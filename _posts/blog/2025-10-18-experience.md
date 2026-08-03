@@ -5,7 +5,7 @@ date: 2025-10-18
 categories: life
 ---
 
-I have quite a few learnings from [FR8](https://fr8.so) that I want to be more intentional about, and I wanted to put my thoughts down here on simple ways to embody them.
+I have quite a few learnings from [FR8](fr8.so) that I want to be more intentional about, and I wanted to put my thoughts down here on simple ways to embody them.
 
 - how to extract most from positive experiences (FR8 itself)
     - stay in touch with positive, ambitious people
@@ -19,4 +19,4 @@ I have quite a few learnings from [FR8](https://fr8.so) that I want to be more i
 
 My FR8 Goals:
 
-- ![Handwritten French list of personal goals from FR8](/imgs/2025-10-18-experience/goals.jpeg)
+- ![](/imgs/2025-10-18-experience/goals.jpeg)

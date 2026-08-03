@@ -1,14 +1,2 @@
 **/__pycache__
 .cursor/
-_site/
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
-.bundle/
-vendor/bundle/
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.synctex.gz

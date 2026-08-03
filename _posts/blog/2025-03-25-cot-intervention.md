@@ -7,11 +7,11 @@ categories: machine_learning
 
 ## Measuring Chain-of-Thought Determinism in Language Models
 
-## Introduction
+# Introduction
 
 Chain-of-thought (CoT) reasoning has become a mainstream concept in AI, with models like DeepSeek R1 Llama 8B making their reasoning processes visible. This visibility has sparked interest in understanding the determinism of these reasoning processes. Specifically, are correct CoT paths deterministic while incorrect paths are stochastic? This question is particularly interesting given the recent emergence of CoT models and the potential for low-hanging fruit in interpretability research.
 
-## Experimental Setup
+# Experimental Setup
 
 I conducted a rigorous black box investigation by intervening manually on the CoT process. The experiment involved:
 
@@ -23,25 +23,25 @@ I conducted a rigorous black box investigation by intervening manually on the Co
 
 This resulted in a dataset of 100 formal logic questions, each with 10 CoT answers. The analysis focused on accumulating reasoning steps across all questions.
 
-## Key Findings
+# Key Findings
 
-### Branching Factor Analysis
+## Branching Factor Analysis
 
-![Line chart comparing accumulated branching factors for correct and incorrect reasoning paths](/imgs/2025-03-25-cot-intervention/branching_factor.png)
+![](/imgs/2025-03-25-cot-intervention/branching_factor.png)
 
 Reasoning paths that yield correct answers tend to have lower branching factors, suggesting more deterministic steps. In contrast, incorrect paths show higher branching, indicating greater uncertainty or divergence. The first step, being manually planted, maintains a branching factor of 1.
 
-### Similarity Divergence
+## Similarity Divergence
 
-![Line chart comparing cosine similarity across correct and incorrect reasoning paths](/imgs/2025-03-25-cot-intervention/similarity_divergence.png)
+![](/imgs/2025-03-25-cot-intervention/similarity_divergence.png)
 
 Correct paths maintain higher similarity, suggesting consistency in reasoning. Incorrect paths diverge more, reflecting erratic decision-making. The first step shows perfect similarity since it's consistently the same. SentenceTransformer was used to embed the reasoning steps in both experiments.
 
-## Technical Challenges
+# Technical Challenges
 
 The most interesting aspect of this project was learning about model internals to manually plant the first reasoning step. This required understanding special token formatting with `<think>` and `<|Assistant|>` tags. Additionally, working within Google Colab's 15GB VRAM constraint presented challenges, often resulting in the familiar "RuntimeError: CUDA error: out of memory" message.
 
-## Future Work
+# Future Work
 
 This investigation opens several avenues for future research:
 
@@ -50,7 +50,7 @@ This investigation opens several avenues for future research:
 3. Developing methods to improve determinism in reasoning processes
 4. Understanding the impact of different prompting strategies on CoT paths
 
-## Resources
+# Resources
 
 - [Colab Notebook](https://colab.research.google.com/drive/1iEMNwrRTidxH32ZUuA50NOo7LG6zXyv0)
 - [Dataset on Hugging Face](https://huggingface.co/datasets/kyars/CoTIntervention)

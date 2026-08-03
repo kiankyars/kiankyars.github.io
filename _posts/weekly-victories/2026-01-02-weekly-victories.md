@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Victories: January 2, 2026"
+title: Weekly Victories
 date: 2026-01-02
 categories: reflection
 ---
@@ -12,7 +12,7 @@ Victory #0:
 Victory #1:
 
 - Had some nice weather.
-    - ![Weather forecast showing a low of minus 29 degrees Celsius](/imgs/2026-01-02-weekly-victories/weather.PNG)
+    - ![](/imgs/2026-01-02-weekly-victories/weather.PNG)
 
 Victory #2:
 
@@ -21,7 +21,7 @@ Victory #2:
 Victory #3:
 
 - Spent quality time with mom, including making **another** amazing pizza, should have spent new year's eve though with her, that was an L.
-    - ![Kian and his mother with their homemade pizza](/imgs/2026-01-02-weekly-victories/pizza.jpeg)
+    - ![](/imgs/2026-01-02-weekly-victories/pizza.jpeg)
 
 Victory #4:
 
