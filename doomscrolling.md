@@ -29,3 +29,7 @@ Here I track how many times per month I doomscroll as a heuristic for my life we
     - 0
 - May
     - 3 (May 3rd, 6th and 17th, first infraction was watching hockey and interviews and a few of my old subscriptions, like Baptiste, second was X, third was playing onling chess for like four hours.)
+- June
+    - At least 1 (June 18th, one hour wasting time on X; June 9th and 11th may also count.)
+- July
+    - At least 1 (July 18th, a YouTube rabbit hole that derailed the afternoon; July 15th may also count.)
