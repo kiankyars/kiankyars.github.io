@@ -23,12 +23,12 @@ categories: reflection
 
 ### Wednesday
 
-- 
+- First day on the bike: Mittelbuchen to Karlsruhe.
 
 ### Thursday
 
-- 
+- Followed the Rhine from Karlsruhe to Heidolsheim, Alsace.
 
 ### Friday
 
-- 
+- Continued south to Lottstetten, near the Swiss border.
