@@ -27,8 +27,8 @@ categories: reflection
 
 ### Thursday
 
-- Obsidian prompt: no daily note; what followed the incentives note?
+- talked with Aadi and Landon, but a poor Fleet interview gave way to a Wikipedia rabbit hole that ran late
 
 ### Friday
 
-- Obsidian prompt: no daily note; how did the week of career conversations end?
+- visited City Hall, but being sick turned most of the day into YouTube and browsing about cycling, current affairs, China, Bellingcat, and Skripal
