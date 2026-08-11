@@ -16,6 +16,10 @@ permalink: /build/
 
 ## GitHub
 
+### [afterclock](https://github.com/kiankyars/afterclock)
+
+A two-player abstract strategy game of directional predictions on a 5×5 board. [[play](https://kiankyars.github.io/afterclock/)]
+
 ### [sqlite](https://github.com/kiankyars/sqlite)
 
 SQLite from scratch.
