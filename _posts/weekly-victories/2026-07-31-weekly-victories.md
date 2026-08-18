@@ -15,15 +15,17 @@ categories: reflection
 
 ### Monday
 
-- finished editing all the SEMI course videos
+- finished editing all the cycling videos
 
 ### Tuesday
 
-- had candid career conversations and clarified what I want from my next team
+- spent the evening with Bilal and Binh
+- spent time with Michael at SFP
+- last yoga session
 
 ### Wednesday
 
-- listened to Sam Altman on incentives and wrote down that incentives are superpowers
+- was at EF all day, sick
 
 ### Thursday
 

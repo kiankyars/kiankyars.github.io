@@ -134,33 +134,36 @@
         \vspace{0.3 cm}
 
         \normalsize
+        \mbox{{\color{black}{\footnotesize\faMapMarker}\hspace*{0.13cm}San Francisco, CA}}%
+        \kern 0.15 cm%
+        \AND%
+        \kern 0.15 cm%
         \mbox{\hrefWithoutArrow{mailto:kiankyars@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}kiankyars@gmail.com}}%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \AND%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \mbox{\hrefWithoutArrow{https://kiankyars.github.io}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}kiankyars.github.io}}%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \AND%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \mbox{\hrefWithoutArrow{https://linkedin.com/in/kyars}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}kyars}}%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \AND%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \mbox{\hrefWithoutArrow{https://github.com/kiankyars}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}kiankyars}}%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \AND%
-        \kern 0.25 cm%
+        \kern 0.15 cm%
         \mbox{\hrefWithoutArrow{https://x.com/neuralkian}{\color{black}{\footnotesize\faTwitter}\hspace*{0.13cm}neuralkian}}%
-    \end{header}
 
-    \section{Education}
-        \begin{twocolentry}
-            {C/O 2025 \textit{Grade: 3.9/4.0}} \textbf{BSc Computer Science, Honours - University of Alberta}
-        \end{twocolentry}
+        \vspace{0.08 cm}
+
+        {\small Python \textbullet{} PyTorch \textbullet{} TRL/vLLM \textbullet{} DeepSpeed \textbullet{} GRPO \textbullet{} Agent Evaluation}
+    \end{header}
         
     \section{Experience}
 
-        \begin{twocolentry}{February 2026 - August 2026}
+        \begin{twocolentry}{March 2026 - August 2026}
             \textbf{\href{https://www.judgmentlabs.ai}{Judgment Labs}}
 
             \textit{Research Engineer}
@@ -170,9 +173,9 @@
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Created a dynamic KNN+MST algorithm for clustering agent traces
-                \item Designed a self-improvement harness for software-engineering agents using Judgment's tracing platform
-                \item Reduced the cost of PII-redaction by a factor of 20
+                \item Built a dynamic KNN+MST pipeline to cluster agent traces by failure mode (tool misuse, failed escalation) for root-cause analysis
+                \item Built a self-improvement harness for software-engineering agents; ran 16+ hour unattended experiment loops
+                \item Integrated a batched PII-redaction backend into the ingest pipeline, reducing cost 20$\times$
             \end{highlights}
         \end{onecolentry}
 
@@ -188,8 +191,7 @@
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed a ReAct-based ARC-AGI-2 solver with iterative, tool-verified refinement over training examples
-                \item Developed a context-compaction method for multi-step agent workflows
+                \item Built a ReAct-based ARC-AGI-2 solver with tool-verified iteration and context compaction for multi-step agent workflows
             \end{highlights}
         \end{onecolentry}
 
@@ -205,7 +207,7 @@
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Landed \href{https://github.com/JackHopkins/factorio-learning-environment/pulls?q=is\%3Apr+author\%3Akiankyars+is\%3Amerged+merged\%3A2025-06-01..2025-08-31}{35 merged PRs} to \href{https://github.com/JackHopkins/factorio-learning-environment/}{Factorio Learning Environment} across agent evaluation, Gym infrastructure, and testing
+                \item Landed \href{https://github.com/JackHopkins/factorio-learning-environment/pulls?q=is\%3Apr+author\%3Akiankyars+is\%3Amerged+merged\%3A2025-06-01..2025-08-31}{35 merged PRs} to \href{https://github.com/JackHopkins/factorio-learning-environment/}{Factorio Learning Environment} across task-grounded agent evals, Gym infrastructure, and regression testing
             \end{highlights}
         \end{onecolentry}
 
@@ -222,8 +224,7 @@
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Finetuned Qwen2.5, Llama 3, and DeepSeek R1 7-8B models with unsloth for provenance graph construction
-                \item Performed adaptive anomaly detection locally on system logs with equivalent performance to GPT-4o
+                \item Fine-tuned Qwen2.5, Llama 3, and DeepSeek-R1 7-8B models and built local system-log anomaly detection matching GPT-4o on the evaluated task
             \end{highlights}
         \end{onecolentry}
 
@@ -240,8 +241,7 @@
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Re-implemented Flora: a low-rank adaptation optimizer using random projections for gradient compression
-                \item Empirical training speed increases up to 25\% compared to LoRA w/ AdamW in 3B and 7B parameter LLMs
+                \item Reimplemented the FLORA optimizer, improving 3B/7B LLM training speed up to 25\% versus LoRA with AdamW
             \end{highlights}
         \end{onecolentry}
 
@@ -258,111 +258,87 @@
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item DAAD RISE Intern in reinforcement learning on the 7-DOF Franka Emika Robot arm
-                \item Trained using Nvidia Omniverse Isaac Sim to perform block manipulation tasks using TRPO and PPO
+                \item DAAD RISE Intern; trained a 7-DOF Franka Emika arm in Nvidia Isaac Sim for block manipulation using TRPO and PPO
             \end{highlights}
         \end{onecolentry}
 
         \vspace{0.09 cm}
 
-    \section{Projects}
-        \begin{twocolentry}{
-            April 2026
-        }
-            \textbf{\href{https://rlvrbook.com}{Reinforcement Learning from Verifiable Rewards} (textbook)}
-        \end{twocolentry}
-
-        \vspace{0.09 cm}
-
-        \begin{twocolentry}{
-            February 2026
-        }
-            \textbf{\href{https://www.youtube.com/watch?v=n1sfrc-RjyM}{OpenClaw Course}}
+    \section{Selected Projects}
+        \begin{twocolentry}{May 2026}
+            \textbf{\href{https://kiankyars.github.io/intuit-rl-envs/}{Six Axes of an RL Environment}}
         \end{twocolentry}
 
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Tutorial on setting up an autonomous agent \& messaging gateway with Open Claw; 250k+ views
+                \item Designed 6 paired GRPO environments with TRL/vLLM on Qwen2.5-1.5B and ran 12 H100 experiments on Modal to isolate reward and tool-use failures
             \end{highlights}
         \end{onecolentry}
-        
+
         \vspace{0.09 cm}
-        
-        \begin{twocolentry}{
-            January 2026
-        }
-            \textbf{\href{https://www.youtube.com/watch?v=D5F8kp_azzw}{Pipeline Parallelism from Scratch}}
+
+        \begin{twocolentry}{April 2026}
+            \textbf{\href{https://rlvrbook.com}{Reinforcement Learning from Verifiable Rewards} (textbook)}
         \end{twocolentry}
-        
+
         \vspace{0.09 cm}
-        
-        \begin{twocolentry}{
-            October 2025
-        }
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Authored a 10-chapter reference on verifier design, reward hacking, training signals, and agentic RLVR
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.09 cm}
+
+        \begin{twocolentry}{July 2026}
+            \textbf{\href{https://github.com/vllm-project/vllm/pull/49670}{vLLM MoE Optimization} (open PR)}
+        \end{twocolentry}
+
+        \vspace{0.09 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Prototyped a fused Triton MoE combine reduction; measured up to 4.69$\times$ H100 microbenchmark speedup and added 33 parametrized test cases
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.09 cm}
+
+        \begin{twocolentry}{July 2026}
+            \textbf{\href{https://kiankyars.github.io/chips/}{CHIPS: From Design to Data Center}}
+        \end{twocolentry}
+
+        \vspace{0.09 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Published a source-checked course tracing an AI accelerator through design/EDA, fabrication, packaging, and data-center deployment
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.09 cm}
+
+        \begin{twocolentry}{October 2025}
             \textbf{\href{https://github.com/kiankyars/DeepLearning}{nanochat from Scratch}}
         \end{twocolentry}
 
         \vspace{0.09 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Re-implemented and trained nanochat on an 8XH100 node with DeepSpeed ZeRO-2
+                \item Reimplemented nanochat's tokenizer and NCCL-distributed training stack
             \end{highlights}
         \end{onecolentry}
-        
+
         \vspace{0.09 cm}
-        
-        \begin{twocolentry}{
-            June 2025
-        }
-            \textbf{\href{https://github.com/kiankyars/Ultra-Scale-Playbook-Series}{Hugging Face Ultra Scale Playbook Series}}
+
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Additional: \href{https://www.youtube.com/watch?v=n1sfrc-RjyM}{OpenClaw Course} (250k+ views) \textbullet{} \href{https://www.youtube.com/watch?v=D5F8kp_azzw}{Pipeline Parallelism from Scratch} \textbullet{} \href{https://github.com/kiankyars/Ultra-Scale-Playbook-Series}{Hugging Face Ultra Scale Series} \textbullet{} \href{https://www.instagram.com/uofarunclub/}{UofA Run Club} \textbullet{} \href{https://kiankyars.github.io/uofacarpool/}{UofACarpool}
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Education}
+        \begin{twocolentry}{C/O 2025 \textit{Grade: 3.9/4.0}}
+            \textbf{BSc Computer Science, Honours - University of Alberta}
         \end{twocolentry}
 
-        \vspace{0.09 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Created a \href{https://youtube.com/playlist?list=PLWVevi-n5pPy-Y9swxvs5AiTwA_QzUXsr&si=TpY9vB9jMqNBk3aZ}{16-part video series} covering the Hugging Face Ultra Scale Playbook to teach myself large-scale GPU orchestration through teaching others, recognized by Hugging Face CSO Thomas Wolf
-            \end{highlights}
-        \end{onecolentry}
-        
-        \vspace{0.09 cm}
-
-        \begin{twocolentry}{
-            August 2024 - April 2025
-        }
-            \textbf{Founder - \href{https://www.instagram.com/uofarunclub/}{UofA Run Club} (UofARC)}
-        \end{twocolentry}
-
-        \vspace{0.09 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Created a weekly run club to gather community members together bright and early
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.09 cm}
-
-        \begin{twocolentry}{
-            March 2024 - April 2025
-        }
-            \textbf{Founder - \href{https://kiankyars.github.io/uofacarpool/}{UofACarpool}}
-        \end{twocolentry}
-
-        \vspace{0.09 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Wrote algorithm and website for matching service that pairs university commuters to carpool together
-                \item Featured on the \href{https://thegatewayonline.ca/2024/10/u-of-a-carpool-aims-to-make-campus-more-eco-friendly/}{University Newspaper}
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.09 cm}
-
-    \section{Interests}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Polyglot (English, French, Farsi, German) and ultrarunner (longest distance: \href{https://flow.polar.com/shared/7ea63b8f2e9504d06c913efc08e9c8cd}{108.67 km})
-            \end{highlights}
-        \end{onecolentry}
-        
 \end{document}

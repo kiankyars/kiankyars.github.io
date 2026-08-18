@@ -7,7 +7,7 @@ categories: reflection
 
 ### Saturday
 
-- called Winston and caught up with my mom and Pegah
+- called Winston and caught up with my mom and Pegah (wasted time this day, better choice would have been to hike)
 
 ### Sunday
 

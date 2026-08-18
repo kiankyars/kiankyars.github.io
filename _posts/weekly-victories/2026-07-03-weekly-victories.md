@@ -23,7 +23,7 @@ categories: reflection
 
 ### Wednesday
 
-- left Valserhône for Lagnieu and set three July goals
+- left Valserhône for Lagnieu
 
 ### Thursday
 
