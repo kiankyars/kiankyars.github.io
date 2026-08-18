@@ -15,12 +15,6 @@ When the Skyscraper Center lacked a city page, I used the tallest figure from cu
 
 _R<sub>i</sub>_ produces tiny values. The tables below multiply the result by 10<sup>6</sup> to report **micrometres of pinnacle per resident** (µm / person). Dubai allocates each inhabitant about **0.21 millimetres** of the Burj Khalifa.
 
-## Criterion
-
-I selected the **hundred most populous** distinct English labels among Wikidata entities typed exactly as [`Q515`](https://www.wikidata.org/wiki/Q515) (`city`). This captures Beijing but omits Shanghai, Delhi, and Guangzhou, which use more specific regional classifications.
-
-## Number Math Fun
-
 City-states, affluent second cities, and petro-capitals dominate the upper percentiles. Ultra-dense South Asian and West African basins occupy the bottom.
 
 ### Top 15

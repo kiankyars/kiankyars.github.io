@@ -5,7 +5,7 @@ date: 2026-02-04
 categories: health
 ---
 
-[](/imgs/2026-02-04-biomaxing/inventors.jpeg)
+![](/imgs/2026-02-04-biomaxing/inventors.jpeg)
 
 I intend on running rigorous self-experiments on my health through biohacking and supplements. This blog post will capture my experiments and running logs.
 
@@ -25,6 +25,9 @@ I intend on running rigorous self-experiments on my health through biohacking an
     - Actual product: Solaray VegCaps, with 200 mg L-theanine and 100 mg green tea leaf per capsule. Proposed experiment: take one capsule in the morning for 14 days, while keeping sleep, training, and other supplements as stable as possible. Since this includes green tea leaf, this is not a perfectly pure L-theanine test, but it should still be a clean enough practical experiment if I keep the product and routine fixed.
     - What I'm measuring: energy, combined calm/anxiety, side effects in notes, sleep, training, and day average heart rate if Polar exposes it. The win condition is not "I felt different once"; it is a boring repeatable signal.
     - Safety notes: L-theanine seems like a pretty low-risk experiment at normal oral doses, but it is still a supplement, not a proven treatment. Possible downsides include sleepiness, headache, nausea/GI upset, dizziness/lightheadedness, and blood-pressure effects. Be more cautious if taking blood-pressure meds, sedatives/sleep meds, ADHD stimulants, chemotherapy, or if pregnant/breastfeeding. Buy third-party-tested if possible.
+
+- Aug 18, 2026
+    - Restarting the L-theanine trial. Last logged capsule was May 28.
 
 ### L-theanine trial log
 
@@ -49,17 +52,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-05-26 | 9h35 | 5 | 5 |  |  | productive |
 | 2026-05-27 | 11h30 | 3 | 2 |  |  |  |
 | 2026-05-28 | 16h50 | 2 | 1 |  |  |  |
-| 2026-05-29 |  |  |  |  |  |  |
-| 2026-05-30 |  |  |  |  |  |  |
-| 2026-05-31 |  |  |  |  |  |  |
-| 2026-06-01 |  |  |  |  |  |  |
-| 2026-06-02 |  |  |  |  |  |  |
-| 2026-06-03 |  |  |  |  |  |  |
-| 2026-06-04 |  |  |  |  |  |  |
-| 2026-06-05 |  |  |  |  |  |  |
-| 2026-06-06 |  |  |  |  |  |  |
-| 2026-06-07 |  |  |  |  |  |  |
-| 2026-06-08 |  |  |  |  |  |  |
+| 2026-08-18[^9] | 14h16 | 2 | 5 |  |  |  |
 
 
 [^1]: Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up.
@@ -77,3 +70,5 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^7]: 2026-05-19: Hiatus May 6 → May 18 — lost all my habits and was a degen. Resuming the trial today.
 
 [^8]: 2026-05-23: I was hiking all day and did not take the supplement. 2026-05-24: I was recovering/having a chill day, and also did not take the supplement.
+
+[^9]: 2026-08-18: Hiatus May 29 → Aug 17. Restarting the trial today. Also, energy is two, even though the day has been great, because I'm fasting for the Cerebras event.
