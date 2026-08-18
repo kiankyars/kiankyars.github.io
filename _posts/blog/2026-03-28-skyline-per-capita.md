@@ -5,17 +5,15 @@ date: 2026-03-28
 categories: data
 ---
 
-I calculated the vertical metres of supertall architecture per resident for the world's largest cities.
+I divided each city's tallest completed building by its population.
 
 ## The metric
 
-For each city _i_, _H<sub>i</sub>_ represents the tallest completed building tracked by the [CTBUH Skyscraper Center](https://www.skyscrapercenter.com/). _P<sub>i</sub>_ represents the residential population from [Wikidata](https://www.wikidata.org/) property [P1082](https://www.wikidata.org/wiki/Property:P1082) using the **March 2026** snapshot. The ratio is _R<sub>i</sub> = H<sub>i</sub> / P<sub>i</sub>_.
+For each city _i_, _H<sub>i</sub>_ is the tallest completed building tracked by the [CTBUH Skyscraper Center](https://www.skyscrapercenter.com/). _P<sub>i</sub>_ is the residential population from [Wikidata](https://www.wikidata.org/) property [P1082](https://www.wikidata.org/wiki/Property:P1082) using the March 2026 snapshot. The ratio is _R<sub>i</sub> = H<sub>i</sub> / P<sub>i</sub>_.
 
-When the Skyscraper Center lacked a city page, I used the tallest figure from curated national Wikipedia tables (India, Bangladesh, Pakistan) or hand-checked municipal sources.
+When the Skyscraper Center lacked a city page, I used the tallest figure from national Wikipedia tables (India, Bangladesh, Pakistan) or hand-checked municipal sources.
 
-_R<sub>i</sub>_ produces tiny values. The tables below multiply the result by 10<sup>6</sup> to report **micrometres of pinnacle per resident** (µm / person). Dubai allocates each inhabitant about **0.21 millimetres** of the Burj Khalifa.
-
-City-states, affluent second cities, and petro-capitals dominate the upper percentiles. Ultra-dense South Asian and West African basins occupy the bottom.
+_R<sub>i</sub>_ is tiny, so the tables multiply by 10<sup>6</sup> and report micrometres per resident (µm / person). In Dubai that's about 0.21 millimetres of the Burj Khalifa per person.
 
 ### Top 15
 
@@ -53,5 +51,3 @@ City-states, affluent second cities, and petro-capitals dominate the upper perce
 |   98 | Lahore    |         150 |     11,126,285 |          13.5 |
 |   99 | Lagos     |         160 |     15,070,000 |          10.6 |
 |  100 | Dhaka     |         171 |     16,800,000 |          10.2 |
-
-Full machine-readable rankings (all 100 rows) live alongside the Jekyll tree in [`misc/skyline_per_capita_ranked.json`](https://github.com/kiankyars/kiankyars.github.io/blob/main/misc/skyline_per_capita_ranked.json). The reproducible merge logic is `misc/build_skyline_rankings.py`, with raw Skyscraper Center passes cached by `misc/skyline_per_capita_data.py`.

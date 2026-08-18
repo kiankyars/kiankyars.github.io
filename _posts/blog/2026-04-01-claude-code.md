@@ -2,7 +2,7 @@
 layout: post
 title: claude code
 date: 2026-04-01
-categories: ai
+categories: machine_learning
 ---
 
 ## Summary
@@ -14,6 +14,8 @@ categories: ai
 - Anthropic published **`2.1.89`** at **2026-03-31 23:32:40 UTC**. Its live tarball contained **no `.map` files**.
 
 ## Timeline
+
+The timeline was made by Claude Code.
 
 | Pacific             | Event                                                                             | Source                                                                                                                                                                                                                                            |
 | ------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,14 +37,11 @@ categories: ai
 | 2026-03-31 22:18:12 | Cherny follows up with a blameless-postmortem framing.                            | X URL cited in [Engineer's Codex](https://read.engineerscodex.com/p/diving-into-claude-codes-source-code): `https://x.com/bcherny/status/2039210700657307889`                                                                                     |
 | 2026-04-01 16:31:39 | npm records publication of Claude Code version `2.1.90`.                          | [npm registry ledger](https://registry.npmjs.org/@anthropic-ai/claude-code)                                                                                                                                                                       |
 
-## Critical disclosures
+## What leaked
 
-The source code exposed Anthropic's strategic direction:
-
-- **Roadmap leakage**: The `KAIROS` and `PROACTIVE` paths detailed Anthropic's background-agent trajectory.
+- **Roadmap leakage**: The `KAIROS` and `PROACTIVE`; Anthropic's background-agents.
 - **Moat design**: Anti-distillation flags, fake-tool injection, connector-text summarization, and native-client attestation revealed product protection strategies.
-- **Internal naming and launch hints**: Codenames and launch comments signaled future features.
-- **Harness architecture**: Prompt-cache boundaries, compaction strategies, LSP tooling, and coordinator-mode prompting provided a blueprint for production coding agents.
+- **Harness architecture**: Prompt-cache boundaries, compaction strategies, LSP tooling, and coordinator-mode prompting.
 
 ## Primary sources
 

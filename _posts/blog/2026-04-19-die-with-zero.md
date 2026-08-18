@@ -18,3 +18,8 @@ categories: life
 - Personal interest rate: Compare doing an experience now vs. later based on current health, available time, and likely enjoyment.
 - Net worth curve and "know your peak": Identify when to shift from accumulation to spending, often around midlife, to avoid dying with excess unused money.
 - Give while alive: Transfer money to family or charities earlier, when it can have more impact and when you can witness the benefit.
+
+## My take
+
+- I value travelling the most of all experiences, therefore I will spend money to travel to the places I want to without regret!
+- Another obvious one here is buying expensive, good food; it will actually make you live longer!
