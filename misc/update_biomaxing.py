@@ -86,6 +86,12 @@ def main():
 
         sleep_key = (log_date + timedelta(days=1)).isoformat()
         n = sleep.get(sleep_key)
+        if not n:
+            n = fetch(token, f"/users/sleep/{sleep_key}")
+            if isinstance(n, dict) and n.get("sleep_score"):
+                sleep[sleep_key] = n
+            else:
+                n = None
         if n and n.get("sleep_score"):
             if not cells[4]:
                 cells[4] = str(n["sleep_score"])

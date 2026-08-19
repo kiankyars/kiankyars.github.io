@@ -20,7 +20,7 @@ categories: reflection
 
 ### Tuesday
 
-- Grinding semi-course, cerebras party, and catan!
+- Grinded semi-course, cerebras party, and catan!
 
 ### Wednesday
 
