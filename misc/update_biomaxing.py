@@ -30,6 +30,7 @@ STATUS = {
     "DETRAINING": "detraining",
     "OVERREACHING": "overreaching",
     "STRAINED": "strained",
+    "RECOVERY_AFTER_OVERREACHING": "recovery after overreaching",
 }
 
 

@@ -33,26 +33,26 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 
 | Date | Capsule/time | Energy (1-5) | Composure (1-5) | Sleep score (1-100) | Sleep charge (1-5) | Cardio load status |
 |--------------|-------------|---------------|----------------|---------------------|-------------------|-------------------|
-| 2026-04-27[^1] | 10h00 | 5 | 4 | 52 | 1 | maintaining |
-| 2026-04-28[^2] | 18h30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | ditto | detraining |
-| 2026-04-29 | 09h00 | 5 | 4 | 74 | 4 | maintaining |
-| 2026-04-30 | 10h00 | 4 | 4 | 65 | 2 | maintaining |
-| 2026-05-01[^3] | 09h30 | 5 | 2 | 63 | 2 | productive |
+| 2026-04-27[^1] | 10:00 | 5 | 4 | 52 | 1 | maintaining |
+| 2026-04-28[^2] | 18:30 | 5 | 5 | Watch didn't record sleep, but it was poor quality | ditto | detraining |
+| 2026-04-29 | 09:00 | 5 | 4 | 74 | 4 | maintaining |
+| 2026-04-30 | 10:00 | 4 | 4 | 65 | 2 | maintaining |
+| 2026-05-01[^3] | 09:30 | 5 | 2 | 63 | 2 | productive |
 | 2026-05-02[^4] | n/a | n/a |  | 69 | 3 | maintaining |
-| 2026-05-03[^5] | 08h00 | 2 | 2 | 72 | 4 | detraining |
-| 2026-05-04[^6] | 07h53 | 4 | 3 | 74 | 4 | maintaining |
-| 2026-05-05 | 10h00 | 2 | 2 | 79 | 4 | productive |
-| 2026-05-19[^7] | 9h45 | 3 | 3 | 77 | 4 | overreaching |
-| 2026-05-20 | 9h30 | 3 | 3 | 76 | 4 | overreaching |
-| 2026-05-21 | 11h15 | 5 | 4 | 45 | 1 | productive |
-| 2026-05-22 | 10h35 | 5 | 5 | 68 | 3 | productive |
-| 2026-05-25 | 11h20 | 4 | 5 | 72 | 3 | productive |
-| 2026-05-26 | 9h35 | 5 | 5 | 64 | 2 | productive |
-| 2026-05-27 | 11h30 | 3 | 2 | 74 | 4 | productive |
-| 2026-05-28 | 16h50 | 2 | 1 | 59 | 1 | productive |
-| 2026-08-18[^9] | 14h16 | 2 | 5 | 62 | 1 | overreaching |
-| 2026-08-19 | 6h50 | 5 | 5 |  |  | maintaining |
-| 2026-08-20 |  |  |  |  |  |  |
+| 2026-05-03[^5] | 08:00 | 2 | 2 | 72 | 4 | detraining |
+| 2026-05-04[^6] | 07:53 | 4 | 3 | 74 | 4 | maintaining |
+| 2026-05-05 | 10:00 | 2 | 2 | 79 | 4 | productive |
+| 2026-05-19[^7] | 09:45 | 3 | 3 | 77 | 4 | overreaching |
+| 2026-05-20 | 09:30 | 3 | 3 | 76 | 4 | overreaching |
+| 2026-05-21 | 11:15 | 5 | 4 | 45 | 1 | productive |
+| 2026-05-22 | 10:35 | 5 | 5 | 68 | 3 | productive |
+| 2026-05-25 | 11:20 | 4 | 5 | 72 | 3 | productive |
+| 2026-05-26 | 09:35 | 5 | 5 | 64 | 2 | productive |
+| 2026-05-27 | 11:30 | 3 | 2 | 74 | 4 | productive |
+| 2026-05-28 | 16:50 | 2 | 1 | 59 | 1 | productive |
+| 2026-08-18[^9] | 14:16 | 2 | 5 | 62 | 1 | overreaching |
+| 2026-08-19 | 06:50 | 5 | 5 |  |  | productive |
+| 2026-08-20 | 09:24 | 5 | 5 |  |  | recovery after overreaching |
 | 2026-08-21 |  |  |  |  |  |  |
 | 2026-08-22 |  |  |  |  |  |  |
 | 2026-08-23 |  |  |  |  |  |  |

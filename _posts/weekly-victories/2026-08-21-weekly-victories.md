@@ -24,7 +24,7 @@ categories: reflection
 
 ### Wednesday
 
-- 
+- Best day I've had in a very long time because I locked the fuck in at Antler and went Super Saiyan mode, s/o Vishal!
 
 ### Thursday
 
