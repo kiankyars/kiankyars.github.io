@@ -28,7 +28,7 @@ categories: reflection
 
 ### Thursday
 
-- 
+- This day was not as intense as yesterday. I still succeeded, though, by finishing the video and editing it, and then also went to this Gemma event, which was kind of mid, but I went crazy at the buffet.
 
 ### Friday
 

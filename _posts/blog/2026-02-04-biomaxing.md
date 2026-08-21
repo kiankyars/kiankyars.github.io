@@ -51,9 +51,9 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-05-27 | 11:30 | 3 | 2 | 74 | 4 | productive |
 | 2026-05-28 | 16:50 | 2 | 1 | 59 | 1 | productive |
 | 2026-08-18[^9] | 14:16 | 2 | 5 | 62 | 1 | overreaching |
-| 2026-08-19 | 06:50 | 5 | 5 |  |  | productive |
-| 2026-08-20 | 09:24 | 5 | 5 |  |  | recovery after overreaching |
-| 2026-08-21 |  |  |  |  |  |  |
+| 2026-08-19 | 06:50 | 5 | 5 | 64 | 2 | productive |
+| 2026-08-20[^10] | 09:24 | 2 | 5 |  |  | recovery after overreaching |
+| 2026-08-21 | 11:07 | 4 | 5 |  |  | recovery after overreaching |
 | 2026-08-22 |  |  |  |  |  |  |
 | 2026-08-23 |  |  |  |  |  |  |
 | 2026-08-24 |  |  |  |  |  |  |
@@ -83,3 +83,5 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^8]: 2026-05-23: I was hiking all day and did not take the supplement. 2026-05-24: I was recovering/having a chill day, and also did not take the supplement.
 
 [^9]: 2026-08-18: Hiatus May 29 → Aug 17. Restarting the trial today. Also, energy is two, even though the day has been great, because I'm fasting for the Cerebras event.
+
+[^10]: 2026-08-20: I downgraded the energy from 5 to 2 the next day just because I literally fell asleep for like 2 hours in the middle of the day. That might have likely been because I ate some fatty processed food, which gave me that brain fog, but I am not sure for 100%.
