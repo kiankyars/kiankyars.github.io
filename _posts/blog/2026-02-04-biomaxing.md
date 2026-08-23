@@ -53,9 +53,9 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-08-18[^9] | 14:16 | 2 | 5 | 62 | 1 | overreaching |
 | 2026-08-19 | 06:50 | 5 | 5 | 64 | 2 | productive |
 | 2026-08-20[^10] | 09:24 | 2 | 5 |  |  | recovery after overreaching |
-| 2026-08-21 | 11:07 | 4 | 5 |  |  | recovery after overreaching |
-| 2026-08-22 |  |  |  |  |  |  |
-| 2026-08-23 |  |  |  |  |  |  |
+| 2026-08-21 | 11:07 | 4 | 5 | 66 | 2 | recovery after overreaching |
+| 2026-08-22[^11] | 13:37 | 2 | 4 | 64 | 2 | recovery after overreaching |
+| 2026-08-23 | 12:07 | 4 | 4 |  |  | recovery after overreaching |
 | 2026-08-24 |  |  |  |  |  |  |
 | 2026-08-25 |  |  |  |  |  |  |
 | 2026-08-26 |  |  |  |  |  |  |
@@ -85,3 +85,5 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^9]: 2026-08-18: Hiatus May 29 → Aug 17. Restarting the trial today. Also, energy is two, even though the day has been great, because I'm fasting for the Cerebras event.
 
 [^10]: 2026-08-20: I downgraded the energy from 5 to 2 the next day just because I literally fell asleep for like 2 hours in the middle of the day. That might have likely been because I ate some fatty processed food, which gave me that brain fog, but I am not sure for 100%.
+
+[^11]: 2026-08-22: Beaucoup trop mangé encore une fois.

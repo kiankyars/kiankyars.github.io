@@ -32,4 +32,5 @@ categories: reflection
 
 ### Friday
 
-- 
+- Went to the residency end of season dinner, which was good.
+- Recorded three YouTube videos in one day.
