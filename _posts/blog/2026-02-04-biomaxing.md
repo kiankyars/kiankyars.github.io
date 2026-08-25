@@ -55,9 +55,9 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-08-20[^10] | 09:24 | 2 | 5 |  |  | recovery after overreaching |
 | 2026-08-21 | 11:07 | 4 | 5 | 66 | 2 | recovery after overreaching |
 | 2026-08-22[^11] | 13:37 | 2 | 4 | 64 | 2 | recovery after overreaching |
-| 2026-08-23 | 12:07 | 4 | 4 |  |  | recovery after overreaching |
-| 2026-08-24 |  |  |  |  |  |  |
-| 2026-08-25 |  |  |  |  |  |  |
+| 2026-08-23 | 12:07 | 4 | 4 | 76 | 4 | recovery after overreaching |
+| 2026-08-24[^12] | 17:33 | 4 | 3 |  |  | recovery after overreaching |
+| 2026-08-25[^13] | 05:11 | 3 | 5 |  |  | recovery after overreaching |
 | 2026-08-26 |  |  |  |  |  |  |
 | 2026-08-27 |  |  |  |  |  |  |
 | 2026-08-28 |  |  |  |  |  |  |
@@ -87,3 +87,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^10]: 2026-08-20: I downgraded the energy from 5 to 2 the next day just because I literally fell asleep for like 2 hours in the middle of the day. That might have likely been because I ate some fatty processed food, which gave me that brain fog, but I am not sure for 100%.
 
 [^11]: 2026-08-22: Beaucoup trop mangé encore une fois.
+
+[^12]: 2026-08-24: Juste parce que la trajectoire du jour a été bouleversée, mais pas grâce du tout!
+
+[^13]: 2026-08-25: Energy is 3 because I only slept from 23:00 to 4:00.
