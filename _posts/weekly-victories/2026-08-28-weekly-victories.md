@@ -11,11 +11,11 @@ categories: reflection
 
 ### Sunday
 
-- 
+- Spoke with Jean-Luc from Rivian, then tackled my GPT messages and had great brainstorming with Sujan at the commons in the evening.
 
 ### Monday
 
-- 
+- Linked up with my boys from the UK at Corgi Cafe and spent the evening at Antler.
 
 ### Tuesday
 
