@@ -19,7 +19,7 @@ categories: reflection
 
 ### Tuesday
 
-- 
+- HOT CHIPS!
 
 ### Wednesday
 
