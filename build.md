@@ -4,41 +4,19 @@ title: Build
 permalink: /build/
 ---
 
-## YouTube
-
-### [OpenClaw – autonomous agent & messaging gateway](https://www.youtube.com/watch?v=n1sfrc-RjyM)
-
-### [Pipeline parallelism from scratch](https://www.youtube.com/watch?v=D5F8kp_azzw)
-
-### [Nanochat from scratch (playlist)](https://www.youtube.com/playlist?list=PLWVevi-n5pPxm2aahpbLCBUc_giHjIgg0)
-
-### [Ultra-Scale Playbook from scratch (playlist)](https://www.youtube.com/playlist?list=PLWVevi-n5pPy-Y9swxvs5AiTwA_QzUXsr)
-
-## GitHub
+## Featured
 
 ### [afterclock](https://github.com/kiankyars/afterclock)
 
 A two-player abstract strategy game of directional predictions on a 5×5 board. [[play](https://kiankyars.github.io/afterclock/)]
 
-### [sqlite](https://github.com/kiankyars/sqlite)
-
-SQLite from scratch.
-
 ### [parallel-ralph](https://github.com/kiankyars/parallel-ralph)
 
 Distributed asynchronous agent harnessing.
 
-### [regex](https://github.com/kiankyars/regex)
+### [coldaisle](https://github.com/kiankyars/coldaisle)
 
-Regex engine from scratch.
-
-### [addy](https://github.com/kiankyars/addy)
-
-Automated podcast advertisements with voice cloning.
-
-### [latent-space](https://github.com/kiankyars/latent-space)
-
-Attention score matrix visualization tool.
+A deterministic C/CUDA data-center simulator with coupled compute, network, power, and thermal systems.
 
 ### [dayops](https://github.com/kiankyars/dayops)
 
@@ -52,14 +30,6 @@ Attention score matrix visualization tool.
 
 Autonomous open-source PR agent.
 
-### [pinchboard](https://github.com/kiankyars/pinchboard)
-
-Moltbook for X.
-
-### [haggler](https://github.com/kiankyars/haggler)
-
-Negotiation and agent-based commerce experiments.
-
 ### [daytona](https://github.com/kiankyars/daytona)
 
 [Winner](/awards/#nvidia-dgx-spark-hackathon-2026), NVIDIA DGX Spark Hackathon.
@@ -67,6 +37,66 @@ Negotiation and agent-based commerce experiments.
 ### [rabbitreview](https://github.com/skylerkimcodes/rabbitreview)
 
 [Winner](/awards/#daytona-hack-sprint-2026), Daytona Hack Sprint.
+
+## Research & Courses
+
+### [OpenClaw – autonomous agent & messaging gateway](https://www.youtube.com/watch?v=n1sfrc-RjyM)
+
+Build an autonomous agent from scratch. [[course](https://kiankyars.github.io/openclawcourse/)] [[code](https://github.com/kiankyars/openclawcourse)]
+
+### [Pipeline parallelism from scratch](https://www.youtube.com/watch?v=D5F8kp_azzw)
+
+Implement naive, GPipe, and 1F1B pipeline schedules. [[course](https://kiankyars.github.io/micropp/)] [[code](https://github.com/kiankyars/micropp)]
+
+### [Scaling Your AI Models with Micro-DDP – Tutorial](https://www.youtube.com/watch?v=7q4D6_3syuE)
+
+Build data-parallel training from first principles. [[course](https://kiankyars.github.io/microddp/)] [[code](https://github.com/kiankyars/microddp)]
+
+### [CHIPS](https://kiankyars.github.io/chips/)
+
+A diagram-led course following an AI accelerator from chip design through fabrication, packaging, systems, and the data center. [[code](https://github.com/kiankyars/chips)]
+
+### [Intuit RL Environments](https://kiankyars.github.io/intuit-rl-envs/)
+
+Interactive studies of reinforcement-learning environment design, backed by controlled H100 training runs. [[code](https://github.com/kiankyars/intuit-rl-envs)]
+
+### [Nanochat from scratch (playlist)](https://www.youtube.com/playlist?list=PLWVevi-n5pPxm2aahpbLCBUc_giHjIgg0)
+
+### [Ultra-Scale Playbook from scratch (playlist)](https://www.youtube.com/playlist?list=PLWVevi-n5pPy-Y9swxvs5AiTwA_QzUXsr)
+
+### [sqlite](https://github.com/kiankyars/sqlite)
+
+SQLite from scratch.
+
+### [regex](https://github.com/kiankyars/regex)
+
+Regex engine from scratch.
+
+### [latent-space](https://github.com/kiankyars/latent-space)
+
+Attention score matrix visualization tool.
+
+### [DeepLearning](https://github.com/kiankyars/DeepLearning)
+
+Machine learning notes, experiments, and implementations.
+
+### [factorio-learning-environment](https://github.com/jackhopkins/factorio-learning-environment)
+
+A non-saturating, open-ended environment for evaluating LLMs in Factorio.
+
+## Archive
+
+### [addy](https://github.com/kiankyars/addy)
+
+Automated podcast advertisements with voice cloning.
+
+### [pinchboard](https://github.com/kiankyars/pinchboard)
+
+Moltbook for X.
+
+### [haggler](https://github.com/kiankyars/haggler)
+
+Negotiation and agent-based commerce experiments.
 
 ### [2025](https://github.com/kiankyars/2025)
 
@@ -76,17 +106,9 @@ A project which projects your high and low agency futures based on your journals
 
 Fun language visualization tool to test my iteration speed. Globe.GL is sick!
 
-### [DeepLearning](https://github.com/kiankyars/DeepLearning)
-
-Machine learning notes, experiments, and implementations.
-
 ### [x-index](https://github.com/kiankyars/x-index)
 
 TypeScript project to calculate your h-index for x, abandoned due to shit X api.
-
-### [factorio-learning-environment](https://github.com/jackhopkins/factorio-learning-environment)
-
-A non-saturating, open-ended environment for evaluating LLMs in Factorio.
 
 ### [MarketplaceDescriptions](https://github.com/kiankyars/MarketplaceDescriptions)
 
