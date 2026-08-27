@@ -23,7 +23,9 @@ categories: reflection
 
 ### Wednesday
 
-- 
+- Went to Cognition. Shout out to Ryan for hosting us!
+- Gave a crash course on data centers to my friend and realized that I really understand this stuff viscerally!
+- Spoke with Erfan and Max as well. It was an amazing social day overall! Tomorrow is for locking in.
 
 ### Thursday
 
