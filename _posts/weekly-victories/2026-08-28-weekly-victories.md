@@ -29,7 +29,8 @@ categories: reflection
 
 ### Thursday
 
-- 
+- Cognition 2x, s/o Sed!
+- First ever Hawk Hill summit on bike
 
 ### Friday
 
