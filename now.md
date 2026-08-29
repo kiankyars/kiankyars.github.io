@@ -4,7 +4,7 @@ title: "Now"
 permalink: /now/
 ---
 
-- In SF.
+- In SF (aka the future).
 
 ## Currently reading
 
