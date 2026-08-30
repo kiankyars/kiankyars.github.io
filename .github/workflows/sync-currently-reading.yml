@@ -18,6 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Sync Goodreads shelf
+        env:
+          GOODREADS_RSS_URL: ${{ secrets.GOODREADS_RSS_URL }}
         run: python3 scripts/sync_currently_reading.py
       - name: Commit a shelf change
         run: |

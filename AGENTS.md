@@ -14,6 +14,12 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
 - Root Markdown files: Main site pages (`index.md`, `about.md`, `blog.md`, `build.md`, `now.md`, `publications.md`, `weekly-victories.md`).
 - `misc/`: CV/resume and scripts — `CV.tex` (build with `make` in `misc/` → `CV.pdf`), `create_post.py`, and other PDFs (e.g. `main.pdf`).
 
+## Currently reading
+
+`scripts/sync_currently_reading.py` writes `_data/currently_reading.json` from the Goodreads currently-reading RSS feed. GitHub Actions runs it daily.
+
+To keep the shelf working after the Goodreads profile is private, store the keyed RSS URL from the currently-reading shelf page (My Books → currently-reading → RSS at the bottom) as the repository secret `GOODREADS_RSS_URL`. Local runs still use the public feed if that env var is unset.
+
 ## Development Workflows
 
 ### Creating New Content

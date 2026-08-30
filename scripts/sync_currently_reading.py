@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
-"""Sync the public Goodreads currently-reading shelf into Jekyll data."""
+"""Sync the Goodreads currently-reading shelf into Jekyll data."""
 
 import json
+import os
 from pathlib import Path
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree
 
 
-FEED_URL = "https://www.goodreads.com/review/list_rss/108079212?shelf=currently-reading"
+PUBLIC_FEED_URL = (
+    "https://www.goodreads.com/review/list_rss/108079212?shelf=currently-reading"
+)
 OUTPUT = Path(__file__).resolve().parents[1] / "_data" / "currently_reading.json"
+
+
+def feed_url() -> str:
+    return os.environ.get("GOODREADS_RSS_URL", "").strip() or PUBLIC_FEED_URL
 
 
 def text(item: ElementTree.Element, tag: str) -> str:
@@ -16,7 +23,7 @@ def text(item: ElementTree.Element, tag: str) -> str:
 
 
 def main() -> None:
-    request = Request(FEED_URL, headers={"User-Agent": "kiankyars.github.io RSS sync"})
+    request = Request(feed_url(), headers={"User-Agent": "kiankyars.github.io RSS sync"})
     with urlopen(request, timeout=30) as response:
         root = ElementTree.fromstring(response.read())
     channel = root.find("channel")
