@@ -34,4 +34,5 @@ categories: reflection
 
 ### Friday
 
-- 
+- The most amazing day of the entire week. What an insane day.
+- The highlight of this day was meeting Aatik, Mike, Seth, and Raman; four incredible people in one incredible day.
