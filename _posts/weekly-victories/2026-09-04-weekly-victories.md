@@ -7,7 +7,8 @@ categories: reflection
 
 ### Saturday
 
-- 
+- Did my first ever podcast today. What an amazing time with Emrick and Rémy!
+- Munched on some Zaa. Shoutout to Ian. He would have destroyed it if he was there.
 
 ### Sunday
 
