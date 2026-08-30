@@ -61,7 +61,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-08-26 | 11:00 | 4 | 5 | 81 | 5 | maintaining |
 | 2026-08-27 | 06:30 | 5 | 5 | 64 | 2 | maintaining |
 | 2026-08-28 | 11:20 | 5 | 5 |  |  | maintaining |
-| 2026-08-29 |  |  |  |  |  |  |
+| 2026-08-29 | 8:17 | 3 | 5 |  |  |  |
 | 2026-08-30 |  |  |  |  |  |  |
 | 2026-08-31 |  |  |  |  |  |  |
 
