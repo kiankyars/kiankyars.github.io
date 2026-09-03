@@ -52,9 +52,9 @@ Implement naive, GPipe, and 1F1B pipeline schedules. [[course](https://kiankyars
 
 Build data-parallel training from first principles. [[course](https://kiankyars.github.io/microddp/)] [[code](https://github.com/kiankyars/microddp)]
 
-### [CHIPS](https://kiankyars.github.io/chips/)
+### [CHIPS](https://www.youtube.com/watch?v=FGT7LZbZe-g)
 
-A diagram-led course following an AI accelerator from chip design through fabrication, packaging, systems, and the data center. [[code](https://github.com/kiankyars/chips)]
+A diagram-led course following an AI accelerator from chip design through fabrication, packaging, systems, and the data center. [[course](https://kiankyars.github.io/chips/)] [[code](https://github.com/kiankyars/chips)]
 
 ### [Intuit RL Environments](https://kiankyars.github.io/intuit-rl-envs/)
 
