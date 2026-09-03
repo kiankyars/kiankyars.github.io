@@ -61,9 +61,17 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-08-26 | 11:00 | 4 | 5 | 81 | 5 | maintaining |
 | 2026-08-27 | 06:30 | 5 | 5 | 64 | 2 | maintaining |
 | 2026-08-28 | 11:20 | 5 | 5 | 79 | 4 | maintaining |
-| 2026-08-29 | 08:17 | 3 | 5 |  |  | maintaining |
-| 2026-08-30 | 08:51 | 5 | 5 |  |  | maintaining |
-| 2026-08-31 |  |  |  |  |  |  |
+| 2026-08-29 | 08:17 | 3 | 5 | 58 | 1 | maintaining |
+| 2026-08-30 | 08:51 | 5 | 5 | 59 | 1 | maintaining |
+| 2026-08-31 | 06:51 | 5 | 4 | 72 | 3 | recovery after overreaching |
+| 2026-09-01[^14] | 08:11 | 4 | 2 | 78 | 4 | recovery after overreaching |
+| 2026-09-02[^15] | 06:00–07:30 | 3 | 4 |  |  | productive |
+| 2026-09-03[^16] | 06:45 | 1 | 3 |  |  | productive |
+| 2026-09-04 |  |  |  |  |  |  |
+| 2026-09-05 |  |  |  |  |  |  |
+| 2026-09-06 |  |  |  |  |  |  |
+| 2026-09-07 |  |  |  |  |  |  |
+| 2026-09-08 |  |  |  |  |  |  |
 
 
 [^1]: Morning started great, and then I had a slump in the afternoon after eating two meals and also feeling hopeless about the project, but then afterwards I felt great in the evening since our poject picked back up.
@@ -91,3 +99,9 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^12]: 2026-08-24: Juste parce que la trajectoire du jour a été bouleversée, mais pas grave du tout!
 
 [^13]: 2026-08-25: Energy is 3 because I only slept from 23:00 to 4:00, still feel great though!
+
+[^14]: 2026-09-01: C'est parce qu'il y a quelques hiccups sur la préparation d'aller à Sacramento. C'est pour ça que je lis uniquement 2 sur cinq.
+
+[^15]: 2026-09-02: Capsule sometime between 6:00 and 7:30.
+
+[^16]: 2026-09-03: Energy is 1 because I was tired after the bike trip. Composure is 3 because I messed up last night by staying up until 10 pm and going on Reddit.
