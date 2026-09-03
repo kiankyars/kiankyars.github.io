@@ -12,19 +12,22 @@ categories: reflection
 
 ### Sunday
 
-- 
+- Had a ball at the European Startup Embassy. What an awesome space!
+- Great conversations with Emrick and Bo.
 
 ### Monday
 
-- 
+- Great day full of great conversations. Talked with Jonathan Koomey, which was awesome, and then let's not forget the two researchers who shared their research with me that I'm very grateful for.
+- Swam in the ocean for the first time in a SF.
 
 ### Tuesday
 
-- 
+- Biked to Sac.
+- Did job interview at golden gate bridge.
 
 ### Wednesday
 
-- 
+- Biked back from Sac.
 
 ### Thursday
 
