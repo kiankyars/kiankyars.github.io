@@ -31,7 +31,12 @@ categories: reflection
 
 ### Thursday
 
-- 
+- Visited Rishub
+- Talked to 2 recruiters
+- Caught up w/ my guy Daniel
+- Saw my boy Asher at Corgi
+- Met up w/ Hudzah
+- MASSIVE W DAY AS ALWAYS
 
 ### Friday
 
