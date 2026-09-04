@@ -67,7 +67,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-09-01[^14] | 08:11 | 4 | 2 | 78 | 4 | recovery after overreaching |
 | 2026-09-02[^15] | 06:00–07:30 | 3 | 4 |  |  | productive |
 | 2026-09-03[^16] | 06:45 | 1 | 3 |  |  | productive |
-| 2026-09-04 |  |  |  |  |  |  |
+| 2026-09-04[^17] | 05:30 | 2 | 5 |  |  | productive |
 | 2026-09-05 |  |  |  |  |  |  |
 | 2026-09-06 |  |  |  |  |  |  |
 | 2026-09-07 |  |  |  |  |  |  |
@@ -105,3 +105,5 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^15]: 2026-09-02: Capsule sometime between 6:00 and 7:30.
 
 [^16]: 2026-09-03: Energy is 1 because I was tired after the bike trip. Composure is 3 because I messed up last night by staying up until 10 pm and going on Reddit.
+
+[^17]: 2026-09-04: There was this weird burning smell in my room last night that I still have no idea where it originated from. I slept with the window open as well as the door, and despite having earplugs, I was still waking up, I think at least twice, or definitely once, in the middle of the night due to car noise, which makes me feel subtly tired. I'm still excited for the day.
