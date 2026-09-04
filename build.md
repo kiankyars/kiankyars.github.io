@@ -4,13 +4,13 @@ title: Build
 permalink: /build/
 ---
 
-Dates show when the work was made, not when it was published. Newest first within each section.
-
-## Research & Courses
-
 ### [GIGAWATT](https://kiankyars.github.io/gigawatt/) (Aug 2026)
 
 A diagram-led course following one watt from generation to GPU transistors and back out as heat. [[code](https://github.com/kiankyars/gigawatt)]
+
+### [coldaisle](https://github.com/kiankyars/coldaisle) (Jul 2026)
+
+A deterministic C/CUDA data-center simulator with coupled compute, network, power, and thermal systems.
 
 ### [CHIPS](https://www.youtube.com/watch?v=FGT7LZbZe-g) (Jul 2026)
 
@@ -19,6 +19,10 @@ A diagram-led course following an AI accelerator from chip design through fabric
 ### [Intuit RL Environments](https://kiankyars.github.io/intuit-rl-envs/) (May 2026)
 
 Interactive studies of reinforcement-learning environment design, backed by controlled H100 training runs. [[code](https://github.com/kiankyars/intuit-rl-envs)]
+
+### [parallel-ralph](https://github.com/kiankyars/parallel-ralph) (Feb 2026)
+
+Distributed asynchronous agent harnessing.
 
 ### [sqlite](https://github.com/kiankyars/sqlite) (Feb 2026)
 
@@ -56,17 +60,7 @@ A non-saturating, open-ended environment for evaluating LLMs in Factorio.
 
 Machine learning notes, experiments, and implementations.
 
-## Systems & Tools
-
-### [coldaisle](https://github.com/kiankyars/coldaisle) (Jul 2026)
-
-A deterministic C/CUDA data-center simulator with coupled compute, network, power, and thermal systems.
-
-### [parallel-ralph](https://github.com/kiankyars/parallel-ralph) (Feb 2026)
-
-Distributed asynchronous agent harnessing.
-
-## Hackathons & Experiments
+## Hackathons
 
 ### [afterclock](https://github.com/kiankyars/afterclock) (Aug 2026)
 
