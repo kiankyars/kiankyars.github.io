@@ -40,4 +40,5 @@ categories: reflection
 
 ### Friday
 
-- 
+- Not as good as previous days, but grinded RLVR book and spoke with family/firends 3x on phone
+- House-warming party w/ roomate and all the people there except Melody were mid
