@@ -69,7 +69,7 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-09-03[^16] | 06:45 | 1 | 3 |  |  | productive |
 | 2026-09-04[^17] | 05:30 | 2 | 5 |  |  | productive |
 | 2026-09-05 | 09:12 | 4 | 4 |  |  | productive |
-| 2026-09-06 |  |  |  |  |  |  |
+| 2026-09-06 | 08:49 | 3 | 5 |  |  | productive |
 | 2026-09-07 |  |  |  |  |  |  |
 | 2026-09-08 |  |  |  |  |  |  |
 
