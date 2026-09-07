@@ -8,6 +8,10 @@ permalink: /build/
 
 A course on AI data centers: power, cooling, and compute. [[code](https://github.com/kiankyars/gigawatt)]
 
+### [afterclock](https://github.com/kiankyars/afterclock) (Aug 2026)
+
+A two-player abstract strategy game of directional predictions on a 5×5 board. [[play](https://kiankyars.github.io/afterclock/)]
+
 ### [coldaisle](https://github.com/kiankyars/coldaisle) (Jul 2026)
 
 A deterministic C/CUDA data-center simulator with coupled compute, network, power, and thermal systems.
@@ -62,7 +66,6 @@ Machine learning notes, experiments, and implementations.
 
 ## Hackathons
 
-- **[afterclock](https://github.com/kiankyars/afterclock)** (Aug 2026). A two-player abstract strategy game of directional predictions on a 5×5 board. [[play](https://kiankyars.github.io/afterclock/)]
 - **[dayops](https://github.com/kiankyars/dayops)** (Feb 2026). [Winner](/awards/#open-agents-hackathon-2026), Open Agents Hackathon. [[devpost](https://devpost.com/software/dayops)] [[hackathon](https://open-agents-hackathon.devpost.com)] [[announcement](https://x.com/AskVenice/status/2027207601323131084)]
 - **[rabbithole](https://github.com/kiankyars/rabbithole)** (Feb 2026). [Winner](/awards/#continual-learning-hackathon-2026), Continual Learning Hackathon.
 - **[rabbitreview](https://github.com/skylerkimcodes/rabbitreview)** (Jan 2026). [Winner](/awards/#daytona-hack-sprint-2026), Daytona Hack Sprint.
