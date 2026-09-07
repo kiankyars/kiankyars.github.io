@@ -12,7 +12,9 @@ categories: reflection
 
 ### Sunday
 
-- 
+- Focus of the day was learning, specifically with respect to data center campus distribution in the context of my data center course.
+- Conducted 2 experiments on Astra 6 capabilities. Next step is to evaluate the results.
+- Studied information theory fundamentals that I had lost intuition on, aka information, entropy, cross-entropy, and KL divergence.
 
 ### Monday
 
