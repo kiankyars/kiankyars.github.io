@@ -65,12 +65,12 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 | 2026-08-30 | 08:51 | 5 | 5 | 59 | 1 | maintaining |
 | 2026-08-31 | 06:51 | 5 | 4 | 72 | 3 | recovery after overreaching |
 | 2026-09-01[^14] | 08:11 | 4 | 2 | 78 | 4 | recovery after overreaching |
-| 2026-09-02[^15] | 06:00–07:30 | 3 | 4 |  |  | productive |
+| 2026-09-02[^15] | 06:00–07:30 | 3 | 4 | 79 | 4 | productive |
 | 2026-09-03[^16] | 06:45 | 1 | 3 |  |  | productive |
-| 2026-09-04[^17] | 05:30 | 2 | 5 |  |  | productive |
-| 2026-09-05 | 09:12 | 4 | 4 |  |  | productive |
+| 2026-09-04[^17] | 05:30 | 2 | 5 | 80 | 5 | productive |
+| 2026-09-05 | 09:12 | 4 | 4 | 59 | 1 | productive |
 | 2026-09-06 | 08:49 | 3 | 5 |  |  | productive |
-| 2026-09-07 |  |  |  |  |  |  |
+| 2026-09-07[^18] | 06:40 | 1 | 4 |  |  | productive |
 | 2026-09-08 |  |  |  |  |  |  |
 
 
@@ -107,3 +107,5 @@ Auto-fill target: Polar sleep score/charge and Polar training status if availabl
 [^16]: 2026-09-03: Energy is 1 because I was tired after the bike trip. Composure is 3 because I messed up last night by staying up until 10 pm and going on Reddit.
 
 [^17]: 2026-09-04: There was this weird burning smell in my room last night that I still have no idea where it originated from. I slept with the window open as well as the door, and despite having earplugs, I was still waking up, I think at least twice, or definitely once, in the middle of the night due to car noise, which makes me feel subtly tired. I'm still excited for the day.
+
+[^18]: 2026-09-07: I literally slept from 9:30 to 6:30, which is amazing (9 hours), but I cannot describe the level of fatigue I felt upon waking up. It was kind of exhausting, to say the least, and I was just sitting there on my bed for a good 15 minutes, from 6:30 to 6:45, in this stupor state. Now I'm sitting at my desk. It's 9 am, and I've had a first aid drink and also went on a 10 km run. My energy level now is actually 5, but I want to be faithful to the time I consumed the pill, which was at 6:40. At that point, it was just pretty insane fatigue. I think I probably woke up in a REM cycle or whatever without the complete sleep cycle, which may have exacerbated this fatigue. The one thing that's true is I'm proud I went on that run despite the fatigue, and now I'm feeling great. One last thing I didn't mention is the fact that I did a bunch of glute exercises yesterday too, which made me physically tired as well in my glutes.
