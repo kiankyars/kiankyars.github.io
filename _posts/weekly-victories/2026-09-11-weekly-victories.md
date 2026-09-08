@@ -18,7 +18,7 @@ categories: reflection
 
 ### Monday
 
-- 
+- Amazing day! I had three meetings, which were all productive, and two meetups with friends, which were awesome.
 
 ### Tuesday
 
