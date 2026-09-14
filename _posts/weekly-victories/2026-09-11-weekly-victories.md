@@ -22,16 +22,20 @@ categories: reflection
 
 ### Tuesday
 
-- 
+- Cool time at the OpenAI office. Wasn't a crazy productive day, though, given I was participating in the hackathon festivities.
 
 ### Wednesday
 
-- 
+- Caught up with Aatik and Fluidstack.
+- speaking w/ F&F
 
 ### Thursday
 
-- 
+- Call with John Shalf, then coffee with Ron at Zocalo.
+- Locked in on gigawatt at night, SST and MV/LV. Closest thing to just buying copper.
 
 ### Friday
 
-- 
+- Interview with Nolan at General Compute.
+- Analog brain dump on paper for the first time in a long time, h/t Tabea.
+- Kept grinding gigawatt, plus Max and Pari.
