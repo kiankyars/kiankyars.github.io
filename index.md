@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+Latest post: [trying to make a SAT solver faster](/machine_learning/2026/09/13/sat-solver.html).
+
 - [YouTube](https://www.youtube.com/@neuralkian)
 - [GitHub](https://github.com/kiankyars)
 - [X](https://twitter.com/neuralkian)
