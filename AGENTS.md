@@ -22,7 +22,7 @@ To keep the shelf working after the Goodreads profile is private, store the keye
 
 ## Weekly victories from time-lapses
 
-`skills/weekly-victories/` is an agent skill (installable with `npx skills add kiankyars/kiankyars.github.io`) whose script `scripts/build_weekly_victories.py` fills the week's `_posts/weekly-victories/` post from the daily time-lapse posts on X. GitHub Actions runs it every Sunday morning Pacific (`.github/workflows/weekly-victories.yml`); it needs the repository secret `XAI_API_KEY` (Grok `x_search`, the default) or `X_BEARER_TOKEN` with the repository variable `TIMELAPSE_BACKEND=x`. Read `skills/weekly-victories/SKILL.md` before touching weekly victories.
+`skills/weekly-victories/` is an agent skill (installable with `npx skills add kiankyars/kiankyars.github.io`) whose script `scripts/build_weekly_victories.py` fills the week's `_posts/weekly-victories/` post from the daily time-lapse posts on X. By default it runs the Grok Build CLI headlessly with the local `grok login` session (no API key); `scripts/install_schedule.sh` schedules it on Kian's machine every Sunday morning. `.github/workflows/weekly-victories.yml` is a manual fallback that needs the repository secret `XAI_API_KEY` or `X_BEARER_TOKEN` with the repository variable `TIMELAPSE_BACKEND=x`. Read `skills/weekly-victories/SKILL.md` before touching weekly victories.
 
 ## Development Workflows
 

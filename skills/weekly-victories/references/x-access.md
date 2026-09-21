@@ -1,7 +1,19 @@
-# Getting the time-lapses off X: X API vs Grok
+# Getting the time-lapses off X: Grok CLI vs xAI API vs X API
 
-Two ways to read @neuralkian's recent posts programmatically. Prices are as of
-September 2026; check the linked docs before relying on them.
+Three ways to read @neuralkian's recent posts programmatically. Prices are as
+of September 2026; check the linked docs before relying on them.
+
+## Grok Build CLI (default backend)
+
+- Command: `grok --no-auto-update --yolo --output-format json -p "<prompt>"`.
+  `-p` is headless mode; the JSON result's `text` field holds the reply.
+- Auth: `grok login` once (browser OAuth, or `grok login --device-auth` on a
+  machine without a browser). The session is cached in `~/.grok/auth.json`
+  and is used ahead of any `XAI_API_KEY`.
+- Cost: covered by the SuperGrok / X Premium+ subscription, no per-token bill.
+- Limits: only works where that login exists, so the Sunday schedule runs on
+  Kian's computer (`scripts/install_schedule.sh`), not in GitHub Actions.
+  Same caveat as the API: the model transcribes posts, it does not copy them.
 
 ## X API v2 (alternative backend)
 
@@ -17,13 +29,14 @@ September 2026; check the linked docs before relying on them.
   posts via `note_tweet`), media types, pagination. The output is the same
   every run.
 
-## xAI Grok `x_search` (default backend)
+## xAI Grok `x_search` API (alternative backend)
 
 - Endpoint: `POST https://api.x.ai/v1/responses` with a tool of
   `{"type": "x_search", "allowed_x_handles": ["neuralkian"], "from_date": ..., "to_date": ...}`.
 - Auth: API key from console.x.ai, stored as the repository secret
-  `XAI_API_KEY`. This is the default; set the repository variable
-  `TIMELAPSE_BACKEND=x` to switch to the X API.
+  `XAI_API_KEY`. Select with `--backend xai` or `TIMELAPSE_BACKEND=xai`; the
+  manual GitHub workflow uses this unless the repository variable
+  `TIMELAPSE_BACKEND=x` switches it to the X API.
 - Cost: from 21 September 2026 xAI bills x_search at $5 per 1,000 posts
   fetched plus normal token usage. Comparable to the X API for seven posts.
 - Does Grok have "better" access to X? It has *different* access: it can search
@@ -35,6 +48,7 @@ September 2026; check the linked docs before relying on them.
 
 ## Choosing
 
-Grok is the default because it needs only an xAI key. Switch to the X API if
-you have a developer token and want byte-exact captions. Either way the
-workflow commits the post, so a bad run is a one-file revert.
+The Grok CLI is the default because it needs no key at all, just the account
+already signed in on the machine. Use the xAI API for CI, and the X API if you
+have a developer token and want byte-exact captions. Either way the run
+commits the post, so a bad run is a one-file revert.

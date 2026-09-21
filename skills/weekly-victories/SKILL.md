@@ -2,10 +2,10 @@
 name: weekly-victories
 description: Populate a Weekly Victories post on kiankyars.github.io from the week's daily time-lapse posts on X (@neuralkian). Use this whenever the user mentions weekly victories, filling in or drafting this week's or last week's victories, pulling their time-lapses from X or Twitter, or asks what they posted each day this week, even if they don't name the post. Also use it to run, debug or reschedule the Sunday-morning automation that does this.
 license: MIT
-compatibility: Python 3.9+ (stdlib only). Network access to api.x.ai with XAI_API_KEY, or to api.x.com with X_BEARER_TOKEN.
+compatibility: Python 3.9+ (stdlib only). The Grok Build CLI signed in with `grok login` (default), or network access to api.x.ai with XAI_API_KEY, or to api.x.com with X_BEARER_TOKEN.
 metadata:
   author: kiankyars
-  schedule: Sunday morning, America/Los_Angeles (see .github/workflows/weekly-victories.yml)
+  schedule: Sunday 08:20 local on Kian's machine via launchd (see scripts/install_schedule.sh)
 ---
 
 # Weekly Victories
@@ -55,21 +55,49 @@ unless the user asks, since the post is meant to be their words.
 
 | `--backend` | Needs | When |
 | --- | --- | --- |
-| `xai` (default) | `XAI_API_KEY` | Grok's `x_search` tool reads the posts and returns them as JSON. No X developer account needed. Read the output before publishing; the model transcribes rather than copies. |
+| `grok` (default) | `grok login` once | Runs the Grok Build CLI headlessly (`grok -p ... --yolo --output-format json`) on this machine. It uses your Grok/X subscription session from `~/.grok/auth.json`, so no API key and no per-token bill. Read the output before publishing; the model transcribes rather than copies. Set `GROK_MODEL` to pick a model, `GROK_CLI` if the binary is not on PATH. |
+| `xai` | `XAI_API_KEY` | Same search through the xAI Responses API `x_search` tool, for CI or machines without the CLI. |
 | `x` | `X_BEARER_TOKEN` | Deterministic timeline fetch via X API v2, if an X developer token is available. |
 | `json` | `--from-json file` | Local fixture for tests and dry runs. |
 
-Both paid backends cost a few cents a week for seven posts. See
+The two API backends cost a few cents a week for seven posts. See
 `references/x-access.md` for the trade-offs and how to get either credential.
+
+## Grok CLI setup (once)
+
+```bash
+curl -fsSL https://x.ai/cli/install.sh | bash   # installs `grok`
+grok login                                       # browser sign-in, cached in ~/.grok/auth.json
+python3 skills/weekly-victories/scripts/build_weekly_victories.py --dry-run
+```
+
+The script calls `grok --no-auto-update --yolo --output-format json -p ...`.
+`--yolo` auto-approves every tool call so an unattended run never waits on a
+permission prompt; the prompt also tells Grok not to touch files or run
+commands, and `Bash`, `Edit` and `Write` are passed to `--disallowed-tools`.
+If a run says you are not signed in, run `grok login` again.
 
 ## Automation
 
-`.github/workflows/weekly-victories.yml` runs the script every Sunday morning
-Pacific and commits the new post. The workflow reads `XAI_API_KEY` (or
-`X_BEARER_TOKEN` with the repository variable `TIMELAPSE_BACKEND=x`) from
-repository secrets. To run it by hand, trigger the workflow from the Actions
-tab or run the script locally and commit.
+Because the default backend uses the login on Kian's own computer, the
+schedule lives there, not in GitHub Actions:
 
-If the workflow fails, the usual causes are an expired token (HTTP 401), the
-pay-per-use cap or rate limit (HTTP 429), or a week with no video posts. The
-script exits non-zero with the HTTP body, so read the job log first.
+```bash
+bash skills/weekly-victories/scripts/install_schedule.sh              # launchd on macOS, cron on Linux
+bash skills/weekly-victories/scripts/install_schedule.sh --uninstall
+```
+
+That runs `scripts/run_weekly.sh` every Sunday at 08:20 local time: pull
+`main`, build the post, commit and push. The log is
+`~/Library/Logs/weekly-victories.log` (macOS) or `~/.weekly-victories.log`.
+To run it now: `bash skills/weekly-victories/scripts/run_weekly.sh`. The
+machine has to be awake at 08:20; launchd runs a missed job at next wake, cron
+does not.
+
+`.github/workflows/weekly-victories.yml` is still there for manual runs
+(`workflow_dispatch`) with the API backends and repository secrets, but it no
+longer has a schedule.
+
+If a run fails, the usual causes are a lapsed `grok login`, an expired API
+token (HTTP 401), a rate limit (HTTP 429), or a week with no video posts. The
+script exits non-zero with the CLI or HTTP output, so read the log first.

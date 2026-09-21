@@ -1,10 +1,9 @@
 name: Weekly victories
 
+# Manual fallback only. The Sunday schedule runs on Kian's machine with the
+# Grok CLI login (skills/weekly-victories/scripts/install_schedule.sh); this
+# workflow uses the API backends and needs XAI_API_KEY or X_BEARER_TOKEN.
 on:
-  schedule:
-    # Sunday ~08:20 Pacific (15:20 UTC in PDT, 07:20 PST). The Friday time-lapse
-    # is posted on Saturday, so Sunday is the first morning the week is complete.
-    - cron: "23 15 * * 0"
   workflow_dispatch:
     inputs:
       week:

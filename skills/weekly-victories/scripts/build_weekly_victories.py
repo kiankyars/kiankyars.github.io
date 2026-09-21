@@ -11,7 +11,9 @@ Conventions this script encodes (see SKILL.md for the reasoning):
 
 Backends (`--backend`):
 
-* `xai` - (default) xAI Responses API with the `x_search` tool, using `XAI_API_KEY`.
+* `grok`- (default) the Grok Build CLI (`grok -p ... --yolo`) in headless mode, using
+          the account you signed into with `grok login`. No API key needed.
+* `xai` - xAI Responses API with the `x_search` tool, using `XAI_API_KEY`.
 * `x`   - X API v2 `GET /2/users/:id/tweets` with `X_BEARER_TOKEN`.
 * `json`- a local file of `{"text", "created_at", "url"}` objects (`--from-json`),
           useful for dry runs and tests.
@@ -28,6 +30,8 @@ import argparse
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
@@ -129,6 +133,66 @@ def fetch_x_api(handle: str, start: datetime, end: datetime) -> list[Post]:
             return posts
 
 
+def search_prompt(handle: str, start: datetime, end: datetime) -> str:
+    return (
+        f"List every original post (not replies or reposts) by @{handle} published between "
+        f"{start.isoformat()} and {end.isoformat()}. Return ONLY a JSON array, no prose, where each "
+        'element is {"text": <full post text verbatim>, "created_at": <ISO 8601 UTC timestamp>, '
+        '"url": <post URL>, "has_video": <true if the post has a video attached>}.'
+    )
+
+
+def parse_posts_json(text: str, source: str) -> list[Post]:
+    match = re.search(r"\[.*\]", text, re.S)
+    if not match:
+        raise SystemExit(f"{source} did not return a JSON array. Raw output:\n{text}")
+    return load_posts(json.loads(match.group(0)))
+
+
+def fetch_grok_cli(handle: str, start: datetime, end: datetime) -> list[Post]:
+    """Run the Grok Build CLI headlessly and let it search X with your Grok login.
+
+    `grok login` (once, interactive) caches a session token in ~/.grok/auth.json,
+    so this needs no API key. `-p` is headless mode, `--yolo` approves every tool
+    call so nothing waits on a prompt, and `--output-format json` gives a single
+    JSON object whose `text` field is the model's reply.
+    """
+    grok = os.environ.get("GROK_CLI", "grok")
+    if not shutil.which(grok):
+        raise SystemExit(
+            f"'{grok}' is not on PATH. Install the Grok Build CLI (curl -fsSL https://x.ai/cli/install.sh | bash) "
+            "and run `grok login` once. Set GROK_CLI to point at the binary if it lives elsewhere."
+        )
+    prompt = (
+        "Use your X search tool. " + search_prompt(handle, start, end)
+        + " Do not read or modify any files and do not run shell commands."
+    )
+    command = [
+        grok,
+        "--no-auto-update",
+        "--yolo",  # never block on a permission prompt; this is unattended
+        "--output-format", "json",
+        "--disallowed-tools", "Bash,Edit,Write",
+        "--cwd", str(REPO_ROOT),
+    ]
+    model = os.environ.get("GROK_MODEL", "").strip()
+    if model:
+        command += ["--model", model]
+    command += ["-p", prompt]
+    result = subprocess.run(command, capture_output=True, text=True, timeout=600)
+    if result.returncode != 0:
+        raise SystemExit(
+            f"grok exited with {result.returncode}. If it says you are not signed in, run `grok login`.\n"
+            f"{result.stderr.strip()}\n{result.stdout.strip()}"
+        )
+    raw = result.stdout.strip()
+    try:
+        text = json.loads(raw).get("text", "")
+    except json.JSONDecodeError:
+        text = raw  # older CLIs print plain text even with --output-format json
+    return parse_posts_json(text, "grok")
+
+
 def fetch_xai(handle: str, start: datetime, end: datetime) -> list[Post]:
     """Ask Grok to pull the posts via its x_search tool and return them as JSON.
 
@@ -140,15 +204,9 @@ def fetch_xai(handle: str, start: datetime, end: datetime) -> list[Post]:
     if not key:
         raise SystemExit("XAI_API_KEY is not set (console.x.ai -> API keys).")
     model = os.environ.get("XAI_MODEL", "grok-4-fast")
-    prompt = (
-        f"List every original post (not replies or reposts) by @{handle} published between "
-        f"{start.isoformat()} and {end.isoformat()}. Return ONLY a JSON array, no prose, where each "
-        'element is {"text": <full post text verbatim>, "created_at": <ISO 8601 UTC timestamp>, '
-        '"url": <post URL>, "has_video": <true if the post has a video attached>}.'
-    )
     body = {
         "model": model,
-        "input": [{"role": "user", "content": prompt}],
+        "input": [{"role": "user", "content": search_prompt(handle, start, end)}],
         "tools": [
             {
                 "type": "x_search",
@@ -168,10 +226,7 @@ def fetch_xai(handle: str, start: datetime, end: datetime) -> list[Post]:
         for part in item.get("content", []) or []:
             if part.get("type") == "output_text":
                 text += part.get("text", "")
-    match = re.search(r"\[.*\]", text, re.S)
-    if not match:
-        raise SystemExit(f"Grok did not return a JSON array. Raw output:\n{text}")
-    return load_posts(json.loads(match.group(0)))
+    return parse_posts_json(text, "Grok")
 
 
 def load_posts(items: list[dict]) -> list[Post]:
@@ -255,7 +310,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--week", type=date.fromisoformat, help="Friday the post is dated (default: last completed week)")
     parser.add_argument("--handle", default=os.environ.get("X_HANDLE", DEFAULT_HANDLE))
-    parser.add_argument("--backend", choices=["xai", "x", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "xai"))
+    parser.add_argument("--backend", choices=["grok", "xai", "x", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "grok"))
     parser.add_argument("--from-json", type=Path, help="posts fixture for --backend json")
     parser.add_argument("--tz", default=DEFAULT_TZ)
     parser.add_argument("--offset-days", type=int, default=1, help="a post on day D describes day D-offset")
@@ -278,6 +333,8 @@ def main() -> None:
         if not args.from_json:
             raise SystemExit("--from-json is required with --backend json")
         posts = load_posts(json.loads(args.from_json.read_text()))
+    elif args.backend == "grok":
+        posts = fetch_grok_cli(args.handle, start, end)
     elif args.backend == "xai":
         posts = fetch_xai(args.handle, start, end)
     else:
