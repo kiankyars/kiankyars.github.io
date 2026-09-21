@@ -1,0 +1,43 @@
+name: Weekly victories
+
+on:
+  schedule:
+    # Sunday ~08:20 Pacific (15:20 UTC in PDT, 07:20 PST). The Friday time-lapse
+    # is posted on Saturday, so Sunday is the first morning the week is complete.
+    - cron: "23 15 * * 0"
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Friday the post is dated (YYYY-MM-DD). Default: last completed week."
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-victories
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build post from time-lapses
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          TIMELAPSE_BACKEND: ${{ vars.TIMELAPSE_BACKEND || 'x' }}
+        run: |
+          args=()
+          if [ -n "${{ inputs.week }}" ]; then args+=(--week "${{ inputs.week }}"); fi
+          python3 skills/weekly-victories/scripts/build_weekly_victories.py "${args[@]}"
+      - name: Commit the post
+        run: |
+          if git status --porcelain -- _posts/weekly-victories | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -- _posts/weekly-victories
+            git commit -m "Add weekly victories from time-lapses"
+            git push
+          fi

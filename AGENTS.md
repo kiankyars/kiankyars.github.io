@@ -20,6 +20,10 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
 
 To keep the shelf working after the Goodreads profile is private, store the keyed RSS URL from the currently-reading shelf page (My Books → currently-reading → RSS at the bottom) as the repository secret `GOODREADS_RSS_URL`. Local runs still use the public feed if that env var is unset.
 
+## Weekly victories from time-lapses
+
+`skills/weekly-victories/` is an agent skill (installable with `npx skills add kiankyars/kiankyars.github.io`) whose script `scripts/build_weekly_victories.py` fills the week's `_posts/weekly-victories/` post from the daily time-lapse posts on X. GitHub Actions runs it every Sunday morning Pacific (`.github/workflows/weekly-victories.yml`); it needs the repository secret `X_BEARER_TOKEN` (or `XAI_API_KEY` with the repository variable `TIMELAPSE_BACKEND=xai`). Read `skills/weekly-victories/SKILL.md` before touching weekly victories.
+
 ## Development Workflows
 
 ### Creating New Content
