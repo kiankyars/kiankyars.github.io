@@ -11,8 +11,8 @@ Conventions this script encodes (see SKILL.md for the reasoning):
 
 Backends (`--backend`):
 
+* `xai` - (default) xAI Responses API with the `x_search` tool, using `XAI_API_KEY`.
 * `x`   - X API v2 `GET /2/users/:id/tweets` with `X_BEARER_TOKEN`.
-* `xai` - xAI Responses API with the `x_search` tool, using `XAI_API_KEY`.
 * `json`- a local file of `{"text", "created_at", "url"}` objects (`--from-json`),
           useful for dry runs and tests.
 
@@ -255,7 +255,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--week", type=date.fromisoformat, help="Friday the post is dated (default: last completed week)")
     parser.add_argument("--handle", default=os.environ.get("X_HANDLE", DEFAULT_HANDLE))
-    parser.add_argument("--backend", choices=["x", "xai", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "x"))
+    parser.add_argument("--backend", choices=["xai", "x", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "xai"))
     parser.add_argument("--from-json", type=Path, help="posts fixture for --backend json")
     parser.add_argument("--tz", default=DEFAULT_TZ)
     parser.add_argument("--offset-days", type=int, default=1, help="a post on day D describes day D-offset")

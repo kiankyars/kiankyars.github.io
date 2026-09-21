@@ -3,7 +3,7 @@
 Two ways to read @neuralkian's recent posts programmatically. Prices are as of
 September 2026; check the linked docs before relying on them.
 
-## X API v2 (default backend)
+## X API v2 (alternative backend)
 
 - Endpoint: `GET /2/users/:id/tweets` with `start_time`/`end_time`,
   `exclude=retweets,replies`, and `expansions=attachments.media_keys` so the
@@ -17,23 +17,24 @@ September 2026; check the linked docs before relying on them.
   posts via `note_tweet`), media types, pagination. The output is the same
   every run.
 
-## xAI Grok `x_search` (alternative backend)
+## xAI Grok `x_search` (default backend)
 
 - Endpoint: `POST https://api.x.ai/v1/responses` with a tool of
   `{"type": "x_search", "allowed_x_handles": ["neuralkian"], "from_date": ..., "to_date": ...}`.
-- Auth: API key from console.x.ai, stored as `XAI_API_KEY`. Set
-  `TIMELAPSE_BACKEND=xai` in the workflow to switch.
+- Auth: API key from console.x.ai, stored as the repository secret
+  `XAI_API_KEY`. This is the default; set the repository variable
+  `TIMELAPSE_BACKEND=x` to switch to the X API.
 - Cost: from 21 September 2026 xAI bills x_search at $5 per 1,000 posts
   fetched plus normal token usage. Comparable to the X API for seven posts.
 - Does Grok have "better" access to X? It has *different* access: it can search
   X without an X developer account, which is the real advantage. It does not
   expose a raw timeline endpoint. The model reads the posts and writes them
   back as JSON, so text can be truncated or paraphrased and video detection is
-  a best guess. For a job whose whole point is copying captions verbatim, the X
-  API is the better fit, with Grok as the fallback when no X token is available.
+  a best guess. The script asks for verbatim text and validates the JSON, but
+  read the generated post before treating it as final.
 
 ## Choosing
 
-Use the X API if you can get a token. Use Grok if you cannot, and read the
-generated post before it is published. Either way the workflow commits the
-post, so a bad run is a one-file revert.
+Grok is the default because it needs only an xAI key. Switch to the X API if
+you have a developer token and want byte-exact captions. Either way the
+workflow commits the post, so a bad run is a one-file revert.

@@ -27,7 +27,7 @@ jobs:
         env:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
-          TIMELAPSE_BACKEND: ${{ vars.TIMELAPSE_BACKEND || 'x' }}
+          TIMELAPSE_BACKEND: ${{ vars.TIMELAPSE_BACKEND || 'xai' }}
         run: |
           args=()
           if [ -n "${{ inputs.week }}" ]; then args+=(--week "${{ inputs.week }}"); fi

@@ -2,7 +2,7 @@
 name: weekly-victories
 description: Populate a Weekly Victories post on kiankyars.github.io from the week's daily time-lapse posts on X (@neuralkian). Use this whenever the user mentions weekly victories, filling in or drafting this week's or last week's victories, pulling their time-lapses from X or Twitter, or asks what they posted each day this week, even if they don't name the post. Also use it to run, debug or reschedule the Sunday-morning automation that does this.
 license: MIT
-compatibility: Python 3.9+ (stdlib only). Network access to api.x.com with X_BEARER_TOKEN, or to api.x.ai with XAI_API_KEY.
+compatibility: Python 3.9+ (stdlib only). Network access to api.x.ai with XAI_API_KEY, or to api.x.com with X_BEARER_TOKEN.
 metadata:
   author: kiankyars
   schedule: Sunday morning, America/Los_Angeles (see .github/workflows/weekly-victories.yml)
@@ -55,8 +55,8 @@ unless the user asks, since the post is meant to be their words.
 
 | `--backend` | Needs | When |
 | --- | --- | --- |
-| `x` (default) | `X_BEARER_TOKEN` | Deterministic timeline fetch via X API v2. Preferred. |
-| `xai` | `XAI_API_KEY` | Grok's `x_search` tool transcribes the posts to JSON. Use if there is no X developer token. Less deterministic; verify the output. |
+| `xai` (default) | `XAI_API_KEY` | Grok's `x_search` tool reads the posts and returns them as JSON. No X developer account needed. Read the output before publishing; the model transcribes rather than copies. |
+| `x` | `X_BEARER_TOKEN` | Deterministic timeline fetch via X API v2, if an X developer token is available. |
 | `json` | `--from-json file` | Local fixture for tests and dry runs. |
 
 Both paid backends cost a few cents a week for seven posts. See
@@ -65,10 +65,10 @@ Both paid backends cost a few cents a week for seven posts. See
 ## Automation
 
 `.github/workflows/weekly-victories.yml` runs the script every Sunday morning
-Pacific and commits the new post. The workflow reads `X_BEARER_TOKEN` (and
-optionally `XAI_API_KEY` with `TIMELAPSE_BACKEND=xai`) from repository
-secrets. To run it by hand, trigger the workflow from the Actions tab or run
-the script locally and commit.
+Pacific and commits the new post. The workflow reads `XAI_API_KEY` (or
+`X_BEARER_TOKEN` with the repository variable `TIMELAPSE_BACKEND=x`) from
+repository secrets. To run it by hand, trigger the workflow from the Actions
+tab or run the script locally and commit.
 
 If the workflow fails, the usual causes are an expired token (HTTP 401), the
 pay-per-use cap or rate limit (HTTP 429), or a week with no video posts. The
