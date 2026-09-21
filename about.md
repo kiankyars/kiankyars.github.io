@@ -6,6 +6,8 @@ permalink: /about/
 
 I operate by [Crocker's rule](http://sl4.org/crocker.html).
 
+I'm really interested in personal development and optimizing the self; for instance, I tracked my life in 10-minute increments for 2,600 hours in 2025, equivalent to 108 days, 8 hours, and 10 minutes, and afterward made the results [public](https://docs.google.com/spreadsheets/d/1Z-z8rZOS-1sBEjFvBPXQdEHrzAxF4pOrZlDZ-iLDolM).
+
 ---
 
 - I am passionate about 3 things:
