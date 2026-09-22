@@ -8,7 +8,7 @@
 #   bash skills/weekly-victories/scripts/install_schedule.sh            # install (macOS launchd or Linux cron)
 #   bash skills/weekly-victories/scripts/install_schedule.sh --uninstall
 #
-# It runs skills/weekly-victories/scripts/run_weekly.sh every Sunday at 08:20
+# It runs skills/weekly-victories/scripts/run_weekly.sh every Sunday at 08:00
 # local time, which builds the post, commits it and pushes.
 set -euo pipefail
 
@@ -35,7 +35,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   <key>ProgramArguments</key>
   <array><string>/bin/bash</string><string>$RUNNER</string></array>
   <key>StartCalendarInterval</key>
-  <dict><key>Weekday</key><integer>0</integer><key>Hour</key><integer>8</integer><key>Minute</key><integer>20</integer></dict>
+  <dict><key>Weekday</key><integer>0</integer><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>
   <key>EnvironmentVariables</key>
   <dict><key>PATH</key><string>$HOME/.grok/bin:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
   <key>StandardOutPath</key><string>$LOG_DIR/weekly-victories.log</string>
@@ -45,10 +45,10 @@ if [[ "$(uname)" == "Darwin" ]]; then
 EOF
   launchctl bootout "gui/$(id -u)" "$PLIST" 2>/dev/null || true
   launchctl bootstrap "gui/$(id -u)" "$PLIST"
-  echo "Installed $PLIST (Sundays 08:20, log: $LOG_DIR/weekly-victories.log)"
+  echo "Installed $PLIST (Sundays 08:00, log: $LOG_DIR/weekly-victories.log)"
   echo "Run it now with: launchctl kickstart gui/$(id -u)/$LABEL"
 else
-  LINE="20 8 * * 0 /bin/bash $RUNNER >> \$HOME/.weekly-victories.log 2>&1"
+  LINE="0 8 * * 0 /bin/bash $RUNNER >> \$HOME/.weekly-victories.log 2>&1"
   if [[ "${1:-}" == "--uninstall" ]]; then
     crontab -l 2>/dev/null | grep -vF "$RUNNER" | crontab - || true
     echo "Removed cron entry"

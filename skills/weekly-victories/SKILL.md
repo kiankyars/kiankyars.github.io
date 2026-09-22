@@ -5,7 +5,7 @@ license: MIT
 compatibility: Python 3.9+ (stdlib only). The Grok Build CLI signed in with `grok login` (default), or network access to api.x.ai with XAI_API_KEY, or to api.x.com with X_BEARER_TOKEN.
 metadata:
   author: kiankyars
-  schedule: Sunday 08:20 local on Kian's machine via launchd (see scripts/install_schedule.sh)
+  schedule: Sunday 08:00 local on Kian's machine via launchd (see scripts/install_schedule.sh)
 ---
 
 # Weekly Victories
@@ -45,8 +45,9 @@ The script picks the week itself: on a Sunday it takes the Friday two days ago.
 On a Friday or Saturday the current week is not yet complete, so it goes back
 one more week. Pass `--week <friday>` to override.
 
-Then read the resulting file. Captions are copied verbatim, minus the trailing
-media link, with a `([time-lapse](url))` pointer after each. If a day says
+Then read the resulting file. Each `- ` line of the caption becomes its own bullet; the
+`Timelapse #N | H Hours` header is folded into a `([time-lapse #N, H hours](url))`
+pointer on the last bullet. If a day says
 `- ` the script found no post for it. Tell the user which days are missing
 rather than inventing content. Never paraphrase or "improve" the captions
 unless the user asks, since the post is meant to be their words.
@@ -55,7 +56,7 @@ unless the user asks, since the post is meant to be their words.
 
 | `--backend` | Needs | When |
 | --- | --- | --- |
-| `grok` (default) | `grok login` once | Runs the Grok Build CLI headlessly (`grok -p ... --yolo --output-format json`) on this machine. It uses your Grok/X subscription session from `~/.grok/auth.json`, so no API key and no per-token bill. Read the output before publishing; the model transcribes rather than copies. Set `GROK_MODEL` to pick a model, `GROK_CLI` if the binary is not on PATH. |
+| `grok` (default) | `grok login` once | Runs the Grok Build CLI headlessly (`grok -p ... --always-approve --output-format json`) on this machine. It uses your Grok/X subscription session from `~/.grok/auth.json`, so no API key and no per-token bill. Read the output before publishing; the model transcribes rather than copies. Set `GROK_MODEL` to pick a model, `GROK_CLI` if the binary is not on PATH. |
 | `xai` | `XAI_API_KEY` | Same search through the xAI Responses API `x_search` tool, for CI or machines without the CLI. |
 | `x` | `X_BEARER_TOKEN` | Deterministic timeline fetch via X API v2, if an X developer token is available. |
 | `json` | `--from-json file` | Local fixture for tests and dry runs. |
@@ -71,8 +72,8 @@ grok login                                       # browser sign-in, cached in ~/
 python3 skills/weekly-victories/scripts/build_weekly_victories.py --dry-run
 ```
 
-The script calls `grok --no-auto-update --yolo --output-format json -p ...`.
-`--yolo` auto-approves every tool call so an unattended run never waits on a
+The script calls `grok --always-approve --output-format json -p ...`.
+`--always-approve` auto-approves every tool call so an unattended run never waits on a
 permission prompt; the prompt also tells Grok not to touch files or run
 commands, and `Bash`, `Edit` and `Write` are passed to `--disallowed-tools`.
 If a run says you are not signed in, run `grok login` again.
@@ -87,16 +88,12 @@ bash skills/weekly-victories/scripts/install_schedule.sh              # launchd 
 bash skills/weekly-victories/scripts/install_schedule.sh --uninstall
 ```
 
-That runs `scripts/run_weekly.sh` every Sunday at 08:20 local time: pull
+That runs `scripts/run_weekly.sh` every Sunday at 08:00 local time: pull
 `main`, build the post, commit and push. The log is
 `~/Library/Logs/weekly-victories.log` (macOS) or `~/.weekly-victories.log`.
 To run it now: `bash skills/weekly-victories/scripts/run_weekly.sh`. The
-machine has to be awake at 08:20; launchd runs a missed job at next wake, cron
+machine has to be awake at 08:00; launchd runs a missed job at next wake, cron
 does not.
-
-`.github/workflows/weekly-victories.yml` is still there for manual runs
-(`workflow_dispatch`) with the API backends and repository secrets, but it no
-longer has a schedule.
 
 If a run fails, the usual causes are a lapsed `grok login`, an expired API
 token (HTTP 401), a rate limit (HTTP 429), or a week with no video posts. The

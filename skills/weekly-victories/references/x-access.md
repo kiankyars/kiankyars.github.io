@@ -5,7 +5,7 @@ of September 2026; check the linked docs before relying on them.
 
 ## Grok Build CLI (default backend)
 
-- Command: `grok --no-auto-update --yolo --output-format json -p "<prompt>"`.
+- Command: `grok --always-approve --output-format json -p "<prompt>"`.
   `-p` is headless mode; the JSON result's `text` field holds the reply.
 - Auth: `grok login` once (browser OAuth, or `grok login --device-auth` on a
   machine without a browser). The session is cached in `~/.grok/auth.json`
@@ -21,7 +21,7 @@ of September 2026; check the linked docs before relying on them.
   `exclude=retweets,replies`, and `expansions=attachments.media_keys` so the
   script can tell which posts carry a video.
 - Auth: app-only Bearer Token from a project in the X developer portal
-  (developer.x.com). Store it as the repository secret `X_BEARER_TOKEN`.
+  (developer.x.com). Export it as `X_BEARER_TOKEN`.
 - Cost: new developer accounts are pay-per-use at roughly $0.005 per post
   read, so a week is well under a dollar. The legacy Free and Basic tiers are
   not offered to new sign-ups.
@@ -33,10 +33,8 @@ of September 2026; check the linked docs before relying on them.
 
 - Endpoint: `POST https://api.x.ai/v1/responses` with a tool of
   `{"type": "x_search", "allowed_x_handles": ["neuralkian"], "from_date": ..., "to_date": ...}`.
-- Auth: API key from console.x.ai, stored as the repository secret
-  `XAI_API_KEY`. Select with `--backend xai` or `TIMELAPSE_BACKEND=xai`; the
-  manual GitHub workflow uses this unless the repository variable
-  `TIMELAPSE_BACKEND=x` switches it to the X API.
+- Auth: API key from console.x.ai in `XAI_API_KEY`. Select with
+  `--backend xai` or `TIMELAPSE_BACKEND=xai`.
 - Cost: from 21 September 2026 xAI bills x_search at $5 per 1,000 posts
   fetched plus normal token usage. Comparable to the X API for seven posts.
 - Does Grok have "better" access to X? It has *different* access: it can search

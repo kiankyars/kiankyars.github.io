@@ -11,7 +11,7 @@ Conventions this script encodes (see SKILL.md for the reasoning):
 
 Backends (`--backend`):
 
-* `grok`- (default) the Grok Build CLI (`grok -p ... --yolo`) in headless mode, using
+* `grok`- (default) the Grok Build CLI (`grok -p ... --always-approve`) in headless mode, using
           the account you signed into with `grok login`. No API key needed.
 * `xai` - xAI Responses API with the `x_search` tool, using `XAI_API_KEY`.
 * `x`   - X API v2 `GET /2/users/:id/tweets` with `X_BEARER_TOKEN`.
@@ -153,7 +153,7 @@ def fetch_grok_cli(handle: str, start: datetime, end: datetime) -> list[Post]:
     """Run the Grok Build CLI headlessly and let it search X with your Grok login.
 
     `grok login` (once, interactive) caches a session token in ~/.grok/auth.json,
-    so this needs no API key. `-p` is headless mode, `--yolo` approves every tool
+    so this needs no API key. `-p` is headless mode, `--always-approve` approves every tool
     call so nothing waits on a prompt, and `--output-format json` gives a single
     JSON object whose `text` field is the model's reply.
     """
@@ -169,10 +169,10 @@ def fetch_grok_cli(handle: str, start: datetime, end: datetime) -> list[Post]:
     )
     command = [
         grok,
-        "--no-auto-update",
-        "--yolo",  # never block on a permission prompt; this is unattended
+        "--always-approve",  # never block on a permission prompt; this is unattended
         "--output-format", "json",
         "--disallowed-tools", "Bash,Edit,Write",
+        "--no-subagents",
         "--cwd", str(REPO_ROOT),
     ]
     model = os.environ.get("GROK_MODEL", "").strip()
@@ -265,13 +265,39 @@ def posts_by_day(posts: list[Post], days: list[date], tz: ZoneInfo, offset_days:
     return by_day
 
 
+HEADER = re.compile(r"^\s*time-?lapse\s*#\s*(\d+)\s*\|\s*([\d.]+)\s*hours?\s*$", re.I)
+
+
+def caption_bullets(text: str) -> tuple[list[str], str]:
+    """Split a time-lapse caption into its lines and pull out the header.
+
+    Captions look like "Timelapse #120 | 13 Hours" followed by "- " items, either
+    on separate lines or joined with " - ". Returns (items, header) where header
+    is e.g. "#120, 13 hours" or "" if the caption had none.
+    """
+    text = TRAILING_LINK.sub("", text.strip())
+    lines = [ln for ln in text.splitlines() if ln.strip()]
+    if len(lines) <= 1:  # newlines collapsed to " - " in transit; split on those instead
+        lines = re.split(r"\s+-\s+", text)
+    parts = [re.sub(r"^\s*-\s*", "", ln).strip() for ln in lines]
+    parts = [p for p in parts if p]
+    header = ""
+    if parts and (m := HEADER.match(parts[0])):
+        header = f"#{m.group(1)}, {m.group(2)} hours"
+        parts = parts[1:]
+    return [" ".join(p.split()) for p in parts], header
+
+
 def bullets_for(posts: list[Post], link: bool) -> list[str]:
     lines = []
     for post in posts:
-        text = clean_text(post.text)
-        if not text:
+        items, header = caption_bullets(post.text)
+        if not items:
             continue
-        lines.append(f"- {text} ([time-lapse]({post.url}))" if link and post.url else f"- {text}")
+        if link and post.url:
+            label = f"time-lapse {header}" if header else "time-lapse"
+            items[-1] += f" ([{label}]({post.url}))"
+        lines += [f"- {item}" for item in items]
     return lines
 
 
