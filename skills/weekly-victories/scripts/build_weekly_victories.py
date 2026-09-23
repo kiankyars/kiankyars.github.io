@@ -13,8 +13,6 @@ Backends (`--backend`):
 
 * `grok`- (default) the Grok Build CLI (`grok -p ... --always-approve`) in headless mode, using
           the account you signed into with `grok login`. No API key needed.
-* `xai` - xAI Responses API with the `x_search` tool, using `XAI_API_KEY`.
-* `x`   - X API v2 `GET /2/users/:id/tweets` with `X_BEARER_TOKEN`.
 * `json`- a local file of `{"text", "created_at", "url"}` objects (`--from-json`),
           useful for dry runs and tests.
 
@@ -36,9 +34,6 @@ import sys
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.error import HTTPError
-from urllib.parse import urlencode
-from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -79,58 +74,6 @@ def week_days(friday: date) -> list[date]:
 
 
 # ------------------------------------------------------------------------ backends
-
-
-def http_json(url: str, headers: dict, body: dict | None = None) -> dict:
-    data = json.dumps(body).encode() if body is not None else None
-    request = Request(url, data=data, headers={"User-Agent": "kiankyars.github.io weekly-victories", **headers})
-    try:
-        with urlopen(request, timeout=60) as response:
-            return json.load(response)
-    except HTTPError as error:
-        detail = error.read().decode(errors="replace")
-        raise SystemExit(f"{url} -> HTTP {error.code}: {detail}") from error
-
-
-def fetch_x_api(handle: str, start: datetime, end: datetime) -> list[Post]:
-    token = os.environ.get("X_BEARER_TOKEN", "").strip()
-    if not token:
-        raise SystemExit("X_BEARER_TOKEN is not set (X developer portal -> project -> Bearer Token).")
-    headers = {"Authorization": f"Bearer {token}"}
-
-    user = http_json(f"https://api.x.com/2/users/by/username/{handle}", headers)
-    user_id = user["data"]["id"]
-
-    params = {
-        "start_time": start.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "end_time": end.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "max_results": 100,
-        "exclude": "retweets,replies",
-        "tweet.fields": "created_at,text,attachments,note_tweet",
-        "expansions": "attachments.media_keys",
-        "media.fields": "type",
-    }
-    posts: list[Post] = []
-    next_token = None
-    while True:
-        if next_token:
-            params["pagination_token"] = next_token
-        page = http_json(f"https://api.x.com/2/users/{user_id}/tweets?{urlencode(params)}", headers)
-        media = {m["media_key"]: m.get("type") for m in page.get("includes", {}).get("media", [])}
-        for item in page.get("data", []):
-            keys = item.get("attachments", {}).get("media_keys", [])
-            text = item.get("note_tweet", {}).get("text") or item["text"]
-            posts.append(
-                Post(
-                    text=text,
-                    created_at=datetime.fromisoformat(item["created_at"].replace("Z", "+00:00")),
-                    url=f"https://x.com/{handle}/status/{item['id']}",
-                    has_video=any(media.get(k) == "video" for k in keys),
-                )
-            )
-        next_token = page.get("meta", {}).get("next_token")
-        if not next_token:
-            return posts
 
 
 def search_prompt(handle: str, start: datetime, end: datetime) -> str:
@@ -179,7 +122,7 @@ def fetch_grok_cli(handle: str, start: datetime, end: datetime) -> list[Post]:
     if model:
         command += ["--model", model]
     command += ["-p", prompt]
-    result = subprocess.run(command, capture_output=True, text=True, timeout=600)
+    result = subprocess.run(command, capture_output=True, text=True, timeout=1800)  # runs have taken 2-12 minutes
     if result.returncode != 0:
         raise SystemExit(
             f"grok exited with {result.returncode}. If it says you are not signed in, run `grok login`.\n"
@@ -191,42 +134,6 @@ def fetch_grok_cli(handle: str, start: datetime, end: datetime) -> list[Post]:
     except json.JSONDecodeError:
         text = raw  # older CLIs print plain text even with --output-format json
     return parse_posts_json(text, "grok")
-
-
-def fetch_xai(handle: str, start: datetime, end: datetime) -> list[Post]:
-    """Ask Grok to pull the posts via its x_search tool and return them as JSON.
-
-    Grok's x_search is a model tool, not a raw timeline endpoint, so the model
-    is asked to transcribe posts verbatim into a strict JSON array. Results are
-    validated but are inherently less deterministic than the X API backend.
-    """
-    key = os.environ.get("XAI_API_KEY", "").strip()
-    if not key:
-        raise SystemExit("XAI_API_KEY is not set (console.x.ai -> API keys).")
-    model = os.environ.get("XAI_MODEL", "grok-4-fast")
-    body = {
-        "model": model,
-        "input": [{"role": "user", "content": search_prompt(handle, start, end)}],
-        "tools": [
-            {
-                "type": "x_search",
-                "allowed_x_handles": [handle],
-                "from_date": start.date().isoformat(),
-                "to_date": end.date().isoformat(),
-            }
-        ],
-    }
-    response = http_json(
-        "https://api.x.ai/v1/responses",
-        {"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-        body,
-    )
-    text = ""
-    for item in response.get("output", []):
-        for part in item.get("content", []) or []:
-            if part.get("type") == "output_text":
-                text += part.get("text", "")
-    return parse_posts_json(text, "Grok")
 
 
 def load_posts(items: list[dict]) -> list[Post]:
@@ -336,7 +243,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--week", type=date.fromisoformat, help="Friday the post is dated (default: last completed week)")
     parser.add_argument("--handle", default=os.environ.get("X_HANDLE", DEFAULT_HANDLE))
-    parser.add_argument("--backend", choices=["grok", "xai", "x", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "grok"))
+    parser.add_argument("--backend", choices=["grok", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "grok"))
     parser.add_argument("--from-json", type=Path, help="posts fixture for --backend json")
     parser.add_argument("--tz", default=DEFAULT_TZ)
     parser.add_argument("--offset-days", type=int, default=1, help="a post on day D describes day D-offset")
@@ -359,12 +266,8 @@ def main() -> None:
         if not args.from_json:
             raise SystemExit("--from-json is required with --backend json")
         posts = load_posts(json.loads(args.from_json.read_text()))
-    elif args.backend == "grok":
-        posts = fetch_grok_cli(args.handle, start, end)
-    elif args.backend == "xai":
-        posts = fetch_xai(args.handle, start, end)
     else:
-        posts = fetch_x_api(args.handle, start, end)
+        posts = fetch_grok_cli(args.handle, start, end)
 
     grouped = posts_by_day(posts, days, tz, args.offset_days)
 

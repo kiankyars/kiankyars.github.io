@@ -2,7 +2,7 @@
 name: weekly-victories
 description: Populate a Weekly Victories post on kiankyars.github.io from the week's daily time-lapse posts on X (@neuralkian). Use this whenever the user mentions weekly victories, filling in or drafting this week's or last week's victories, pulling their time-lapses from X or Twitter, or asks what they posted each day this week, even if they don't name the post. Also use it to run, debug or reschedule the Sunday-morning automation that does this.
 license: MIT
-compatibility: Python 3.9+ (stdlib only). The Grok Build CLI signed in with `grok login` (default), or network access to api.x.ai with XAI_API_KEY, or to api.x.com with X_BEARER_TOKEN.
+compatibility: Python 3.9+ (stdlib only) and the Grok Build CLI signed in with `grok login`.
 metadata:
   author: kiankyars
   schedule: Sunday 08:00 local on Kian's machine via launchd (see scripts/install_schedule.sh)
@@ -57,12 +57,9 @@ unless the user asks, since the post is meant to be their words.
 | `--backend` | Needs | When |
 | --- | --- | --- |
 | `grok` (default) | `grok login` once | Runs the Grok Build CLI headlessly (`grok -p ... --always-approve --output-format json`) on this machine. It uses your Grok/X subscription session from `~/.grok/auth.json`, so no API key and no per-token bill. Read the output before publishing; the model transcribes rather than copies. Set `GROK_MODEL` to pick a model, `GROK_CLI` if the binary is not on PATH. |
-| `xai` | `XAI_API_KEY` | Same search through the xAI Responses API `x_search` tool, for CI or machines without the CLI. |
-| `x` | `X_BEARER_TOKEN` | Deterministic timeline fetch via X API v2, if an X developer token is available. |
-| `json` | `--from-json file` | Local fixture for tests and dry runs. |
+| `json` | `--from-json file` | Local fixture of `{"text", "created_at", "url", "has_video"}` objects for tests and dry runs. |
 
-The two API backends cost a few cents a week for seven posts. See
-`references/x-access.md` for the trade-offs and how to get either credential.
+Runs have taken anywhere from 2 to 12 minutes; the script allows 30.
 
 ## Grok CLI setup (once)
 
@@ -95,6 +92,6 @@ To run it now: `bash skills/weekly-victories/scripts/run_weekly.sh`. The
 machine has to be awake at 08:00; launchd runs a missed job at next wake, cron
 does not.
 
-If a run fails, the usual causes are a lapsed `grok login`, an expired API
-token (HTTP 401), a rate limit (HTTP 429), or a week with no video posts. The
-script exits non-zero with the CLI or HTTP output, so read the log first.
+If a run fails, the usual causes are a lapsed `grok login`, a run past the
+30-minute limit, or a week with no video posts. The script exits non-zero with
+the CLI output, so read the log first.
