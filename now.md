@@ -4,7 +4,7 @@ title: "Now"
 permalink: /now/
 ---
 
-- Hayes Valley
+- I'm at [fr8](fr8.so)
 
 ## Currently reading
 
