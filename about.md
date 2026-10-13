@@ -17,12 +17,6 @@ I'm really interested in personal development and optimizing the self; for insta
 
 ---
 
-- I agree with the opinion expressed [here](https://docs.google.com/document/d/1vDOmF-fPfBHG1hM2DsS6gHd04XYETcmtq-0kPsaDVO8).
-- [This](https://paulgraham.com/selfindulgence.html) is my favourite PG article.
-- I recommend young people read Patrick Collison's [advice](https://patrickcollison.com/advice).
-
----
-
 - I identify as follows (I have not thought enough about the order yet to rank them by importance):
     - Canadian
     - Runner

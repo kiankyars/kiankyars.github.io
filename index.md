@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Home
 ---
 
 - [YouTube](https://www.youtube.com/@neuralkian)

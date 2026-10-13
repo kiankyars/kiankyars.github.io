@@ -16,3 +16,7 @@ permalink: /links/
 - [Lessons from my PhD](https://austinhenley.com/blog/lessonsfrommyphd.html)
 - [A neural network in 11 lines of Python](https://iamtrask.github.io/2015/07/12/basic-python-network/)
 - [What every programmer should know about memory](https://www.akkadia.org/drepper/cpumemory.pdf)
+- [How to do great work](https://paulgraham.com/greatwork.html#f26n)
+- [Building important companies](https://docs.google.com/document/d/1vDOmF-fPfBHG1hM2DsS6gHd04XYETcmtq-0kPsaDVO8)
+- [How to lose time and money](https://paulgraham.com/selfindulgence.html)
+- [Advice — Patrick Collison](https://patrickcollison.com/advice)
