@@ -135,12 +135,27 @@ def fetch_grok_cli(handle: str, start: datetime, end: datetime) -> list[Post]:
     return parse_posts_json(text, "grok")
 
 
+STATUS_ID = re.compile(r"/status/(\d+)")
+
+
+def snowflake_time(url: str) -> datetime | None:
+    """Exact posting time encoded in an X status ID, or None if there is no ID."""
+    match = STATUS_ID.search(url or "")
+    if not match:
+        return None
+    millis = (int(match.group(1)) >> 22) + 1288834974657
+    return datetime.fromtimestamp(millis / 1000, timezone.utc)
+
+
 def load_posts(items: list[dict]) -> list[Post]:
     posts = []
     for item in items:
-        created = datetime.fromisoformat(str(item["created_at"]).replace("Z", "+00:00"))
-        if created.tzinfo is None:
-            created = created.replace(tzinfo=timezone.utc)
+        # Trust the post ID over the model's transcribed timestamp.
+        created = snowflake_time(item.get("url", ""))
+        if created is None:
+            created = datetime.fromisoformat(str(item["created_at"]).replace("Z", "+00:00"))
+            if created.tzinfo is None:
+                created = created.replace(tzinfo=timezone.utc)
         posts.append(Post(item["text"], created, item.get("url", ""), bool(item.get("has_video"))))
     return posts
 
