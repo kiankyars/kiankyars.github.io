@@ -7,7 +7,8 @@ Conventions this script encodes (see SKILL.md for the reasoning):
   Saturday through Friday, in that order.
 * Each day's time-lapse is posted on X the *next* day, so a post published on
   day D describes day D-1 (`--offset-days`, default 1).
-* Days are reckoned in America/Los_Angeles (`--tz`).
+* Days are reckoned in this machine's local timezone (`--tz` to override), since
+  that is where the day being filmed happened.
 
 Backends (`--backend`):
 
@@ -40,7 +41,15 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 POSTS_DIR = REPO_ROOT / "_posts" / "weekly-victories"
 DAYS = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 DEFAULT_HANDLE = "neuralkian"
-DEFAULT_TZ = "America/Los_Angeles"
+def local_tz_name() -> str:
+    """IANA name of this machine's timezone, e.g. Europe/Helsinki."""
+    if os.environ.get("TZ"):
+        return os.environ["TZ"]
+    target = os.path.realpath("/etc/localtime")
+    return target.split("zoneinfo/", 1)[1] if "zoneinfo/" in target else "UTC"
+
+
+DEFAULT_TZ = local_tz_name()
 TRAILING_LINK = re.compile(r"\s*https?://t\.co/\S+\s*$")
 
 

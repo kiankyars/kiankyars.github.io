@@ -25,8 +25,10 @@ file with the right dates.
   Friday. So a post on day D describes day D-1, and the week ending Friday F is
   only complete on Saturday evening. That is why the automation runs on
   **Sunday** morning, not Saturday.
-- **Days are Pacific time.** A post at 03:00 UTC Sunday is Saturday evening in
-  San Francisco and therefore describes Friday.
+- **Days are local time.** The script uses this machine's timezone (or `--tz`),
+  both to map posts to days and to decide which week is complete. It used to be
+  hard-coded to Pacific, which made Sunday-morning runs abroad pick the
+  previous week.
 - **Hand-written text wins.** If Kian already typed something under a day, keep
   it and only fill the days that are still empty (`- `). Pass `--force` only if
   asked to regenerate a day.
