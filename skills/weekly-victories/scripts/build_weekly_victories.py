@@ -7,8 +7,8 @@ Conventions this script encodes (see SKILL.md for the reasoning):
   Saturday through Friday, in that order.
 * Each day's time-lapse is posted on X the *next* day, so a post published on
   day D describes day D-1 (`--offset-days`, default 1).
-* Days are reckoned in this machine's local timezone (`--tz` to override), since
-  that is where the day being filmed happened.
+* There is no timezone setting. Days follow this machine's clock, which is
+  wherever Kian is, so the script works unchanged when he travels.
 
 Backends (`--backend`):
 
@@ -35,21 +35,11 @@ import sys
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 POSTS_DIR = REPO_ROOT / "_posts" / "weekly-victories"
 DAYS = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 DEFAULT_HANDLE = "neuralkian"
-def local_tz_name() -> str:
-    """IANA name of this machine's timezone, e.g. Europe/Helsinki."""
-    if os.environ.get("TZ"):
-        return os.environ["TZ"]
-    target = os.path.realpath("/etc/localtime")
-    return target.split("zoneinfo/", 1)[1] if "zoneinfo/" in target else "UTC"
-
-
-DEFAULT_TZ = local_tz_name()
 TRAILING_LINK = re.compile(r"\s*https?://t\.co/\S+\s*$")
 
 
@@ -163,7 +153,7 @@ def clean_text(text: str) -> str:
     return " ".join(text.split())
 
 
-def posts_by_day(posts: list[Post], days: list[date], tz: ZoneInfo, offset_days: int) -> dict[date, list[Post]]:
+def posts_by_day(posts: list[Post], days: list[date], tz, offset_days: int) -> dict[date, list[Post]]:
     """Assign each post to the day it describes.
 
     Time-lapses are preferred (a video attachment); if a day has none, any
@@ -254,14 +244,13 @@ def main() -> None:
     parser.add_argument("--handle", default=os.environ.get("X_HANDLE", DEFAULT_HANDLE))
     parser.add_argument("--backend", choices=["grok", "json"], default=os.environ.get("TIMELAPSE_BACKEND", "grok"))
     parser.add_argument("--from-json", type=Path, help="posts fixture for --backend json")
-    parser.add_argument("--tz", default=DEFAULT_TZ)
     parser.add_argument("--offset-days", type=int, default=1, help="a post on day D describes day D-offset")
     parser.add_argument("--no-links", action="store_true", help="omit the link back to each post")
     parser.add_argument("--force", action="store_true", help="overwrite days that already have content")
     parser.add_argument("--dry-run", action="store_true", help="print the post instead of writing it")
     args = parser.parse_args()
 
-    tz = ZoneInfo(args.tz)
+    tz = datetime.now().astimezone().tzinfo  # the machine's own clock
     friday = args.week or last_completed_friday(datetime.now(tz).date())
     if friday.weekday() != 4:
         raise SystemExit(f"{friday} is not a Friday; weekly victories are dated on Fridays.")
