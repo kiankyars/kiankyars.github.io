@@ -20,9 +20,9 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
 
 To keep the shelf working after the Goodreads profile is private, store the keyed RSS URL from the currently-reading shelf page (My Books → currently-reading → RSS at the bottom) as the repository secret `GOODREADS_RSS_URL`. Local runs still use the public feed if that env var is unset.
 
-## Weekly victories from time-lapses
+## Weekly victories
 
-`skills/weekly-victories/` is an agent skill (installable with `npx skills add kiankyars/kiankyars.github.io`) whose script `scripts/build_weekly_victories.py` fills the week's `_posts/weekly-victories/` post from the daily time-lapse posts on X. By default it runs the Grok Build CLI headlessly with the local `grok login` session (no API key); `scripts/install_schedule.sh` schedules it on Kian's machine every Sunday morning. Read `skills/weekly-victories/SKILL.md` before touching weekly victories.
+Weekly victories ended with the week of 2026-10-23. Daily time-lapses are now logged in Kian's Obsidian daily notes, so there is no automation for these posts; don't recreate it.
 
 ## Development Workflows
 

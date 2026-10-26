@@ -28,17 +28,15 @@ categories: reflection
 
 ### Tuesday
 
-- away for next 3 days, so here are two clips from a darker time:
-- me playing online chess for most of two days across the 8th and 10th of August ([time-lapse #135, 11 hours](https://x.com/neuralkian/status/2105373111671455820))
+- bike trip
 
 ### Wednesday
 
-- I've shown this @SemiAnalysis_ chart to many friends, if it is too be believed, @Siemens, @GEVernova, and the whole gang are undervalued.
-- Only time will tell! ([time-lapse](https://x.com/neuralkian/status/2105743436716425607))
+- bike trip
 
 ### Thursday
 
-- 
+- travel day
 
 ### Friday
 
