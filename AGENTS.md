@@ -20,10 +20,6 @@ This project is a personal website and blog for Kian Kyars, hosted on GitHub Pag
 
 To keep the shelf working after the Goodreads profile is private, store the keyed RSS URL from the currently-reading shelf page (My Books → currently-reading → RSS at the bottom) as the repository secret `GOODREADS_RSS_URL`. Local runs still use the public feed if that env var is unset.
 
-## Weekly victories
-
-Weekly victories ended with the week of 2026-10-23. Daily time-lapses are now logged in Kian's Obsidian daily notes, so there is no automation for these posts; don't recreate it.
-
 ## Development Workflows
 
 ### Creating New Content
