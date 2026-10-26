@@ -7,13 +7,13 @@ categories: reflection
 
 ### Saturday
 
-- Researched examples for Patrick Collison's /fast page and sent them to him with a BioNTech timeline.
+- Could not walk.
 - Shared my data center course with people in the industry and pitched a podcast.
 - Lined up SF contacts for Ethan and introduced him to Ron.
 
 ### Sunday
 
-- Two-hour conversation about data centers with someone from CERN.
+- Scratch.
 
 ### Monday
 
