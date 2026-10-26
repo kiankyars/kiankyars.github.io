@@ -11,12 +11,13 @@ categories: reflection
 - plan hike
 - read some @SemiAnalysis_
 - using claude for investment advice
+- sauna
 - problem of the week ([time-lapse #144, 7 hours](https://x.com/neuralkian/status/2109700167502868541))
 
 ### Sunday
 
 - All-day hike.
-- Decided I genuinely want to become an ultramarathoner and win ultras, so my running plan needs to change.
+- Horrible blisters from poison oak.
 
 ### Monday
 
@@ -42,8 +43,6 @@ categories: reflection
 - Morning run, then set up nand2tetris.
 - Call with Ethan.
 - FR8 compute meeting and reached out to neoclouds.
-- Watched Liam Fedus's Accel talk. His analogy that we've already reached ASI in chess and protein folding made it click: to get good at a real-world task, you need simulation of, and interaction with, that problem space.
-- The bet on automated research labs is very compelling.
 - Interview with Heng.
 - Shaved my beard!
 
