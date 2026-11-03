@@ -48,7 +48,7 @@ Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, w
 
 Without reasoning, 84–98% of points sit in the biggest connected patch of their phase; however, balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
 
-## Reasoning fixes most of it
+## Reasoning is almost a silver bullety=
 
 <div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
 <div id="effect"></div>
@@ -93,6 +93,52 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
 - Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92.
 - Reasoning settings differ between models, so the reasoning comparison is not fully controlled.
 - The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.
+
+## Appendix: a reasoning trace
+
+Of the models that reason, only Sonnet 4.5 returns its reasoning as text, so here is one of its traces. The question was:
+
+> Pure water at equilibrium, at 532.15 kelvin and 2755 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
+
+This is hot water squeezed to about 27,000 atmospheres. Answering instantly, 15 of the 22 models say ice and the other 7 say supercritical. It is liquid. Sonnet 4.5 first wonders about ice VII, then checks the melting curve and gets it right:
+
+<div class="pd-trace">Let me determine the phase of water at 532.15 K and 2755 MPa.
+
+First, let me convert the temperature to Celsius:
+532.15 K = 259°C
+
+The pressure is 2755 MPa = 27550 bar = 27.55 kbar
+
+For water, the critical point is at:
+- Critical temperature: 647.096 K (373.946°C)
+- Critical pressure: 22.064 MPa
+
+Since the temperature (532.15 K) is BELOW the critical temperature (647.096 K), the substance cannot be supercritical.
+
+At this temperature (259°C) and this very high pressure (2755 MPa), I need to check what phase water would be in.
+
+At 259°C and normal pressures, water would be vapor/steam. However, at extremely high pressures, water can remain liquid even at temperatures well above 100°C.
+
+At 2755 MPa (which is about 125 times the critical pressure), this is an extremely high pressure. At such high pressures, water will be in the liquid phase even at 259°C.
+
+Actually, let me reconsider. At very high pressures and lower temperatures, water could even be in various ice phases (solid).
+
+Looking at the water phase diagram:
+- At extremely high pressures (thousands of MPa), several high-pressure ice phases exist
+- At 2755 MPa (2.755 GPa), we&#x27;re in the range of high-pressure ice phases
+
+At 532.15 K (259°C) and 2755 MPa, I need to check if this falls in the liquid region or a solid (ice) region.
+
+For high-pressure ice phases:
+- Ice VII exists at pressures above about 2.2 GPa at room temperature
+- At 2.755 GPa (2755 MPa), we need to check the temperature
+
+At 2755 MPa, the melting point of ice would be elevated significantly. However, 259°C is quite high. Let me think about this more carefully.
+Ice VII&#x27;s melting curve rises with pressure, staying stable up to roughly 355 K at 2.2 GPa. At 2.755 GPa, this melting temperature pushes somewhat higher, landing around 350-380 K based on the positive slope of the curve.
+
+Since 532.15 K far exceeds this melting threshold, water at these conditions should be liquid rather than solid ice.</div>
+
+It answered `{"phase": "liquid"}`.
 
 <style>
   .pd-atlas { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 14px 10px; margin: 1rem 0 1.5rem; }
@@ -149,6 +195,7 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
   #time svg { display: block; width: 100%; height: auto; margin: 0.5rem 0 1rem; }
   #time text { font-size: 12px; fill: var(--muted); }
   #time .grid { stroke: var(--border); }
+  .pd-trace { white-space: pre-wrap; font-family: ui-monospace, Menlo, monospace; font-size: 0.82rem; line-height: 1.45; background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem 0.9rem; margin: 1rem 0; }
   .pd-tip { position: fixed; z-index: 20; pointer-events: none; background: var(--text); color: light-dark(#fff, #111); font-size: 0.78rem; padding: 5px 8px; line-height: 1.35; }
 </style>
 
