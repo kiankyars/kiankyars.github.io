@@ -53,7 +53,7 @@ Without reasoning, 84–98% of points sit in the biggest connected patch of thei
 <div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
 <div id="effect"></div>
 
-Each line below is where one model stops saying vapor (boiling) or solid (melting). Black lines are the truth. Hover over a line to see which model drew it.
+Each line below is where one model stops saying vapor (boiling) or solid (melting). Black lines are the truth.
 
 <div class="pd-segments" id="fanCondition"></div>
 <div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
@@ -142,9 +142,7 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
   #fan svg { display: block; width: 100%; height: auto; margin: 0.5rem 0 1rem; }
   #fan text { font-size: 12px; fill: var(--muted); }
   #fan .grid { stroke: var(--border); }
-  #fan .line { fill: none; stroke-width: 1.4; stroke-linejoin: round; opacity: 0.75; }
-  #fan .hit { fill: none; stroke: transparent; stroke-width: 10; }
-  #fan g.lit .line { stroke-width: 3; opacity: 1; }
+  #fan .line { pointer-events: none; fill: none; stroke-width: 1.4; stroke-linejoin: round; opacity: 0.75; }
   #fan .truth { fill: none; stroke: var(--text); stroke-width: 2.2; pointer-events: none; }
   .pd-tip { position: fixed; z-index: 20; pointer-events: none; background: var(--text); color: light-dark(#fff, #111); font-size: 0.78rem; padding: 5px 8px; line-height: 1.35; }
 </style>
@@ -396,23 +394,16 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
     svg += `<g id="fanLines">`;
     for (const m of D.models.filter((v) => v.lines && v.lines[condition])) {
       const color = m.provider === "anthropic" ? "#d97757" : "#10a37f";
-      svg += `<g data-tip="${named(m)}">`;
+      svg += `<g>`;
       for (const curve of Object.values(m.lines[condition])) {
         if (curve.length < 2) continue;
-        svg += `<polyline class="line" stroke="${color}" points="${pts(curve)}"></polyline><polyline class="hit" points="${pts(curve)}"></polyline>`;
+        svg += `<polyline class="line" stroke="${color}" points="${pts(curve)}"></polyline>`;
       }
       svg += `</g>`;
     }
     svg += `</g>`;
     for (const curve of D.curves) svg += `<polyline class="truth" points="${pts(curve)}"></polyline>`;
     $("fan").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every model's boiling and melting curves">${svg}</svg>`;
-    const tipBox = $("tip");
-    const group = $("fanLines");
-    for (const g of group.children) {
-      g.addEventListener("pointerenter", () => { g.classList.add("lit"); group.appendChild(g); });
-      g.addEventListener("pointermove", (e) => { tipBox.hidden = false; tipBox.textContent = g.dataset.tip; tipBox.style.left = `${e.clientX + 12}px`; tipBox.style.top = `${e.clientY + 12}px`; });
-      g.addEventListener("pointerleave", () => { g.classList.remove("lit"); tipBox.hidden = true; });
-    }
   }
 
   function hookMap() {
