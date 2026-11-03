@@ -5,13 +5,13 @@ date: 2026-11-03
 categories: machine_learning
 ---
 
-Thanks to left-over API credits, I got 1,180,160 answers from 28 language models, 14 from Anthropic and 14 from OpenAI, on the state of pure water at different temperatures and pressures, [repo](https://github.com/kiankyars/phase-diagram). Each question followed this format:
+Thinking of how to use left-over API credits, I questioned 28 language models[^models] 1,180,160 times on the state of pure water at different temperatures and pressures, [repo](https://github.com/kiankyars/phase-diagram). Each question followed this format:
 
 > Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-The questions were independent, with no tools or memory. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
+The questions were independent, with no tools or memory; cost was $796: $462 from Ant and $334 from Oai at batch prices. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
 
-## All the maps
+## Results
 
 Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model, you can click a map to explore it below.
 
@@ -41,8 +41,7 @@ Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, w
   </div>
   <div class="pd-key" id="bigKey"></div>
   <p class="pd-prompt" id="prompt"></p>
-  <div class="pd-verdict"><div><small>Model said</small><b id="said">–</b></div><div><small>IAPWS</small><b id="truth">–</b></div></div>
-  <table class="pd-readings" id="readings"></table>
+  <div class="pd-verdict"><div><small>Model</small><b id="said">–</b></div><div><small>IAPWS</small><b id="truth">–</b></div></div>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="pdLines"></g></defs></svg>
@@ -51,7 +50,9 @@ Without reasoning, 84–98% of points sit in the biggest connected patch of thei
 
 ## Reasoning fixes most of it
 
-![Balanced accuracy of each model, instantly and with reasoning allowed](/imgs/2026-11-03-phase-diagram/reasoning_effect.png)
+<div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
+<div id="effect"></div>
+<div class="pd-tip" id="tip" hidden></div>
 
 18 models can answer both ways, and reasoning made all 18 better: balanced accuracy rose by a median of 0.20. Median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
 
@@ -87,17 +88,15 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
 - Reasoning settings differ between models, so the reasoning comparison is not fully controlled.
 - The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.
 
-The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
-
-
 <style>
-  .pd-atlas { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 14px 10px; margin: 1rem 0 1.5rem; }
+  .pd-atlas { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 14px 10px; margin: 1rem 0 1.5rem; }
   .pd-group { grid-column: 1 / -1; font-weight: 700; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 2px; margin-top: 0.4rem; }
   .pd-tile { all: unset; display: grid; gap: 3px; cursor: pointer; min-width: 0; }
   .pd-tile:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
   .pd-tile.ref { cursor: default; }
-  .pd-head { display: flex; justify-content: space-between; gap: 4px; font-size: 0.8rem; line-height: 1.2; }
-  .pd-head b { font-weight: 700; }
+  .pd-head { display: flex; justify-content: space-between; gap: 4px; font-size: 0.76rem; line-height: 1.2; }
+  .pd-head b { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .pd-head span { white-space: nowrap; }
   .pd-tile:not(.ref):hover b, .pd-tile.on b { color: var(--link); }
   .pd-map { position: relative; aspect-ratio: 1; width: 100%; background: var(--border); }
   .pd-map canvas, .pd-map svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
@@ -128,10 +127,15 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
   .pd-verdict { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .pd-verdict small { display: block; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
   .pd-verdict b { font-size: 1.35rem; }
-  .pd-readings { display: table !important; margin: 0 !important; font-size: 0.88rem; }
-  .pd-readings th, .pd-readings td { border: 0 !important; border-bottom: 1px solid var(--border) !important; padding: 4px 0 !important; font-weight: 400; }
-  .pd-readings td { text-align: right !important; font-variant-numeric: tabular-nums; padding-left: 12px !important; white-space: nowrap; }
-  .pd-readings th { color: var(--muted); }
+  .pd-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+  .pd-dot.hollow { box-shadow: inset 0 0 0 2px var(--muted); }
+  #effect svg { display: block; width: 100%; height: auto; margin: 0.5rem 0 1rem; }
+  #effect text { font-size: 12px; fill: var(--muted); }
+  #effect .name { fill: var(--text); font-size: 13px; }
+  #effect .grid { stroke: var(--border); }
+  #effect .bar { stroke: light-dark(#c3c2b7, #555); stroke-width: 3; stroke-linecap: round; }
+  #effect .row:hover .name { fill: var(--link); }
+  .pd-tip { position: fixed; z-index: 20; pointer-events: none; background: var(--text); color: light-dark(#fff, #111); font-size: 0.78rem; padding: 5px 8px; line-height: 1.35; }
 </style>
 
 <script>
@@ -168,6 +172,7 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
     segments($("view"), "view", VIEWS, state.view, (v) => { state.view = v; renderBig(); });
     hookMap();
     renderAtlas();
+    renderEffect();
     setModel(state.model);
   });
 
@@ -226,7 +231,7 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
   }
 
   function legend(host) {
-    host.innerHTML = PHASES.map((name, k) => `<span><i style="background:rgb(${COLORS[k]})"></i>${name}</span>`).join("") + `<span><i style="background:rgb(${NONE})"></i>No answer</span>`;
+    host.innerHTML = PHASES.map((name, k) => `<span><i style="background:rgb(${COLORS[k]})"></i>${name}</span>`).join("");
   }
 
   function segments(host, name, options, chosen, onChange) {
@@ -254,7 +259,6 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
   function renderAtlas() {
     const host = $("atlas");
     host.innerHTML = "";
-    host.appendChild(tile("IAPWS", "1.00", D.truth, D.side, null));
     for (const provider of ["anthropic", "openai"]) {
       const title = document.createElement("div");
       title.className = "pd-group";
@@ -324,17 +328,6 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
     $("said").textContent = said >= "0" && said <= "3" ? PHASES[+said] : "No answer";
     $("said").style.color = said === truth ? "rgb(0, 131, 0)" : "";
     $("truth").textContent = PHASES[+truth];
-    const s = entry.scores;
-    const rows = [
-      ["Grid", `${side} × ${side}`],
-      ["Balanced accuracy", fixed(s.balanced_accuracy, 2)],
-      ["Boiling curve error", s.saturation_mae === null ? "–" : `${fixed(s.saturation_mae, 2)} decades of pressure`],
-      ["Melting curve error", s.melting_mae === null ? "–" : `${fixed(s.melting_mae, 0)} K`],
-      ["Boils at 1 atm", s.boils_at === null ? "–" : `${fixed(s.boils_at, 0)} K (true 373 K)`],
-      ["Freezes at 1 atm", s.freezes_at === null ? "–" : `${fixed(s.freezes_at, 0)} K (true 273 K)`],
-    ];
-    if (state.condition === "reasoned") rows.push(["Replies that reasoned", `${fixed(100 * s.share_thought, 0)}%`]);
-    $("readings").innerHTML = rows.map(([a, b]) => `<tr><th scope="row">${a}</th><td>${b}</td></tr>`).join("");
     const size = 1000 / side;
     for (const id of ["cursor", "cursorShadow"]) {
       const rect = $(id);
@@ -342,6 +335,38 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
       rect.setAttribute("y", (side - 1 - j) * size);
       rect.setAttribute("width", size);
       rect.setAttribute("height", size);
+    }
+  }
+
+  /* Each model with and without reasoning, on the same points as the atlas. */
+  function renderEffect() {
+    const W = 680, left = 120, right = 14, top = 26, rowH = 22;
+    const x = (v) => left + ((v - 0.5) / 0.5) * (W - left - right);
+    let y = 0, body = "";
+    for (const provider of ["anthropic", "openai"]) {
+      y += 30;
+      body += `<text class="name" x="0" y="${y}" style="font-weight:700">${PROVIDER[provider]}</text>`;
+      y += 8;
+      for (const m of D.models.filter((v) => v.provider === provider)) {
+        y += rowH;
+        const a = m.atlas.instant, b = m.atlas.reasoned;
+        const color = provider === "anthropic" ? "#d97757" : "#10a37f";
+        const tip = `${named(m)}: ${a === undefined ? "no instant mode" : "instant " + a.toFixed(2)}, ${b === undefined ? "no reasoning mode" : "reasoning " + b.toFixed(2)}`;
+        body += `<g class="row" data-tip="${tip}"><rect x="0" y="${y - rowH / 2}" width="${W}" height="${rowH}" fill="transparent"></rect><text class="name" x="${left - 10}" y="${y + 4}" text-anchor="end">${named(m)}</text>`;
+        if (a !== undefined && b !== undefined) body += `<line class="bar" x1="${x(a)}" x2="${x(b)}" y1="${y}" y2="${y}"></line>`;
+        if (a !== undefined) body += `<circle cx="${x(a)}" cy="${y}" r="5.5" style="fill: light-dark(#fff, #111); stroke: var(--muted); stroke-width: 2"></circle>`;
+        if (b !== undefined) body += `<circle cx="${x(b)}" cy="${y}" r="5.5" fill="${color}"></circle>`;
+        body += `</g>`;
+      }
+    }
+    const H = y + 40;
+    let axis = "";
+    for (const v of [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]) axis += `<line class="grid" x1="${x(v)}" x2="${x(v)}" y1="${top}" y2="${H - 26}"></line><text x="${x(v)}" y="${H - 10}" text-anchor="middle">${v.toFixed(1)}</text>`;
+    $("effect").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Balanced accuracy of each model, instantly and with reasoning allowed">${axis}<text x="${x(0.75)}" y="12" text-anchor="middle">Balanced accuracy, 64 × 64, kelvin and megapascals</text>${body}</svg>`;
+    const tipBox = $("tip");
+    for (const row of $("effect").querySelectorAll(".row")) {
+      row.addEventListener("pointermove", (e) => { tipBox.hidden = false; tipBox.textContent = row.dataset.tip; tipBox.style.left = `${e.clientX + 12}px`; tipBox.style.top = `${e.clientY + 12}px`; });
+      row.addEventListener("pointerleave", () => { tipBox.hidden = true; });
     }
   }
 
@@ -368,3 +393,5 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
   }
 })();
 </script>
+
+[^models]: 14 from Anthropic and 14 from OpenAI.
