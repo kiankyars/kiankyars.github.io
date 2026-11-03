@@ -52,6 +52,12 @@ Without reasoning, 84–98% of points sit in the biggest connected patch of thei
 
 <div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
 <div id="effect"></div>
+
+Each line below is where one model stops saying vapor (boiling) or solid (melting). Black lines are the truth. Hover over a line to see which model drew it.
+
+<div class="pd-segments" id="fanCondition"></div>
+<div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
+<div id="fan"></div>
 <div class="pd-tip" id="tip" hidden></div>
 
 18 models can answer both ways, and reasoning made all 18 better: balanced accuracy rose by a median of 0.20. Median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
@@ -60,9 +66,7 @@ Haiku 5.5 gains the most, from 0.63 to 0.96, because instantly it almost never s
 
 ## Do newer models do better?
 
-![Every model's boiling and melting curves against the truth](/imgs/2026-11-03-phase-diagram/boundary_fan.png)
-
-It depends on the curve. Each line above is where one model stops saying vapor (boiling) or solid (melting). Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.
+It depends on the curve. Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.
 
 ![Accuracy and boundary error by release date](/imgs/2026-11-03-phase-diagram/generations.png)
 
@@ -135,6 +139,13 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
   #effect .grid { stroke: var(--border); }
   #effect .bar { stroke: light-dark(#c3c2b7, #555); stroke-width: 3; stroke-linecap: round; }
   #effect .row:hover .name { fill: var(--link); }
+  #fan svg { display: block; width: 100%; height: auto; margin: 0.5rem 0 1rem; }
+  #fan text { font-size: 12px; fill: var(--muted); }
+  #fan .grid { stroke: var(--border); }
+  #fan .line { fill: none; stroke-width: 1.4; stroke-linejoin: round; opacity: 0.75; }
+  #fan .hit { fill: none; stroke: transparent; stroke-width: 10; }
+  #fan g.lit .line { stroke-width: 3; opacity: 1; }
+  #fan .truth { fill: none; stroke: var(--text); stroke-width: 2.2; pointer-events: none; }
   .pd-tip { position: fixed; z-index: 20; pointer-events: none; background: var(--text); color: light-dark(#fff, #111); font-size: 0.78rem; padding: 5px 8px; line-height: 1.35; }
 </style>
 
@@ -159,7 +170,7 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
   const named = (m) => m.label + (m.thinks ? " *" : "");
   const fixed = (x, n) => (x === null || x === undefined ? "–" : x.toFixed(n));
 
-  fetch("/imgs/2026-11-03-phase-diagram/maps.json?v=2").then((r) => r.json()).then((data) => {
+  fetch("/imgs/2026-11-03-phase-diagram/maps.json?v=3").then((r) => r.json()).then((data) => {
     D = data;
     state.units = D.framings[0].key;
     state.model = D.models.find((m) => m.label === "Sonnet 4.6").id;
@@ -173,6 +184,8 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
     hookMap();
     renderAtlas();
     renderEffect();
+    segments($("fanCondition"), "fanCondition", CONDITIONS, "instant", renderFan);
+    renderFan("instant");
     setModel(state.model);
   });
 
@@ -367,6 +380,38 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
     for (const row of $("effect").querySelectorAll(".row")) {
       row.addEventListener("pointermove", (e) => { tipBox.hidden = false; tipBox.textContent = row.dataset.tip; tipBox.style.left = `${e.clientX + 12}px`; tipBox.style.top = `${e.clientY + 12}px`; });
       row.addEventListener("pointerleave", () => { tipBox.hidden = true; });
+    }
+  }
+
+  /* Every model's boiling and melting curves, one mode at a time. */
+  function renderFan(condition) {
+    const { tMin, tMax, logpMin, logpMax } = D.bounds;
+    const [W, H, left, bottom] = [680, 560, 52, 26];
+    const x = (t) => left + ((t - tMin) / (tMax - tMin)) * (W - left - 8);
+    const y = (p) => 8 + (1 - (p - logpMin) / (logpMax - logpMin)) * (H - bottom - 8);
+    const pts = (curve) => curve.map(([t, p]) => `${x(t)},${y(p)}`).join(" ");
+    let svg = "";
+    for (const [p, name] of [[0, "1 Pa"], [3, "1 kPa"], [6, "1 MPa"], [9, "1 GPa"]]) svg += `<line class="grid" x1="${left}" x2="${W - 8}" y1="${y(p)}" y2="${y(p)}"></line><text x="${left - 6}" y="${y(p) + 4}" text-anchor="end">${name}</text>`;
+    for (const t of [200, 400, 600, 800]) svg += `<text x="${x(t)}" y="${H - 6}" text-anchor="middle">${t === 800 ? "800 K" : t}</text>`;
+    svg += `<g id="fanLines">`;
+    for (const m of D.models.filter((v) => v.lines && v.lines[condition])) {
+      const color = m.provider === "anthropic" ? "#d97757" : "#10a37f";
+      svg += `<g data-tip="${named(m)}">`;
+      for (const curve of Object.values(m.lines[condition])) {
+        if (curve.length < 2) continue;
+        svg += `<polyline class="line" stroke="${color}" points="${pts(curve)}"></polyline><polyline class="hit" points="${pts(curve)}"></polyline>`;
+      }
+      svg += `</g>`;
+    }
+    svg += `</g>`;
+    for (const curve of D.curves) svg += `<polyline class="truth" points="${pts(curve)}"></polyline>`;
+    $("fan").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every model's boiling and melting curves">${svg}</svg>`;
+    const tipBox = $("tip");
+    const group = $("fanLines");
+    for (const g of group.children) {
+      g.addEventListener("pointerenter", () => { g.classList.add("lit"); group.appendChild(g); });
+      g.addEventListener("pointermove", (e) => { tipBox.hidden = false; tipBox.textContent = g.dataset.tip; tipBox.style.left = `${e.clientX + 12}px`; tipBox.style.top = `${e.clientY + 12}px`; });
+      g.addEventListener("pointerleave", () => { g.classList.remove("lit"); tipBox.hidden = true; });
     }
   }
 
