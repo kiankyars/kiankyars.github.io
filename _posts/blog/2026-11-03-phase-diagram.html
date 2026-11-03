@@ -1,0 +1,218 @@
+---
+layout: post
+title: What does a language model think water does?
+date: 2026-11-03
+categories: machine_learning
+---
+
+<p>Thanks to left-over API credits, I got 1,180,160 answers from 28 language models, 14 from Anthropic and 14 from OpenAI, on the state of pure water at different temperatures and pressures. Each question looked like this:</p>
+
+<blockquote>Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.</blockquote>
+
+<p>Every question went in on its own, with no tools and no memory of the others. From the answers I drew the phase diagram each model implies and graded it against the IAPWS reference equations. The idea comes from henry's <a href="https://outsidetext.substack.com/p/how-does-a-blind-model-see-the-earth">How does a blind model see the Earth?</a>, which did the same thing with a world map.</p>
+
+<p>The short version: answering instantly, no model beats a sketch I could draw from four facts I remember from school. Allowed to reason, 14 of 24 models beat it and the best are almost exact. Newer models are not clearly better.</p>
+
+<h2>Explore the answers</h2>
+
+<p>Every pixel is one question. Hover over it (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase. Black lines are the true boundaries.</p>
+
+<div id="explorer">
+  <div id="map" tabindex="0" aria-label="Phase diagram. Use the arrow keys to move between cells.">
+    <canvas id="canvas"></canvas>
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><g id="lines"></g><rect id="cursor" fill="none" stroke="#000" stroke-width="2" vector-effect="non-scaling-stroke"></rect></svg>
+  </div>
+  <p id="axes"><small>Temperature runs from 170 K on the left to 900 K on the right. Pressure runs from 0.01 Pa at the bottom to 20 GPa at the top, on a log scale.</small></p>
+  <p id="key"></p>
+  <p>
+    <label>Model <select id="model"></select></label>
+    <label>Mode <select id="condition"><option value="instant">Answering instantly</option><option value="reasoned">Reasoning allowed</option></select></label>
+    <label>Units <select id="units"></select></label>
+  </p>
+  <p id="prompt"></p>
+  <p>Model said: <b id="said">–</b>. True phase: <b id="truth">–</b>. Balanced accuracy of this map: <b id="score">–</b> (<span id="grid"></span>).</p>
+</div>
+
+<noscript><p>The explorer needs JavaScript.</p></noscript>
+
+<h2>All the maps</h2>
+
+<p>Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model.</p>
+
+<img src="/imgs/2026-11-03-phase-diagram/atlas_instant.png" alt="Every model's phase diagram, answering instantly" />
+
+<img src="/imgs/2026-11-03-phase-diagram/atlas_reasoned.png" alt="Every model's phase diagram, with reasoning allowed" />
+
+<p>The instant maps look tidy: 84–98% of points sit in the biggest connected patch of their phase. But balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).</p>
+
+<h2>Four facts beat every instant map</h2>
+
+<p>I made a sketch from the triple point, the critical point, ice melting at 0 °C and one latent heat, joined by the Clausius-Clapeyron equation. It scores 0.94. No model answering instantly scores above 0.83. To be fair to the models, I chose the sketch's layout after a small trial run, and it has no ice above 0 °C, so 21 of the 22 instant maps beat it on high-pressure ice.</p>
+
+<h2>Reasoning fixes most of it</h2>
+
+<img src="/imgs/2026-11-03-phase-diagram/reasoning_effect.png" alt="Balanced accuracy of each model, instantly and with reasoning allowed" />
+
+<p>18 models can answer both ways, and reasoning made all 18 better: balanced accuracy rose by a median of 0.20. Median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.</p>
+
+<p>Haiku 5.5 gains the most, from 0.63 to 0.96, because instantly it almost never says liquid. Sonnet 5 gains the least, from 0.79 to 0.85, because with reasoning it calls even more hot gas supercritical.</p>
+
+<h2>Do newer models do better?</h2>
+
+<img src="/imgs/2026-11-03-phase-diagram/boundary_fan.png" alt="Every model's boiling and melting curves against the truth" />
+
+<p>It depends on the curve. Each line above is where one model stops saying vapor (boiling) or solid (melting). Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.</p>
+
+<img src="/imgs/2026-11-03-phase-diagram/generations.png" alt="Accuracy and boundary error by release date" />
+
+<p>Over time, balanced accuracy barely moves. Since September 2025, the period both providers cover, neither provider's instant trend is clear, and with reasoning allowed neither shows a clear gain either. Anthropic's older models are retired, so its history only goes back to September 2025, while OpenAI's goes back to July 2024.</p>
+
+<h2>Changing the units changes the answer</h2>
+
+<img src="/imgs/2026-11-03-phase-diagram/units_gap_instant.png" alt="Agreement across units against agreement on a repeat" />
+
+<p>I asked the same points in six sets of units: kelvin or Celsius, with pascals, megapascals or atmospheres. I also asked two of them, kelvin with megapascals and Celsius with atmospheres, a second time to see how much answers move by chance. Answering instantly, all 22 models change their answers more when only the units change. Sonnet 4.6 agrees with itself on 96% of repeats but only 76% of unit changes. Opus 5 calls hot gas supercritical 85–89% of the time in kelvin and 18–22% in Celsius. With reasoning allowed, the gap is at most 0.06.</p>
+
+<p>Part of this is how the number is written rather than the unit itself: 2 MPa is "2.000 megapascals" but "2.000e6 pascals".</p>
+
+<h2>Models think hardest near the boundaries</h2>
+
+<img src="/imgs/2026-11-03-phase-diagram/thought_map.png" alt="Reasoning tokens spent at each point for four models" />
+
+<p>Some models with reasoning allowed often skip it. Darker cells above took more reasoning tokens, and they trace the true boundaries. Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest, Sonnet 5.5 on 76% and 17%. The models seem to know where the hard questions are.</p>
+
+<h2>Caveats</h2>
+
+<ul>
+  <li>Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92, still below the sketch's 0.94.</li>
+  <li>Reasoning settings differ between models, so the reasoning comparison is not fully controlled.</li>
+  <li>I tested 143 trends and 84 unit gaps without correcting for that. By chance alone about 7 trends and 4 gaps would look clear; 26 and 13 did.</li>
+  <li>The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.</li>
+</ul>
+
+<p>The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices. The code, every answer and every raw reply are in the <a href="https://github.com/kiankyars/phase-diagram">repo</a>.</p>
+
+<style>
+  #map { position: relative; width: 100%; max-width: 560px; aspect-ratio: 1; cursor: crosshair; touch-action: none; }
+  #map canvas, #map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #map canvas { image-rendering: pixelated; }
+  #map:focus { outline: 2px solid var(--link); }
+  #explorer label { margin-right: 1rem; white-space: nowrap; }
+  #key span { margin-right: 1rem; white-space: nowrap; }
+  #key i { display: inline-block; width: 0.8em; height: 0.8em; margin-right: 0.3em; }
+  #prompt { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; }
+</style>
+
+<script>
+(function () {
+  const PHASES = ["Solid", "Liquid", "Vapor", "Supercritical"];
+  const COLORS = [[42, 120, 214], [0, 131, 0], [237, 161, 0], [232, 123, 164]];
+  const $ = (id) => document.getElementById(id);
+  let D, cell = { i: 0, j: 0 };
+
+  fetch("/imgs/2026-11-03-phase-diagram/maps.json").then((r) => r.json()).then((data) => {
+    D = data;
+    $("key").innerHTML = PHASES.map((name, k) => `<span><i style="background:rgb(${COLORS[k]})"></i>${name}</span>`).join("") + `<span><i style="background:#c3c2b7"></i>No answer</span>`;
+    for (const m of D.models) $("model").add(new Option(m.label, m.id));
+    for (const f of D.framings) $("units").add(new Option(f.label, f.key));
+    drawLines();
+    for (const id of ["model", "condition", "units"]) $(id).addEventListener("change", draw);
+    const map = $("map");
+    const pick = (e) => {
+      const box = map.getBoundingClientRect();
+      const side = sideOf();
+      cell = { i: clamp(Math.floor(((e.clientX - box.left) / box.width) * side)), j: clamp(Math.floor(((box.bottom - e.clientY) / box.height) * side)) };
+      readout();
+    };
+    map.addEventListener("pointermove", pick);
+    map.addEventListener("pointerdown", pick);
+    map.addEventListener("keydown", (e) => {
+      const step = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, 1], ArrowDown: [0, -1] }[e.key];
+      if (!step) return;
+      e.preventDefault();
+      cell = { i: clamp(cell.i + step[0]), j: clamp(cell.j + step[1]) };
+      readout();
+    });
+    draw();
+  });
+
+  const key = () => `${$("model").value}|${$("condition").value}|${$("units").value}`;
+  const current = () => D.maps[key()];
+  const sideOf = () => (current() ? D.side >> current().level : D.side);
+  const clamp = (v) => Math.max(0, Math.min(sideOf() - 1, v));
+
+  function drawLines() {
+    const { tMin, tMax, logpMin, logpMax } = D.bounds;
+    $("lines").innerHTML = D.curves.map((line) => `<polyline fill="none" stroke="#000" stroke-width="1.2" vector-effect="non-scaling-stroke" points="${line.map(([t, p]) => `${(1000 * (t - tMin)) / (tMax - tMin)},${1000 * (1 - (p - logpMin) / (logpMax - logpMin))}`).join(" ")}"/>`).join("");
+  }
+
+  /* Some models lack a mode or a set of units, so those options are disabled. */
+  function draw() {
+    const id = $("model").value;
+    for (const o of $("condition").options) o.disabled = !D.maps[`${id}|${o.value}|${D.framings[0].key}`];
+    if ($("condition").selectedOptions[0].disabled) $("condition").value = [...$("condition").options].find((o) => !o.disabled).value;
+    for (const o of $("units").options) o.disabled = !D.maps[`${id}|${$("condition").value}|${o.value}`];
+    if ($("units").selectedOptions[0].disabled) $("units").value = D.framings[0].key;
+    const entry = current();
+    const side = D.side >> entry.level;
+    const canvas = $("canvas");
+    canvas.width = canvas.height = side;
+    const ctx = canvas.getContext("2d");
+    const image = ctx.createImageData(side, side);
+    for (let i = 0; i < side; i++) {
+      for (let j = 0; j < side; j++) {
+        const c = entry.cells[i * side + j];
+        const rgb = c >= "0" && c <= "3" ? COLORS[+c] : [195, 194, 183];
+        const at = ((side - 1 - j) * side + i) * 4;
+        image.data.set([...rgb, 255], at);
+      }
+    }
+    ctx.putImageData(image, 0, 0);
+    $("score").textContent = entry.score.toFixed(2);
+    $("grid").textContent = `${side} × ${side} grid`;
+    if (!readout.started) cell = { i: Math.floor(0.39 * side), j: Math.floor(0.57 * side) };
+    cell = { i: clamp(cell.i), j: clamp(cell.j) };
+    readout();
+  }
+
+  /* Each grid level keeps one question per block of the finest grid. */
+  function pointAt(level, i, j) {
+    for (let a = i << level; a < (i + 1) << level; a++) {
+      for (let b = j << level; b < (j + 1) << level; b++) {
+        const pid = a * D.side + b;
+        if (+D.levelOf[pid] >= level) return pid;
+      }
+    }
+    return -1;
+  }
+
+  function number(x, sig = 4) {
+    const [mantissa, raw] = x.toExponential(sig - 1).split("e");
+    const exponent = +raw;
+    if (exponent >= -3 && exponent < 6) return Number(`${mantissa}e${exponent}`).toFixed(Math.max(sig - 1 - exponent, 0));
+    return `${mantissa}e${exponent}`;
+  }
+
+  /* The prompt, written exactly as the experiment wrote it. */
+  function readout() {
+    readout.started = true;
+    const entry = current();
+    const side = D.side >> entry.level;
+    const pid = pointAt(entry.level, cell.i, cell.j);
+    const f = D.framings.find((x) => x.key === $("units").value);
+    const T = D.T[pid], p = D.p[pid];
+    const temperature = f.t === "K" ? `${T.toFixed(2)} kelvin` : `${(T - 273.15).toFixed(2)} degrees Celsius`;
+    const pressure = f.p === "Pa" ? `${number(p)} pascals` : f.p === "MPa" ? `${number(p / 1e6)} megapascals` : `${number(p / 101325)} atmospheres`;
+    $("prompt").textContent = `Pure water at equilibrium, at ${temperature} and ${pressure}: solid, liquid, vapor, or supercritical? Do not say anything else.`;
+    const said = entry.cells[cell.i * side + cell.j];
+    $("said").textContent = said >= "0" && said <= "3" ? PHASES[+said] : "no answer";
+    $("truth").textContent = PHASES[+D.truth[pid]];
+    const size = 1000 / side;
+    const rect = $("cursor");
+    rect.setAttribute("x", cell.i * size);
+    rect.setAttribute("y", (side - 1 - cell.j) * size);
+    rect.setAttribute("width", size);
+    rect.setAttribute("height", size);
+  }
+})();
+</script>
