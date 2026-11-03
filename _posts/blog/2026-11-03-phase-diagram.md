@@ -68,7 +68,9 @@ Haiku 5.5 gains the most, from 0.63 to 0.96, because instantly it almost never s
 
 It depends on the curve. Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.
 
-![Accuracy and boundary error by release date](/imgs/2026-11-03-phase-diagram/generations.png?v=2)
+<div class="pd-segments" id="timeCondition"></div>
+<div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
+<div id="time"></div>
 
 Over time, balanced accuracy barely moves. Since September 2025, the period both providers cover, neither provider's instant trend is clear, and with reasoning allowed neither shows a clear gain either. Anthropic's older models are retired, so its history only goes back to September 2025, while OpenAI's goes back to July 2024.
 
@@ -144,6 +146,9 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
   #fan .grid { stroke: var(--border); }
   #fan .line { pointer-events: none; fill: none; stroke-width: 1.4; stroke-linejoin: round; opacity: 0.75; }
   #fan .truth { fill: none; stroke: var(--text); stroke-width: 2.2; pointer-events: none; }
+  #time svg { display: block; width: 100%; height: auto; margin: 0.5rem 0 1rem; }
+  #time text { font-size: 12px; fill: var(--muted); }
+  #time .grid { stroke: var(--border); }
   .pd-tip { position: fixed; z-index: 20; pointer-events: none; background: var(--text); color: light-dark(#fff, #111); font-size: 0.78rem; padding: 5px 8px; line-height: 1.35; }
 </style>
 
@@ -168,7 +173,7 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
   const named = (m) => m.label + (m.thinks ? " *" : "");
   const fixed = (x, n) => (x === null || x === undefined ? "–" : x.toFixed(n));
 
-  fetch("/imgs/2026-11-03-phase-diagram/maps.json?v=3").then((r) => r.json()).then((data) => {
+  fetch("/imgs/2026-11-03-phase-diagram/maps.json?v=4").then((r) => r.json()).then((data) => {
     D = data;
     state.units = D.framings[0].key;
     state.model = D.models.find((m) => m.label === "Sonnet 4.6").id;
@@ -184,6 +189,8 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
     renderEffect();
     segments($("fanCondition"), "fanCondition", CONDITIONS, "instant", renderFan);
     renderFan("instant");
+    segments($("timeCondition"), "timeCondition", CONDITIONS, "instant", renderTime);
+    renderTime("instant");
     setModel(state.model);
   });
 
@@ -404,6 +411,42 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
     svg += `</g>`;
     for (const curve of D.curves) svg += `<polyline class="truth" points="${pts(curve)}"></polyline>`;
     $("fan").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every model's boiling and melting curves">${svg}</svg>`;
+  }
+
+  /* Balanced accuracy by release date. Lines join models of the same family. */
+  const FAMILY = { opus: "Opus", sonnet: "Sonnet", haiku: "Haiku", fable: "Fable", gpt: "GPT", small: "Small GPT", "o-series": "o3" };
+  function renderTime(condition) {
+    const [W, H, left, right] = [680, 360, 40, 86];
+    const t0 = +new Date("2024-06-15"), t1 = +new Date("2026-11-15");
+    const x = (d) => left + ((+new Date(d) - t0) / (t1 - t0)) * (W - left - right);
+    const y = (v) => H - 26 - ((v - 0.5) / 0.5) * (H - 40);
+    let svg = "";
+    for (const v of [0.5, 0.6, 0.7, 0.8, 0.9, 1]) svg += `<line class="grid" x1="${left}" x2="${W - right}" y1="${y(v)}" y2="${y(v)}"></line><text x="${left - 6}" y="${y(v) + 4}" text-anchor="end">${v.toFixed(1)}</text>`;
+    for (const year of [2025, 2026]) svg += `<text x="${x(year + "-01-01")}" y="${H - 6}" text-anchor="middle">${year}</text>`;
+    const ends = [];
+    let dots = "";
+    for (const provider of ["anthropic", "openai"]) {
+      const color = provider === "anthropic" ? "#d97757" : "#10a37f";
+      const models = D.models.filter((m) => m.provider === provider && m.atlas[condition] !== undefined);
+      for (const family of new Set(models.map((m) => m.family))) {
+        const line = models.filter((m) => m.family === family);
+        const last = line[line.length - 1];
+        const dotY = y(last.atlas[condition]);
+        if (line.length === 1 && last.released < "2026-01-01") svg += `<text x="${x(last.released)}" y="${dotY - 9}" text-anchor="middle">${FAMILY[family]}</text>`;
+        else ends.push({ name: FAMILY[family], dotX: x(last.released), dotY, y: dotY });
+        if (line.length > 1) svg += `<polyline fill="none" stroke="${color}" stroke-width="2" points="${line.map((m) => `${x(m.released)},${y(m.atlas[condition])}`).join(" ")}"></polyline>`;
+      }
+      for (const m of models) dots += `<circle cx="${x(m.released)}" cy="${y(m.atlas[condition])}" r="5" fill="${color}" style="stroke: light-dark(#fff, #111); stroke-width: 2"></circle><circle class="dot" data-tip="${named(m)}, ${m.released}: ${m.atlas[condition].toFixed(2)}" cx="${x(m.released)}" cy="${y(m.atlas[condition])}" r="11" fill="transparent"></circle>`;
+    }
+    ends.sort((a, b) => a.y - b.y);
+    for (let k = 1; k < ends.length; k++) ends[k].y = Math.max(ends[k].y, ends[k - 1].y + 14);
+    for (const end of ends) svg += `<line class="grid" x1="${end.dotX + 6}" y1="${end.dotY}" x2="${W - right + 4}" y2="${end.y}"></line><text x="${W - right + 8}" y="${end.y + 4}">${end.name}</text>`;
+    $("time").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Balanced accuracy by release date"><text x="${left}" y="12">Balanced accuracy, 64 × 64, kelvin and megapascals</text>${svg}${dots}</svg>`;
+    const tipBox = $("tip");
+    for (const dot of $("time").querySelectorAll(".dot")) {
+      dot.addEventListener("pointermove", (e) => { tipBox.hidden = false; tipBox.textContent = dot.dataset.tip; tipBox.style.left = `${e.clientX + 12}px`; tipBox.style.top = `${e.clientY + 12}px`; });
+      dot.addEventListener("pointerleave", () => { tipBox.hidden = true; });
+    }
   }
 
   function hookMap() {
