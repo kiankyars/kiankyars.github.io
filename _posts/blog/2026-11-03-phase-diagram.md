@@ -9,7 +9,7 @@ Thinking of how to use left-over API credits, I questioned 28 language models[^m
 
 > Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-The questions were independent, with no tools or memory; cost was $796: $462 from Ant and $334 from Oai at batch prices. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
+The questions were independent, with no tools or memory; cost was \$796: \$462 from Ant and \$334 from Oai at batch prices. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
 
 ## Results
 
