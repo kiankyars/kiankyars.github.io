@@ -1,21 +1,24 @@
 ---
 layout: post
-title: What does a language model think water does?
+title: Can LLMs predict water's state?
 date: 2026-11-03
 categories: machine_learning
 ---
 
-Thanks to left-over API credits, I got 1,180,160 answers from 28 language models, 14 from Anthropic and 14 from OpenAI, on the state of pure water at different temperatures and pressures. Each question looked like this:
+Thanks to left-over API credits, I got 1,180,160 answers from 28 language models, 14 from Anthropic and 14 from OpenAI, on the state of pure water at different temperatures and pressures, [repo](https://github.com/kiankyars/phase-diagram). Each question followed this format:
 
 > Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-Every question went in on its own, with no tools and no memory of the others. From the answers I drew the phase diagram each model implies and graded it against the IAPWS reference equations. The idea comes from henry's [How does a blind model see the Earth?](https://outsidetext.substack.com/p/how-does-a-blind-model-see-the-earth), which did the same thing with a world map.
+TL;DR
 
-The short version: answering instantly, no model beats a sketch I could draw from four facts I remember from school. Allowed to reason, 14 of 24 models beat it and the best are almost exact. Newer models are not clearly better.
+Instant answers are worse than reasoned ones, the best reasoning models are almost exact; I also not that newer models are not clearly better.
+
+The questions were independent, with no tools or memory. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
+
 
 ## Explore the answers
 
-Every pixel is one question. Hover over it (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase. Black lines are the true boundaries.
+Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase. Black lines are the true boundaries.
 
 <div id="explorer">
   <div id="map" tabindex="0" aria-label="Phase diagram. Use the arrow keys to move between cells.">
@@ -42,10 +45,6 @@ Scores are balanced accuracy: the average share correct over the four phases. 0.
 ![Every model's phase diagram, with reasoning allowed](/imgs/2026-11-03-phase-diagram/atlas_reasoned.png)
 
 The instant maps look tidy: 84–98% of points sit in the biggest connected patch of their phase. But balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
-
-## Four facts beat every instant map
-
-I made a sketch from the triple point, the critical point, ice melting at 0 °C and one latent heat, joined by the Clausius-Clapeyron equation. It scores 0.94. No model answering instantly scores above 0.83. To be fair to the models, I chose the sketch's layout after a small trial run, and it has no ice above 0 °C, so 21 of the 22 instant maps beat it on high-pressure ice.
 
 ## Reasoning fixes most of it
 
@@ -77,16 +76,15 @@ Part of this is how the number is written rather than the unit itself: 2 MPa is 
 
 ![Reasoning tokens spent at each point for four models](/imgs/2026-11-03-phase-diagram/thought_map.png)
 
-Some models with reasoning allowed often skip it. Darker cells above took more reasoning tokens, and they trace the true boundaries. Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest, Sonnet 5.5 on 76% and 17%.
+Darker cells above took more reasoning tokens, and they trace the true boundaries, cool! Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest, Sonnet 5.5 on 76% and 17%.
 
 ## Caveats
 
-- Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92, still below the sketch's 0.94.
+- Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92.
 - Reasoning settings differ between models, so the reasoning comparison is not fully controlled.
-- I tested 143 trends and 84 unit gaps without correcting for that. By chance alone about 7 trends and 4 gaps would look clear; 26 and 13 did.
 - The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.
 
-The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices. The code, every answer and every raw reply are in the [repo](https://github.com/kiankyars/phase-diagram).
+The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
 
 <style>
   #map { position: relative; width: 100%; max-width: 560px; aspect-ratio: 1; cursor: crosshair; touch-action: none; }
