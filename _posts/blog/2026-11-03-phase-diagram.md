@@ -11,7 +11,7 @@ Thinking of how to use left-over API credits, I questioned 28 language models[^m
 
 ## Results
 
-Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model. You can click a map to explore it below.
+Scores are the average share correct over the four phases; 0.25 for guessing and 1 for perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model. Click a map to explore it below, or toggle reasoning on-and-off!
 
 <div class="pd-segments" id="atlasCondition"></div>
 <div class="pd-key" id="atlasKey"></div>
@@ -48,6 +48,8 @@ On instant mode, 84–98% of points sit in the biggest connected patch of their 
 
 ## Reasoning is almost a silver bullet
 
+Balanced accuracy rose by a median of 0.20, and median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
+
 <div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
 <div id="effect"></div>
 
@@ -57,8 +59,6 @@ Each line below is where one model demarcates vapor (boiling) or solid (melting)
 <div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
 <div id="fan"></div>
 <div class="pd-tip" id="tip" hidden></div>
-
-Balanced accuracy rose by a median of 0.20, and median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
 
 Haiku 5.5 gains the most, from 0.63 to 0.96, because for some reason it almost never says liquid when not reasoning. Sonnet 5 gains the least, from 0.79 to 0.85, because with reasoning it calls even more hot gas supercritical.
 
@@ -74,9 +74,11 @@ First of all, Anthropic models released before September 2025 are retired, with 
 
 ## Changing the units changes the answer
 
-![Agreement across units against agreement on a repeat](/imgs/2026-11-03-phase-diagram/units_gap_instant.png?v=2)
+![Agreement across units against agreement on a repeat](/imgs/2026-11-03-phase-diagram/units_gap_instant.png?v=3)
 
-To have more meaningful results, for every point, we ask the same question in six different units, which is the Cartesian product between kelvin or Celsius for temperature, and pascals, megapascals or atmospheres when it comes to pressure. For two of these Cartesian products, namely kelvin × megapascals and Celsius × atmospheres, (I just randomly sampled these two out of the six) I sampled each point twice to see the variance. Answering instantly, all 22 models change their answers more often than when they reason. With reasoning allowed, the gap is at most 6%, against up to 20% when answering instantly. Intuitively, this makes sense because, if you put yourself in the model's shoes, when it has to answer instantly, the entropy is higher (because it has less evidence to ground its answer on), whereas when it has a reasoning trace to base itself on, you'll get a consistent answer.
+To have more meaningful results, for every point, we ask the same question in six different units, which is the Cartesian product between kelvin or Celsius for temperature, and pascals, megapascals or atmospheres when it comes to pressure. For two of these Cartesian products, namely kelvin × megapascals and Celsius × atmospheres, (I just randomly sampled these two out of the six) I sampled each point twice to see the variance.
+
+With reasoning allowed, the gap is at most 6%, against 20% when answering instantly. Intuitively, this makes sense because, if you put yourself in the model's shoes, when it has to answer instantly, the entropy is higher (because it has less evidence to ground its answer on), whereas when it has a reasoning trace to base itself on, you'll get a consistent answer.
 
 Two empirical results from this section:
 - Sonnet 4.6 agrees with itself on 96% of repeats but only on 76% of unit changes.
