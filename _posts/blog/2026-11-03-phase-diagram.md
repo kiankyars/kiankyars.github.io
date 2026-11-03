@@ -46,53 +46,57 @@ Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, w
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="pdLines"></g></defs></svg>
 
-Without reasoning, 84–98% of points sit in the biggest connected patch of their phase; however, balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
+On instant mode, 84–98% of points sit in the biggest connected patch of their phase; however, balanced accuracy is only 0.63-0.83%. The most common errors are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
 
 ## Reasoning is almost a silver bullety=
 
 <div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
 <div id="effect"></div>
 
-Each line below is where one model stops saying vapor (boiling) or solid (melting). Black lines are the truth.
+Each line below is where one model demarcates vapor (boiling) or solid (melting).
 
 <div class="pd-segments" id="fanCondition"></div>
 <div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
 <div id="fan"></div>
 <div class="pd-tip" id="tip" hidden></div>
 
-18 models can answer both ways, and reasoning made all 18 better: balanced accuracy rose by a median of 0.20. Median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
+Balanced accuracy rose by a median of 0.20, and median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
 
-Haiku 5.5 gains the most, from 0.63 to 0.96, because instantly it almost never says liquid. Sonnet 5 gains the least, from 0.79 to 0.85, because with reasoning it calls even more hot gas supercritical.
+Haiku 5.5 gains the most, from 0.63 to 0.96, because for some reason it almost never says liquid when not reasoning. Sonnet 5 gains the least, from 0.79 to 0.85, because with reasoning it calls even more hot gas supercritical.
 
 ## Do newer models do better?
 
-It depends on the curve. Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.
+Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot.
 
 <div class="pd-segments" id="timeCondition"></div>
 <div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
 <div id="time"></div>
 
-Over time, balanced accuracy barely moves. Since September 2025, the period both providers cover, neither provider's instant trend is clear, and with reasoning allowed neither shows a clear gain either. Anthropic's older models are retired, so its history only goes back to September 2025, while OpenAI's goes back to July 2024.
+First of all, Anthropic models beyond September 2025 are retired, with the exception of Opus 3. For OpenAI, the history does go back farther, all the way to July 2024. This is why we were able to test models like GPT-4.1. Over the period that the two labs have models available, there isn't a clear trend. For some model classes, it is positive linear, but then, if you look at Haiku, it actually got markedly worse, at least on instant mode.
 
 ## Changing the units changes the answer
 
 ![Agreement across units against agreement on a repeat](/imgs/2026-11-03-phase-diagram/units_gap_instant.png?v=2)
 
-I asked the same points in six sets of units: kelvin or Celsius, with pascals, megapascals or atmospheres. I also asked two of them, kelvin with megapascals and Celsius with atmospheres, a second time to see how much answers move by chance. Answering instantly, all 22 models change their answers more when only the units change. Sonnet 4.6 agrees with itself on 96% of repeats but only 76% of unit changes. Opus 5 calls hot gas supercritical 85–89% of the time in kelvin and 18–22% in Celsius. With reasoning allowed, the gap is at most 0.06.
+To have more meaningful results, for every point, we ask the same question in six different units, which is the Cartesian product between Kelvin or Celsius on temperature, and Pascals, megapascals, or atmospheres when it comes to pressure. For two of these Cartesian products, namely Kelvin × Mega Packcells and Celsius × Atmosphere, (I just randomly sampled these two out of the six) I sampled twice each point to see the variance. Answering instantly, all 22 models change their answers more often than when they reason. With reasoning allowed, the gap is at most 6% (add the largest gap here for non reasoning). Intuitively, this makes sense because, if you put yourselves in the model's shoes, when it has to answer instantly, the entropy is higher (because it has less evidence to ground its answer on), whereas when it has a reasoning trace to base itself on, you'll get a consistent answer.
 
-Part of this is how the number is written rather than the unit itself: 2 MPa is "2.000 megapascals" but "2.000e6 pascals".
+Two empiral results from this section:
+- Sonnet 4.6 agrees with itself on 96% of repeats but only on 76% of unit changes.
+- Opus 5 (what a horrible model lol) calls hot gas supercritical 85–89% of the time in kelvin and 18–22% in Celsius.
 
 ## Models think hardest near the boundaries
 
 ![Reasoning tokens spent at each point for four models](/imgs/2026-11-03-phase-diagram/thought_map.png)
 
-Darker cells above took more reasoning tokens, and they trace the true boundaries, cool! Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest, Sonnet 5.5 on 76% and 17%.
+My favourite cool finding!
+
+- Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest.
+- Sonnet 5.5 on 76% and 17%.
 
 ## Caveats
 
-- Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92.
 - Reasoning settings differ between models, so the reasoning comparison is not fully controlled.
-- The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.
+- The whole experiment was run by Claude Opus 5.5, which is also one of the graded models (conflict of interest?).
 
 ## Appendix: a reasoning trace
 
@@ -100,7 +104,7 @@ Of the models that reason, only Sonnet 4.5 returns its reasoning as text, so her
 
 > Pure water at equilibrium, at 532.15 kelvin and 2755 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-This is hot water squeezed to about 27,000 atmospheres. Answering instantly, 15 of the 22 models say ice and the other 7 say supercritical. It is liquid. Sonnet 4.5 first wonders about ice VII, then checks the melting curve and gets it right:
+For context, this is hot water squeezed to about 27,000 atmospheres. Answering instantly, 15 of the 22 models say ice and the other 7 say supercritical. It is liquid. Sonnet 4.5 first wonders about ice VII, then checks the melting curve and gets it right:
 
 <div class="pd-trace">Let me determine the phase of water at 532.15 K and 2755 MPa.
 
