@@ -11,7 +11,7 @@ Thinking of how to use left-over API credits, I questioned 28 language models[^m
 
 ## Results
 
-Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model, you can click a map to explore it below.
+Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model. You can click a map to explore it below.
 
 <div class="pd-segments" id="atlasCondition"></div>
 <div class="pd-key" id="atlasKey"></div>
@@ -44,9 +44,9 @@ Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, w
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="pdLines"></g></defs></svg>
 
-On instant mode, 84–98% of points sit in the biggest connected patch of their phase; however, balanced accuracy is only 0.63-0.83%. The most common errors are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
+On instant mode, 84–98% of points sit in the biggest connected patch of their phase; however, balanced accuracy is only 0.63 to 0.83. The most common errors are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
 
-## Reasoning is almost a silver bullety=
+## Reasoning is almost a silver bullet
 
 <div class="pd-key"><span><i class="pd-dot hollow"></i>Answering instantly</span><span><i class="pd-dot" style="background:var(--text)"></i>Reasoning allowed</span></div>
 <div id="effect"></div>
@@ -70,15 +70,15 @@ Answering instantly, OpenAI's boiling curve moved toward the truth: the error fe
 <div class="pd-key" style="margin-top:6px"><span><i class="pd-dot" style="background:#d97757"></i>Anthropic</span><span><i class="pd-dot" style="background:#10a37f"></i>OpenAI</span></div>
 <div id="time"></div>
 
-First of all, Anthropic models beyond September 2025 are retired, with the exception of Opus 3. For OpenAI, the history does go back farther, all the way to July 2024. This is why we were able to test models like GPT-4.1. Over the period that the two labs have models available, there isn't a clear trend. For some model classes, it is positive linear, but then, if you look at Haiku, it actually got markedly worse, at least on instant mode.
+First of all, Anthropic models released before September 2025 are retired, with the exception of Opus 3. For OpenAI, the history does go back farther, all the way to July 2024. This is why we were able to test models like GPT-4.1. Over the period that the two labs have models available, there isn't a clear trend. For some model classes, it is positive linear, but then, if you look at Haiku, it actually got markedly worse, at least on instant mode.
 
 ## Changing the units changes the answer
 
 ![Agreement across units against agreement on a repeat](/imgs/2026-11-03-phase-diagram/units_gap_instant.png?v=2)
 
-To have more meaningful results, for every point, we ask the same question in six different units, which is the Cartesian product between Kelvin or Celsius on temperature, and Pascals, megapascals, or atmospheres when it comes to pressure. For two of these Cartesian products, namely Kelvin × Mega Packcells and Celsius × Atmosphere, (I just randomly sampled these two out of the six) I sampled twice each point to see the variance. Answering instantly, all 22 models change their answers more often than when they reason. With reasoning allowed, the gap is at most 6% (add the largest gap here for non reasoning). Intuitively, this makes sense because, if you put yourselves in the model's shoes, when it has to answer instantly, the entropy is higher (because it has less evidence to ground its answer on), whereas when it has a reasoning trace to base itself on, you'll get a consistent answer.
+To have more meaningful results, for every point, we ask the same question in six different units, which is the Cartesian product between kelvin or Celsius for temperature, and pascals, megapascals or atmospheres when it comes to pressure. For two of these Cartesian products, namely kelvin × megapascals and Celsius × atmospheres, (I just randomly sampled these two out of the six) I sampled each point twice to see the variance. Answering instantly, all 22 models change their answers more often than when they reason. With reasoning allowed, the gap is at most 6%, against up to 20% when answering instantly. Intuitively, this makes sense because, if you put yourself in the model's shoes, when it has to answer instantly, the entropy is higher (because it has less evidence to ground its answer on), whereas when it has a reasoning trace to base itself on, you'll get a consistent answer.
 
-Two empiral results from this section:
+Two empirical results from this section:
 - Sonnet 4.6 agrees with itself on 96% of repeats but only on 76% of unit changes.
 - Opus 5 (what a horrible model lol) calls hot gas supercritical 85–89% of the time in kelvin and 18–22% in Celsius.
 
