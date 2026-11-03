@@ -9,8 +9,6 @@ Thinking of how to use left-over API credits, I questioned 28 language models[^m
 
 > Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-The questions were independent, with no tools or memory; cost was \$796: \$462 from Ant and \$334 from Oai at batch prices. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
-
 ## Results
 
 Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model, you can click a map to explore it below.
@@ -93,8 +91,10 @@ My favourite cool finding!
 - Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest.
 - Sonnet 5.5 on 76% and 17%.
 
-## Caveats
+## Disclosure
 
+- The questions were independent, with no tools or memory.
+- Cost was $796: $462 from Ant and $334 from Oai at batch prices.
 - Reasoning settings differ between models, so the reasoning comparison is not fully controlled.
 - The whole experiment was run by Claude Opus 5.5, which is also one of the graded models (conflict of interest?).
 
