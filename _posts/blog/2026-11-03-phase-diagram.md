@@ -9,42 +9,45 @@ Thanks to left-over API credits, I got 1,180,160 answers from 28 language models
 
 > Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-TL;DR
-
-Instant answers are worse than reasoned ones, the best reasoning models are almost exact; I also not that newer models are not clearly better.
-
 The questions were independent, with no tools or memory. From the answers I drew the phase diagram of each model against the IAPWS reference equations.
-
-
-## Explore the answers
-
-Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase. Black lines are the true boundaries.
-
-<div id="explorer">
-  <div id="map" tabindex="0" aria-label="Phase diagram. Use the arrow keys to move between cells.">
-    <canvas id="canvas"></canvas>
-    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><g id="lines"></g><rect id="cursor" fill="none" stroke="#000" stroke-width="2" vector-effect="non-scaling-stroke"></rect></svg>
-  </div>
-  <p><small>Temperature runs from 170 K on the left to 900 K on the right. Pressure runs from 0.01 Pa at the bottom to 20 GPa at the top, on a log scale.</small></p>
-  <p id="key"></p>
-  <p>
-    <label>Model <select id="model"></select></label>
-    <label>Mode <select id="condition"><option value="instant">Answering instantly</option><option value="reasoned">Reasoning allowed</option></select></label>
-    <label>Units <select id="units"></select></label>
-  </p>
-  <p id="prompt"></p>
-  <p>Model said: <b id="said">–</b>. True phase: <b id="truth">–</b>. Balanced accuracy of this map: <b id="score">–</b> (<span id="grid"></span>).</p>
-</div>
 
 ## All the maps
 
-Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model.
+Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model, you can click a map to explore it below.
 
-![Every model's phase diagram, answering instantly](/imgs/2026-11-03-phase-diagram/atlas_instant.png)
+<div class="pd-segments" id="atlasCondition"></div>
+<div class="pd-key" id="atlasKey"></div>
+<div class="pd-atlas" id="atlas"></div>
 
-![Every model's phase diagram, with reasoning allowed](/imgs/2026-11-03-phase-diagram/atlas_reasoned.png)
+## Explore one model
 
-The instant maps look tidy: 84–98% of points sit in the biggest connected patch of their phase. But balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
+Hover over a pixel (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase.
+
+<div class="pd-explorer">
+  <select id="model" aria-label="Model"></select>
+  <div class="pd-label">Mode</div>
+  <div class="pd-segments" id="condition"></div>
+  <div class="pd-label">Units in the prompt</div>
+  <div class="pd-segments" id="units"></div>
+  <div class="pd-label">Show</div>
+  <div class="pd-segments" id="view"></div>
+  <div class="pd-frame">
+    <div class="pd-y" id="yAxis" aria-hidden="true"></div>
+    <div class="pd-map" id="bigMap" tabindex="0" aria-label="Phase diagram. Use the arrow keys to move between cells.">
+      <canvas id="bigCanvas"></canvas>
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><use href="#pdLines"></use><rect class="pd-cursor-shadow" id="cursorShadow"></rect><rect class="pd-cursor" id="cursor"></rect></svg>
+    </div>
+    <div class="pd-x" id="xAxis" aria-hidden="true"></div>
+  </div>
+  <div class="pd-key" id="bigKey"></div>
+  <p class="pd-prompt" id="prompt"></p>
+  <div class="pd-verdict"><div><small>Model said</small><b id="said">–</b></div><div><small>IAPWS</small><b id="truth">–</b></div></div>
+  <table class="pd-readings" id="readings"></table>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="pdLines"></g></defs></svg>
+
+Without reasoning, 84–98% of points sit in the biggest connected patch of their phase; however, balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
 
 ## Reasoning fixes most of it
 
@@ -86,98 +89,214 @@ Darker cells above took more reasoning tokens, and they trace the true boundarie
 
 The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
 
+
 <style>
-  #map { position: relative; width: 100%; max-width: 560px; aspect-ratio: 1; cursor: crosshair; touch-action: none; }
-  #map canvas, #map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-  #map canvas { image-rendering: pixelated; }
-  #map:focus { outline: 2px solid var(--link); }
-  #explorer label { margin-right: 1rem; white-space: nowrap; }
-  #key span { margin-right: 1rem; white-space: nowrap; }
-  #key i { display: inline-block; width: 0.8em; height: 0.8em; margin-right: 0.3em; }
-  #prompt { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; }
+  .pd-atlas { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 14px 10px; margin: 1rem 0 1.5rem; }
+  .pd-group { grid-column: 1 / -1; font-weight: 700; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 2px; margin-top: 0.4rem; }
+  .pd-tile { all: unset; display: grid; gap: 3px; cursor: pointer; min-width: 0; }
+  .pd-tile:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+  .pd-tile.ref { cursor: default; }
+  .pd-head { display: flex; justify-content: space-between; gap: 4px; font-size: 0.8rem; line-height: 1.2; }
+  .pd-head b { font-weight: 700; }
+  .pd-tile:not(.ref):hover b, .pd-tile.on b { color: var(--link); }
+  .pd-map { position: relative; aspect-ratio: 1; width: 100%; background: var(--border); }
+  .pd-map canvas, .pd-map svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .pd-map canvas { image-rendering: pixelated; }
+  .pd-map svg { pointer-events: none; overflow: visible; }
+  #pdLines polyline { fill: none; stroke: #111; stroke-width: 1; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+  .pd-explorer { display: grid; gap: 8px; margin: 1rem 0; }
+  .pd-explorer select { font: inherit; font-size: 1.15rem; font-weight: 700; padding: 6px 8px; color: var(--text); background: light-dark(#fff, #1c1c1c); border: 1px solid var(--border); max-width: 320px; }
+  .pd-label { font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+  .pd-segments { display: flex; flex-wrap: wrap; }
+  .pd-segments input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .pd-segments label { font-size: 0.85rem; padding: 5px 10px; border: 1px solid var(--border); margin: 0 -1px -1px 0; cursor: pointer; color: var(--muted); }
+  .pd-segments input:checked + label { background: var(--text); border-color: var(--text); color: light-dark(#fff, #111); }
+  .pd-segments input:focus-visible + label { outline: 2px solid var(--link); outline-offset: 2px; }
+  .pd-segments input:disabled + label { opacity: 0.4; cursor: not-allowed; }
+  .pd-frame { display: grid; grid-template-columns: 46px minmax(0, 1fr); grid-template-rows: auto 24px; margin-top: 10px; }
+  .pd-y, .pd-x { position: relative; font-size: 0.72rem; color: var(--muted); }
+  .pd-y span { position: absolute; right: 6px; transform: translateY(-50%); white-space: nowrap; }
+  .pd-x { grid-column: 2; }
+  .pd-x span { position: absolute; top: 4px; transform: translateX(-50%); white-space: nowrap; }
+  #bigMap { cursor: crosshair; touch-action: none; }
+  #bigMap:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+  .pd-cursor { fill: none; stroke: #fff; stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .pd-cursor-shadow { fill: none; stroke: #000; stroke-width: 4; vector-effect: non-scaling-stroke; }
+  .pd-key { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.8rem; color: var(--muted); }
+  .pd-key i { display: inline-block; width: 11px; height: 11px; margin-right: 5px; vertical-align: -1px; }
+  .pd-prompt { font-family: ui-monospace, Menlo, monospace; font-size: 0.88rem; min-height: 4.2em; margin: 0.5rem 0 0; }
+  .pd-verdict { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pd-verdict small { display: block; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+  .pd-verdict b { font-size: 1.35rem; }
+  .pd-readings { display: table !important; margin: 0 !important; font-size: 0.88rem; }
+  .pd-readings th, .pd-readings td { border: 0 !important; border-bottom: 1px solid var(--border) !important; padding: 4px 0 !important; font-weight: 400; }
+  .pd-readings td { text-align: right !important; font-variant-numeric: tabular-nums; padding-left: 12px !important; white-space: nowrap; }
+  .pd-readings th { color: var(--muted); }
 </style>
 
 <script>
 (function () {
+  "use strict";
   const PHASES = ["Solid", "Liquid", "Vapor", "Supercritical"];
   const COLORS = [[42, 120, 214], [0, 131, 0], [237, 161, 0], [232, 123, 164]];
+  const NONE = [195, 194, 183];
+  const RIGHT = [226, 228, 228];
+  const CONDITIONS = [["instant", "Answering instantly"], ["reasoned", "Reasoning allowed"]];
+  const VIEWS = [["answers", "Answers"], ["errors", "Mistakes only"]];
+  const PROVIDER = { anthropic: "Anthropic", openai: "OpenAI" };
   const $ = (id) => document.getElementById(id);
-  let D, cell = { i: 0, j: 0 };
+  const svgNS = "http://www.w3.org/2000/svg";
+  let D;
+  const state = { model: null, condition: "instant", units: null, view: "answers", cell: null, atlas: "instant" };
 
-  fetch("/imgs/2026-11-03-phase-diagram/maps.json").then((r) => r.json()).then((data) => {
+  const key = (id, condition, units) => `${id}|${condition}|${units}`;
+  const current = () => D.maps[key(state.model, state.condition, state.units)];
+  const has = (id, condition) => !!D.maps[key(id, condition, D.framings[0].key)];
+  const named = (m) => m.label + (m.thinks ? " *" : "");
+  const fixed = (x, n) => (x === null || x === undefined ? "–" : x.toFixed(n));
+
+  fetch("/imgs/2026-11-03-phase-diagram/maps.json?v=2").then((r) => r.json()).then((data) => {
     D = data;
-    $("key").innerHTML = PHASES.map((name, k) => `<span><i style="background:rgb(${COLORS[k]})"></i>${name}</span>`).join("") + `<span><i style="background:#c3c2b7"></i>No answer</span>`;
-    for (const m of D.models) $("model").add(new Option(m.label, m.id));
-    for (const f of D.framings) $("units").add(new Option(f.label, f.key));
-    drawLines();
-    for (const id of ["model", "condition", "units"]) $(id).addEventListener("change", draw);
-    const map = $("map");
-    const pick = (e) => {
-      const box = map.getBoundingClientRect();
-      const side = sideOf();
-      cell = { i: clamp(Math.floor(((e.clientX - box.left) / box.width) * side)), j: clamp(Math.floor(((box.bottom - e.clientY) / box.height) * side)) };
-      readout();
-    };
-    map.addEventListener("pointermove", pick);
-    map.addEventListener("pointerdown", pick);
-    map.addEventListener("keydown", (e) => {
-      const step = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, 1], ArrowDown: [0, -1] }[e.key];
-      if (!step) return;
-      e.preventDefault();
-      cell = { i: clamp(cell.i + step[0]), j: clamp(cell.j + step[1]) };
-      readout();
-    });
-    draw();
+    state.units = D.framings[0].key;
+    state.model = D.models.find((m) => m.label === "Sonnet 4.6").id;
+    buildLines();
+    buildAxes();
+    for (const host of [$("atlasKey"), $("bigKey")]) legend(host);
+    for (const m of D.models) $("model").add(new Option(named(m), m.id));
+    $("model").addEventListener("change", () => setModel($("model").value));
+    segments($("atlasCondition"), "atlasCondition", CONDITIONS, state.atlas, (v) => { state.atlas = v; renderAtlas(); });
+    segments($("view"), "view", VIEWS, state.view, (v) => { state.view = v; renderBig(); });
+    hookMap();
+    renderAtlas();
+    setModel(state.model);
   });
 
-  const key = () => `${$("model").value}|${$("condition").value}|${$("units").value}`;
-  const current = () => D.maps[key()];
-  const sideOf = () => (current() ? D.side >> current().level : D.side);
-  const clamp = (v) => Math.max(0, Math.min(sideOf() - 1, v));
-
-  function drawLines() {
-    const { tMin, tMax, logpMin, logpMax } = D.bounds;
-    $("lines").innerHTML = D.curves.map((line) => `<polyline fill="none" stroke="#000" stroke-width="1.2" vector-effect="non-scaling-stroke" points="${line.map(([t, p]) => `${(1000 * (t - tMin)) / (tMax - tMin)},${1000 * (1 - (p - logpMin) / (logpMax - logpMin))}`).join(" ")}"/>`).join("");
+  /* Each grid level keeps one question per block of the finest grid. */
+  const lookups = {};
+  function lookup(level) {
+    if (lookups[level]) return lookups[level];
+    const side = D.side >> level;
+    const table = new Int32Array(side * side).fill(-1);
+    for (let pid = 0; pid < D.side * D.side; pid++) {
+      if (+D.levelOf[pid] >= level) table[(Math.floor(pid / D.side) >> level) * side + ((pid % D.side) >> level)] = pid;
+    }
+    return (lookups[level] = table);
   }
 
-  /* Some models lack a mode or a set of units, so those options are disabled. */
-  function draw() {
-    const id = $("model").value;
-    for (const o of $("condition").options) o.disabled = !D.maps[`${id}|${o.value}|${D.framings[0].key}`];
-    if ($("condition").selectedOptions[0].disabled) $("condition").value = [...$("condition").options].find((o) => !o.disabled).value;
-    for (const o of $("units").options) o.disabled = !D.maps[`${id}|${$("condition").value}|${o.value}`];
-    if ($("units").selectedOptions[0].disabled) $("units").value = D.framings[0].key;
-    const entry = current();
-    const side = D.side >> entry.level;
-    const canvas = $("canvas");
+  const answerPaint = (c) => (c >= "0" && c <= "3" ? COLORS[+c] : NONE);
+  function errorPaint(level) {
+    const table = lookup(level);
+    const side = D.side >> level;
+    return (c, i, j) => (c === D.truth[table[i * side + j]] ? RIGHT : answerPaint(c));
+  }
+
+  function draw(canvas, cells, side, paint) {
     canvas.width = canvas.height = side;
     const ctx = canvas.getContext("2d");
     const image = ctx.createImageData(side, side);
     for (let i = 0; i < side; i++) {
-      for (let j = 0; j < side; j++) {
-        const c = entry.cells[i * side + j];
-        const rgb = c >= "0" && c <= "3" ? COLORS[+c] : [195, 194, 183];
-        const at = ((side - 1 - j) * side + i) * 4;
-        image.data.set([...rgb, 255], at);
-      }
+      for (let j = 0; j < side; j++) image.data.set([...paint(cells[i * side + j], i, j), 255], ((side - 1 - j) * side + i) * 4);
     }
     ctx.putImageData(image, 0, 0);
-    $("score").textContent = entry.score.toFixed(2);
-    $("grid").textContent = `${side} × ${side} grid`;
-    if (!readout.started) cell = { i: Math.floor(0.39 * side), j: Math.floor(0.57 * side) };
-    cell = { i: clamp(cell.i), j: clamp(cell.j) };
-    readout();
   }
 
-  /* Each grid level keeps one question per block of the finest grid. */
-  function pointAt(level, i, j) {
-    for (let a = i << level; a < (i + 1) << level; a++) {
-      for (let b = j << level; b < (j + 1) << level; b++) {
-        const pid = a * D.side + b;
-        if (+D.levelOf[pid] >= level) return pid;
+  function buildLines() {
+    const { tMin, tMax, logpMin, logpMax } = D.bounds;
+    for (const line of D.curves) {
+      const path = document.createElementNS(svgNS, "polyline");
+      path.setAttribute("points", line.map(([t, p]) => `${(1000 * (t - tMin)) / (tMax - tMin)},${1000 * (1 - (p - logpMin) / (logpMax - logpMin))}`).join(" "));
+      $("pdLines").appendChild(path);
+    }
+  }
+
+  function buildAxes() {
+    const { tMin, tMax, logpMin, logpMax } = D.bounds;
+    for (const t of [200, 300, 400, 500, 600, 700, 800]) {
+      const tick = document.createElement("span");
+      tick.textContent = t === 800 ? "800 K" : t;
+      tick.style.left = `${(100 * (t - tMin)) / (tMax - tMin)}%`;
+      $("xAxis").appendChild(tick);
+    }
+    for (const [p, name] of [[0, "1 Pa"], [3, "1 kPa"], [6, "1 MPa"], [9, "1 GPa"]]) {
+      const tick = document.createElement("span");
+      tick.textContent = name;
+      tick.style.top = `${100 * (1 - (p - logpMin) / (logpMax - logpMin))}%`;
+      $("yAxis").appendChild(tick);
+    }
+  }
+
+  function legend(host) {
+    host.innerHTML = PHASES.map((name, k) => `<span><i style="background:rgb(${COLORS[k]})"></i>${name}</span>`).join("") + `<span><i style="background:rgb(${NONE})"></i>No answer</span>`;
+  }
+
+  function segments(host, name, options, chosen, onChange) {
+    host.innerHTML = "";
+    for (const [value, text, disabled] of options) {
+      const input = Object.assign(document.createElement("input"), { type: "radio", name, id: `${name}-${value}`, value, checked: value === chosen, disabled: !!disabled });
+      input.addEventListener("change", () => onChange(value));
+      const label = document.createElement("label");
+      label.htmlFor = input.id;
+      label.textContent = text;
+      host.append(input, label);
+    }
+  }
+
+  function tile(name, score, cells, side, onClick) {
+    const node = document.createElement(onClick ? "button" : "div");
+    node.className = onClick ? "pd-tile" : "pd-tile ref";
+    if (onClick) node.type = "button";
+    node.innerHTML = `<span class="pd-head"><b>${name}</b><span>${score}</span></span><span class="pd-map"><canvas></canvas><svg viewBox="0 0 1000 1000" preserveAspectRatio="none"><use href="#pdLines"></use></svg></span>`;
+    draw(node.querySelector("canvas"), cells, side, answerPaint);
+    if (onClick) node.addEventListener("click", onClick);
+    return node;
+  }
+
+  function renderAtlas() {
+    const host = $("atlas");
+    host.innerHTML = "";
+    host.appendChild(tile("IAPWS", "1.00", D.truth, D.side, null));
+    for (const provider of ["anthropic", "openai"]) {
+      const title = document.createElement("div");
+      title.className = "pd-group";
+      title.textContent = PROVIDER[provider];
+      host.appendChild(title);
+      for (const m of D.models.filter((x) => x.provider === provider && has(x.id, state.atlas))) {
+        const entry = D.maps[key(m.id, state.atlas, D.framings[0].key)];
+        host.appendChild(tile(named(m), fixed(m.atlas[state.atlas], 2), entry.cells, D.side >> entry.level, () => {
+          state.condition = state.atlas;
+          setModel(m.id);
+          $("model").scrollIntoView({ behavior: "smooth", block: "start" });
+        }));
       }
     }
-    return -1;
+    const note = document.createElement("div");
+    note.className = "pd-group";
+    note.style.border = "0";
+    note.style.fontWeight = "400";
+    note.textContent = "* Cannot turn reasoning off.";
+    host.appendChild(note);
+  }
+
+  /* Not every model has every mode or set of units, so those stay disabled. */
+  function setModel(id) {
+    state.model = id;
+    $("model").value = id;
+    if (!has(id, state.condition)) state.condition = has(id, "instant") ? "instant" : "reasoned";
+    segments($("condition"), "condition", CONDITIONS.map(([v, t]) => [v, t, !has(id, v)]), state.condition, (v) => { state.condition = v; renderUnits(); renderBig(); });
+    renderUnits();
+    renderBig();
+  }
+
+  function renderUnits() {
+    const available = (u) => !!D.maps[key(state.model, state.condition, u)];
+    if (!available(state.units)) state.units = D.framings[0].key;
+    segments($("units"), "units", D.framings.map((f) => [f.key, f.label, !available(f.key)]), state.units, (v) => { state.units = v; renderBig(); });
+  }
+
+  function renderBig() {
+    const entry = current();
+    draw($("bigCanvas"), entry.cells, D.side >> entry.level, state.view === "errors" ? errorPaint(entry.level) : answerPaint);
+    readout();
   }
 
   function number(x, sig = 4) {
@@ -189,24 +308,63 @@ The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices.
 
   /* The prompt, written exactly as the experiment wrote it. */
   function readout() {
-    readout.started = true;
     const entry = current();
     const side = D.side >> entry.level;
-    const pid = pointAt(entry.level, cell.i, cell.j);
-    const f = D.framings.find((x) => x.key === $("units").value);
+    const cell = state.cell || { x: 0.39, y: 0.57 };
+    const i = Math.min(Math.floor(cell.x * side), side - 1);
+    const j = Math.min(Math.floor(cell.y * side), side - 1);
+    const pid = lookup(entry.level)[i * side + j];
+    const f = D.framings.find((x) => x.key === state.units);
     const T = D.T[pid], p = D.p[pid];
     const temperature = f.t === "K" ? `${T.toFixed(2)} kelvin` : `${(T - 273.15).toFixed(2)} degrees Celsius`;
     const pressure = f.p === "Pa" ? `${number(p)} pascals` : f.p === "MPa" ? `${number(p / 1e6)} megapascals` : `${number(p / 101325)} atmospheres`;
     $("prompt").textContent = `Pure water at equilibrium, at ${temperature} and ${pressure}: solid, liquid, vapor, or supercritical? Do not say anything else.`;
-    const said = entry.cells[cell.i * side + cell.j];
-    $("said").textContent = said >= "0" && said <= "3" ? PHASES[+said] : "no answer";
-    $("truth").textContent = PHASES[+D.truth[pid]];
+    const said = entry.cells[i * side + j];
+    const truth = D.truth[pid];
+    $("said").textContent = said >= "0" && said <= "3" ? PHASES[+said] : "No answer";
+    $("said").style.color = said === truth ? "rgb(0, 131, 0)" : "";
+    $("truth").textContent = PHASES[+truth];
+    const s = entry.scores;
+    const rows = [
+      ["Grid", `${side} × ${side}`],
+      ["Balanced accuracy", fixed(s.balanced_accuracy, 2)],
+      ["Boiling curve error", s.saturation_mae === null ? "–" : `${fixed(s.saturation_mae, 2)} decades of pressure`],
+      ["Melting curve error", s.melting_mae === null ? "–" : `${fixed(s.melting_mae, 0)} K`],
+      ["Boils at 1 atm", s.boils_at === null ? "–" : `${fixed(s.boils_at, 0)} K (true 373 K)`],
+      ["Freezes at 1 atm", s.freezes_at === null ? "–" : `${fixed(s.freezes_at, 0)} K (true 273 K)`],
+    ];
+    if (state.condition === "reasoned") rows.push(["Replies that reasoned", `${fixed(100 * s.share_thought, 0)}%`]);
+    $("readings").innerHTML = rows.map(([a, b]) => `<tr><th scope="row">${a}</th><td>${b}</td></tr>`).join("");
     const size = 1000 / side;
-    const rect = $("cursor");
-    rect.setAttribute("x", cell.i * size);
-    rect.setAttribute("y", (side - 1 - cell.j) * size);
-    rect.setAttribute("width", size);
-    rect.setAttribute("height", size);
+    for (const id of ["cursor", "cursorShadow"]) {
+      const rect = $(id);
+      rect.setAttribute("x", i * size);
+      rect.setAttribute("y", (side - 1 - j) * size);
+      rect.setAttribute("width", size);
+      rect.setAttribute("height", size);
+    }
+  }
+
+  function hookMap() {
+    const map = $("bigMap");
+    const pick = (e) => {
+      const box = map.getBoundingClientRect();
+      state.cell = { x: Math.min(Math.max((e.clientX - box.left) / box.width, 0), 0.9999), y: Math.min(Math.max((box.bottom - e.clientY) / box.height, 0), 0.9999) };
+      readout();
+    };
+    map.addEventListener("pointermove", pick);
+    map.addEventListener("pointerdown", pick);
+    map.addEventListener("keydown", (e) => {
+      const step = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, 1], ArrowDown: [0, -1] }[e.key];
+      if (!step) return;
+      e.preventDefault();
+      const side = D.side >> current().level;
+      const cell = state.cell || { x: 0.39, y: 0.57 };
+      const i = Math.min(Math.max(Math.floor(cell.x * side) + step[0], 0), side - 1);
+      const j = Math.min(Math.max(Math.floor(cell.y * side) + step[1], 0), side - 1);
+      state.cell = { x: (i + 0.5) / side, y: (j + 0.5) / side };
+      readout();
+    });
   }
 })();
 </script>
