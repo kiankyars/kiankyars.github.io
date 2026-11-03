@@ -5,24 +5,24 @@ date: 2026-11-03
 categories: machine_learning
 ---
 
-<p>Thanks to left-over API credits, I got 1,180,160 answers from 28 language models, 14 from Anthropic and 14 from OpenAI, on the state of pure water at different temperatures and pressures. Each question looked like this:</p>
+Thanks to left-over API credits, I got 1,180,160 answers from 28 language models, 14 from Anthropic and 14 from OpenAI, on the state of pure water at different temperatures and pressures. Each question looked like this:
 
-<blockquote>Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.</blockquote>
+> Pure water at equilibrium, at 450.00 kelvin and 2.000 megapascals: solid, liquid, vapor, or supercritical? Do not say anything else.
 
-<p>Every question went in on its own, with no tools and no memory of the others. From the answers I drew the phase diagram each model implies and graded it against the IAPWS reference equations. The idea comes from henry's <a href="https://outsidetext.substack.com/p/how-does-a-blind-model-see-the-earth">How does a blind model see the Earth?</a>, which did the same thing with a world map.</p>
+Every question went in on its own, with no tools and no memory of the others. From the answers I drew the phase diagram each model implies and graded it against the IAPWS reference equations. The idea comes from henry's [How does a blind model see the Earth?](https://outsidetext.substack.com/p/how-does-a-blind-model-see-the-earth), which did the same thing with a world map.
 
-<p>The short version: answering instantly, no model beats a sketch I could draw from four facts I remember from school. Allowed to reason, 14 of 24 models beat it and the best are almost exact. Newer models are not clearly better.</p>
+The short version: answering instantly, no model beats a sketch I could draw from four facts I remember from school. Allowed to reason, 14 of 24 models beat it and the best are almost exact. Newer models are not clearly better.
 
-<h2>Explore the answers</h2>
+## Explore the answers
 
-<p>Every pixel is one question. Hover over it (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase. Black lines are the true boundaries.</p>
+Every pixel is one question. Hover over it (or tap it, or use the arrow keys) to see the exact prompt, what the model said and the true phase. Black lines are the true boundaries.
 
 <div id="explorer">
   <div id="map" tabindex="0" aria-label="Phase diagram. Use the arrow keys to move between cells.">
     <canvas id="canvas"></canvas>
     <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><g id="lines"></g><rect id="cursor" fill="none" stroke="#000" stroke-width="2" vector-effect="non-scaling-stroke"></rect></svg>
   </div>
-  <p id="axes"><small>Temperature runs from 170 K on the left to 900 K on the right. Pressure runs from 0.01 Pa at the bottom to 20 GPa at the top, on a log scale.</small></p>
+  <p><small>Temperature runs from 170 K on the left to 900 K on the right. Pressure runs from 0.01 Pa at the bottom to 20 GPa at the top, on a log scale.</small></p>
   <p id="key"></p>
   <p>
     <label>Model <select id="model"></select></label>
@@ -33,64 +33,60 @@ categories: machine_learning
   <p>Model said: <b id="said">–</b>. True phase: <b id="truth">–</b>. Balanced accuracy of this map: <b id="score">–</b> (<span id="grid"></span>).</p>
 </div>
 
-<noscript><p>The explorer needs JavaScript.</p></noscript>
+## All the maps
 
-<h2>All the maps</h2>
+Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model.
 
-<p>Scores are balanced accuracy: the average share correct over the four phases. 0.25 is guessing and 1 is perfect. They are measured in kelvin and megapascals on the same 64 × 64 points for every model.</p>
+![Every model's phase diagram, answering instantly](/imgs/2026-11-03-phase-diagram/atlas_instant.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/atlas_instant.png" alt="Every model's phase diagram, answering instantly" />
+![Every model's phase diagram, with reasoning allowed](/imgs/2026-11-03-phase-diagram/atlas_reasoned.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/atlas_reasoned.png" alt="Every model's phase diagram, with reasoning allowed" />
+The instant maps look tidy: 84–98% of points sit in the biggest connected patch of their phase. But balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).
 
-<p>The instant maps look tidy: 84–98% of points sit in the biggest connected patch of their phase. But balanced accuracy is only 0.63 to 0.83. The big misses are liquid above the critical pressure, which models call supercritical or ice (68% wrong), and vapor below 0 °C (56% wrong).</p>
+## Four facts beat every instant map
 
-<h2>Four facts beat every instant map</h2>
+I made a sketch from the triple point, the critical point, ice melting at 0 °C and one latent heat, joined by the Clausius-Clapeyron equation. It scores 0.94. No model answering instantly scores above 0.83. To be fair to the models, I chose the sketch's layout after a small trial run, and it has no ice above 0 °C, so 21 of the 22 instant maps beat it on high-pressure ice.
 
-<p>I made a sketch from the triple point, the critical point, ice melting at 0 °C and one latent heat, joined by the Clausius-Clapeyron equation. It scores 0.94. No model answering instantly scores above 0.83. To be fair to the models, I chose the sketch's layout after a small trial run, and it has no ice above 0 °C, so 21 of the 22 instant maps beat it on high-pressure ice.</p>
+## Reasoning fixes most of it
 
-<h2>Reasoning fixes most of it</h2>
+![Balanced accuracy of each model, instantly and with reasoning allowed](/imgs/2026-11-03-phase-diagram/reasoning_effect.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/reasoning_effect.png" alt="Balanced accuracy of each model, instantly and with reasoning allowed" />
+18 models can answer both ways, and reasoning made all 18 better: balanced accuracy rose by a median of 0.20. Median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.
 
-<p>18 models can answer both ways, and reasoning made all 18 better: balanced accuracy rose by a median of 0.20. Median melting curve error fell from 77 K to 20 K. Boiling curve error fell from 0.58 to 0.006 decades of pressure (a decade is a factor of 10). GPT-5.6 Sol, GPT-6 Astra and GPT-6.1 Sol get the melting curve right at all but one or two of 39 pressures.</p>
+Haiku 5.5 gains the most, from 0.63 to 0.96, because instantly it almost never says liquid. Sonnet 5 gains the least, from 0.79 to 0.85, because with reasoning it calls even more hot gas supercritical.
 
-<p>Haiku 5.5 gains the most, from 0.63 to 0.96, because instantly it almost never says liquid. Sonnet 5 gains the least, from 0.79 to 0.85, because with reasoning it calls even more hot gas supercritical.</p>
+## Do newer models do better?
 
-<h2>Do newer models do better?</h2>
+![Every model's boiling and melting curves against the truth](/imgs/2026-11-03-phase-diagram/boundary_fan.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/boundary_fan.png" alt="Every model's boiling and melting curves against the truth" />
+It depends on the curve. Each line above is where one model stops saying vapor (boiling) or solid (melting). Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.
 
-<p>It depends on the curve. Each line above is where one model stops saying vapor (boiling) or solid (melting). Answering instantly, OpenAI's boiling curve moved toward the truth: the error fell from about 2 decades on GPT-4o mini to about 0.2 on GPT-5.5 and GPT-6 Sol. Their melting curve went the other way. OpenAI's three oldest models put ice 46–193 K too cold above 209 MPa, and its models from GPT-5.4 on put it 65–351 K too hot. Thirteen of the 22 instant models turn hot compressed liquid into ice below 1 GPa, where the true melting pressure is 3 to 12 GPa.</p>
+![Accuracy and boundary error by release date](/imgs/2026-11-03-phase-diagram/generations.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/generations.png" alt="Accuracy and boundary error by release date" />
+Over time, balanced accuracy barely moves. Since September 2025, the period both providers cover, neither provider's instant trend is clear, and with reasoning allowed neither shows a clear gain either. Anthropic's older models are retired, so its history only goes back to September 2025, while OpenAI's goes back to July 2024.
 
-<p>Over time, balanced accuracy barely moves. Since September 2025, the period both providers cover, neither provider's instant trend is clear, and with reasoning allowed neither shows a clear gain either. Anthropic's older models are retired, so its history only goes back to September 2025, while OpenAI's goes back to July 2024.</p>
+## Changing the units changes the answer
 
-<h2>Changing the units changes the answer</h2>
+![Agreement across units against agreement on a repeat](/imgs/2026-11-03-phase-diagram/units_gap_instant.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/units_gap_instant.png" alt="Agreement across units against agreement on a repeat" />
+I asked the same points in six sets of units: kelvin or Celsius, with pascals, megapascals or atmospheres. I also asked two of them, kelvin with megapascals and Celsius with atmospheres, a second time to see how much answers move by chance. Answering instantly, all 22 models change their answers more when only the units change. Sonnet 4.6 agrees with itself on 96% of repeats but only 76% of unit changes. Opus 5 calls hot gas supercritical 85–89% of the time in kelvin and 18–22% in Celsius. With reasoning allowed, the gap is at most 0.06.
 
-<p>I asked the same points in six sets of units: kelvin or Celsius, with pascals, megapascals or atmospheres. I also asked two of them, kelvin with megapascals and Celsius with atmospheres, a second time to see how much answers move by chance. Answering instantly, all 22 models change their answers more when only the units change. Sonnet 4.6 agrees with itself on 96% of repeats but only 76% of unit changes. Opus 5 calls hot gas supercritical 85–89% of the time in kelvin and 18–22% in Celsius. With reasoning allowed, the gap is at most 0.06.</p>
+Part of this is how the number is written rather than the unit itself: 2 MPa is "2.000 megapascals" but "2.000e6 pascals".
 
-<p>Part of this is how the number is written rather than the unit itself: 2 MPa is "2.000 megapascals" but "2.000e6 pascals".</p>
+## Models think hardest near the boundaries
 
-<h2>Models think hardest near the boundaries</h2>
+![Reasoning tokens spent at each point for four models](/imgs/2026-11-03-phase-diagram/thought_map.png)
 
-<img src="/imgs/2026-11-03-phase-diagram/thought_map.png" alt="Reasoning tokens spent at each point for four models" />
+Some models with reasoning allowed often skip it. Darker cells above took more reasoning tokens, and they trace the true boundaries. Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest, Sonnet 5.5 on 76% and 17%.
 
-<p>Some models with reasoning allowed often skip it. Darker cells above took more reasoning tokens, and they trace the true boundaries. Opus 5.5 reasons on 79% of points near a boundary and 20% of the rest, Sonnet 5.5 on 76% and 17%. The models seem to know where the hard questions are.</p>
+## Caveats
 
-<h2>Caveats</h2>
+- Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92, still below the sketch's 0.94.
+- Reasoning settings differ between models, so the reasoning comparison is not fully controlled.
+- I tested 143 trends and 84 unit gaps without correcting for that. By chance alone about 7 trends and 4 gaps would look clear; 26 and 13 did.
+- The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.
 
-<ul>
-  <li>Hot gas below the critical pressure counts as vapor and dense fluid above it counts as liquid. That is the textbook convention, but the prompt doesn't say so. If I accept "supercritical" for vapor above 647 K and liquid above 22 MPa, the best instant score rises from 0.83 to 0.92, still below the sketch's 0.94.</li>
-  <li>Reasoning settings differ between models, so the reasoning comparison is not fully controlled.</li>
-  <li>I tested 143 trends and 84 unit gaps without correcting for that. By chance alone about 7 trends and 4 gaps would look clear; 26 and 13 did.</li>
-  <li>The whole experiment was run by Claude Opus 5.5, which is also one of the graded models.</li>
-</ul>
-
-<p>The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices. The code, every answer and every raw reply are in the <a href="https://github.com/kiankyars/phase-diagram">repo</a>.</p>
+The run cost $796: $462 at Anthropic and $334 at OpenAI, at batch prices. The code, every answer and every raw reply are in the [repo](https://github.com/kiankyars/phase-diagram).
 
 <style>
   #map { position: relative; width: 100%; max-width: 560px; aspect-ratio: 1; cursor: crosshair; touch-action: none; }
